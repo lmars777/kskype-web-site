@@ -1,0 +1,97 @@
+body {margin: 0; padding: 0;}
+
+#lia-body .lia-content {
+	padding-top: 0px;
+}
+
+#lia-body .lia-content .lia-component-common-widget-search-form input.search-input {
+	font-size: 13px;
+	color: #2c2c2c;
+	vertical-align: text-bottom;
+	border: 2px solid #00AFF0;
+	margin: 0 10px;
+	padding: 4px 10px;
+}
+
+#lia-body .lia-content .lia-component-common-widget-search-form input.search-input {
+	width: 360px;
+}
+
+#lia-body .lia-autocomplete-container {
+	text-align: left;
+}
+
+#lia-body .lia-content .communities {
+	display: block;
+	overflow: hidden;
+	width: 685px;
+}
+
+#lia-body .lia-content .communities h2 {
+	font-weight: normal;
+	color: #666666;
+	font-size: 24px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}	
+
+#lia-body .lia-content .communities h3 {
+	float: left;
+	width: 120px;
+	height: 55px;
+	font-weight: normal;
+	font-size: 20px;
+	margin: 0;
+}	
+#lia-body .lia-content .communities ul {
+	padding: 0;
+	margin: 0;
+}
+#lia-body .lia-content .communities ul li {
+	list-style-type: none;
+	clear: both;
+}
+#lia-body .lia-content .communities ul li .posts {
+	float: left;
+	width: 520px;
+}
+#lia-body .lia-content .communities p {
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: left;
+	margin: 0;
+	font-size: 16px;
+}
+#lia-body .lia-content .communities a {
+	color: #0E7DC2;
+	text-decoration: none;
+}
+#lia-body .lia-content .communities a:hover {
+	text-decoration: underline;
+}
+
+.LithiumLogo {
+	opacity: 0.6;
+}
+/*
+     FILE ARCHIVED ON 22:44:15 Oct 30, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:46:17 Oct 06, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.647
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.008
+  esindex: 0.01
+  cdx.remote: 12.039
+  LoadShardBlock: 140.789 (6)
+  PetaboxLoader3.datanode: 119.32 (8)
+  load_resource: 188.067 (2)
+  PetaboxLoader3.resolve: 162.455 (2)
+*/

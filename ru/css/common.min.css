@@ -124,7 +124,7 @@ section,div,header,nav {
 }
 @font-face {
   font-family:"Segoe UI Hebrew Regular";
-  src:local("O"),url("../fonts/segoe-ui-regular-hebrew.woff") format("woff"),url("../fonts/segoe-ui-regular-hebrew.eot"),url("../fonts/segoe-ui-regular-hebrew.eot") format("embedded-opentype"),url("https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.ttf") format("truetype");
+  src:local("O"),url("../fonts/segoe-ui-regular-hebrew.woff") format("woff"),url("../fonts/segoe-ui-regular-hebrew.eot"),url("../fonts/segoe-ui-regular-hebrew.eot") format("embedded-opentype"),url("../fonts/segoe-ui-regular-hebrew.ttf") format("truetype");
   font-style:normal;
   font-weight:400
 }
@@ -136,7 +136,7 @@ section,div,header,nav {
 }
 @font-face {
   font-family:"Segoe UI Arabic Semibold";
-  src:local("O"),url("https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.woff") format("woff"),url("../fonts/segoe-ui-semibold-arabic.eot"),url("../fonts/segoe-ui-semibold-arabic.eot") format("embedded-opentype"),url("https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.ttf") format("truetype");
+  src:local("O"),url("../fonts/segoe-ui-semibold-arabic.woff") format("woff"),url("../fonts/segoe-ui-semibold-arabic.eot"),url("../fonts/segoe-ui-semibold-arabic.eot") format("embedded-opentype"),url("../fonts/segoe-ui-semibold-arabic.ttf") format("truetype");
   font-style:normal;
   font-weight:400
 }
@@ -148,13 +148,13 @@ section,div,header,nav {
 }
 @font-face {
   font-family:"Segoe UI Greek Semibold";
-  src:local("O"),url("https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.woff") format("woff"),url("https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.eot"),url("https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.eot") format("embedded-opentype"),url("../fonts/segoe-ui-semibold-greek.ttf") format("truetype");
+  src:local("O"),url("../fonts/segoe-ui-semibold-greek.woff") format("woff"),url("../fonts/segoe-ui-semibold-greek.eot"),url("../fonts/segoe-ui-semibold-greek.eot") format("embedded-opentype"),url("../fonts/segoe-ui-semibold-greek.ttf") format("truetype");
   font-style:normal;
   font-weight:400
 }
 @font-face {
   font-family:"Segoe UI Hebrew Semibold";
-  src:local("O"),url("../fonts/segoe-ui-semibold-hebrew.woff") format("woff"),url("../fonts/segoe-ui-semibold-hebrew.eot"),url("../fonts/segoe-ui-semibold-hebrew.eot") format("embedded-opentype"),url("https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/fonts/hebrew/segoe-ui-semibold-hebrew.ttf") format("truetype");
+  src:local("O"),url("../fonts/segoe-ui-semibold-hebrew.woff") format("woff"),url("../fonts/segoe-ui-semibold-hebrew.eot"),url("../fonts/segoe-ui-semibold-hebrew.eot") format("embedded-opentype"),url("../fonts/segoe-ui-semibold-hebrew.ttf") format("truetype");
   font-style:normal;
   font-weight:400
 }
@@ -560,7 +560,7 @@ button.smallButton,a.smallButton {
   display:inline-block
 }
 .arrowNext,.arrowPrev,.arrowUp,.arrowDown {
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/ui-elements/buttons-sprite.png');
+  background-image:url('../images/buttons-sprite.png');
   background-repeat:no-repeat;
   text-align:middle
 }
@@ -1269,7 +1269,7 @@ html.rtl .btn.small .arrowPrev {
   background-image:none!important
 }
 .btn .icon {
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/ui-elements/buttons-sprite-24bit.png');
+  background-image:url('../images/buttons-sprite-24bit.png');
   position:absolute;
   top:50%
 }
@@ -1284,7 +1284,7 @@ html.rtl .btn.small .arrowPrev {
   background-size:62px auto
 }
 .deviceSpec .icon {
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/ui-elements/hd-buttons-logos-sprite-24bit.png');
+  background-image:url('../images/hd-buttons-logos-sprite-24bit.png');
   background-size:160px auto
 }
 }.btn .arrowNext .icon,.btn .arrowPrev .icon {
@@ -1467,7 +1467,7 @@ nav#scom .centerWrapper {
   left:19px;
   width:99px;
   height:44px;
-  background:transparent url(https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) no-repeat
+  background:transparent url(../images/menu-sprite-standard.png) no-repeat
 }
 .skypeLogo:hover {
   background-position:0 -50px
@@ -1814,7 +1814,7 @@ html:not(.noMobileState) #mobileMenu {
   display:block;
   width:38px;
   height:38px;
-  background:transparent url(https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) -100px 0 no-repeat;
+  background:transparent url(../images/menu-sprite-standard.png) -100px 0 no-repeat;
   z-index:2
 }
 html.rtl:not(.noMobileState) #mobileMenu {
@@ -1844,7 +1844,7 @@ html:not(.noMobileState) #closeMenu {
   padding-right:8px;
   padding-top:12px;
   padding-bottom:12px;
-  background:transparent url(https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) -100px -38px no-repeat;
+  background:transparent url(../images/menu-sprite-standard.png) -100px -38px no-repeat;
   color:#fff
 }
 html.rtl:not(.noMobileState) #closeMenu {
@@ -1852,7 +1852,7 @@ html.rtl:not(.noMobileState) #closeMenu {
   right:7px;
   padding-left:8px;
   padding-right:51px;
-  background:transparent url(https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) right -90px no-repeat
+  background:transparent url(../images/menu-sprite-standard.png) right -90px no-repeat
 }
 html:not(.noMobileState) #homeLink {
   margin:0;
@@ -2225,7 +2225,7 @@ footer .footerSocial img {
 .footerWarning .noCalls img {
   width:37px;
   height:28px;
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/icons/footer-no-calls.png')
+  background-image:url('../images/footer-no-calls.png')
 }
 .rtl .footerContent {
   float:right
@@ -2292,7 +2292,7 @@ footer .footerSocial img {
   height:100%;
   display:inline-block;
   float:left;
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/icons/languages-world.png');
+  background-image:url('../images/languages-world.png');
   background-position:center;
   background-repeat:no-repeat
 }
@@ -2310,7 +2310,7 @@ footer .footerSocial img {
   height:100%;
   display:inline-block;
   float:right;
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/icons/languages-pick-down.png');
+  background-image:url('../images/languages-pick-down.png');
   background-position:center;
   background-repeat:no-repeat
 }
@@ -2419,7 +2419,7 @@ footer .footerSocial img {
   background-size:12px auto
 }
 .footerImageContainer {
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-hd.png');
+  background-image:url('../images/footer-clouds-with-rainbow-hd.png');
   background-size:488px auto
 }
 .footerWarning .noCalls img {
@@ -2427,7 +2427,7 @@ footer .footerSocial img {
   background-size:37px
 }
 footer .bottom .ms-logo {
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/icons/ms-logo-24bit-hd.png');
+  background-image:url('../images/ms-logo-24bit-hd.png');
   background-size:89px auto
 }
 }@media only screen and (min-width:768px) and (max-width:959px) {
@@ -2468,7 +2468,7 @@ html:not(.noTabletState) .footerSlogan {
 html:not(.noTabletState) .footerImageContainer {
   height:109px;
   right:-781px;
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-tablet.png')
+  background-image:url('../images/footer-clouds-with-rainbow-tablet.png')
 }
 html.rtl:not(.noMobileState) .rtl .footerImageContainer {
   right:auto;
@@ -2542,7 +2542,7 @@ html:not(.noMobileState) footer .footerLanguageSelector {
 html:not(.noMobileState) footer .noCalls img {
   width:34px;
   height:25px;
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/icons/footer-no-calls-mobile.png')
+  background-image:url('../images/footer-no-calls-mobile.png')
 }
 html:not(.noMobileState) footer .top {
   width:auto;
@@ -2633,7 +2633,7 @@ html.rtl:not(.noMobileState) .slimlineFooter .footerContent .footerWarning {
 }
 html.rtl:not(.noMobileState) .footerImageContainer {
   left:0;
-  background-image:url('https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile-rtl.png');
+  background-image:url('../images/footer-clouds-with-rainbow-mobile-rtl.png');
   background-position:left bottom
 }
 html:not(.noMobileState) .slimlineFooter .footerContent {
@@ -2737,13 +2737,13 @@ html.rtl:not(.noMobileState) footer .bottom .ms-logo {
 .mediumFlag {
   width:52px;
   height:32px;
-  background-image:url(https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/flags/country-flags-52x32.png);
+  background-image:url(../images/country-flags-52x32.png);
   background-repeat:no-repeat
 }
 .smallFlag {
   width:37px;
   height:23px;
-  background-image:url(https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/flags/country-flags-37x23.png);
+  background-image:url(../images/country-flags-37x23.png);
   background-repeat:no-repeat
 }
 .largeFlag-AD {
@@ -5036,12 +5036,12 @@ html.rtl:not(.noMobileState) footer .bottom .ms-logo {
   .largeFlag {
   width:52px;
   height:32px;
-  background-image:url(https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/flags/country-flags-52x32.png)
+  background-image:url(../images/country-flags-52x32.png)
 }
 .mediumFlag {
   width:37px;
   height:23px;
-  background-image:url(https://web.archive.org/web/20130323214700im_/http://www.skypeassets.com/i/common/images/flags/country-flags-37x23.png)
+  background-image:url(../images/country-flags-37x23.png)
 }
 .largeFlag-AD {
   background-position:0 0

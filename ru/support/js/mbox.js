@@ -5,7 +5,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
   let self = _____WB$wombat$assign$function_____("self");
   let document = _____WB$wombat$assign$function_____("document");
   let location = _____WB$wombat$assign$function_____("location");
-  let top = _____WB$wombat$assign$function_____("top");
+  //let top = _____WB$wombat$assign$function_____("top");
   let parent = _____WB$wombat$assign$function_____("parent");
   let frames = _____WB$wombat$assign$function_____("frames");
   let opener = _____WB$wombat$assign$function_____("opener");
@@ -28,7 +28,7 @@ window.open(URL,'open_window','menubar, toolbar, location, directories, status, 
 }
 /*
      FILE ARCHIVED ON 15:56:46 Jun 06, 2013 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 18:00:50 Sep 29, 2024.
+     INTERNET ARCHIVE ON 16:15:21 Oct 15, 2024.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -36,13 +36,13 @@ window.open(URL,'open_window','menubar, toolbar, location, directories, status, 
 */
 /*
 playback timings (ms):
-  captures_list: 0.473
-  exclusion.robots: 0.018
-  exclusion.robots.policy: 0.008
-  esindex: 0.009
-  cdx.remote: 8.019
-  LoadShardBlock: 1060.557 (3)
-  PetaboxLoader3.datanode: 73.555 (5)
-  PetaboxLoader3.resolve: 1521.905 (2)
-  load_resource: 542.477 (2)
+  captures_list: 0.559
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.015
+  esindex: 0.01
+  cdx.remote: 10.498
+  LoadShardBlock: 115.627 (3)
+  PetaboxLoader3.resolve: 82.599 (3)
+  PetaboxLoader3.datanode: 67.047 (5)
+  load_resource: 65.751 (2)
 */

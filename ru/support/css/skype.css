@@ -134,9 +134,9 @@ section, div, header, nav {
 	font-family: "Segoe UI Cyrillic Light";
 	src: local("O"),
 		 url("../fonts/segoe-ui-light-cyrillic.woff") format("woff"),
-		 url("../fonts/segoe-ui-light-cyrillic.eot"),
-		 url("../fonts/segoe-ui-light-cyrillic.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-light-cyrillic.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-light-cyrillic.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-light-cyrillic.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-light-cyrillic.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 200;
 }
@@ -144,10 +144,10 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Greek Light";
 	src: local("O"),
-		 url("../fonts/segoe-ui-light-greek.woff") format("woff"),
-		 url("../fonts/segoe-ui-light-greek.eot"),
-		 url("../fonts/segoe-ui-light-greek.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-light-greek.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-light-greek.woff") format("woff"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-light-greek.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-light-greek.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-light-greek.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 200;
 }
@@ -155,10 +155,10 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Hebrew Light";
 	src: local("O"),
-		 url("../fonts/segoe-ui-light-hebrew.woff") format("woff"),
-		 url("../fonts/segoe-ui-light-hebrew.eot"),
-		 url("../fonts/segoe-ui-light-hebrew.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-light-hebrew.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-light-hebrew.woff") format("woff"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-light-hebrew.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-light-hebrew.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-light-hebrew.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 200;
 }
@@ -167,9 +167,9 @@ section, div, header, nav {
 	font-family: "Segoe UI Regular";
 	src: local("O"),
 		 url("../fonts/segoe-ui-regular-latin.woff") format("woff"),
-		 url("../fonts/segoe-ui-regular-latin.eot"),
-		 url("../fonts/segoe-ui-regular-latin.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-regular-latin.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/latin/segoe-ui-regular-latin.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/latin/segoe-ui-regular-latin.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/latin/segoe-ui-regular-latin.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -177,9 +177,9 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Arabic Regular";
 	src: local("O"),
-		 url("../fonts/segoe-ui-regular-arabic.woff") format("woff"),
-		 url("../fonts/segoe-ui-regular-arabic.eot"),
-		 url("../fonts/segoe-ui-regular-arabic.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/arabic/segoe-ui-regular-arabic.woff") format("woff"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/arabic/segoe-ui-regular-arabic.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/arabic/segoe-ui-regular-arabic.eot") format("embedded-opentype"),
 		 url("../fonts/segoe-ui-regular-arabic.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
@@ -188,7 +188,7 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Cyrillic Regular";
 	src: local("O"),
-		 url("../fonts/segoe-ui-regular-cyrillic.woff") format("woff"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-regular-cyrillic.woff") format("woff"),
 		 url("../fonts/segoe-ui-regular-cyrillic.eot"),
 		 url("../fonts/segoe-ui-regular-cyrillic.eot") format("embedded-opentype"),
 		 url("../fonts/segoe-ui-regular-cyrillic.ttf") format("truetype");
@@ -199,10 +199,10 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Greek Regular";
 	src: local("O"),
-		 url("https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-regular-greek.woff") format("woff"),
-		 url("../fonts/segoe-ui-regular-greek.eot"),
-		 url("../fonts/segoe-ui-regular-greek.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-regular-greek.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-regular-greek.woff") format("woff"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-regular-greek.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-regular-greek.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-regular-greek.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -210,10 +210,10 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Hebrew Regular";
 	src: local("O"),
-		 url("../fonts/segoe-ui-regular-hebrew.woff") format("woff"),
-		 url("https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.eot"),
-		 url("https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-regular-hebrew.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.woff") format("woff"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -222,9 +222,9 @@ section, div, header, nav {
 	font-family: "Segoe UI Semibold";
 	src: local("O"),
 		 url("../fonts/segoe-ui-semibold-latin.woff") format("woff"),
-		 url("../fonts/segoe-ui-semibold-latin.eot"),
-		 url("../fonts/segoe-ui-semibold-latin.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-semibold-latin.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/latin/segoe-ui-semibold-latin.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/latin/segoe-ui-semibold-latin.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/latin/segoe-ui-semibold-latin.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -232,10 +232,10 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Arabic Semibold";
 	src: local("O"),
-		 url("https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.woff") format("woff"),
-		 url("../fonts/segoe-ui-semibold-arabic.eot"),
-		 url("../fonts/segoe-ui-semibold-arabic.eot") format("embedded-opentype"),
-		 url("https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.woff") format("woff"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -243,10 +243,10 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Cyrillic Semibold";
 	src: local("O"),
-		 url("../fonts/segoe-ui-semibold-cyrillic.woff") format("woff"),
-		 url("https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.eot"),
-		 url("https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-semibold-cyrillic.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.woff") format("woff"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -254,10 +254,10 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Greek Semibold";
 	src: local("O"),
-		 url("https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.woff") format("woff"),
-		 url("../fonts/segoe-ui-semibold-greek.eot"),
-		 url("../fonts/segoe-ui-semibold-greek.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-semibold-greek.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.woff") format("woff"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.eot"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.eot") format("embedded-opentype"),
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -265,10 +265,10 @@ section, div, header, nav {
 @font-face {
 	font-family: "Segoe UI Hebrew Semibold";
 	src: local("O"),
-		 url("https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-semibold-hebrew.woff") format("woff"),
+		 url("../fonts/segoe-ui-semibold-hebrew.woff") format("woff"),
 		 url("../fonts/segoe-ui-semibold-hebrew.eot"),
 		 url("../fonts/segoe-ui-semibold-hebrew.eot") format("embedded-opentype"),
-		 url("../fonts/segoe-ui-semibold-hebrew.ttf") format("truetype");
+		 url("/web/20130606155627im_/https://secure.skypeassets.com/i/common/fonts/hebrew/segoe-ui-semibold-hebrew.ttf") format("truetype");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -1047,7 +1047,7 @@ a.smallButton {
 .arrowPrev,
 .arrowUp,
 .arrowDown {
-	background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/ui-elements/buttons-sprite.png');
+	background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/ui-elements/buttons-sprite.png');
 	background-repeat: no-repeat;
 	text-align: middle;
 	/* display: inline-block; if not specified RTL wont work properly */
@@ -1937,7 +1937,7 @@ button.button .dualLineMobileCta {
 		left: 19px;
 		width: 99px;
 		height: 44px;
-		background: transparent url(https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) no-repeat;
+		background: transparent url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) no-repeat;
 	}
 
 		.skypeLogo:hover {
@@ -2327,12 +2327,12 @@ html:not(.noTabletState) .mainNavigation .sub {
 @media screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (max-moz-device-pixel-ratio: 2) {
 	.skypeLogo {
-		background: transparent url(../images/menu-sprite-retina.png) no-repeat;
+		background: transparent url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-retina.png) no-repeat;
 		background-size: 140px auto;
 	}
 
 	.skypeLogo:hover {
-		background: transparent url(../images/menu-sprite-retina.png) no-repeat 0 -100;
+		background: transparent url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-retina.png) no-repeat 0 -100;
 	}
 }
 
@@ -2384,7 +2384,7 @@ screen and (max-moz-device-pixel-ratio: 2) {
 		display: block;
 		width: 38px;
 		height: 38px;
-		background: transparent url(https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) -100px 0 no-repeat;
+		background: transparent url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) -100px 0 no-repeat;
 		z-index: 2;
 	}
 
@@ -2417,7 +2417,7 @@ screen and (max-moz-device-pixel-ratio: 2) {
 			padding-right: 8px;
 			padding-top: 12px;
 			padding-bottom: 12px;
-			background: transparent url(https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) -100px -38px no-repeat;
+			background: transparent url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) -100px -38px no-repeat;
 			color: #fff;
 		}
 
@@ -2639,12 +2639,12 @@ screen and (max-moz-device-pixel-ratio: 2) {
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (max-moz-device-pixel-ratio: 2) and (max-width: 767px) {
 	html:not(.noMobileState) #closeMenu {
-		background-image: url(../images/menu-sprite-retina.png);
+		background-image: url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-retina.png);
 		background-size: 140px auto;
 	}
 
 	html:not(.noMobileState) #mobileMenu {
-		background-image: url(../images/menu-sprite-retina.png);
+		background-image: url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/menu-sprite-retina.png);
 		background-size: 140px auto;
 	}
 }
@@ -2748,7 +2748,7 @@ footer .centered {
 	right: -706px;
 	bottom: 0;
 	position: absolute;
-	background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow.png');
+	background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow.png');
 	background-repeat: no-repeat;
 	z-index: 1;
 }
@@ -2840,7 +2840,7 @@ footer .centered {
 		.footerWarning .noCalls img {
 			width: 37px;
 			height: 28px;
-			background-image: url('../images/footer-no-calls.png');
+			background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/footer-no-calls.png');
 		}
 
 .rtl .footerContent {
@@ -2879,7 +2879,7 @@ footer .centered {
 .rtl .footerImageContainer {
 	right: auto;
 	left: -706px;
-	background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-rtl.png');
+	background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-rtl.png');
 	background-position: right top;
 }
 
@@ -2928,7 +2928,7 @@ footer .centered {
 		height: 100%;
 		display: inline-block;
 		float: left;
-		background-image: url('../images/languages-world.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/languages-world.png');
 		background-position: center;
 		background-repeat: no-repeat;
 	}
@@ -2942,7 +2942,7 @@ footer .centered {
 		height: 100%;
 		display: inline-block;
 		float: right;
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/languages-pick-down.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/languages-pick-down.png');
 		background-position: center;
 		background-repeat: no-repeat;
 	}
@@ -3073,22 +3073,22 @@ footer .centered {
 @media screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (max-moz-device-pixel-ratio: 2) {
 	.languagesDropdown .world {
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/languages-world-hd.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/languages-world-hd.png');
 		background-size: 18px auto;
 	}
 
 	.languagesDropdown .pickDown {
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/languages-pick-down-hd.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/languages-pick-down-hd.png');
 		background-size: 12px auto;
 	}
 
 	.footerImageContainer {
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-hd.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-hd.png');
 		background-size: 488px auto;
 	}
 
 	.footerWarning .noCalls img {
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/footer-no-calls-hd.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/footer-no-calls-hd.png');
 		background-size: 37px;
 	}
 }
@@ -3145,13 +3145,13 @@ screen and (max-moz-device-pixel-ratio: 2) {
 	html:not(.noTabletState) .footerImageContainer {
 		height: 109px;
 		right: -781px;
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-tablet.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-tablet.png');
 	}
 
 	html.rtl:not(.noMobileState) .rtl .footerImageContainer {
 		right: auto;
 		left: -781px;
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-tablet-rtl.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-tablet-rtl.png');
 		background-position: right bottom;
 	}
 
@@ -3246,7 +3246,7 @@ screen and (max-moz-device-pixel-ratio: 2) {
 		html:not(.noMobileState) footer .noCalls img {
 			width: 34px;
 			height: 25px;
-			background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/footer-no-calls-mobile.png');
+			background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/footer-no-calls-mobile.png');
 		}
 
 		html:not(.noMobileState) footer .top {
@@ -3282,7 +3282,7 @@ screen and (max-moz-device-pixel-ratio: 2) {
 		right: 0;
 		bottom: 0;
 		margin: 0 auto;
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile.png');
 		background-position: right bottom;
 	}
 
@@ -3332,7 +3332,7 @@ screen and (max-moz-device-pixel-ratio: 2) {
 
 	html.rtl:not(.noMobileState) .footerImageContainer {
 		left: 0;
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile-rtl.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile-rtl.png');
 		background-position: left bottom;
 	}
 
@@ -3431,33 +3431,33 @@ screen and (max-moz-device-pixel-ratio: 2) {
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (max-moz-device-pixel-ratio: 2) and (max-width: 767px) {
 	html:not(.noMobileState) .footerImageContainer {
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile-hd.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile-hd.png');
 		background-size: 167px auto;
 	}
 
 	.footerWarning .noCalls img {
-		background-image: url('https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/footer-no-calls-mobile-hd.png');
+		background-image: url('/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/icons/footer-no-calls-mobile-hd.png');
 		background-size: 34px auto;
 	}
 }
 .largeFlag {
 	width: 74px;
 	height: 46px;
-	background-image: url(../images/country-flags-74x46.png);
+	background-image: url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/flags/country-flags-74x46.png);
 	background-repeat: no-repeat;
 }
 
 .mediumFlag {
 	width: 52px;
 	height: 32px;
-	background-image: url(https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/flags/country-flags-52x32.png);
+	background-image: url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/flags/country-flags-52x32.png);
 	background-repeat: no-repeat;
 }
 
 .smallFlag {
 	width: 37px;
 	height: 23px;
-	background-image: url(../images/country-flags-37x23.png);
+	background-image: url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/flags/country-flags-37x23.png);
 	background-repeat: no-repeat;
 }
 
@@ -6519,13 +6519,13 @@ screen and (max-moz-device-pixel-ratio: 2) and (max-width: 767px) {
 	.largeFlag {
 		width: 52px;
 		height: 32px;
-		background-image: url(https://web.archive.org/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/flags/country-flags-52x32.png);
+		background-image: url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/flags/country-flags-52x32.png);
 	}
 
 	.mediumFlag {
 		width: 37px;
 		height: 23px;
-		background-image: url(../images/country-flags-37x23.png);
+		background-image: url(/web/20130606155627im_/https://secure.skypeassets.com/i/common/images/flags/country-flags-37x23.png);
 	}
 
 	.largeFlag-AD {
@@ -8563,7 +8563,7 @@ screen and (max-moz-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 /*
      FILE ARCHIVED ON 15:56:27 Jun 06, 2013 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 18:00:45 Sep 29, 2024.
+     INTERNET ARCHIVE ON 16:15:44 Oct 15, 2024.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -8571,13 +8571,13 @@ screen and (max-moz-device-pixel-ratio: 2) and (max-width: 767px) {
 */
 /*
 playback timings (ms):
-  captures_list: 0.899
-  exclusion.robots: 0.034
-  exclusion.robots.policy: 0.018
-  esindex: 0.018
-  cdx.remote: 24.769
-  LoadShardBlock: 83.069 (3)
-  PetaboxLoader3.datanode: 151.738 (5)
-  load_resource: 249.621 (2)
-  PetaboxLoader3.resolve: 139.752 (2)
+  captures_list: 0.612
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.014
+  esindex: 0.012
+  cdx.remote: 123.512
+  LoadShardBlock: 69.191 (3)
+  PetaboxLoader3.datanode: 117.443 (5)
+  load_resource: 295.953 (2)
+  PetaboxLoader3.resolve: 235.004 (2)
 */

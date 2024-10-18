@@ -5,7 +5,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
   let self = _____WB$wombat$assign$function_____("self");
   let document = _____WB$wombat$assign$function_____("document");
   let location = _____WB$wombat$assign$function_____("location");
-  let top = _____WB$wombat$assign$function_____("top");
+  //let top = _____WB$wombat$assign$function_____("top");
   let parent = _____WB$wombat$assign$function_____("parent");
   let frames = _____WB$wombat$assign$function_____("frames");
   let opener = _____WB$wombat$assign$function_____("opener");
@@ -212,7 +212,7 @@ if (SKYPE.settings.waMode == "staging") {
 }
 /*
      FILE ARCHIVED ON 15:56:30 Jun 06, 2013 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 18:04:09 Sep 29, 2024.
+     INTERNET ARCHIVE ON 16:15:21 Oct 15, 2024.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -220,13 +220,13 @@ if (SKYPE.settings.waMode == "staging") {
 */
 /*
 playback timings (ms):
-  captures_list: 0.807
-  exclusion.robots: 0.035
-  exclusion.robots.policy: 0.015
-  esindex: 0.014
-  cdx.remote: 11.734
-  LoadShardBlock: 89.618 (3)
-  PetaboxLoader3.datanode: 144.885 (5)
-  load_resource: 150.834 (2)
-  PetaboxLoader3.resolve: 78.394
+  captures_list: 0.566
+  exclusion.robots: 0.019
+  exclusion.robots.policy: 0.008
+  esindex: 0.011
+  cdx.remote: 74.263
+  LoadShardBlock: 78.033 (3)
+  PetaboxLoader3.datanode: 71.889 (5)
+  PetaboxLoader3.resolve: 76.598 (2)
+  load_resource: 74.232 (2)
 */

@@ -1,0 +1,32 @@
+{
+    "backgrounds": {
+        "donetsk": "https://static.limpe.fun/secure/logbg.png",
+        "tamtam": "https://static.limpe.fun/secure/tamtam.png"
+    },
+    "translations": {
+        "ru": {
+            "addHoliday": "Добавить праздник",
+            "holidayName": "Название праздника:",
+            "holidayTime": "Время мероприятия:",
+            "save": "Сохранить",
+            "delete": "Удалить",
+            "holidaysOn": "Праздники на"
+        },
+        "uk": {
+            "addHoliday": "Додати свято",
+            "holidayName": "Назва свята:",
+            "holidayTime": "Час проведення:",
+            "save": "Зберегти",
+            "delete": "Видалити",
+            "holidaysOn": "Свята на"
+        },
+        "en": {
+            "addHoliday": "Add Holiday",
+            "holidayName": "Holiday Name:",
+            "holidayTime": "Event Time:",
+            "save": "Save",
+            "delete": "Delete",
+            "holidaysOn": "Holidays on"
+        }
+    }
+}

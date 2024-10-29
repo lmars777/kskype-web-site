@@ -11176,10 +11176,9 @@ header.postDownload .retry {
     display: block;
     z-index: 1
 }
-
 .mediaGallery li {
     list-style-type: none;
-    height: 13333332px;
+    height: 1002px;
     margin: 0;
     padding: 0;
 }
@@ -15934,23 +15933,3 @@ ul.iconCentered .greenTip {
     }
 }
 
-/*
-     FILE ARCHIVED ON 18:08:46 Feb 07, 2013 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 15:27:48 Oct 14, 2024.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.552
-  exclusion.robots: 0.049
-  exclusion.robots.policy: 0.039
-  esindex: 0.009
-  cdx.remote: 8.501
-  LoadShardBlock: 210.132 (3)
-  PetaboxLoader3.datanode: 110.273 (4)
-  PetaboxLoader3.resolve: 88.534 (2)
-  load_resource: 78.023
-*/

@@ -1,0 +1,650 @@
+<!DOCTYPE html><html class="noTabletState ru  " data-language="ru" lang="ru"><!-- Meta info --><head><meta charset="utf-8">
+	<title>KSkype - Классический Скайп</title>
+	<meta name="description" content="Установите классический Скайп, над которым мы так долго работали. Позвольте себе увидеть знакомый и привычный интерфейс">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width">
+
+	
+	
+	<!-- Default Assets -->
+	<link rel="stylesheet" href="css/common.min.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/scom.min.css" type="text/css" media="screen">
+
+	<!--   
+	 NOTICE:  Third party scripts and code linked to or referenced here are not licensed to you by   
+	 the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use -
+	 http://www.asp.net/ajaxlibrary/CDN.ashx
+	-->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+	<script type="text/javascript" src="js/skype.min.js"></script>
+	
+	<script type="text/javascript">
+	SKYPE.settings = {};
+	SKYPE.settings.api = {
+			sessionApiUrl: ""
+	}
+	</script>
+
+	
+</head>
+<body>
+	
+	
+	<nav id="scom" class="isNotAuthenticated" data-content-key="authenticationStatus">
+		<div class="centerWrapper">
+			<a href="index.html" class="skypeLogo" title="На главную"></a>
+			<a href="index.html#" id="mobileMenu" data-sc="mobile_menu"></a>
+			<div class="mainNavigation">
+				<ul>
+					<li class="noDesktop">
+						<a href="index.html#" id="closeMenu">close Menu</a>
+					</li>
+					<li class="noDesktop">
+						<a href="index.html" id="homeLink">go to homepage</a>
+					</li>
+					
+						<li class="">
+							<a data-sc="whatkskype" href="what-is-skype/index.html">about KSkype</a>
+							<script type="text/javascript">
+							var s_el = s_el || {};
+							s_el.header_what_is_skype = {click: {events: "event35", eVar19: "header: what_is_skype", prop18: "D=v19"}};
+							</script>
+							 
+								<ul class="sub">
+									
+										<li>
+											<a data-sc="whatkskype" href="what-is-skype/index.html" title="О KSkype">about KSkype</a>
+											<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.header_what_is_skype = {click: {events: "event35", eVar19: "header: what_is_skype", prop18: "D=v19"}};
+											</script>											
+										</li>
+									
+										<li>
+											<a data-sc="header_features" href="features/index.html" title="Ченжлог">Changelog</a>
+											<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.header_features = {click: {events: "event35", eVar19: "header: features", prop18: "D=v19"}};
+											</script>											
+										</li>
+									
+										<li>
+											<a data-sc="header_business" href="business/index.html" title="Skype for Bussines">Skype for Bussines</a>
+											<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.header_business = {click: {events: "event35", eVar19: "header: business", prop18: "D=v19"}};
+											</script>											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+						<li class="">
+							<a data-sc="header_rates" href="https://limpe.fun/plugins/kskype" title="дополнения">Addons</a>
+							<script type="text/javascript">
+							var s_el = s_el || {};
+							s_el.header_rates = {click: {events: "event35", eVar19: "header: rates", prop18: "D=v19"}};
+							</script>
+							 
+								<ul class="sub">
+									
+										<li>
+											<a data-sc="header_rates" href="https://limpe.fun/plugins/kskype/scripts" title="скрипты">Scripts</a>
+											<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.header_rates = {click: {events: "event35", eVar19: "header: rates", prop18: "D=v19"}};
+											</script>											
+										</li>
+									
+										<li>
+											<a data-sc="header_premium" href="https://limpe.fun/plugins/kskype/themes" title="темы">Themes</a>
+											<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.header_premium = {click: {events: "event35", eVar19: "header: premium", prop18: "D=v19"}};
+											</script>											
+									
+									
+									
+																						
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+						<li class="singleItem">
+							<a data-sc="header_download_skype" href="https://kskype.limpe.fun/download-skype" title="загрузки">Downloads</a>
+							<script type="text/javascript">
+							var s_el = s_el || {};
+							s_el.header_download_skype = {click: {events: "event35", eVar19: "header: download_skype", prop18: "D=v19"}};
+							</script>
+							
+						</li>
+					
+						<li class="singleItem">
+							<a data-sc="header_support_skype_com" href="https://kskype.limpe.fun/support" title="поддержка">Support</a>
+							<script type="text/javascript">
+							var s_el = s_el || {};
+							s_el.header_support_skype_com = {click: {events: "event35", eVar19: "header: support_skype_com", prop18: "D=v19"}};
+							</script>
+							
+						</li>
+					
+					
+						<li class="noDesktop singleItem">
+							<a href="https://web.archive.org/web/20130323035130/http://www.skype.com/go/myaccount" data-sc="header_profile" data-link-type="profile" title=""></a>
+						</li>
+						
+						<li class="noDesktop singleItem notAuthenticated">
+							<a href="https://web.archive.org/web/20130323035130/http://www.skype.com/go/myaccount" class="notAuthenticated" data-sc="header_login" data-link-type="" title=""></a>
+						</li>
+						
+						
+					
+					
+					
+				</ul>
+			</div>
+			
+			
+			<ul class="account notAuthenticated noMobile">
+				<li><a href="https://web.archive.org/web/20130323035130/http://www.skype.com/go/myaccount" data-sc="header_login" data-link-type="login" title=""></a></li>
+				<li class="noMobile"><a href="https://kskype.limpe.fun/download-skype" data-sc="header_join" data-link-type="" title=""></a></li>
+			</ul>
+				<script type="text/javascript">
+					var s_el = s_el || {};
+					s_el.header_login = {click: {events: "event35", eVar19: "tray: sign-in", prop18: "D=v19"}};
+					s_el.header_join = {click: {events: "event35", eVar19: "tray: sign-up", prop18: "D=v19"}};
+				</script>			
+			
+			
+			
+			<ul class="account authenticated noMobile">
+				<li class="username"><a href="https://web.archive.org/web/20130323035130/http://www.skype.com/go/myaccount" data-sc="header_profile" data-link-type="profile" data-content-key="skypename" title=""></a></li>
+				<li><a href="https://web.archive.org/web/20130323035130/http://www.skype.com/go/logout" data-sc="header_logout" data-link-type="logout" title=""></a></li>
+			</ul>
+			
+			
+			<!-- For mobile-->
+			<ul class="account noDesktop noTablet">
+				<li><a href="index.html#" data-sc="mobile_menu" data-link-type="" id="mobileMenuLink">Меню</a></li>
+			</ul>
+			<script type="text/javascript">
+				var s_el = s_el || {};
+				s_el.mobile_menu = {click: {events: "event36", eVar19: "mobile nav flyout", prop18: D="v19"}};
+			</script>			
+		</div>
+	</nav>
+
+
+
+
+	<div class="parsys mainParsys"><div class="homepageHeader section"> 
+<header>
+	<div class="heroCenter homePage">
+		<div class="noMobile heroIllustrationContainer">
+			<div class="heroIllustrationWrapper">
+				<img src="images/dummy.png" style="background-image: url(images/homepage.jpg)" alt="Бесплатные звонки через Интернет с помощью Skype" class="heroIllustration">
+			</div>
+		</div>
+		<div class="noDesktop noTablet">
+			<img src="images/hero-mobile-homepage.jpg" alt="" class="heroIllustration">
+		</div>
+		<div class="bubblesWrapper">
+			<div class="bubbles">
+				<div class="headline">
+					<h1 class="h1-large">KSkype is about online</h1>
+				</div>
+				
+					<div class="action noMobile">
+						
+							<script type="text/javascript">
+			                    var s_el = s_el || {};
+			                    s_el.homepagecta = {
+			                            click: function(){
+			                                var _c = {};
+			                                _c.products = s.apl(_c.products, ';;;;;eVar22=home-_-header-_-join');_c.eVar1 = 'home-_-header-_-join';_c.eVar19 = 'home-header:click:join_homepageheader_0';_c.events = s.apl(_c.events,'event6',',');_c.eVar19 = "home:Join:homepageheader_0";_c.events = s.apl(_c.events,'event35',',', 1);
+			                                return _c;
+			                            }
+			                    };
+			                    var s_impression  = s_impression || [];s_impression.push({events: "event5",products: ";;;;;evar22=home-_-header-_-join"});
+			                </script>
+						
+						<a href="https://kskype.limpe.fun/download-skype" title="�&nbsp;егистрация" class="CTA section" data-sc="homepagecta">
+							<h2 class="h2-medium">Download now!</h2>
+							<img src="images/dummy.png" class="arrowRight" alt="">
+						</a>
+					</div>
+				
+			</div>
+		</div>
+	</div>
+</header>
+
+</div>
+<div class="section">
+
+    
+    	<section class="whiteToLightFogGradientSmall">
+		    
+		    <div class="parsys"><div class="text section"><div class=" noMobile textComponent component section noMarginBottom">
+	<div class="alignRight">
+		
+			
+			
+				<h3>Want to know more about all of this?<br>
+</h3>
+<h3><a href="what-is-kskype/index.html">Details about KSkype</a></h3>
+
+			 
+		
+	</div>
+</div>
+</div>
+<div class="downloadButtonOSSpecific section"><div class="component noDesktop noTablet">
+    <div class="buttonContainer">
+        <div class="buttonWrapper">
+            
+                
+                
+                
+                
+            
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="rawHtml section">
+	<div class="component text noDesktop" style="margin-left: auto; margin-right: auto;">
+	<a class="button secondaryCta" href="https://kskype.limpe.fun/download-skype" title="Скачать KSkype" data-sc="join"> <span class="noIcon">Cкачать KSkype</span> </a>
+</div>
+<div class="component textComponent noDesktop">
+	<div class="alignCenter">
+		<h2><a href="https://kskype.limpe.fun/ru/about" data-sc="buy_credit"><img src="images/skype-credit-icon-mobile.png" style="vertical-align: middle;" alt=""> <span style="vertical-align: middle; margin-left: 8px;">Что такое KSkype</span> </a></h2>
+	</div>
+</div>
+
+</div>
+<div class="carousel section">
+
+    <script type="text/javascript">
+        SKYPE.ResponsiveState.init();
+    </script>
+    <div class="homepageCarousel component" data-slide-rotation-interval="10">
+        <ul class="gallerySlides">
+            
+                <li class="active" data-slidenumber="1">
+                    
+                    
+                                        <div class="slideModule leftAlignedText whiteText clickable" id="slideModule-position1" data-mbox-name="">
+                        <img src="images/fswl-468.jpg" alt="С любовью от Skype">
+                        <div class="textArea ">
+                            <h3>Everyone's favorite classic Skype is here!</h3>
+                            <p>You can experience the cozy feeling of classic Skype again! Download the new version of KSkype</p>
+                            <a data-sc="JjWPtHHwZG" href="https://kskype.limpe.fun/download-skype" title="Скачать КСкайп">Download KSkype</a>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+	                    if (SKYPE.CurrentResponsiveState !== 'mobile') {
+	                        var s_el = s_el || {};
+	                        s_el.JjWPtHHwZG = {
+	                                click: function(){
+	                                    var _c = {};
+	                                    _c.products = s.apl(_c.products, ';;;;;eVar22=home-_-position1-_-SkypeLove');_c.eVar1 = 'home-_-position1-_-SkypeLove';_c.eVar19 = 'home-position1:click:SkypeLove_carousel';_c.events = s.apl(_c.events,'event6',',');_c.eVar19 = "home:<OTHER_CTA>:carousel";_c.events = s.apl(_c.events,'event35',',', 1);
+	                                    return _c;
+	                                }
+	                        };
+	                        var s_impression  = s_impression || [];s_impression.push({events: "event5",products: ";;;;;evar22=home-_-position1-_-SkypeLove"});
+	                    }
+                    </script>
+                    
+                    
+                                        <div class="slideModule leftAlignedText grayText clickable" id="slideModule-position2" data-mbox-name="">
+                        <img src="images/gift-cards-ordinary.jpg" alt="Подарочные карты Skype">
+                        <div class="textArea whiteText">
+                            <h3>Use Skype to do good</h3>
+                            <p>Wish your family and friends good morning, work on your projects in Skype. Do not use Skype to plan terrorist attacks and other evil acts!</p>
+                            <a data-sc="fztuyeaHbh" href="https://www.skype.com/ru/legal/tou/" title="Правила сервиса">Terms of Service</a>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+	                    if (SKYPE.CurrentResponsiveState !== 'mobile') {
+	                        var s_el = s_el || {};
+	                        s_el.fztuyeaHbh = {
+	                                click: function(){
+	                                    var _c = {};
+	                                    _c.products = s.apl(_c.products, ';;;;;eVar22=home-_-position2-_-gift-cards');_c.eVar1 = 'home-_-position2-_-gift-cards';_c.eVar19 = 'home-position2:click:gift-cards_carousel';_c.events = s.apl(_c.events,'event6',',');_c.eVar19 = "home:<OTHER_CTA>:carousel";_c.events = s.apl(_c.events,'event35',',', 1);
+	                                    return _c;
+	                                }
+	                        };
+	                        var s_impression  = s_impression || [];s_impression.push({events: "event5",products: ";;;;;evar22=home-_-position2-_-gift-cards"});
+	                    }
+                    </script>
+                </li>
+            
+                <li class="" data-slidenumber="2">
+                    
+                    
+                                        <div class="slideModule leftAlignedText whiteText clickable" id="slideModule-position3" data-mbox-name="">
+                        <img src="images/premium-blue.jpg" alt="Ознакомиться со Skype Premium">
+                        <div class="textArea ">
+                            <h3>Be at your best</h3>
+                            <p>Try out other @limpe projects. We are happy to provide you with quality and convenient services</p>
+                            <a data-sc="dLxtERXWvb" href="https://ru.limpe.fun/" title="Перейти на сайт limpe"> Go to the @limpe website</a>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+	                    if (SKYPE.CurrentResponsiveState !== 'mobile') {
+	                        var s_el = s_el || {};
+	                        s_el.dLxtERXWvb = {
+	                                click: function(){
+	                                    var _c = {};
+	                                    _c.products = s.apl(_c.products, ';;;;;eVar22=home-_-position3-_-premium_next-level');_c.eVar1 = 'home-_-position3-_-premium_next-level';_c.eVar19 = 'home-position3:click:premium_next-level_carousel';_c.events = s.apl(_c.events,'event6',',');_c.eVar19 = "home:<OTHER_CTA>:carousel";_c.events = s.apl(_c.events,'event35',',', 1);
+	                                    return _c;
+	                                }
+	                        };
+	                        var s_impression  = s_impression || [];s_impression.push({events: "event5",products: ";;;;;evar22=home-_-position3-_-premium_next-level"});
+	                    }
+                    </script>
+                    
+                    
+                                        <div class="slideModule rightAlignedText grayText clickable" id="slideModule-position4" data-mbox-name="">
+                        <img src="images/latin-america.jpg" alt="Cмайл улыбается и просит зайти в дискорд">
+                        <div class="textArea ">
+                            <h3>Join the Skype Community on Discord</h3>
+                            <p>Join the friendly community in the messenger Discord, dedicated to the topic of Skype. Communication in English and Russian </p>
+                            <a data-sc="XgNXTBIAPa" href="https://discord.gg/gVHACXUvjA" title="Присоединиться к Skype Community">Join the Skype Community</a>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+	                    if (SKYPE.CurrentResponsiveState !== 'mobile') {
+	                        var s_el = s_el || {};
+	                        s_el.XgNXTBIAPa = {
+	                                click: function(){
+	                                    var _c = {};
+	                                    _c.products = s.apl(_c.products, ';;;;;eVar22=home-_-position4-_-LATAM_subs');_c.eVar1 = 'home-_-position4-_-LATAM_subs';_c.eVar19 = 'home-position4:click:LATAM_subs_carousel';_c.events = s.apl(_c.events,'event6',',');_c.eVar19='home:buy:carousel';_c.eVar56='subscriptions'; _c.products = s.apl(_c.products,'subscriptions;package-global-region-landline-latam-unlimited-1m',',', 1); _c.events = s.apl(_c.events,'scAdd',',', 1);
+	                                    return _c;
+	                                }
+	                        };
+	                        var s_impression  = s_impression || [];s_impression.push({events: "event5",products: ";;;;;evar22=home-_-position4-_-LATAM_subs"});
+	                    }
+                    </script>
+                </li>
+            
+            			<li class="slideModule noDesktop noTablet rightAlignedText whiteText mobileModule clickable">
+				<div class="mobileSlide" id="carouselSlide-mobile" data-mbox-name="">
+					
+					<div class="textArea whiteText">
+						<p class="title-h3">KSkype is an unofficial client created by @limpe. You are responsible for using it.</p>
+						
+					</div>
+				</div>
+			</li>
+			<script type="text/javascript">
+				if (SKYPE.CurrentResponsiveState === 'mobile') {
+					var s_el = s_el || {};
+	                s_el.yAdBKEEyzc = {
+	                        click: function(){
+	                            var _c = {};
+	                            
+	                            return _c;
+	                        }
+	                };
+	                
+				}
+			</script>
+			
+        </ul>
+        
+            <ul class="pagination">
+                
+                   <li class="active" data-slidenumber="1">
+                        <a href="index.html"></a>
+                    </li>
+                
+                   <li class="" data-slidenumber="2">
+                        <a href="index.html"></a>
+                    </li>
+                
+            </ul>
+        
+    </div>
+
+</div>
+<div class="rawHtml section">
+
+
+</div>
+</div>
+
+		</section>
+    
+</div>
+</div>
+
+	
+	<footer>
+		<div class="top">
+			<div class="centered">
+				<div class="footerContent">
+					<div class="footerButtons">
+	<div class="footerLanguageSelector">
+		<form action="https://kskype.limpe.fun/${LC}" method="get">
+		<label class="languagesDropdown" for="userLanguage">
+			<span class="world"></span>
+			<span id="pickedLanguage" class="language">Русский</span>
+			<span class="pickDown"></span>
+			<script type="text/javascript">                                        
+		    var s_langChange = function (el) {
+		        if ((typeof s != 'undefined') && (typeof s.trackAction != 'undefined')) {
+		            s.trackAction({events: "event36",
+		                eVar19: "language selector: " + $('html').attr('data-language') + " > " + $('#userLanguage').val(),
+		                prop18: "D=v19"}, el);
+		            }
+		        return true;
+		        };
+		    </script>
+            <select name="userLanguage" id="userLanguage" class="userLanguage" onchange="s_langChange(this);" data-sc="lang_selector">
+				<option value="en" lang="en">English</option>
+				<option value="yt" lang="it">Yakut</option>
+				<option value="uz" lang="ja">Uzbek (Cyrillic alphabet)</option>
+				<option value="ar" lang="ar">Armenian</option>
+				<option value="ro" lang="ro">Română</option>
+				<option value="ru" lang="ru" selected="selected">Russian</option>
+				<option value="uk" lang="uk">Українська</option>
+			</select>
+		</label>
+		</form>
+	</div>
+						<div class="footerSocial noMobile">
+		<a href="https://tt.me/limpe"><img alt="ТамТам" src="images/tamtam.png"></a>				
+
+				<a href="https://my.dexpaz.ru/club16"><img alt="Твой Мир @ limpe" src="images/mir.png"></a> 
+							<a href="https://t.me/limpetech"><img alt="Telegram" src="images/telegram.png"></a>	
+						<a href="https://my.mail.ru/community/limpe/"><img alt="Moй мир @ mail.ru" src="images/mymailru.png"></a>				
+						</div>
+					</div>
+					<div class="footerLinks">
+						<ul>
+							
+								<li class="noMobile"><a data-sc="footer_about" href="about/index.html" title="О программе">О программе</a>
+										<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.footer_about = {click: {events: "event35", eVar19: "footer: about", prop18: "D=v19"}};
+										</script>
+								</li>
+							
+								<li class="noMobile"><a data-sc="footer_advertise" href="https://www.skype.com/go/advertise" title="�&nbsp;еклама у нас">Skype advertising</a>
+										<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.footer_advertise = {click: {events: "event35", eVar19: "footer: advertise", prop18: "D=v19"}};
+										</script>
+								</li>
+							
+								<li class="noMobile"><a data-sc="footer_blogs_skype_com" href="https://blogs.skype.com/" title="Блоги">Skype Blog (official)</a>
+										<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.footer_blogs_skype_com = {click: {events: "event35", eVar19: "footer: blogs_skype_com", prop18: "D=v19"}};
+										</script>
+								</li>
+							
+								<li class="noMobile"><a data-sc="footer_legal" href="legal/index.html" title="Юридическая информация">Legal information</a>
+										<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.footer_legal = {click: {events: "event35", eVar19: "footer: legal", prop18: "D=v19"}};
+										</script>
+								</li>
+							
+								<li class="noMobile"><a data-sc="footer_jobs" href="https://www.skype.com/go/jobs" title="Вакансии">Skype jobs</a>
+										<script type="text/javascript">
+											var s_el = s_el || {};
+											s_el.footer_jobs = {click: {events: "event35", eVar19: "footer: jobs", prop18: "D=v19"}};
+										</script>
+								</li>
+							
+							<li>
+								<a data-sc="sitemapLink" href="site-map/index.html">Site Map</a>
+								<script type="text/javascript">
+									var s_el = s_el || {};
+									s_el.sitemapLink = {click: {events: "event35", eVar19: "footer: site_map", prop18: "D=v19"}};
+								</script>
+							</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="footerCopyright">
+						<div class="noMobile"><p>© 2024 Limpe Technologies. Site Code: 2013 Microsoft. The Skype name, related trademarks and logos, and the “S” logo are trademarks owned by Skype or related companies. Use of this website constitutes consent to perform <a href="http://www.skype.com/ru/legal/tou/">Conditions of Use</a>, <a href="http://www.skype.com/ru/legal/privacy/">Privacy Statement and Cookie Policy</a>.<br>
+</p>
+</div>
+						<div class="noTablet noDesktop"><p>© 2024 Limpe Technologies. Site Code: 2013 Microsoft. The Skype name, related trademarks and logos, and the “S” logo are trademarks owned by Skype or related companies. Use of this website constitutes consent to perform <a href="http://www.skype.com/ru/legal/tou/">Conditions of Use</a>, <a href="http://www.skype.com/ru/legal/privacy/">Privacy Statement and Cookie Policy</a>.<br>
+</p>
+</div>
+					</div>
+					<div class="footerWarning">
+						<div class="noCalls">
+							<img src="images/dummy.png" alt="No emergency calls">
+						</div>
+						<div class="noMobile"><p><b>Banning the use of Skype for emergency calls</b><br>
+Skype is not a substitute for a regular phone and cannot be used for emergency calls.<br>
+</p>
+</div>
+						<div class="noDesktop noTablet"><p>Skype is not for emergency calls<br>
+</p>
+</div>
+					</div>
+				</div>
+				<div class="footerSlogan noMobile">
+					
+				</div>
+			</div>
+			<div class="footerImageContainer"></div>
+		</div>
+		<div class="bottom">
+			<div class="centered">
+				
+					<p class="noMobile">Reliable communication via Skype. Call everyone on Skype, instant message and video chat with friends - all for free. And with a little Skype Credit, you can make cheap calls to mobiles and landlines, access the internet in Wi-Fi hotspots and send low-cost SMS messages. Users can also sign up for a Premium account, which includes unlimited calls to any country of your choice.</p>
+				
+				<div class="ms-logo"></div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	//<![CDATA[
+		SKYPE && SKYPE.env && SKYPE.env.Loader.ready();
+	//]]>
+	</script>
+
+
+
+	<!-- TRACKING -->
+<script type="text/javascript" src="js/s_code_20121127.js"></script>
+<noscript><img src="ss/skypeglobalprod/1/H.25--NS/0" height="1" width="1" style="border: 0" alt=""/></noscript>
+<script type="text/javascript">
+
+    /*
+    * Fix iOS5 cache problem with forced reload
+    */
+
+    if((/iphone|ipod|ipad.*os 5/gi).test(navigator.appVersion)) {
+
+        window.onpageshow = function(evt) {
+
+            if (evt.persisted) {
+                
+                document.body.style.display = "none";
+                location.reload();
+            }
+        };
+    }
+
+    var _t      = {};
+    _t.pageName = "static/home";
+    _t.channel  = "home";
+    _t.prop5    = _t.eVar5 = "ru";
+    SKYPE.ResponsiveState.init();
+    _t.eVar54   =  SKYPE.CurrentResponsiveState;
+    _t.eVar71 = "";
+    _t.prop36   = "";
+    s.trackPage(_t);
+    
+    $(function() {
+        $(document).on('click.sc', 'a[data-sc]:not(select)', function(e) {
+            
+            if (typeof s_el[$(this).attr('data-sc')] == 'undefined')
+                return;
+            
+            var tracking_obj = s_el[$(this).attr('data-sc')].click;
+            
+            if (typeof tracking_obj === 'function'){
+                tracking_obj = tracking_obj.call(); 
+            }
+            
+            if (tracking_obj.asPage === true) {
+                s.trackPage(tracking_obj);
+            } else {
+                s.trackAction(tracking_obj);
+            }
+            
+        })
+    });
+</script>
+
+	
+    
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+		
+		    SKYPE.ResponsiveState.init();
+		
+		    if (SKYPE.CurrentResponsiveState !== 'mobile') {
+		
+		        var scriptsArr = document.getElementsByTagName('script'),
+		            protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+		            headEl = scriptsArr[0].parentNode;
+		
+		        var uz = document.createElement('script'); 
+		            uz.type = 'text/javascript'; 
+		            uz.async = true; 
+		            uz.charset = 'utf-8';
+		            uz.src = protocol + 'cdn4.userzoom.com/custom/js/F5C9FDBB49F6DF1188490022196C4538.js';
+		        
+		        var track = document.createElement('script'); 
+		            track.type = 'text/javascript'; 
+		            track.async = true; 
+		            track.charset = 'utf-8';
+		            track.src = protocol + 'cdn3.userzoom.com/uz.js?cuid=F5C9FDBB49F6DF1188490022196C4538';
+		        
+		        headEl.insertBefore(uz, scriptsArr[0]);
+		        headEl.insertBefore(track, scriptsArr[1]);
+		    }
+		});
+	
+	</script>
+
+
+
+</body></html>

@@ -1,14 +1,3 @@
- <!-- Open Graph meta tags -->
-    <meta property="og:title" content="KSkype - Classic Skype on Mac or Windows. Linux.">
-    <meta property="og:description" content="Classic Skype in 2024 - KSkype!">
-    <meta property="og:image" content="http://kskype.limpe.fun/assets/v1/tab/imagetab.gif">
-    <meta property="og:url" content="http://kskype.limpe.fun">
-    <!-- Twitter Card meta tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="KSkype - Classic Skype on Mac or Windows. Linux.">
-    <meta name="twitter:description" content="Classic Skype in 2024 - KSkype!">
-    <meta name="twitter:image" content="http://kskype.limpe.fun/assets/v1/tab/imagetab.gif">
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,14 +7,49 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var userLang = navigator.language || navigator.userLanguage;
+            var userAgent = navigator.userAgent;
+            var platform = navigator.platform.toLowerCase();
             var redirectUrl;
 
-            if (userLang.startsWith('ru')) {
-                redirectUrl = 'https://kskype.limpe.fun/ru/download-skype';
-            } else if (userLang.startsWith('uk')) {
-                redirectUrl = 'https://kskype.limpe.fun/en/download-skype';
+            // Function to check if the browser is legacy
+            function isLegacyBrowser() {
+                var isIE = /MSIE|Trident/.test(userAgent);
+                var isOldChrome = /Chrome\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
+                var isOldFirefox = /Firefox\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
+                return isIE || isOldChrome || isOldFirefox;
+            }
+
+            // Determine platform
+            function getPlatform() {
+                if (platform.indexOf('win') !== -1) return 'mswindows';
+                if (platform.indexOf('mac') !== -1) return 'osx';
+                if (platform.indexOf('linux') !== -1) return 'lin';
+                if (/android/.test(userAgent)) return 'android';
+                if (/iphone|ipad|ipod/.test(userAgent)) return 'iphoneos';
+                return 'unknown';
+            }
+
+            var platformType = getPlatform();
+
+            if (isLegacyBrowser()) {
+                if (userLang.startsWith('ru') || userLang.startsWith('uk')) {
+                    redirectUrl = 'https://kskype.limpe.fun/legacy/ru/download/' + platformType;
+                } else {
+                    redirectUrl = 'https://kskype.limpe.fun/legacy/en/download/' + platformType;
+                }
             } else {
-                redirectUrl = 'https://kskype.limpe.fun/ua/download-skype';
+                if (userLang.startsWith('ru')) {
+                    redirectUrl = 'https://kskype.limpe.fun/ru/download-skype';
+                } else if (userLang.startsWith('uk')) {
+                    redirectUrl = 'https://kskype.limpe.fun/ua/download-skype';
+                } else {
+                    redirectUrl = 'https://kskype.limpe.fun/en/download-skype';
+                }
+
+                // Additional redirects for non-Windows platforms
+                if (platformType !== 'mswindows') {
+                    redirectUrl += '/' + platformType;
+                }
             }
 
             window.location.href = redirectUrl;
@@ -33,6 +57,6 @@
     </script>
 </head>
 <body>
-    <p>Redirecting based on your browser language...</p>
+    <p>loading..</p>
 </body>
 </html>

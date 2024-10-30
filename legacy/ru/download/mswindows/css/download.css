@@ -3,10 +3,12 @@
 	margin: -170px 0px 0 20px;
 	z-index: 999;
 	position: relative;
+	display: none
 }
 .vistaCertified {
     float: right;
     margin: -5px -25px 0 20px;
+	display: none
 }
 #screenshotMacosx {
 	float: right;
@@ -225,23 +227,3 @@ div.chooseLinux ul li#distroDynSta {
 div.chooseLinux ul li#distroCentos {
     background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_centos.png) left center no-repeat;
 }
-/*
-     FILE ARCHIVED ON 12:38:16 Feb 23, 2008 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 06:46:22 Oct 30, 2024.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.551
-  exclusion.robots: 0.02
-  exclusion.robots.policy: 0.01
-  esindex: 0.012
-  cdx.remote: 4.679
-  LoadShardBlock: 8852.75 (3)
-  PetaboxLoader3.datanode: 8860.529 (6)
-  load_resource: 44.338
-  PetaboxLoader3.resolve: 28.62
-*/

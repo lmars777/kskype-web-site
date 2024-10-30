@@ -1,0 +1,144 @@
+body {
+	font-size: 14px;
+	line-height: 1.357em; /* 19px */
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+	font-size: 1em; /* 14px */
+	line-height: 1.357em;
+	margin: 0 0 1.357em 0;
+	color: #2C2C2C;
+}
+ul,
+ol {
+	margin: 0 0 1.357em 0;
+}
+.contentTable {
+	margin: 0 0 1.357em 0;
+}
+.contentTable td {
+	padding: 0 20px;
+}
+p.small {
+	font-size: 0.786em; /* 11px */
+	line-height: 1.727em;
+	margin-bottom: 1.727em;
+	color: #999;
+}
+
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+
+a {
+	color: #0181E3;
+}
+a:hover {
+    color: #3a9eeb;
+}
+a:visited {
+    color: #62a8f0;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+h1 {
+	font-size: 2.462em; /* 32px */
+	line-height: 1.19em;
+	margin-bottom: 15px;
+	letter-spacing: -0.03em;
+	color: #525252;
+}
+h1.products {
+	color: #afb4b4;
+	margin: 22px 0 0 0;
+	line-height: 100%;
+}
+h2 {
+	font-size: 1.286em; /* 18px */
+	line-height: 1.056em; /* 19(px) : 18(px) =   1.056(em) */
+	padding: 9px 0 10px 0; /* was margin: 9px 0 10px 0; but changed beacuse of 19px + 9px case */
+	color: #2C2C2C;
+}
+h2.products {
+	padding: 0 0 10px 0;
+	line-height: 100%;
+}
+h3, h4, h5, h6  {
+	/* font-family: "Lucida Grande", Calibri, Verdana, Geneva, Tahoma, sans-serif; */
+	font-size: 1em; /* 14px */
+	line-height: 1.357em;
+	margin: 0;
+	color: black;
+}
+
+sup {
+	font-size: 0.85em;
+	vertical-align: super;
+}
+sub {
+	font-size: 0.85em;
+	vertical-align: sub;
+}
+
+.floatl {
+	float: left;
+}
+.floatr {
+	float: right;
+}
+.clearer {
+	clear: both;
+	font: 1px/1px monospace;
+	height: 1px;
+	width: 1px;
+}
+.clear {
+	clear: both;
+}
+div.clear {
+    clear: both;
+    overflow: hidden;
+}
+div.clearLine {
+	clear: both;
+	height: 19px;
+}
+
+div.clearLineLeft {
+	clear: left;
+	height: 19px;
+}
+
+div.clearLineRight {
+	clear: right;
+	height: 19px;
+}
+/*
+     FILE ARCHIVED ON 12:21:06 Feb 23, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:17:22 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.478
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.007
+  esindex: 0.009
+  cdx.remote: 7.364
+  LoadShardBlock: 58.603 (3)
+  PetaboxLoader3.datanode: 75.685 (4)
+  load_resource: 83.126
+  PetaboxLoader3.resolve: 62.937
+*/

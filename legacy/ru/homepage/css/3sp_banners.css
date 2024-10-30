@@ -1,0 +1,37 @@
+#SP3Banner {
+	position: absolute;
+	bottom: 0;
+	z-index: 1000;
+	margin: 0 0 -45px 25px;
+	height: 70px;
+	font: 18px/70px Helvetica, Arial, sans-serif;
+	color: #666666;
+}
+
+#SP3Banner img {
+	padding-right: 10px;
+}
+
+#footer {
+	margin-top: 90px !important;
+}
+/*
+     FILE ARCHIVED ON 19:22:42 Feb 17, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:42:08 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.442
+  exclusion.robots: 0.014
+  exclusion.robots.policy: 0.007
+  esindex: 0.009
+  cdx.remote: 12.336
+  LoadShardBlock: 121.174 (3)
+  PetaboxLoader3.datanode: 79.515 (4)
+  PetaboxLoader3.resolve: 104.529 (2)
+  load_resource: 65.896
+*/

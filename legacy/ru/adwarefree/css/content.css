@@ -1,0 +1,511 @@
+/* Text styles based on content, tables etc */
+
+#content #paddedContent table.list {
+	width: 100%;
+	border-top: 1px solid #d9d9d9;
+	margin-bottom: 28px;
+}
+#content #paddedContent table.list td,
+#content #paddedContent table.list th {
+	padding: 3px 20px;
+	border-bottom: 1px solid #d9d9d9;
+}
+#content #paddedContent table.list thead td,
+#content #paddedContent table.list thead th {
+	background: #e5f6fd;
+}
+#content #paddedContent table.list th {
+	font-weight: bold;
+}
+
+#content #paddedContent table.prices {
+	width: 100%;
+	border-top: 1px solid #cbcdcd;
+	margin-bottom: 28px;
+}
+#content #paddedContent table.prices td,
+#content #paddedContent table.prices th {
+	padding: 12px 10px;
+}
+
+#content #paddedContent table.prices tr.grey td,
+#content #paddedContent table.prices tr.grey th {
+	background-color: #f2f2f2;
+}
+
+#content #paddedContent table.prices tr.grey td {
+	border-left: 1px solid #ffffff;
+}
+
+#content #paddedContent table.prices td span {
+	color: #afb4b4;
+}
+
+#content #paddedContent table.prices th {
+	line-height: 16px;
+}
+
+#content #paddedContent table.prices th img {
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+#content #paddedContent p,
+#content #paddedContent h1,
+#content #paddedContent h2,
+#content #paddedContent h3,
+#content #paddedContent h4,
+#content #paddedContent h5,
+#content #paddedContent h6,
+#content #paddedContent .padded {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+#content #paddedContent ul p,
+#content #paddedContent ul h1,
+#content #paddedContent ul h2,
+#content #paddedContent ul h3,
+#content #paddedContent ul h4,
+#content #paddedContent ul h5,
+#content #paddedContent ul h6,
+#content #paddedContent ul .padded {
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+#content div.fullWidth h1,
+#content div.fullWidth h2,
+#content div.fullWidth h3,
+#content div.fullWidth h4,
+#content div.fullWidth h5,
+#content div.fullWidth p,
+#content div.fullWidth .padded {
+	padding: 0 20px 0 20px;
+}
+#content #paddedContent li {
+	padding-right: 10px;
+}
+
+#content #paddedContent .contentSplit .leftQuarter p,
+#content #paddedContent .contentSplit .leftQuarter h1,
+#content #paddedContent .contentSplit .leftQuarter h2,
+#content #paddedContent .contentSplit .leftQuarter h3 {
+	padding-right: 0;
+}
+#content #paddedContent .contentSplit .rightQuarter p,
+#content #paddedContent .contentSplit .rightQuarter h1,
+#content #paddedContent .contentSplit .rightQuarter h2,
+#content #paddedContent .contentSplit .rightQuarter h3 {
+	padding-left: 0;
+}
+
+#content #paddedContent img.floatl {
+	margin: 0 20px 0 -10px;
+}
+
+#content #paddedContent img.floatr {
+	margin: 0 -10px 0 20px;
+}
+
+#content ul {
+	margin-left: 0px;
+	padding-left: 20px;
+	list-style: outside circle;
+}
+#content ol {
+	margin-left: 0px;
+	padding-left: 20px;
+	list-style: decimal inside;
+}
+#content ul li,
+#content ol li {
+	overflow: visible;
+}
+small {
+	color: #7b7f81;
+	font-size: 0.85em;
+}
+ul.small {
+	color: #7b7f81;
+	font-size: 0.85em;
+	margin-top: 0;
+}
+#content ul li.title {
+	list-style: none;
+}
+#content ul li.action {
+	list-style: none;
+}
+p.center {
+	text-align: center;
+}
+.graphicalSteps {
+	background: url(../images/graphical_steps.png) no-repeat 23px bottom;
+	padding-left: 35px;
+}
+
+.removeStepsBorder {
+	background: #fff;
+	margin-left: -35px;
+	padding-left: 35px;
+	margin-bottom: -15px;
+}
+
+#content #paddedContent h2.step1,
+#content #paddedContent h2.step2,
+#content #paddedContent h2.step3,
+#content #paddedContent h2.step4,
+#content #paddedContent h2.step5,
+#content #paddedContent h2.step6,
+#content #paddedContent h2.step7,
+#content #paddedContent h2.step8,
+#content #paddedContent h2.step9,
+#content #paddedContent h2.step10 {
+	padding-left: 35px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	margin-left: -25px;
+}
+
+#content #paddedContent p.step1,
+#content #paddedContent p.step2,
+#content #paddedContent p.step3,
+#content #paddedContent p.step4,
+#content #paddedContent p.step5,
+#content #paddedContent p.step6,
+#content #paddedContent p.step7,
+#content #paddedContent p.step8,
+#content #paddedContent p.step9,
+#content #paddedContent p.step10 {
+	padding: 9px 0 8px 35px !important;
+	background-position: top left;
+	background-repeat: no-repeat;
+	margin-left: -25px;
+}
+
+h2.step1,p.step1 {
+	background: url(../images/blue_1.png);
+}
+h2.step2,p.step2 {
+	background: url(../images/blue_2.png);
+}
+h2.step3,p.step3 {
+	background: url(../images/blue_3.png);
+}
+h2.step4,p.step4 {
+	background: url(../images/blue_4.png);
+}
+h2.step5,p.step5 {
+	background: url(../images/blue_5.png);
+}
+h2.step6,p.step6 {
+	background: url(../images/blue_6.png);
+}
+h2.step7,p.step7 {
+	background: url(../images/blue_7.png);
+}
+h2.step8,p.step8 {
+	background: url(../images/blue_8.png);
+}
+h2.step9,p.step9 {
+	background: url(../images/blue_9.png);
+}
+h2.step10,p.step10 {
+	background: url(../images/blue_10.png);
+}
+#content div.contentbox div.boxheading {
+	padding: 10px 10px 8px 10px;
+	margin: 0 !important;
+	font: bold 1.385em Helvetica, Arial, sans-serif;
+	color: #2c2c2c;
+}
+
+#content div.contentbox p {
+	margin: 0;
+	padding: 10px;
+}
+
+#content div.contentbox img.floatr {
+	padding: 0 10px 10px 10px;
+}
+
+#content div.contentbox.yellow {
+	background-color: #fff8e1;
+}
+
+#content div.contentbox.yellow div.boxheading {
+	background-color: #ffe9a4;
+	color: #525252;
+}
+
+#content div.contentbox.blue {
+	background-color: #e2f2fe;
+}
+
+#content div.contentbox.blue div.boxheading {
+	background-color: #9dd6ff;
+	color: #525252;
+}
+
+#content div.contentbox.orange {
+	background-color: #fff0e5;
+}
+
+#content div.contentbox.orange div.boxheading {
+	background-color: #ffb97f;
+	color: #ffffff;
+}
+
+#content #infoBox {
+	margin: 10px 0 0 10px;
+	background: url(../images/yellow_blue_bottombox_bg.png) -462px 0px repeat-y;
+}
+
+#content #infoBox p {
+	padding: 10px;
+}
+#content #infoBox .leftBlock {
+	width: 335px;
+	float: left;
+}
+
+#content #infoBox .rightBlock {
+	width: 335px;
+	float: right;
+}
+
+#content #infoBox .leftBlockTriple {
+	width: 210px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#content #infoBox .centerBlockTriple {
+	width: 220px;
+	float: left;
+}
+
+#content #infoBox .rightBlockTriple {
+	width: 230px;
+	float: right;
+}
+
+#content p.message {
+	padding: 14px 20px 16px 67px !important;
+	margin: 1.31em 0 1.45em 0 !important;
+}
+p.info {
+	border-top: 1px solid #aee756;
+	border-bottom: 1px solid #aee756;
+	color: #525252;
+	font-weight: bold;
+	background: #e9fad0 url(../images/message_info.png) no-repeat 20px center;
+}
+div.additionalInformation {
+    background: #E5F6FD;
+    border-bottom: 1px solid #7FD7F7;
+    border-top: 1px solid #7FD7F7;
+    padding: 15px 0;
+    overflow: hidden;
+	width: 100%;
+}
+p.available {
+	color: #666666;
+	clear: both;
+}
+p.available img {
+	vertical-align: top;
+	margin-right: 3px;
+}
+p.available span {
+	/* padding-left: 5px; */
+}
+
+p.available a {
+	text-decoration: none;
+	color: #666666;
+}
+
+p.available a:hover {
+	text-decoration: underline;
+	color: #0181e3;
+}
+
+
+div.customLinks a {
+	color: #2c2c2c;
+	text-decoration: none;
+}
+
+div.customLinks a:hover {
+	color: #0181E3 !important;
+	text-decoration: underline !important;
+}
+
+div.customLinks a:visited {
+	color: #2c2c2c;
+	text-decoration: none;
+}
+p.noEmergency.icon {
+    background: url(../images/noemergency.png) center left no-repeat;
+    padding-left: 50px !important;
+    margin-left: 20px;
+}
+p.noEmergency small {
+	color: #2c2c2c;
+}
+p.noEmergency strong {
+	color: #f00;
+	font-weight: normal;
+}
+
+#sidebarContent p.noEmergency {
+    padding: 170px 0 0 0 !important;
+    margin: 0 !important;
+    background: white url(../images/noemergency.png) 0 130px no-repeat !important;
+}
+#sidebarContent p.noEmergency small {
+	color: #2c2c2c;
+}
+#sidebarContent p.noEmergency strong {
+	color: #f00;
+	font-weight: normal;
+}
+
+.flowContainerTop {
+	background: url(../images/flow_container_top.png) no-repeat top left;
+	width: 960px;
+	margin-bottom: 0.93em;
+}
+.flowContainerBottom {
+	background: url(../images/flow_container_bottom.png) no-repeat bottom left;
+	padding: 21px 21px 22px 21px;
+}
+.flowContent {
+	padding: 10px 20px 0 20px;
+}
+.flowSubmit {
+	padding: 17px 20px 18px 20px;
+	background: url(../images/flow_container_submit.png);
+}
+* html .flowContent,
+* html .flowSubmit {
+	display: inline-block;
+}
+#content #paddedContent .flowContent p,
+#content #paddedContent .flowContent h1,
+#content #paddedContent .flowContent h2,
+#content #paddedContent .flowContent h3,
+#content #paddedContent .flowContent h4,
+#content #paddedContent .flowContent h5,
+#content #paddedContent .flowContent h6 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#content #paddedContent.fullWidth {
+	padding-right: 0;
+}
+p.simpleInfo {
+	background: url(../images/info_16x16.png) no-repeat 10px 0;
+	padding-left: 34px !important;
+}
+.default p.simpleInfo,
+.fullWidth p.simpleInfo {
+	background: url(../images/info_16x16.png) no-repeat 20px 0;
+	padding-left: 44px !important;
+}
+
+table.listTable {
+	width: 100%;
+}
+.flowContent table.listTable {
+	margin-top: 0.79em;
+}
+table.listTable th {
+	border-bottom: 1px solid #7fd7f7;
+	font-weight: bold;
+	padding: 8px 5px 9px 5px;
+}
+table.listTable td {
+	padding: 8px 5px 8px 5px;
+	vertical-align: middle;
+}
+table.listTable .right {
+	padding-right: 20px;
+}
+table.listTable .left {
+	padding-left: 20px;
+}
+.flowContent table.listTable .right {
+	padding-right: 10px;
+}
+.flowContent table.listTable .left {
+	padding-left: 10px;
+}
+table.listTable span.flag {
+	margin-top: -2px;
+}
+tr.even td {
+	background: #fff;
+}
+tr.odd td {
+	background: #e5f7fd;
+}
+tr.edit td.edit {
+	border-top: 1px solid #bfc4c4;
+	background: #fffb93 url(../images/flow_edit.png) top left repeat-x;
+	padding-left: 0;
+	padding-right: 0;
+}
+table.listTable td.edit th {
+	border: none;
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+table.listTable td.edit table.editTable td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+table.editTable span.buttonSmall {
+	margin-left: 8px;
+}
+table.editTable td small {
+	margin-top: 5px;
+}
+table.wideTable {
+	width: 100%;
+}
+.hiLite {
+	color: #00aff0;
+}
+#content .flowContent p.message {
+	margin-top: 0 !important;
+}
+td.toBottom {
+	vertical-align: bottom !important;
+	padding-bottom: 10px !important;
+}
+.atlasImage {
+    position: absolute;
+}
+/*
+     FILE ARCHIVED ON 15:07:09 Feb 06, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:22:42 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.467
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.008
+  esindex: 0.012
+  cdx.remote: 6.896
+  LoadShardBlock: 110.949 (3)
+  PetaboxLoader3.datanode: 133.704 (4)
+  PetaboxLoader3.resolve: 79.97 (2)
+  load_resource: 105.798
+*/

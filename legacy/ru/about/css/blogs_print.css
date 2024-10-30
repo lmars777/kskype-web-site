@@ -1,0 +1,37 @@
+body {
+	font-family: "Times New Roman", serif;
+}
+#sidebar,
+#footer-content,
+#global-navigation,
+#account-bar,
+.skip,
+.legal-information {
+	display: none !important;
+}
+#skype-logo img {
+	border: none;
+}
+#legal {
+	margin-top: 20px;
+}
+/*
+     FILE ARCHIVED ON 19:28:32 Feb 22, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:17:22 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.55
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.01
+  esindex: 0.011
+  cdx.remote: 17.182
+  LoadShardBlock: 122.179 (3)
+  PetaboxLoader3.datanode: 114.603 (4)
+  PetaboxLoader3.resolve: 160.451 (2)
+  load_resource: 161.419
+*/

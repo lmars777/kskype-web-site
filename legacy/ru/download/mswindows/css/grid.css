@@ -1,0 +1,143 @@
+/* Grid spliting and containers */
+
+#container {
+	width: 960px;
+	margin: -37px auto 0 auto;
+	overflow: hidden;
+}
+
+/* Grid for pages with a sidebar: 700 content + 240 sideabar */
+#container.sidebar {
+	background: url(/web/20080223122052im_/http://c.skype.com/i/images/backgrounds/sidebar_end.png) no-repeat 689px bottom;
+	margin-bottom: 30px;
+}
+#container #content {
+	padding: 0;
+}
+
+#container #content.wide {
+	padding: 45px 0;
+}
+
+#container.noCloud {
+	margin-top: 0 !important;
+}
+#container.sidebar.noSubmenu {
+	margin-top: 30px !important;
+}
+div.default {
+	margin: 30px auto 0 auto !important;
+}
+#container.sidebar #content {
+	width: 720px;
+	float: left;
+	background: url(/web/20080223122052im_/http://c.skype.com/i/images/backgrounds/sidebar_begin.png) no-repeat 689px top;
+	padding: 0;
+}
+#container.sidebar #sidebar {
+	width: 240px;
+	float: right;
+}
+#content #paddedContent { /* So we can have backgrounds outside the 20px left margin */
+	padding: 0 30px 0 0;  /* was 0 30px 0 10px before */
+}
+#paddedContent .contentSplit {
+	overflow: visible;
+	clear: both;
+}
+#paddedContent .contentSplit .leftColumn,
+#paddedContent .contentSplit .rightColumn {
+	width: 335px;
+	overflow: visible;
+}
+#paddedContent .contentSplit .leftColumn {
+	float: left;
+	padding-left: 5px;
+	margin-left: -5px;
+}
+#paddedContent .contentSplit .rightColumn {
+	float: right;
+	padding-left: 5px;
+	margin-left: -5px;
+}
+#paddedContent .contentSplit .leftQuarter,
+#paddedContent .contentSplit .rightQuarter {
+	width: 160px;
+}
+#paddedContent .contentSplit .leftQuarter {
+	float: left;
+}
+#paddedContent .contentSplit .rightQuarter {
+	float: right;
+}
+#paddedContent .thirdsColumnsLeft {
+	width: 215px;
+	float: left;
+	display: inline;
+	padding-left: 5px;
+	margin-left: -5px;
+}
+#paddedContent .thirdsColumnsRight {
+	width: 220px;
+	float: right;
+	display: inline;
+}
+#paddedContent .wide {
+	width: 455px !important;
+	padding-left: 5px;
+	margin-left: -5px;
+}
+
+#sidebarIllustration {
+	position: relative;
+	width: 270px;
+	left: 50%;
+	margin-left: 207px;
+	text-align: right;
+	z-index: 9;
+	margin-top: -31px;
+	margin-bottom: -31px;
+	height: 70px;
+}
+
+body.noSubmenu #sidebarIllustration {
+	position: relative;
+	width: 270px;
+	left: 50%;
+	margin-left: 207px;
+	text-align: right;
+	z-index: 9;
+	margin-top: 0;
+	margin-bottom: -31px;
+	height: 70px;
+}
+
+/* Development grip */
+div#grid {
+	background: url(/web/20080223122052im_/http://c.skype.com/i/images/backgrounds/_grid.png);
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*
+     FILE ARCHIVED ON 12:20:52 Feb 23, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:46:12 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.546
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.008
+  esindex: 0.021
+  cdx.remote: 55.604
+  LoadShardBlock: 340.202 (3)
+  PetaboxLoader3.datanode: 342.698 (6)
+  load_resource: 30.824
+  PetaboxLoader3.resolve: 26.002
+*/

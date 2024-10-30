@@ -1,0 +1,247 @@
+#screenshotWindows {
+	float: right;
+	margin: -170px 0px 0 20px;
+	z-index: 999;
+	position: relative;
+}
+.vistaCertified {
+    float: right;
+    margin: -5px -25px 0 20px;
+}
+#screenshotMacosx {
+	float: right;
+	margin: -210px 35px 0 20px;
+	z-index: 999;
+	position: relative;
+}
+#screenshotLinux {
+	float: right;
+	margin: -210px 35px 0 20px;
+	z-index: 999;
+	position: relative;
+}
+#screenshotLinuxChoose {
+	float: right;
+	margin: -255px 35px -3px 20px;
+	z-index: 999;
+	position: relative;
+}
+#screenshotN800{
+	float: right;
+	margin: -120px 35px 0 20px;
+	z-index: 999;
+	position: relative;
+}
+#screenshotN810{
+	float: right !important;
+	margin: -145px 0 0 20px;
+	z-index: 999;
+	position: relative;
+}
+#screenshotEmailtoolbar {
+	float: right;
+	margin: -87px -20px 0 20px;
+	z-index: 999;
+	position: relative;
+}
+#screenshotOfficeToolbar {
+	float: right;
+	margin: -154px -10px 0 20px;
+	z-index: 999;
+	position: relative;
+}
+.downloadForm {
+	border-top: 1px solid #7fd7f7;
+	border-bottom: 1px solid #7fd7f7;
+	background: #e5f6fd url(../images/download_blue.png) no-repeat 354px 0px;
+	display: block;
+	padding: 14px 20px 20px 20px;
+	margin: 9px 0 17px 0;
+}
+
+.downloadForm.emailToolbar {
+	background: #e5f6fd url(../images/download_blue.png) no-repeat 540px -37px;
+}
+.officeToolbar {
+	background: #e5f6fd;
+}
+.chooseForm {
+	border-top: 1px solid #7fd7f7;
+	border-bottom: 1px solid #7fd7f7;
+	background: #e5f6fd url(../images/download_blue.png) no-repeat 570px -18px;
+	display: block;
+	padding: 14px 10px 20px 10px;
+	margin: 9px 0 17px 0;
+	overflow: hidden;
+	zoom: 1;
+}
+.downloadWindows,
+.downloadMac,
+.downloadLinux,
+.downloadOfficeToolbar,
+.downloadEmailToolbar,
+.downloadMobile {
+	padding-left: 43px;
+	width: 400px;
+	padding-top: 11px;
+}
+.downloadWindows {
+	background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_windows.png) no-repeat top left;
+}
+.downloadMac {
+	background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_mac.png) no-repeat top left;
+}
+.downloadLinux {
+	background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_linux.png) no-repeat top left;
+}
+.downloadMobile {
+	background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_mobile.png) no-repeat top left;
+}
+.downloadEmailToolbar {
+	background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_emailtoolbar.png) no-repeat 0 6px;
+}
+.downloadOfficeToolbar {
+	background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_officetoolbar.png) no-repeat 0 6px;
+	width: 280px;
+}
+.downloadForm h2 {
+	margin-top: 0;
+}
+#content #paddedContent .downloadForm h2,
+#content #paddedContent .downloadForm p {
+	padding: 0;
+}
+p#upgradeToLatest {
+	margin-bottom: 0;
+	display: none;
+}
+div.chooseLinux {
+	float: left;
+	width: 265px;
+}
+#content #paddedContent div.chooseLinux p {
+	padding: 0;
+}
+div.chooseLinux p.last {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+div.chooseLinux p img {
+	float: left;
+}
+
+.rightColumn p,
+.rightColumn h3,
+.rightColumn h2 {
+	padding-left: 0 !important;
+}
+
+.rightColumn h3 img.icon {
+	margin: 0 5px 0 0;
+	float: left;
+}
+
+p.center {
+	padding: 0 !important;
+}
+
+p.center strong {
+	display: block;
+}
+
+p.center span {
+	display: block;
+}
+
+/* Images for different Linux distros */
+img#downloadUbuntu {
+	margin: 0 13px 0 1px;
+}
+img#downloadDebian {
+	margin: 0 16px 0 6px;
+}
+img#downloadMepis {
+	margin: -2px 16px 0 8px;
+}
+img#downloadXandros {
+	margin: -4px 13px 0 2px;
+}
+img#downloadFedora {
+	margin: 1px 13px 0 2px;
+}
+img#downloadSuse {
+	margin: 0 14px 0 0;
+}
+img#downloadMandriva {
+	margin: -3px 14px 0 1px;
+}
+img#downloadDynamicStatic {
+	margin: 2px 17px -10px 4px;
+}
+
+div.chooseLinux ul {
+    margin: 0 0 0 10px !important;
+    padding: 0 !important;
+}
+
+div.chooseLinux ul li {
+    list-style: none !important;
+    padding: 10px 0 0 48px !important;
+    min-height: 35px;
+}
+
+* html div.chooseLinux ul li {
+    height: 35px;
+}
+
+div.chooseLinux ul li#distroUbuntu {
+    background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_ubuntu.png) left center no-repeat;
+}
+div.chooseLinux ul li#distroDebian {
+    background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_debian.png) left center no-repeat;
+}
+div.chooseLinux ul li#distroMepis {
+    background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_mepis.png) left center no-repeat;
+}
+div.chooseLinux ul li#distroXandros {
+    background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_xandros.png) left center no-repeat;
+}
+div.chooseLinux ul li#distroFedora {
+    padding-top: 0 !important;
+    padding-bottom: 1px !important;
+	background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_fedora.png) left center no-repeat;
+}
+div.chooseLinux ul li#distroSuse {
+    background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_suse.png) left center no-repeat;
+}
+div.chooseLinux ul li#distroMandriva {
+    background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_mandriva.png) left center no-repeat;
+}
+div.chooseLinux ul li#distroDynSta {
+    padding-top: 0 !important;
+    padding-bottom: 10px !important;
+    background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_stat-dyn.png) left center no-repeat;
+}
+div.chooseLinux ul li#distroCentos {
+    background: url(/web/20080223123816im_/http://c.skype.com/i/images/icons/download_centos.png) left center no-repeat;
+}
+/*
+     FILE ARCHIVED ON 12:38:16 Feb 23, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:46:22 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.551
+  exclusion.robots: 0.02
+  exclusion.robots.policy: 0.01
+  esindex: 0.012
+  cdx.remote: 4.679
+  LoadShardBlock: 8852.75 (3)
+  PetaboxLoader3.datanode: 8860.529 (6)
+  load_resource: 44.338
+  PetaboxLoader3.resolve: 28.62
+*/

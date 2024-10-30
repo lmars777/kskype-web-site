@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title>Page Not Found - Skype.com</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	
+<!-- Meta -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="robots" content="noodp">
+
+<!-- Microsoft smarties -->
+<meta http-equiv="ImageResize" content="no">
+<meta http-equiv="ImageToolbar" content="no">
+<meta name="MSSmartTagsPreventParsing" content="true">
+
+<!-- Icon -->
+<link rel="icon" href="/errors/i/images/icons/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="shortcut icon" href="/errors/i/images/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/errors/i/images/logos/skype_webclip.png">
+
+<!-- Default stylesheets -->
+<link rel="stylesheet" href="/errors/i/css/print.css" type="text/css" media="print">
+<link rel="stylesheet" href="/errors/i/css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/errors/i/css/base.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/errors/i/css/grid.css" type="text/css" media="screen">
+
+<!-- Formatting stylesheets -->
+<link rel="stylesheet" href="/errors/i/css/content.css" type="text/css" media="screen">
+
+<!-- Navigation stylesheets -->
+<link rel="stylesheet" href="/errors/i/css/navigation.css" type="text/css" media="screen">
+</head>
+<body>
+
+<div id="header">
+<a href="/" id="skypeLogo" title="skype.com"><img src="/errors/i/images/logos/skype_logo.png" width="105" height="47" alt="Skype Logo"> <span>Take a deep breath".</span></a>
+
+<div id="headerNavigation">
+<a href="http://www.skype.com/go/help">Help</a> ·
+<form id="googleSearchForm" method="get" action="http://search.skype.com/search">
+    <div id="searchSet">
+        <input type="text" name="q" id="google-input" value="Search">
+        <input type="hidden" name="client" value="default_frontend">
+        <input type="hidden" name="proxystylesheet" value="default_frontend">
+        <input type="hidden" name="output" value="xml_no_dtd">
+	</div>
+</form><!-- #googleSearchForm -->
+</div><!-- #headerNavigation -->
+</div><!-- #header -->
+<div id="mainNavigation">
+</div><!-- #mainNavigation -->
+
+<div id="container" class="default">
+	<div id="content">
+		<div id="paddedContent">
+			<h1>Hi, we couldnâ€™t find this page</h1>
+
+			<p>Looks like the page you were trying to visit doesnâ€™t exist or has been deleted. If you got here by a link from skype.com then <a href="http://www.skype.com/go/help.ticket.submit">let us know</a> about the wrong or out of date link and weâ€™ll fix it. Thanks.</p>
+
+			<p>Since weâ€™re not sure what you were looking for then hereâ€™s a bunch of things you might find useful:</p>
+		    <ul>
+		    	<li><a href="http://www.skype.com/go/download/">Download Skype</a></li>
+		        <li><a href="http://www.skype.com/intl/en/allfeatures/skypetoskypecall/">Free calls over the internet</a></li>
+		        <li><a href="http://www.skype.com/go/videocalling/">Free video calls</a></li>
+		    	<li><a href="http://www.skype.com/go/help/">Visit our support site</a></li>
+		    	<li><a href="http://www.skype.com/">Go to Skype.com homepage</a></li>
+		    </ul>
+
+		</div><!-- #paddedContent -->
+	</div><!-- #content -->
+</div><!-- #container -->
+
+<div id="footer">
+    <form id="userPreferencesForm" method="post" action="/intl/[LC]/">
+    	<div id="footerNavigation">
+    		<a href="http://www.skype.com/go/about">About us</a> · <a href="http://www.skype.com/go/news">News</a> · <a href="http://www.skype.com/go/jobs">Jobs</a> · <a href="http://www.skype.com/go/prices">Prices</a> · <a href="http://www.skype.com/go/security">Security</a>
+    	</div><!-- #footerNavigation -->
+    	<div id="legalLinks"><a href="http://www.skype.com/go/legal.privacy" title="">Privacy policy</a> · <a href="http://www.skype.com/go/legal">Legal</a> · <span>© 2008 Skype Limited</span></div><!-- #legalLinks -->
+	</form><!-- #userPreferencesForm -->
+</div><!-- #footer -->
+
+
+</body></html>

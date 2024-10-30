@@ -1,0 +1,364 @@
+div.downloadButtons {
+    margin-top: 15px;
+}
+
+/* Big button */
+span.button a { 
+    height: 32px;
+    font: bold 18px/32px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+    span.button a span {
+        display: block;
+        white-space: nowrap;
+        padding: 5px 12px 5px 0;
+        line-height: 23px;
+        cursor: pointer;
+    }
+
+/* Small button */
+
+span.buttonSmall a {
+	height: 22px;
+	font: bold 14px/22px Helvetica, Arial, sans-serif;
+	text-decoration: none;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+	span.buttonSmall a span {
+		display: block;
+        white-space: nowrap;
+		padding: 0px 11px 0 0;
+        line-height: 24px;    
+        cursor: pointer;
+	}
+	
+	* html span.buttonSmall a span {
+        line-height: 22px;
+    }
+
+/* Blue */
+
+span.button a.blue {
+    background: #42B2F5;
+	color: #fff;
+    padding: 0 0 0 12px;
+    background: #42B2F5 url(../images/blue_comp_left.png) left top no-repeat;
+}
+
+span.button a.blue:hover {
+    padding: 0 0 0 12px;
+    background: #42B2F5 url(../images/blue_comp_left.png) 0 -32px no-repeat;
+}
+	span.button a.blue span {
+	    background: #42B2F5 url(../images/blue_comp_right.png) right top no-repeat;
+	}
+	span.button a.blue:hover span {
+	    background: #42B2F5 url(../images/blue_comp_right.png) right -32px no-repeat;
+	}
+span.button a.blue.skypeCredit {
+    padding: 0 0 0 40px;
+    background: #42B2F5 url(../images/blue_comp_credit_left.png) left top no-repeat;
+}
+
+span.button a.blue.skypeCredit:hover {
+    padding: 0 0 0 40px;
+    background: #42B2F5 url(../images/blue_comp_credit_left.png) 0 -32px no-repeat;
+}
+
+span.button a.blue.shop {
+    padding: 0 0 0 40px;
+    background: #42B2F5 url(../images/blue_comp_shop_left.png) left top no-repeat;
+}
+
+span.button a.blue.shop:hover {
+    padding: 0 0 0 40px;
+    background: #42B2F5 url(../images/blue_comp_shop_left.png) 0 -32px no-repeat;
+}
+
+
+span.button a.blue.freeCall {
+    padding: 0 0 0 40px;
+    background: #42B2F5 url(../images/blue_comp_call_left.png) no-repeat scroll left top;
+}
+span.button a.blue.freeCall:hover {
+    padding: 0 0 0 40px;
+    background: #42B2F5 url(../images/blue_comp_call_left.png) 0 -32px no-repeat;
+}
+
+/* Blue small */
+
+span.buttonSmall a.blue {
+	background:  #42B2F5 url(../images/blue_small_comp_left.png) left top no-repeat;
+	padding-left: 11px;
+    color: #FFFFFF;
+}
+
+span.buttonSmall a.blue:hover {
+	background:  #42B2F5 url(../images/blue_small_comp_left.png) left -22px no-repeat;
+	padding-left: 11px;
+}
+
+span.buttonSmall a.blue span {
+	background: #42B2F5 url(../images/blue_small_comp_right.png) right top no-repeat;
+}
+
+span.buttonSmall a.blue:hover span {
+	background: #42B2F5 url(../images/blue_small_comp_right.png) right -22px no-repeat;
+}
+
+span.buttonSmall a.blue.skypeCredit {
+    padding: 0 0 0 32px;
+    background: #42B2F5 url(../images/blue_small_comp_credit_left.png) left top no-repeat;
+}
+span.buttonSmall a.blue.skypeCredit:hover {
+    padding: 0 0 0 32px;
+    background: #42B2F5 url(../images/blue_small_comp_credit_left.png) left -22px no-repeat;
+}
+span.buttonSmall a.blue.skypeOnlineNr {
+    padding: 0 0 0 32px;
+    background: #42B2F5 url(../images/blue_small_comp_onlinenr_left.png) left top no-repeat;
+}
+span.buttonSmall a.blue.skypeOnlineNr:hover {
+    padding: 0 0 0 32px;
+    background: #42B2F5 url(../images/blue_small_comp_onlinenr_left.png) left -22px no-repeat;
+}
+span.buttonSmall a.blue.skypeVoicemail {
+    padding: 0 0 0 32px;
+    background: #42B2F5 url(../images/blue_small_comp_voicemail_left.png) left top no-repeat;
+}
+span.buttonSmall a.blue.skypeVoicemail:hover {
+    padding: 0 0 0 32px;
+    background: #42B2F5 url(../images/blue_small_comp_voicemail_left.png) left -22px no-repeat;
+}
+span.buttonSmall a.blue.shop {
+    padding: 0 0 0 32px;
+    background: #42B2F5 url(../images/blue_small_comp_cart_left.png) left top no-repeat;
+}
+span.buttonSmall a.blue.shop:hover {
+    padding: 0 0 0 32px;
+    background: #42B2F5 url(../images/blue_small_comp_cart_left.png) left -22px no-repeat;
+}
+
+
+/* Yellow */
+
+span.button a.yellow {
+	color: #545454;
+    padding: 0 0 0 12px;
+    background: #FFCD00 url(../images/yellow_comp_left.png) left top no-repeat;
+}
+span.button a.yellow:hover {
+    padding: 0 0 0 12px;
+    background: #FFCD00 url(../images/yellow_comp_left.png) left -32px no-repeat;
+}
+	span.button a.yellow span {
+	    background: #FFCD00 url(../images/yellow_comp_right.png) right top no-repeat;
+	}
+	span.button a.yellow:hover span {
+	    background: #FFCD00 url(../images/yellow_comp_right.png) right -32px no-repeat;
+	}
+span.button a.yellow.skypePro {
+    padding: 0 0 0 40px;
+    background: #FFCD00 url(../images/yellow_comp_pro_left.png) left top no-repeat;
+}
+span.button a.yellow.skypePro:hover {
+    padding: 0 0 0 40px;
+    background: #FFCD00 url(../images/yellow_comp_pro_left.png) left -32px no-repeat;
+}
+
+/* Yellow small */
+
+span.buttonSmall a.yellow {
+    color: #545454;
+    background:  #FFCD00 url(../images/yellow_small_comp_left.png) left top no-repeat;
+	padding-left: 11px;
+}
+
+span.buttonSmall a.yellow:hover {
+	background:  #FFCD00 url(../images/yellow_small_comp_left.png) left -22px no-repeat;
+	padding-left: 11px;
+}
+
+span.buttonSmall a.yellow span {
+	background: #FFCD00 url(../images/yellow_small_comp_right.png) right top no-repeat;
+}
+
+span.buttonSmall a.yellow:hover span {
+	background: #FFCD00 url(../images/yellow_small_comp_right.png) right -22px no-repeat;
+}
+
+span.buttonSmall a.yellow.skypePro {
+    padding: 0 0 0 32px;
+    background: #FFCD00 url(../images/yellow_small_comp_pro_left.png) left top no-repeat;
+}
+
+span.buttonSmall a.yellow.skypePro:hover {
+    padding: 0 0 0 32px;
+    background: #FFCD00 url(../images/yellow_small_comp_pro_left.png) left -22px no-repeat;
+}
+
+/* Gray */
+
+span.button a.gray {
+	color: #0181E3;
+    padding: 0 0 0 12px;
+    background: #F0F0F0 url(../images/gray_comp_left.png) left top no-repeat;
+}
+span.button a.gray:hover {
+    padding: 0 0 0 12px;
+    color: #006ABC;
+    background: #F0F0F0 url(../images/gray_comp_left.png) left -32px no-repeat;
+}
+	span.button a.gray span {
+	    background: #F0F0F0 url(../images/gray_comp_right.png) right top no-repeat;
+	}
+	span.button a.gray:hover span {
+	    background: #F0F0F0 url(../images/gray_comp_right.png) right -32px no-repeat;
+	}
+
+/* Gray small */
+
+span.buttonSmall a.gray {
+    color: #0181E3;
+	background:  #F0F0F0 url(../images/gray_small_comp_left.png) left top no-repeat;
+	padding-left: 11px;
+}
+
+span.buttonSmall a.gray:hover {
+    color: #006ABC;
+	background:  #F0F0F0 url(../images/gray_small_comp_left.png) left -22px no-repeat;
+	padding-left: 11px;
+}
+
+span.buttonSmall a.gray span {
+	background: #F0F0F0 url(../images/gray_small_comp_right.png) right top no-repeat;
+}
+
+span.buttonSmall a.gray:hover span {
+	background: #F0F0F0 url(../images/gray_small_comp_right.png) right -22px no-repeat;
+}
+
+
+/* Green */
+
+span.button a.green {
+    color: #FFFFFF;
+    padding: 0 0 0 12px;
+    background: #87C80A url(../images/green_comp_left.png) left top no-repeat;
+}
+span.button a.green:hover {
+    padding: 0 0 0 12px;
+    background: #87C80A url(../images/green_comp_left.png) 0 -32px no-repeat;
+}
+    span.button a.green span {
+        background: #87C80A url(../images/green_comp_right.png) right top no-repeat;
+    }
+    span.button a.green:hover span {
+        background: #87C80A url(../images/green_comp_right.png) right -32px no-repeat;
+    }
+
+span.button a.green.skype {
+    padding: 0 0 0 40px;
+    background: #87C80A url(../images/green_comp_skype_left.png) left top no-repeat;
+}
+span.button a.green.skype:hover {
+    padding: 0 0 0 40px;
+    background: #87C80A url(../images/green_comp_skype_left.png) 0 -32px no-repeat;
+}
+
+span.button a.green.extras {
+    padding: 0 0 0 40px;
+    background: #87C80A url(../images/green_comp_extras_left.png) left top no-repeat;
+}
+span.button a.green.extras:hover {
+    padding: 0 0 0 40px;
+    background: #87C80A url(../images/green_comp_extras_left.png) 0 -32px no-repeat;
+}
+
+/* Disabled buttons */
+
+span.button a.disabled {
+	color: #afb4b4 !important;
+	background: #F0F0F0 url(../images/gray_comp_left.png) left top no-repeat !important;
+	cursor: default !important;
+}
+span.buttonSmall a.disabled {
+	color: #afb4b4 !important;
+	background: #F0F0F0 url(../images/gray_small_comp_left.png) left top no-repeat !important;
+	cursor: default !important;
+}
+
+span.button a.disabled:hover {
+	color: #afb4b4 !important;
+	background: #F0F0F0 url(../images/gray_comp_left.png) left top no-repeat !important;
+	cursor: default !important;
+}
+span.button a.disabled span {
+	background: #F0F0F0 url(../images/gray_comp_right.png) right top no-repeat !important;
+	cursor: default !important;
+}
+span.button a.disabled:hover span {
+	background: #F0F0F0 url(../images/gray_comp_right.png) right top no-repeat !important;
+	cursor: default !important;
+}
+span.buttonSmall a.disabled:hover {
+    color: #afb4b4 !important;
+	background:  #F0F0F0 url(../images/gray_small_comp_left.png) left top no-repeat !important;
+	cursor: default !important;
+}
+span.buttonSmall a.disabled span {
+	background: #F0F0F0 url(../images/gray_small_comp_right.png) right top no-repeat !important;
+	cursor: default !important;
+}
+span.buttonSmall a.disabled:hover span {
+	background: #F0F0F0 url(../images/gray_small_comp_right.png) right top no-repeat !important;
+	cursor: default !important;
+}
+
+/* Buttons and text on right */
+
+.buttonAndText span.button,
+.buttonAndText span.buttonSmall {
+	margin-right: 0.25em;
+}
+
+.buttonAndText .text {
+	line-height: 32px;
+}
+
+.buttonSmallAndText .text {
+	line-height: 23px;
+}
+
+/* Buttons in infoBox columns */
+
+#content #infoBox p span.buttonSmall {
+	float: left;
+	padding-bottom: 8px;
+}
+
+/*
+     FILE ARCHIVED ON 12:21:24 Feb 23, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:46:12 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.472
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.011
+  esindex: 0.01
+  cdx.remote: 2.53
+  LoadShardBlock: 125.079 (3)
+  PetaboxLoader3.datanode: 129.546 (6)
+  load_resource: 78.525
+  PetaboxLoader3.resolve: 70.307
+*/

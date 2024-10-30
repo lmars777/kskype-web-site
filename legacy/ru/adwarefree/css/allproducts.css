@@ -1,0 +1,146 @@
+#customHeading {
+	width: 490px;
+}
+
+#customHeading p {
+	margin-top: 5px;
+}
+
+div.additionalInformation.productSpecific p {
+	font: bold 16px Helvetica, Arial, sans-serif;
+	line-height: 25px;
+	color: #2c2c2c;
+	margin: 0 0 0;
+}
+
+div.additionalInformation {
+	margin-bottom: 18px;
+}
+
+div.additionalInformation.products3ColumnList {
+	padding: 23px 0 0;
+}
+
+div.products3ColumnList h2 {
+	padding: 0 0 0 20px;
+}
+
+div.additionalInformation ul {
+	margin-bottom: 19px;
+}
+
+div.products3ColumnList ul li {
+	list-style-type: none;
+}
+
+div.products3ColumnList div.columnL {
+	width: 320px;
+	float: left;
+}
+div.products3ColumnList div.columnC {
+	width: 320px;
+	float: left;
+}
+div.products3ColumnList div.columnR {
+	width: 320px;
+	float: right;
+}
+
+div.products3ColumnList a, div.products3ColumnList a:visited {
+    color: #2C2C2C !important;
+    text-decoration: none !important;
+}
+div.products3ColumnList a:hover {
+    color: #3A9EEB !important;
+    text-decoration: underline !important;
+}
+
+#blueSplash {
+	background: url(../images/bluesplash_products.png) top left no-repeat;
+	float: right;
+	width: 189px;
+	height: 198px;
+	margin-top: -120px;
+	margin-bottom: -90px;
+	position: relative;
+	z-index: 1000;
+}
+
+.light {
+	margin-top: -160px !important;
+	background: url(../images/bluesplash_products_light.png) !important;
+	z-index: -1 !important;
+}
+
+#blueSplashImg {
+	position: absolute;
+	left: 36px;
+	top: 24px;
+}
+
+#shortRow {
+	width: 505px;
+}
+
+div.leftSide {
+	float: left;
+	width: 570px;
+	margin-bottom: 5px;
+}
+
+div.rightSide {
+	float: right;
+	width: 332px;
+	margin-bottom: 5px;
+}
+
+div.rightSide div.rightPromoBox {
+	padding: 10px 0 0 40px;
+}
+
+div.rightSide div.rightPromoBox h2 {
+	padding: 0;
+}
+
+div.rightSide div.rightPromoBox p {
+	margin-bottom: 9px;
+}
+
+div.rightSide #skypeProPromo {
+    width: 100%;
+	background: transparent url(../images/skypepro_46x46_white.png) 0 10px no-repeat;
+}
+
+div.rightSide #skypeCreditPromo {
+    width: 100%;
+	background: transparent url(../images/skypecredit_46x46_white.png) 0 10px no-repeat;
+}
+
+div.leftSide p {
+	margin-top: 10px;
+}
+
+div.videohq_image {
+	padding: 17px 0 0 0;
+	margin-top: -40px;
+}
+/*
+     FILE ARCHIVED ON 12:24:21 Feb 23, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:22:42 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.608
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.01
+  esindex: 0.012
+  cdx.remote: 6.994
+  LoadShardBlock: 72.677 (3)
+  PetaboxLoader3.datanode: 44.505 (4)
+  load_resource: 101.097
+  PetaboxLoader3.resolve: 96.175
+*/

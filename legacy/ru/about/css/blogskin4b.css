@@ -1,0 +1,164 @@
+#content #paddedContent .postHeader {
+    width: 620px;
+}
+* html #content #paddedContent em {
+    font-size: 0.96em;
+}
+#sidebarContent {
+    padding-right: 20px important;
+}
+.sidebar-module {
+    padding-bottom: 1.0em;
+}
+#content #paddedContent .postHeader h2 {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+#content #paddedContent .postHeader h2,
+#content #paddedContent .postHeader p {
+    padding-left: 5px;
+}
+#content #paddedContent .post-author {
+    padding-left: 20px;
+}
+#content #paddedContent .post-subhead {
+    font-size: 0.9em;
+}
+#content #paddedContent .post-subhead img {
+    vertical-align: middle;
+}
+#content #paddedContent .post {
+    clear: both;
+    oveflow: hidden;
+    margin-bottom: 2em;
+    background: url(../images/post-separator.png) no-repeat bottom center;
+    padding-bottom: 2em;
+    width: 690px;
+}
+.bubble-container {
+    background: url(../images/post-separator.png) no-repeat bottom center;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.bubble-container .footer {
+    font-size: 0.9em;
+}
+.bubble-container .footer img {
+    vertical-align: middle;
+}
+.post-body img,
+.bubble-container .body img {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.bubble-container .body {
+    overflow: hidden;
+}
+#content #paddedContent ul p,
+#content #paddedContent ul h1,
+#content #paddedContent ul h2,
+#content #paddedContent ul h3,
+#content #paddedContent ul h4,
+#content #paddedContent ul h5,
+#content #paddedContent ul h6,
+#content #paddedContent ul .padded,
+#content #paddedContent blockquote p,
+#content #paddedContent blockquote h1,
+#content #paddedContent blockquote h2,
+#content #paddedContent blockquote h3,
+#content #paddedContent blockquote h4,
+#content #paddedContent blockquote h5,
+#content #paddedContent blockquote h6,
+#content #paddedContent blockquote .padded {
+	padding-left: 0;
+	padding-right: 10px;
+}
+#content #paddedContent blockquote {
+    padding-left: 20px;
+	padding-right: 10px;
+}
+.commenting-bubble,
+.commenting-bubble-footer,
+.comment-count-start {
+    padding: 0 10px 0 20px;
+}
+.commenting-bubble textarea {
+    width: 650px;
+    margin-bottom: 10px;
+}
+.commenting-bubble-footer input {
+    margin-right: 10px;
+}
+.col-2L {
+    float: left;
+    width: 340px;
+}
+.col-2R {
+    float: right;
+    width: 340px;
+}
+#rssAndBlogs {
+    background: url(../images/post-separator.png) no-repeat bottom center;
+    padding: 0 0 1em 0;
+    margin: 0 0 2em 0;
+    display: none;
+}
+.col-2R h6,
+.col-2L h6 {
+    overflow: hidden;
+}
+#sidebarContent img.floatl {
+    margin: 0 10px 10px 0 !important;
+}
+#subscribeTop p {
+    margin: 0 !important;
+}
+#subscribeTop {
+    background: #E5F6FD;
+    border-bottom: 1px solid #7FD7F7;
+    padding: 10px;
+    zoom: 1;
+}
+#subscribeBottom {
+    border-top: 1px solid #7FD7F7;
+    background: #E5F6FD;
+    zoom: 1;
+    margin: 0 -20px 0 -17px;
+}
+#subscribeTop .clearer {
+    display: none;
+}
+#subscribeTop table {
+    clear: both;
+    width: 200px !important;
+}
+#subscribeTop table col {
+    width: none !important;
+}
+#subscribeTop table td {
+    font-size: 0.8em;
+}
+.module-content li.title a {
+    display: none;
+}
+/*
+     FILE ARCHIVED ON 19:28:29 Feb 22, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:17:22 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.54
+  exclusion.robots: 0.02
+  exclusion.robots.policy: 0.009
+  esindex: 0.012
+  cdx.remote: 7.295
+  LoadShardBlock: 139.291 (3)
+  PetaboxLoader3.datanode: 89.62 (4)
+  PetaboxLoader3.resolve: 148.104 (2)
+  load_resource: 102.557
+*/

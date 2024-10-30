@@ -1,0 +1,164 @@
+/* sideBar */ 
+
+#sidebarContent {
+	/* font-size: 1.08em; */
+	/* font-family: "Lucida Grande", Helvetica, Arial, sans-serif; */ /* 14px */ 
+	/*line-height: 1.357em; */ /* 19px */ 
+}
+
+#sidebar #sidebarContent {
+	padding: 60px 20px 0 17px;
+}
+#sidebar #sidebarContent.lowTop {
+	padding-top: 0;
+}
+#sidebarContent strong.sidebarHeading {
+	display: block;
+	color: #444444;
+}
+
+#sidebarContent strong.sidebarHeading img {
+	vertical-align: middle;
+}
+
+#sidebarContent img.floatl {
+	margin: 0 10px 0 -10px;
+}
+
+#sidebarContent img.floatr {
+	margin: 0 -10px 0 10px;
+}
+
+
+#sidebarContent div.sidebarButton {
+	margin: -55px 0 -24px -17px;
+	padding: 45px 0 50px;
+	display: block;
+	float: left;
+	width: 221px;
+	color: #0181e3;
+	background: url(../images/grad_vline.png) center right no-repeat;
+}
+
+* html #sidebarContent div.sidebarButton {
+	margin: -55px -30px -26px -9px;
+}
+
+#sidebarContent div.sidebarButton a {
+	display: block;
+	float: left;
+	cursor: pointer;
+	min-height: 41px;
+	width: 203px;
+	padding-left: 18px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #0181e3;
+}
+
+* html #sidebarContent div.sidebarButton a {
+	min-height: 41px;
+}
+
+#sidebarContent div.sidebarButton a img {
+	display: block;
+	margin: 6px 0 0 0;
+	width: 24px;
+	height: 24px;
+	float: left;
+}
+
+#sidebarContent div.sidebarButton a span {
+	margin: 10px 15px 10px 30px !important;
+	display: block !important;
+	text-decoration: underline !important;
+	font-weight: bold !important;
+	color: #0181e3 !important;
+	background: transparent !important;
+}
+
+#sidebarContent div.sidebarButton a:hover {
+	color: #0181e3 !important;
+}
+
+#sidebarContent div.sidebarButton a:active {
+	color: #2c2c2c !important;
+}
+
+#sidebarContent div.sidebarButton a:visited {
+	color: #0181e3 !important;
+}
+
+/* GREEN button background */
+
+#sidebarContent div.sidebarButton a.green {
+	background: url(../images/green_sidebar.png) 0px bottom no-repeat !important;
+}
+
+#sidebarContent div.sidebarButton a.green:hover {
+	background: url(../images/green_sidebar.png) -221px bottom no-repeat !important;
+}
+
+#sidebarContent div.sidebarButton a.green:active {
+	background: url(../images/green_sidebar.png) -442px bottom no-repeat !important;
+}
+
+/* YELLOW button background */
+
+#sidebarContent div.sidebarButton a.yellow {
+	background: url(../images/yellow_sidebar.png) 0px bottom no-repeat !important;
+}
+
+#sidebarContent div.sidebarButton a.yellow:hover {
+	background: url(../images/yellow_sidebar.png) -221px bottom no-repeat !important;
+}
+
+#sidebarContent div.sidebarButton a.yellow:active {
+	background: url(../images/yellow_sidebar.png) -442px bottom no-repeat !important;
+}
+
+/* BLUE button background */
+
+#sidebarContent div.sidebarButton a.blue {
+	background: url(../images/blue_sidebar.png) 0px bottom no-repeat !important;
+}
+
+#sidebarContent div.sidebarButton a.blue:hover {
+	background: url(../images/blue_sidebar.png) -221px bottom no-repeat !important;
+}
+
+#sidebarContent div.sidebarButton a.blue:active {
+	background: url(../images/blue_sidebar.png) -442px bottom no-repeat !important;
+}
+
+#sidebar #sidebarContent ul {
+	list-style: circle inside;
+}
+#sidebar #sidebarContent ul li.title {
+	list-style: none outside;
+	margin: 0;
+	padding: 0;
+}
+#sidebarContent ul li strong.sidebarHeading {
+	display: inline;
+}
+/*
+     FILE ARCHIVED ON 15:07:06 Feb 06, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:22:42 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.495
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.009
+  esindex: 0.011
+  cdx.remote: 7.949
+  LoadShardBlock: 60.795 (3)
+  PetaboxLoader3.datanode: 142.708 (4)
+  load_resource: 166.622
+  PetaboxLoader3.resolve: 80.414
+*/

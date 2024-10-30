@@ -32,14 +32,31 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var userLang = navigator.language || navigator.userLanguage;
+            var userAgent = navigator.userAgent;
             var redirectUrl;
 
-            if (userLang.startsWith('ru')) {
-                redirectUrl = 'https://kskype.limpe.fun/ru';
-            } else if (userLang.startsWith('uk')) {
-                redirectUrl = 'https://kskype.limpe.fun/ua';
+          
+            function isLegacyBrowser() {
+                var isIE = /MSIE|Trident/.test(userAgent);
+                var isOldChrome = /Chrome\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
+                var isOldFirefox = /Firefox\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
+                return isIE || isOldChrome || isOldFirefox;
+            }
+
+            if (isLegacyBrowser()) {
+                if (userLang.startsWith('ru')) {
+                    redirectUrl = 'https://kskype.limpe.fun/legacy/ru/homepage';
+                } else {
+                    redirectUrl = 'https://kskype.limpe.fun/legacy/en/homepage';
+                }
             } else {
-                redirectUrl = 'https://kskype.limpe.fun/en';
+                if (userLang.startsWith('ru')) {
+                    redirectUrl = 'https://kskype.limpe.fun/ru';
+                } else if (userLang.startsWith('uk')) {
+                    redirectUrl = 'https://kskype.limpe.fun/ua';
+                } else {
+                    redirectUrl = 'https://kskype.limpe.fun/en';
+                }
             }
 
             window.location.href = redirectUrl;

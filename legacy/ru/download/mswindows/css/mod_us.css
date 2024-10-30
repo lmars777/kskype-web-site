@@ -1,0 +1,85 @@
+/* US styles */ 
+
+div.customLinks a:link {
+color:#0181E3;
+text-decoration:underline;
+}
+
+div.customLinks a:hover {
+color:#3A9EEB;
+text-decoration:underline;
+}
+
+div.customLinks a:visited {
+color:#3A9EEB;
+text-decoration:underline;
+}
+
+div #index-topSplash {
+	position: relative;
+	height: 424px;
+	margin: 10px auto 0 auto;
+	width: 960px;
+	background: url(../images/index_baby.jpg) 20px 0px no-repeat;
+}
+
+#content #paddedContent .helloagainSplit .cheapCalls {
+background:transparent url(/web/20080206150729im_/http://c.skype.com/i/images/icons/cheapcalls_ho_white.png) no-repeat scroll 20px 5px;
+height:100%;
+}
+
+#content #paddedContent .helloagainSplit .skypeCredit {
+background:transparent url(/web/20080206150729im_/http://c.skype.com/i/images/icons/skypecredit_96x96_white.png) no-repeat scroll 40px 5px;
+height:100%;
+}
+
+#content #paddedContent .helloagainSplit h2, 
+#content #paddedContent .helloagainSplit p {
+padding-left:20px;
+padding-right:20px;
+}
+
+div.additionalInformation {
+background:#E5F6FD none repeat scroll 0%;
+border-bottom:1px solid #7FD7F7;
+border-top:1px solid #7FD7F7;
+overflow:hidden;
+padding:15px 0pt;
+width:100%;
+}
+
+div.additionalInformation div#leftBlock {
+float:left;
+width:1px;
+}
+
+div.additionalInformation div#rightBlock {
+float:left;
+width:600px;
+}
+
+#sidebarContent p.noEmergency {
+background:white url(/web/20080206150729im_/http://c.skype.com/i/images/icons/noemergency.png) no-repeat scroll 0pt 90px !important;
+margin:0pt !important;
+padding:125px 0pt 0pt !important;
+}
+/*
+     FILE ARCHIVED ON 15:07:29 Feb 06, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:46:13 Oct 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.417
+  exclusion.robots: 0.015
+  exclusion.robots.policy: 0.007
+  esindex: 0.009
+  cdx.remote: 6.767
+  LoadShardBlock: 196.952 (3)
+  PetaboxLoader3.datanode: 143.357 (6)
+  PetaboxLoader3.resolve: 125.425 (2)
+  load_resource: 85.854
+*/

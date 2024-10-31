@@ -28,33 +28,39 @@
 				<div class="footerContent">
 					<div class="footerButtons">
 	<div class="footerLanguageSelector">
-		<form action="https://kskype.limpe.fun/${LC} target="_blank" method="get">
-		<label class="languagesDropdown" for="userLanguage">
-			<span class="world"></span>
-			<span id="pickedLanguage" class="language">Русский</span>
-			<span class="pickDown"></span>
-			<script type="text/javascript">                                        
-		    var s_langChange = function (el) {
-		        if ((typeof s != 'undefined') && (typeof s.trackAction != 'undefined')) {
-		            s.trackAction({events: "event36",
-		                eVar19: "language selector: " + $('html').attr('data-language') + " > " + $('#userLanguage').val(),
-		                prop18: "D=v19"}, el);
-		            }
-		        return true;
-		        };
-		    </script>
+    <form id="languageForm" action="https://kskype.limpe.fun/${LC}" method="get">
+        <label class="languagesDropdown" for="userLanguage">
+            <span class="world"></span>
+            <span id="pickedLanguage" class="language">Русский</span>
+            <span class="pickDown"></span>
+            <script type="text/javascript">                                        
+                var s_langChange = function (el) {
+                    if ((typeof s != 'undefined') && (typeof s.trackAction != 'undefined')) {
+                        s.trackAction({
+                            events: "event36",
+                            eVar19: "language selector: " + $('html').attr('data-language') + " > " + $('#userLanguage').val(),
+                            prop18: "D=v19"
+                        }, el);
+                    }
+                    // Перенаправление на новую страницу
+                    var selectedLanguage = el.value;
+                    window.location.href = "https://kskype.limpe.fun/" + selectedLanguage;
+                    return false;
+                };
+            </script>
             <select name="userLanguage" id="userLanguage" class="userLanguage" onchange="s_langChange(this);" data-sc="lang_selector">
-				<option value="en" lang="en">English</option>
-				<option value="yt" lang="it">Якутский</option>
-				<option value="uz" lang="ja">Узбекский (кириллица)</option>
-				<option value="ar" lang="ar">Aрмянский</option>
-				<option value="ro" lang="ro">Română</option>
-				<option value="ru" lang="ru" selected="selected">Русский</option>
-				<option value="uk" lang="uk">Українська</option>
-			</select>
-		</label>
-		</form>
-	</div>
+                <option value="en" lang="en">English</option>
+                
+                
+                
+                <option value="ro" lang="ro">Română</option>
+                <option value="ru" lang="ru" selected="selected">Русский</option>
+                <option value="uk" lang="uk">Українська</option>
+            </select>
+        </label>
+    </form>
+</div>
+
 						<div class="footerSocial noMobile">
 		<a href="https://tt.me/limpe"><img alt="ТамТам" src="images/tamtam.png"></a>				
 

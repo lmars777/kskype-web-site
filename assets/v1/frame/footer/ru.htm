@@ -28,7 +28,7 @@
 				<div class="footerContent">
 					<div class="footerButtons">
 	<div class="footerLanguageSelector">
-    <form id="languageForm" action="https://kskype.limpe.fun/${LC}" method="get">
+    <form id="languageForm" action="https://kskype.limpe.fun/${LC}" method="get" onsubmit="return false;">
         <label class="languagesDropdown" for="userLanguage">
             <span class="world"></span>
             <span id="pickedLanguage" class="language">Русский</span>
@@ -42,17 +42,16 @@
                             prop18: "D=v19"
                         }, el);
                     }
-                   
+                    // Перенаправление на новую страницу
                     var selectedLanguage = el.value;
-                    window.location.href = "https://kskype.limpe.fun/" + selectedLanguage;
-                    return false;
+                    window.top.location.href = "https://kskype.limpe.fun/" + selectedLanguage;
                 };
             </script>
             <select name="userLanguage" id="userLanguage" class="userLanguage" onchange="s_langChange(this);" data-sc="lang_selector">
                 <option value="en" lang="en">English</option>
-                
-                
-                
+                <option value="yt" lang="it">Якутский</option>
+                <option value="uz" lang="ja">Узбекский (кириллица)</option>
+                <option value="ar" lang="ar">Aрмянский</option>
                 <option value="ro" lang="ro">Română</option>
                 <option value="ru" lang="ru" selected="selected">Русский</option>
                 <option value="uk" lang="uk">Українська</option>
@@ -60,6 +59,7 @@
         </label>
     </form>
 </div>
+
 
 						<div class="footerSocial noMobile">
 		<a href="https://tt.me/limpe"><img alt="ТамТам" src="images/tamtam.png"></a>				

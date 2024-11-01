@@ -1,78 +1,996 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KSkype - Classic Skype on Mac or Windows. Linux.</title>
-    <link rel="icon" type="image/x-icon" href="http://kskype.limpe.fun/ico/favicon.ico">
-    <!-- Open Graph meta tags -->
-    <meta property="og:title" content="KSkype - Classic Skype on Mac or Windows. Linux.">
-    <meta property="og:description" content="Classic Skype in 2024 - KSkype!">
-    <meta property="og:image" content="http://kskype.limpe.fun/assets/v1/tab/imagetab.gif">
-    <meta property="og:url" content="http://kskype.limpe.fun">
-    <!-- Twitter Card meta tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="KSkype - Classic Skype on Mac or Windows. Linux.">
-    <meta name="twitter:description" content="Classic Skype in 2024 - KSkype!">
-    <meta name="twitter:image" content="http://kskype.limpe.fun/assets/v1/tab/imagetab.gif">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
+<html class="en ltr os_Windows" data-language="en"
+data-pagename="home" data-pagetype="home"
+data-pagepath="/home" data-region="us" lang="en"
+dir="ltr">
+<!-- AzureInstance: CMSApp_IN_1 -->
+<!-- определяем дизайн футер -->
+     <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
         }
-        .redirect-message {
-            font-size: 1.5em;
-            color: #333;
-        }
-        .banner {
-            margin-top: 20px;
+        iframe {
+            width: 100%;
+            height: 459px;
+            border: none;
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var userLang = navigator.language || navigator.userLanguage;
-            var userAgent = navigator.userAgent;
-            var redirectUrl;
+    
+<head id="head">
+  <!-- is_embed=False -->
+  <title> Skype | Free calls to friends and family
+  </title>
+  <meta name="description" content="Download Skype and stay in touch with family and friends for free. Get international calling, free online calls and Skype for Business on desktop and mobile.">
+  <meta name="keywords" content="free calls, free online calls, video conferencing, free calls on desktop, free calls on mobile">
+  <meta charset="utf-8">
+  <!-- DNS prefetch -->
+  <link rel="dns-prefetch" href="https://web.archive.org/web/20170703093944/https://secure.skypeassets.com/">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta property="og:image" content="images/skype-logo-open-graph.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="max-age=0">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!-- Apple Mobile Web App -->
+  <meta name="apple-mobile-web-app-capable"
+  content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style"
+  content="black">
+  <!-- Icon -->
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/scom.css">
+  <!-- NOTICE: Third party scripts or code, linked to, called or referenced from this web site, online service or product, are licensed to you by the third parties that own such code, not by Microsoft. -->
+  <script src="js/modernizr.min.js"></script>
+  <script>
+    var require = {
+      baseUrl: "https://kskype.limpe.fun/test/js/",
+      waitSeconds: 200,
+      paths: {
+        "jquery": "scom/main",
+        "domReady": "scom/main",
+        "jqueryvisible": "scom/main",
+        "apollo/Accordion": "scom/main",
+        "apollo/ajax": "scom/main",
+        "apollo/Animation": "scom/main",
+        "apollo/clientOsDetection": "scom/main",
+        "apollo/cookie": "scom/main",
+        "apollo/displayName": "scom/main",
+        "apollo/device": "scom/main",
+        "apollo/Dropdown": "scom/main",
+        "apollo/document": "scom/main",
+        "apollo/footer": "scom/main",
+        "apollo/hash": "scom/main",
+        "apollo/localisation": "scom/main",
+        "apollo/mediaQuery": "scom/main",
+        "apollo/mediator": "scom/main",
+        "apollo/responsive": "scom/main",
+        "apollo/scroll": "scom/main",
+        "apollo/util": "scom/main",
+        "apollo/user": "scom/main",
+        "apollo/user.token": "scom/main",
+        "apollo/user.preferences": "scom/main",
+        "apollo/window": "scom/main",
+        "apollo/navigationBanner": "scom/main",
+        "apollo/navigationBar.NavigationBar": "scom/main",
+        "apollo/navigationBar.SingleNavigationLink": "scom/main",
+        "apollo/navigationBar.MobileMenuNavigationLink": "scom/main",
+        "apollo/navigationBar.ParentNavigationLink": "scom/main",
+        "apollo/navigationBar.ChildNavigationLink": "scom/main",
+        "scom/appBanner/appBanner": "scom/main",
+        "scom/newSkype/linkRewriter": "scom/main",
+        "scom/cookiePolicy/cookiePolicy": "scom/main",
+        "apollo/edgePromotion": "scom/main",
+        "scom/download/Dropdown": "scom/main",
+        "scom/navigation/navigation": "scom/main",
+        "scom/overlay/overlay": "scom/main",
+        "scom/tracking": "scom/main",
+        "apollo/tracking": "scom/main",
+        "aria": "../lib/aria-web-telemetry-2.7.1.min",
+        "ecsClient": "../lib/ecs-client.min",
+        "swcChat": "../lib/swcChat.min"
+      },
+      shim: {
+        "ecsClient": {
+          exports: "ecsClient"
+        }
+      }
+    };
+  </script>
+  <script src="js/require.js" data-main="https://secure.skypeassets.com/apollo/2.0.1271/js/scom/main.js"></script>
+  <script>
+    define("apollo/settings", function() {
+      "use strict";
+      var settings = {};
+      settings.newSkype = {
+        "newSkypeAndroidLink": "https://web.archive.org/web/20170703093944/https://go.skype.com/scom.download.new",
+        "newSkypeIphoneLink": "https://web.archive.org/web/20170703093944/https://go.skype.com/scom.download.new",
+        "iPhoneNewSkype": "false",
+        "androidNewSkype": "true",
+        "androidCountryList": "",
+        "androidSupportedList": "Android 7,Android 8,Android 9"
+      };
+      settings.api = {
+        "sessionApiUrl": "https://web.archive.org/web/20170703093944/https://api.skype.com/users/self/displayname",
+        "webClientEligibilityApiUrl": "https://web.archive.org/web/20170703093944/https://web.skype.com/v1/api/eligibility-check",
+        "contentApiUrl": "https://web.archive.org/web/20170703093944/https://contentapi.skype.com/api/v2-0/regions/",
+        "skypeApiUrlBase": "https://web.archive.org/web/20170703093944/https://api.skype.com/",
+        "helperApiUrlBase": "https://web.archive.org/web/20170703093944/https://helperapi.skype.com/"
+      };
+      settings.token = {
+        "clientId": "815617",
+        "redirectUri": "https://web.archive.org/web/20170703093944/https://www.skype.com/en/apps/tokenhandler?appid=scom",
+        "loginUri": "https://web.archive.org/web/20170703093944/https://a.lw.skype.com/login/silent"
+      };
+      settings.user = {
+        "loadProfile": true
+      };
+      settings.message = {
+        "genericError": "Oops, it looks like we lost this bit. Please try again while we find a new copywriter."
+      };
+      settings.clicktale = {
+        "enabled": true,
+        "selector": "[data-content-key='skypename']"
+      };
+      settings.guestHost = {
+        "skypewebClientLauncherUrl": "https://web.archive.org/web/20170703093944/https://web.skype.com/",
+        "skypeguestHostBackEndUrl": "https://web.archive.org/web/20170703093944/https://wx.skype.com/api/v1/scom/",
+        "skypeguestHostDelayToRedirect": 2000,
+        "skypeguestHostGreenIdEnabled": false,
+        "skypeguestHostGreenIdUrl": "https://web.archive.org/web/20170703093944/https://fpt.skype.com"
+      };
+      settings.errorsLogger = {
+        "enabled": true,
+        "token": "28b1987bcc8c4e1a8cd8c2874c7dede4-66d03f5b-4777-4915-ba6a-f821e57b2e64-7437"
+      };
+      settings.ecs = {
+        "serverUri": "prod"
+      };
+      settings.swcChat = {
+        "connectPageUrl": "https://web.archive.org/web/20170703093944/https://www.skype.com/en/connect/",
+        "environment": "prod"
+      };
+      settings.navigation = {
+        "header": {
+          "sticky": false,
+          "showLinks": true,
+          "showButtons": false,
+          "accountLink": "https://go.skype.com/myaccount",
+          "logoutLink": "https://go.skype.com/logout"
+        }
+      };
+      settings.navigation.header[
+        "sticky"] = true;
+      settings.navigation.header[
+        "showLinks"] = false;
+      settings.navigation.header[
+        "showButtons"] = true;
+      return settings;
+    });
+    require(["apollo/settings"],
+      function(settings) {
+        if (!!settings.errorsLogger &&
+          !!settings.errorsLogger.enabled &&
+          !!settings.errorsLogger.token
+        ) {
+          requirejs.onError =
+            function(err) {
+              require([
+                "apollo/tracking.aria"
+              ], function(
+                scomTrackingAria) {
+                scomTrackingAria.logConsoleError(
+                  err,
+                  "requireOnError"
+                );
+              });
+            };
+          window.onerror = function(
+            msg) {
+            require([
+              "apollo/tracking.aria"
+            ], function(
+              scomTrackingAria) {
+              scomTrackingAria.logConsoleError(
+                msg,
+                "windowOnError"
+              );
+            });
+          };
+        }
+      });
+  </script>
+  <script type="text/javascript">
+    require(["scom/home/home"]);
+    require(["scom/lazyBackgrounds"]);
+  </script>
+  <style>
+    #tour1 {
+      background-image: url('images/tour-background-1-sm.jpg');
+    }
+    
+    #tour2 {
+      background-image: url('images/tour-background-2-sm.jpg');
+    }
+    
+    #tour3 {
+      background-image: url('en.html');
+    }
+    
+    #tour4 {
+      background-image: url('images/tour-background-4-sm.jpg');
+    }
+    
+    @media (min-width: 768px) {
+      html {
+        margin-top: 71px;
+        transition-duration: 0s;
+      }
+      #tour1 {
+        background-image: url('images/tour-background-1.jpg');
+      }
+      #tour2 {
+        background-image: url('images/tour-background-2.jpg');
+      }
+      #tour3 {
+        background-image: url('images/tour-background-3.jpg');
+      }
+      #tour4 {
+        background-image: url('images/tour-background-4.jpg');
+      }
+      #bottomCtaSection {
+        background-image: url('images/oipujrsptrgkedjflkqofd;kehlatiregucrghfuivsloiujhnvfljxs.png');
+      }
+    }
+    
+    @media (min-width: 1025px) {
+      #bottomCtaSection {
+        background-image: url('images/oipujrsptrgkedjflkqofd;kehlatiregucrghfuivsloiujhnvfljxs.png');
+      }
+    }
+    
+    html.noMediaQueries {
+      margin-top: 71px;
+    }
+    
+    .noMediaQueries #tour1 {
+      background-image: url('images/tour-background-1.jpg');
+    }
+    
+    .noMediaQueries #tour2 {
+      background-image: url('images/tour-background-2.jpg');
+    }
+    
+    .noMediaQueries #tour3 {
+      background-image: url('images/tour-background-3.jpg');
+    }
+    
+    .noMediaQueries #tour4 {
+      background-image: url('images/tour-background-4.jpg');
+    }
+    
+    .noMediaQueries #bottomCtaSection {
+      background-image: url('images/bottom-bg.jpg');
+    }
+  </style>
+  <style>
+    #coverSection {
+      background-image: url('images/may-1-sm-b.jpg');
+    }
+    
+    @media (min-width: 768px) {
+      #coverSection {
+        background-image: url('images/may-1-md.jpg');
+      }
+    }
+    
+    @media (min-width: 1025px) {
+      #coverSection {
+        background-image: url('images/may.jpg');
+      }
+    }
+    
+    .noMediaQueries #coverSection {
+      background-image: url('images/may.jpg');
+    }
+  </style>
+  <link rel="canonical" href="https://web.archive.org/web/20170703093944/https://www.skype.com/en/">
+  <link rel="alternate" hreflang="ar" href="https://web.archive.org/web/20170703093944/https://www.skype.com/ar/">
+  <link rel="alternate" hreflang="bg" href="https://web.archive.org/web/20170703093944/https://www.skype.com/bg/">
+  <link rel="alternate" hreflang="cs" href="https://web.archive.org/web/20170703093944/https://www.skype.com/cs/">
+  <link rel="alternate" hreflang="da" href="https://web.archive.org/web/20170703093944/https://www.skype.com/da/">
+  <link rel="alternate" hreflang="de" href="https://web.archive.org/web/20170703093944/https://www.skype.com/de/">
+  <link rel="alternate" hreflang="el" href="https://web.archive.org/web/20170703093944/https://www.skype.com/el/">
+  <link rel="alternate" hreflang="en" href="https://web.archive.org/web/20170703093944/https://www.skype.com/en/">
+  <link rel="alternate" hreflang="es" href="https://web.archive.org/web/20170703093944/https://www.skype.com/es/">
+  <link rel="alternate" hreflang="et" href="https://web.archive.org/web/20170703093944/https://www.skype.com/et/">
+  <link rel="alternate" hreflang="fi" href="https://web.archive.org/web/20170703093944/https://www.skype.com/fi/">
+  <link rel="alternate" hreflang="fr" href="https://web.archive.org/web/20170703093944/https://www.skype.com/fr/">
+  <link rel="alternate" hreflang="he" href="https://web.archive.org/web/20170703093944/https://www.skype.com/he/">
+  <link rel="alternate" hreflang="hi" href="https://web.archive.org/web/20170703093944/https://www.skype.com/hi/">
+  <link rel="alternate" hreflang="hu" href="https://web.archive.org/web/20170703093944/https://www.skype.com/hu/">
+  <link rel="alternate" hreflang="id" href="https://web.archive.org/web/20170703093944/https://www.skype.com/id/">
+  <link rel="alternate" hreflang="it" href="https://web.archive.org/web/20170703093944/https://www.skype.com/it/">
+  <link rel="alternate" hreflang="ja" href="https://web.archive.org/web/20170703093944/https://www.skype.com/ja/">
+  <link rel="alternate" hreflang="ko" href="https://web.archive.org/web/20170703093944/https://www.skype.com/ko/">
+  <link rel="alternate" hreflang="nl" href="https://web.archive.org/web/20170703093944/https://www.skype.com/nl/">
+  <link rel="alternate" hreflang="no" href="https://web.archive.org/web/20170703093944/https://www.skype.com/no/">
+  <link rel="alternate" hreflang="pl" href="https://web.archive.org/web/20170703093944/https://www.skype.com/pl/">
+  <link rel="alternate" hreflang="pt-br" href="https://web.archive.org/web/20170703093944/https://www.skype.com/pt-br/">
+  <link rel="alternate" hreflang="pt" href="https://web.archive.org/web/20170703093944/https://www.skype.com/pt/">
+  <link rel="alternate" hreflang="ro" href="https://web.archive.org/web/20170703093944/https://www.skype.com/ro/">
+  <link rel="alternate" hreflang="ru" href="https://web.archive.org/web/20170703093944/https://www.skype.com/ru/">
+  <link rel="alternate" hreflang="sv" href="https://web.archive.org/web/20170703093944/https://www.skype.com/sv/">
+  <link rel="alternate" hreflang="tr" href="https://web.archive.org/web/20170703093944/https://www.skype.com/tr/">
+  <link rel="alternate" hreflang="uk" href="https://web.archive.org/web/20170703093944/https://www.skype.com/uk/">
+  <link rel="alternate" hreflang="zh-Hans"
+  href="https://web.archive.org/web/20170703093944/https://www.skype.com/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant"
+  href="https://web.archive.org/web/20170703093944/https://www.skype.com/zh-Hant/"> </head>
 
-          
-            function isLegacyBrowser() {
-                var isIE = /MSIE|Trident/.test(userAgent);
-                var isOldChrome = /Chrome\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
-                var isOldFirefox = /Firefox\/([0-9]+)/.test(userAgent) && parseInt(RegExp.$1, 10) <= 20;
-                return isIE || isOldChrome || isOldFirefox;
-            }
-
-            if (isLegacyBrowser()) {
-                if (userLang.startsWith('ru')) {
-                    redirectUrl = 'https://kskype.limpe.fun/legacy/ru/homepage';
-                } else {
-                    redirectUrl = 'https://kskype.limpe.fun/legacy/en/homepage';
-                }
-            } else {
-                if (userLang.startsWith('ru')) {
-                    redirectUrl = 'https://kskype.limpe.fun/ru';
-                } else if (userLang.startsWith('uk')) {
-                    redirectUrl = 'https://kskype.limpe.fun/ua';
-                } else {
-                    redirectUrl = 'https://kskype.limpe.fun/en';
-                }
-            }
-
-            fetch('https://kskype.limpe.fun/assets/v1/load')
-                .then(response => response.text())
-                .then(data => {
-                    document.body.innerHTML = data;
-                    
-                    window.location.href = redirectUrl;
-                })
-                .catch(error => console.error('Error fetching content:', error));
-        });
+<body class="v2">
+  <!-- BEGIN WAYBACK TOOLBAR INSERT -->
+  <form method="post" action="/web/20170703093944/https://www.skype.com/en/default.aspx"
+  id="form">
+    <div class="aspNetHidden">
+      <input type="hidden" name="manScript_HiddenField"
+      id="manScript_HiddenField" value="">
+      <input type="hidden" name="__EVENTTARGET"
+      id="__EVENTTARGET" value="">
+      <input type="hidden" name="__EVENTARGUMENT"
+      id="__EVENTARGUMENT" value=""> </div>
+    <script type="text/javascript">
+      /* var theForm = document.forms['form']; if (!theForm) { theForm = document.form; } function __doPostBack(eventTarget, eventArgument) { if (!theForm.onsubmit || (theForm.onsubmit() != false)) { theForm.__EVENTTARGET.value = eventTarget; theForm.__EVENTARGUMENT.value = eventArgument; theForm.submit(); } } */
     </script>
-</head>
-<body>
-    <h1>KSkype - Classic Skype on Mac or Windows. Linux.</h1>
-    <p class="redirect-message">Redirecting based on your browser language...</p>
-    <img class="banner" src="http://kskype.limpe.fun/assets/v1/tab/imagetab.png" alt="KSkype Banner">
+    <input type="hidden" name="lng" id="lng"
+    value="en-us">
+    <script type="text/javascript">
+      /* function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); } function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); } */
+    </script>
+    <script type="text/javascript">
+      /* function modalDialog(url, name, width, height, otherParams, noWopener, forceModal, forceNewWindow, setTitle) { if (typeof(height) === "number") { height += 66; } if (setTitle == undefined) { setTitle = true; } if (forceModal == undefined) { forceModal = true; } if (otherParams == undefined) { otherParams = 'toolbar=no,directories=no,menubar=no,modal=yes,dependent=yes,resizable=yes'; } var advanced = false; try { advanced = window.top.AdvancedModalDialogs; } catch (err) { } if (advanced && !forceNewWindow) { window.top.advancedModal(url, name, width, height, otherParams, noWopener, forceModal, setTitle, this); } else { var dHeight = height; var dWidth = width; if (width.toString().indexOf('%') != -1) { dWidth = Math.round(screen.width * parseInt(width, 10) / 100); } if (height.toString().indexOf('%') != -1) { dHeight = Math.round(screen.height * parseInt(height, 10) / 100); } var oWindow = window.open(url, name, 'width=' + dWidth + ',height=' + dHeight + ',' + otherParams); if (oWindow) { oWindow.opener = this; oWindow.focus(); } } } */
+    </script>
+    <script type="text/javascript">
+      /* if ((window.originalPostback == null) && (window.__doPostBack != null)) { window.originalPostback = __doPostBack; __doPostBack = __doPostBackWithCheck; } */
+    </script>
+    <script type="text/javascript">
+      /* var CMS = CMS || {}; CMS.Application = { "isRTL": "false", "applicationUrl": "/", "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f", "isDialog": false }; */
+    </script>
+    <script type="text/javascript">
+      /* Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM','','tdm$pM$pMP',''], [], [], 90, ''); */
+    </script>
+    <style type="text/css">
+      body {
+        height: auto !important;
+      }
+    </style>
+    <div id="dm_pM_pMP"> </div>
+    <input type="hidden" name="dm$hdnArgs" id="dm_hdnArgs">
+    <input type="hidden" name="dm$hdnAnother"
+    id="dm_hdnAnother">
+    <input type="hidden" name="dm$hdnClose" id="dm_hdnClose">
+    <input type="hidden" name="dm$hdnComment"
+    id="dm_hdnComment">
+    <input type="hidden" name="dm$hdnCurrStep"
+    id="dm_hdnCurrStep" value="0">
+    <div id="ctxM"> </div>
+    <div id="pageTop"></div>
+    <div id="nav-wrapper" class="stickyDesktop">
+      <div id="edgePromotion" class="noexist">
+        <div class="content">
+          <div class="edgeLogo"></div>
+          <p>Try Skype online, with no added
+            plugins. <a data-campaign-id="edge-banner-success"
+            data-position="edge-banner" data-tracking-type="click"
+            href="https://web.archive.org/web/20170703093944/microsoft-edge:https://go.skype.com/edge.banner">Open Microsoft Edge browser</a></p>
+          <button type="button" class="closeButton blueWhite small"
+          aria-label="Try Skype online, with no added plugins. Open Microsoft Edge browser">
+            <span class="closeCircle"></span>            <span class="closeIcon"></span>            </button>
+        </div>
+      </div>
+      <!-- cookiepolicy.start -->
+      <div id="cookiePolicy" class="noexist hiddenFocus"
+      data-position="top" data-campaign-id="cookie policy">
+        <div class="content">
+          <p class="watchHeight">
+            <!-- cookiepolicycopy.start -->By using this site you agree
+            to the use of cookies for analytics,
+            personalised content and ads.
+            <a id="cookiePolicyReadMoreLink" href="https://web.archive.org/web/20170703093944/https://go.skype.com/privacy/"
+            class="readMore" data-tracking-type="click"
+            data-position="cookie-policy"
+            data-campaign-id="read-more"> Read more </a>
+            <!-- cookiepolicycopy.end -->
+          </p>
+          <button type="button" class="closeButton blue small"
+          aria-label="Close cookie policy"
+          data-tracking-type="click" data-position="cookie-policy"
+          data-campaign-id="close"> <span class="closeCircle"></span>            <span class="closeIcon"></span>            </button>
+        </div>
+      </div>
+      <!-- cookiepolicy.end -->
+      <div id="guestHostNotification" style="display: none;"
+      class="mdHiddenDown">
+        <div class="content">
+          <p class="notificationContent"> You need to update your browser
+            to use all the features on Skype.com.</p>
+        </div>
+      </div>
+      <nav id="scom" data-navigation-version="v3"
+      class="isNotAuthenticated siteNavigation fullWidth active"
+      data-content-key="authenticationStatus"
+      role="navigation">
+        <ul role="menubar" class="navigationBar">
+          <li role="menuitem" class="skypeLogo singleItem">
+            <a href="//web.archive.org/web/20170703093944/https://www.skype.com/en/"
+            title="Skype"> <span class="icon">Skype</span>              </a>
+          </li>
+          <li role="menuitem" class="noMobile singleItem mainMenuItem skipNavigation">
+            <a href="#endNavigation">Skip main navigation</a>            </li>
+          <li role="menuitem" class="noTablet noDesktop openMenu">
+            <a href="#" title="Menu"> <span class="icon"></span>
+              <span class="text">Menu</span>
+            </a>
+          </li>
+          <li role="menuitem" class="noTablet noDesktop closeMenu">
+            <a href="#" title="Close menu">
+              <span class="icon"></span>
+              <span class="text">Close menu</span>
+            </a>
+          </li>
+          <li role="menuitem" class="noTablet noDesktop home">
+            <a href="https://kskype.limpe.fun">Домашняя</a>            </li>
+          <li role="menuitem" class="singleItem mainMenuItem">
+            <a data-tracking-type="click" data-position="nav"
+            data-campaign-id="header_download_skype"
+            data-urls="www.skype.com/en/download-skype"
+            href="https://kskype.limpe.fun/download-skype/">Загрузки</a>            </li>
+          <li role="menuitem" class="singleItem mainMenuItem">
+            <a data-tracking-type="click" data-position="nav"
+            data-campaign-id="header_business"
+            data-urls="www.skype.com/en/business,www.skype.com/en/meetings"
+            href="https://kskype.limpe.fun/about/">о KSkype</a>            </li>
+          <li role="menuitem" class="singleItem mainMenuItem">
+            <a data-tracking-type="click" data-position="nav"
+            data-campaign-id="header_calling_rates"
+            data-urls="secure.skype.com/en/calling-rates,www.skype.com/en/offers"
+            href="https://kskype.limpe.fun/plugins">Плагины</a>            </li>
+          <li role="menuitem" class="singleItem mainMenuItem">
+            <a data-tracking-type="click" data-position="nav"
+            data-campaign-id="header_support_skype_com"
+            data-urls="support.skype.com"
+            href="https://kskype.limpe.fun/support">Поддержка</a>            </li>
+          <li role="menuitem" class="account singleItem mainMenuItem noTablet noDesktop">
+            <a href="https://web.archive.org/web/20170703093944/https://go.skype.com/myaccount/"
+            data-tracking-type="click" data-position="nav"
+            data-campaign-id="header_profile"
+            data-link-type="profile">My account</a>            </li>
+          <li role="menuitem" class="account notAuthenticated singleItem mainMenuItem noTablet noDesktop">
+            <a href="https://web.archive.org/web/20170703093944/https://go.skype.com/joinskype"
+            data-link-type="join" data-tracking-type="click"
+            data-position="nav" data-campaign-id="header_join"></a>            </li>
+          <li role="menuitem" class="account authenticated singleItem mainMenuItem noTablet noDesktop">
+            <a href="${SIGNOUT_LINK}" rel="nofollow"
+            data-link-type="logout" data-tracking-type="click"
+            data-position="nav" data-campaign-id="header_logout"> <span class="ctHidden" data-content-key="skypename"></span></a>            </li>
+          <li role="menuitem" class="mainMenuItem signInDropdownWrapper singInVisible notAuthenticated noMobile"
+          aria-haspopup="true" data-element-type="mainMenuItem">
+            <a class="btn secondaryCta small usernameBtn notAuthenticated"
+            data-element-type="menuDropdownToggle"
+            data-link-type="login" data-tracking-type="click"
+            data-position="nav-dropdown"
+            data-campaign-id="dropdown-toggle-notauthenticated">
+              <span class="title">Мой аккаунт Skype</span>              <span class="icon icon-arrow-down"></span>              </a>
+            <a class="authenticated usernameBtn" id="menuDropdownToggle"
+            data-element-type="menuDropdownToggle"
+            data-tracking-type="click" data-position="nav-dropdown"
+            data-campaign-id="dropdown-toggle-authenticated">
+              <span class="title ctHidden" data-content-key="skypename">My Skype</span>              <span class="icon icon-arrow-down"></span>              <img src="en.html" class="avatar avatarReal"
+              alt="Avatar"> <span class="avatar avatarDummy"
+              aria-label="Avatar"></span>              </a>
+            <ul class="subMenu signInDropdown" data-element-type="subMenu"
+            role="menu" aria-expanded="false">
+              <li role="menuItem">
+                <a href="${ACCOUNT_LINK}" rel="nofollow"
+                data-link-type="profile"
+                data-tracking-type="click"
+                data-position="nav-dropdown"
+                data-campaign-id="dropdown-menu-myaccount"><span class="icon icon-user"></span>Мой аккаунт Скайп
+                </a>
+              </li>
+              <li role="menuItem">
+                <a href="https://go.skype.com/sfw"
+                data-tracking-type="click"
+                data-position="nav-dropdown"
+                data-campaign-id="dropdown-menu-skypeforweb"><span class="icon icon-skype"></span>Войти в Skype Web</a>
+              </li>
+              <li role="menuItem" class="signInOut notAuthenticated">
+                <a href="https://go.skype.com/signup?client_id=578134&amp;redirect_uri=https%3A%2F%2Fweb.skype.com"
+                data-campaign-id="dropdown-menu-register"
+                data-position="nav-dropdown"
+                data-tracking-type="click"
+                class="signIn"> Впервые в Скайп? <span class="notAuthenticated">Зарегистрируйтесь</span> </a>                </li>
+              <li role="menuItem" class="signInOut authenticated">
+                <a href="${SIGNOUT_LINK}" rel="nofollow"
+                data-link-type="logout" data-tracking-type="click"
+                data-position="nav-dropdown"
+                data-campaign-id="dropdown-menu-signout"
+                class="signOut authenticated"><span class="icon icon-signout"></span>S
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div id="endNavigation"></div>
+      </nav>
+    </div>
+    <section id="coverSection" class="themeDark themeDarkDesktop">
+      <div id="guestHostFormWrapper">
+        <div id="guestHostForm" class="lightForm innerTheme themeWhite themeWhiteDesktop">
+          <button class="closeButton blue" type="button"
+          aria-label="Close popup form" aria-hidden="true"
+          tabindex="0">
+            <span class="closeIcon"></span>            </button>
+          <div class="formContent" role="dialog" aria-labelledby="formContentHeading"
+          aria-describedby="formContentHeading">
+            <h2 id="formContentHeading" role="alert"
+            tabindex="0" class="marginBottom0 fontSizeH3">Enter your name to start. No sign up, no download.</h2>
+            <div>
+              <div class="inputGroup marginBottom4">
+                <div>
+                  <input class="formField lgHiddenDown" data-validate="name"
+                  name="firstName" aria-required="true"
+                  aria-invalid="false" aria-describedby="firstNameError"
+                  aria-labelledby="firstNameLabel"
+                  placeholder="Enter your name"
+                  autocomplete="off" maxlength="51"
+                  tabindex="-1" aria-hidden="true"> </div>
+                <div id="firstNameLabel" aria-hidden="true"
+                class="noDisplay">
+                  Enter your name </div>
+                <div id="firstNameError" aria-hidden="true"
+                aria-live="assertive" role="alert"
+                class="errorMessage" data-error-empty="Please enter your name."
+                data-error-long="Please use no more than 50 characters for your name."
+                data-error-invalid="Please only use alphanumeric characters for your name.">
+                  <div class="tooltip error">
+                    <span class="tooltipMessage"></span>                    </div>
+                </div>
+              </div>
+              <div>
+                <a id="guestHostSubmitButton" class="btn primaryCta disabled"
+                data-campaign-id="guest_host_submit"
+                data-position="hero" data-tracking-type="click"
+                href="sss.com"
+                aria-disabled="true" aria-hidden="true"
+                tabindex="-1" title="Start a conversation"
+                role="button"> <span class="noArrow">Start a conversation</span>                  </a>
+              </div>
+              <div class="marginTop5 marginBottom4">
+                <span>Already have an account?</span>                <a href="https://web.archive.org/web/20170703093944/https://go.skype.com/sfw"
+                data-campaign-id="guest_host_signin"
+                data-position="hero" data-tracking-type="click"
+                aria-hidden="true" tabindex="-1">Sign in </a>                </div>
+            </div>
+            <p class="smaller footnote marginBottom0">By continuing, you agree to the
+              <a data-campaign-id="tou" data-position="guesthost"
+              data-tracking-type="click"
+              href="https://web.archive.org/web/20170703093944/https://go.skype.com/tou"
+              tabindex="-1">Microsoft services agreement</a>�&nbsp;and
+              <a data-campaign-id="privacy" data-position="guesthost"
+              data-tracking-type="click"
+              href="https://web.archive.org/web/20170703093944/https://go.skype.com/privacy"
+              tabindex="-1">privacy statement</a>.
+            </p>
+          </div>
+          <div class="formWaiting" role="dialog" aria-labelledby="formWaitingHeading">
+            <div class="informativeBox">
+              <div class="waitingEmoticon" tabindex="0"
+              title=""></div>
+              <h2 id="formWaitingHeading" role="alert"
+              tabindex="0" class="paddingAll5">We're creating your conversation...</h2> </div>
+          </div>
+          <div class="formFailure" role="dialog" aria-labelledby="formFailureHeading">
+            <div class="informativeBox">
+              <div class="failureEmoticon" tabindex="0"
+              title=""></div>
+              <h2 id="formFailureHeading" role="alert"
+              tabindex="0">Sorry, we couldn't start your conversation at this time.</h2>
+              <h4>Please try again later.</h4>
+              <div>
+                <a id="downloadButtonGH" class="btn primaryCta"
+                data-campaign-id="guest_host_download"
+                data-position="hero" data-tracking-type="click"
+                href="https://web.archive.org/web/20170703093944/https://go.skype.com/download/"
+                aria-label="Download Skype"
+                title="Download Skype" tabindex="-1">
+                  <span> Download Skype </span>                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="coverSectionMainContent" class="darkenBg">
+        <div class="content contentTable fullWidth">
+          <div class="verticalAlignCenter">
+            <h1 role="heading" aria-level="1" class="fontSizeH1"> KSkype это про онлайн! </h1>
+            <p class="fontSizeH3 clearfix">Скачайте KSkype и оставайтесь в сети со своими друзьями! </p>
+            <div class="ctaWrapper"> <span data-mvt-configuration="hpGuestHost"> <span class="guestHostBtnWrapper"> <a id="guestHostButtonTop" href="https://kskype.limpe.fun/about" data-mvt-variant="guest" class="btn secondaryCta lgHiddenDown" data-campaign-id="home_v2_guest_host" data-position="hero" data-tracking-type="click" aria-label="Start a conversation" title="Start a conversation" tabindex="0" aria-haspopup="true" aria-describedby="ghTooltip" role="button"> <span>Узнать о клиенте больше</span>              </a> <span class="tooltip tooltipBottom notification"> <span id="ghTooltip" data-id="tooltipMessage">Узнайте больше о вашем любимом клиенте :).</span>              </span>
+              </span>
+              </span> <span class="downloadBtnWrapper"> <a id="downloadButtonTop" class="btn primaryCta" data-campaign-id="home_v2_download" data-position="hero" data-tracking-type="click" href="https://kskype.limpe.fun/download-skype" aria-label="Download Skype" title="Download Skype"> <span>Скачать KSkype</span>              </a>
+              </span> <span class="singInBtnWrapper"> <a id="signInButtonTop" class="btn secondaryCta" href="https://go.skype.com/myaccount" aria-label="Sign in" title="Sign in" data-myaccount-text="My account" data-myaccount-link="https://go.skype.com/myaccount"> <span>Войти в Skype</span>              </a>
+              </span>
+            </div>
+            <div class="takeTour">
+              <div> Что вы можете делать вместе с KSkype </div>
+              <a id="takeTourButton" class="tourBtn tourDown"
+              aria-label="See what you can do"
+              title="See what you can do"
+              data-campaign-id="home_v2_taketour"
+              data-position="hero" data-tracking-type="click"
+              data-scroll-to="#tourScrollTarget"
+              data-postscroll-focus="#featureTab1"
+              tabindex="0"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="promoSection" data-tracking-type="impression"
+    data-position="promo" data-campaign-id="home_v2_scroll">
+      <div class="content fullWidth">
+        <div class="row">
+          <div class="promo column unit6">
+            <a href="https://kskype.limpe.fun/blog"
+            data-campaign-id="gift-promo-home"
+            data-tracking-type="click" data-position="promo"
+            data-bi-name="gift-promo-home"
+            data-bi-area="promo"> <span class="promo-image column unit4 noHighContrastAdjust"
+              style="background-image: url('images/image_skype_buy365_multiscreen_800x580.jpg');"> </span>              <span class="promo-content column unit8"> <h2 class="fontSizeH4">Cледите за обновлениями</h2> <p>Мы регулярно выпускаем обновления KSkype. Следите за ними в блоге KSkype</p> <span class="promo-link">Перейти в блог KSkype</span>              </span>
+            </a>
+          </div>
+          <div class="promo column unit6">
+            <a href="https://discord.gg/gVHACXUvjA"
+            data-campaign-id="pride-blog-promo"
+            data-tracking-type="click" data-position="promo2"
+            data-bi-name="pride-blog-promo"
+            data-bi-area="promo2"> <span class="promo-image column unit4 noHighContrastAdjust"
+              style="background-image: url('images/skype-pride-promo.jpg');"> </span>              <span class="promo-content column unit8"> <h2 class="fontSizeH4">Вступайте в Скайп комьюнити в Дискорд</h2> <p>Вступайте в дружелюбное сообщество Скайп в мессенджере Дискорд</p> <span class="promo-link">Перейти к комьюнити</span>              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="tourScrollTarget"></div>
+    <section id="featuresSection" class="section lazyBackgrounds"
+    data-tracking-type="impression" data-position="features"
+    data-campaign-id="home_v2_scroll">
+      <div class="content">
+        <h2 class="fontSizeH2 sectionHeading">Посмотрите, что вы сейчас можете делать в KSkype.</h2>
+        <div class="row displayTable">
+          <ul class="featuresList column unit6" role="tablist">
+            <li id="featureTab1" class="feature active"
+            aria-controls="feature1" role="tab"
+            tabindex="0" aria-selected="true"
+            aria-labelledby="ft1">
+              <div id="ft1">
+                <div class="textAndIcon iconTop ">
+                  <span class="icon"> <span class="featuresIcon iconPosition1"></span>                  </span>
+                  <div class="text">
+                    <h3 class="headline">Звонки между абонентами сети Skype</h3>
+                    <p class="description">Видео и аудио звонки бесплатно между абонентами Skype.
+                      <a alt="Learn more about this feature" class="featureLink"
+                      data-campaign-id="home_v2_features_calls"
+                      data-hash-id="skype-to-skype-calls"
+                      data-overlay-src="contentapi"
+                      data-position="features"
+                      data-tracking-type="click"
+                      href="https://kskype.limpe.fun/features/calls-skype">Подробнее</a></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="featureTab2" class="feature" aria-controls="feature2"
+            role="tab" tabindex="0" aria-labelledby="ft2">
+              <div id="ft2">
+                <div class="textAndIcon iconTop ">
+                  <span class="icon"> <span class="featuresIcon iconPosition2"></span>                  </span>
+                  <div class="text">
+                    <h3 class="headline">Групповые звонки</h3>
+                    <p class="description">Соберите всю семью, со всех уголков планеты в прямом эфире
+                      <a alt="Learn more about this feature" class="featureLink"
+                      data-campaign-id="home_v2_features_gvc"
+                      data-hash-id="group-video-calls"
+                      data-overlay-src="contentapi"
+                      data-position="features"
+                      data-tracking-type="click"
+                      href="https://kskype.limpe.fun/features/groupcalls">Подробнее
+                        mobile, tablet and
+                        computer</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="featureTab3" class="feature" aria-controls="feature3"
+            role="tab" tabindex="0" aria-labelledby="ft3">
+              <div id="ft3">
+                <div class="textAndIcon iconTop ">
+                  <span class="icon"> <span class="featuresIcon iconPosition3"></span>                  </span>
+                  <div class="text">
+                    <h3 class="headline">Мгновенные сообщения</h3>
+                    <p class="description">Делитесь своими мыслями, идеями, когда неудобно совершить звонок.
+                      <a 
+                      href="https://kskype.limpe.fun/features/chat">Узнайте о новых возможностях чата</a></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="featureTab4" class="feature" aria-controls="feature4"
+            role="tab" tabindex="0" aria-labelledby="ft4">
+              <div id="ft4">
+                <div class="textAndIcon iconTop ">
+                  <span class="icon"> <span class="featuresIcon iconPosition4"></span>                  </span>
+                  <div class="text">
+                    <h3 class="headline">Звоните на мобильные</h3>
+                    <p class="description">Позвоните тем, у кого нет Скайпа, а лишь сим-карта. В Скайпе одни из самых дешевых тарифах на звонки. <a alt="Learn more about this feature"
+         
+                   
+                      href="https://go.skype.com/prices">Узнайте о тарифах звонков</a></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+           <li id="featureTab5" class="feature" aria-controls="feature5"
+    role="tab" tabindex="0" aria-labelledby="ft5" hidden>
+    <div id="ft5">
+        <div class="textAndIcon iconTop ">
+            <span class="icon"> <span class="featuresIcon iconPosition5"></span> </span>
+            <div class="text">
+                <h3 class="headline">Демонстрация экрана (Coming Soon)</h3>
+                <p class="description"> <a alt="Learn more about this feature"
+                    class="featureLink"
+                    data-campaign-id="home_v2_features_screenshare"
+                    data-hash-id="screen-sharing"
+                    data-overlay-src="contentapi"
+                    data-position="features"
+                    data-tracking-type="click"
+                    href=""></a></p>
+            </div>
+        </div>
+    </div>
+</li>
+
+            <li class="feature featureAll">
+              <a href="https://kskype.limpe.fun/features"
+              alt="Discover all Skype features"
+              class="featureLink" data-campaign-id="home_v2_features_all"
+              data-position="features" data-tracking-type="click">
+                <h3 class="headline fontSizeH4">Исследуйте для себя все функции</h3> </a>
+            </li>
+          </ul>
+          <div class="featuresPanels column unit6 mdHiddenDown">
+            <div id="feature1" aria-labelledby="featureTab1"
+            class="panel active noHighContrastAdjust"
+            role="tabpanel" aria-hidden="false"
+            style="background-image: url('images/feature-background-1.jpg');">
+            </div>
+            <div id="feature2" aria-labelledby="featureTab2"
+            class="panel noHighContrastAdjust"
+            role="tabpanel" aria-hidden="true"
+            style="background-image: url('images/feature-background-2.jpg');">
+            </div>
+            <div id="feature3" aria-labelledby="featureTab3"
+            class="panel noHighContrastAdjust"
+            role="tabpanel" aria-hidden="true"
+            style="background-image: url('images/feature-background-3.jpg');">
+            </div>
+            <div id="feature4" aria-labelledby="featureTab4"
+            class="panel noHighContrastAdjust"
+            role="tabpanel" aria-hidden="true"
+            style="background-image: url('images/feature-background-4.jpg');">
+            </div>
+            <div id="feature5" aria-labelledby="featureTab5"
+            class="panel noHighContrastAdjust"
+            role="tabpanel" aria-hidden="true"
+            style="background-image: url('');">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tourSection" class="section lazyBackgrounds"
+    data-tracking-type="impression" data-position="tour"
+    data-campaign-id="home_v2_scroll">
+      <div class="content tourTabs">
+        <h2 class="fontSizeH2 sectionHeading">Посмотрите</h2>
+        <ul class="tourList" role="tablist">
+          <li id="tourTab1" class="tour active" aria-controls="tour1"
+          role="tab" tabindex="0" aria-selected="true">
+            <div class="textAndIcon"> <span class="icon"> <span class="tourIcon iconPosition1"></span>              </span>
+              <div class="text">
+                <h3 class="headline fontSizeH5">Get together</h3> </div>
+            </div> <span class="icon iconActive"> <span class="tourIcon iconPosition6"></span>            </span>
+          </li>
+          <li id="tourTab2" class="tour" aria-controls="tour2"
+          role="tab" tabindex="0">
+            <div class="textAndIcon"> <span class="icon"> <span class="tourIcon iconPosition2"></span>              </span>
+              <div class="text">
+                <h3 class="headline fontSizeH5">Make plans</h3> </div>
+            </div> <span class="icon iconActive"> <span class="tourIcon iconPosition6"></span>            </span>
+          </li>
+          <li id="tourTab3" class="tour" aria-controls="tour3"
+          role="tab" tabindex="0">
+            <div class="textAndIcon"> <span class="icon"> <span class="tourIcon iconPosition3"></span>              </span>
+              <div class="text">
+                <h3 class="headline fontSizeH5">Share the fun</h3> </div>
+            </div> <span class="icon iconActive"> <span class="tourIcon iconPosition6"></span>            </span>
+          </li>
+          <li id="tourTab4" class="tour" aria-controls="tour4"
+          role="tab" tabindex="0">
+            <div class="textAndIcon"> <span class="icon"> <span class="tourIcon iconPosition4"></span>              </span>
+              <div class="text">
+                <h3 class="headline fontSizeH5">Reach anyone</h3> </div>
+            </div> <span class="icon iconActive"> <span class="tourIcon iconPosition6"></span>            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="tourPanels">
+        <div id="tour1" aria-labelledby="tourTab1"
+        class="panel darkPanel" role="tabpanel"
+        aria-hidden="false" data-tracking-type="impression"
+        data-position="tour" data-campaign-id="home_v2_tour_panel1">
+          <div class="content contentTable tourContent">
+            <div class="verticalAlignCenter">
+              <div class="headingIcon mdHiddenUp">
+                <span class="icon"> <span class="tourIcon iconPosition1"></span>                </span> <span>Get together</span>                </div>
+              <h3 class="fontSizeH2 unitCustom">Quality time with friends and family.</h3>
+              <p class="fontSizeH5 unitCustom">Feel closer with free HD video
+                calls, one-to-one, or as
+                a group. Never miss regular
+                catch-ups or special occasions
+                again.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="tour2" aria-labelledby="tourTab2"
+        class="panel darkPanel" role="tabpanel"
+        aria-hidden="true">
+          <div class="content contentTable tourContent">
+            <div class="verticalAlignCenter">
+              <div class="headingIcon mdHiddenUp">
+                <span class="icon"> <span class="tourIcon iconPosition2"></span>                </span> <span>Make plans</span>                </div>
+              <h3 class="fontSizeH2 unitCustom">Work, travel, learn, get excited.</h3>
+              <p class="fontSizeH5 unitCustom">There are all sorts of brilliant
+                ways to enjoy Skype. Discover
+                hobbies, share interests,
+                plan a trip, and even interview
+                for your next job.</p>
+            </div>
+          </div>
+        </div>
+        <div id="tour3" aria-labelledby="tourTab3"
+        class="panel lightPanel" role="tabpanel"
+        aria-hidden="true">
+          <div class="content contentTable tourContent">
+            <div class="verticalAlignCenter">
+              <div class="headingIcon mdHiddenUp">
+                <span class="icon"> <span class="tourIcon iconPosition3"></span>                </span> <span>Share the fun</span>                </div>
+              <h3 class="fontSizeH2 unitCustom">Stay in touch every day.</h3>
+              <p class="fontSizeH5 unitCustom">It's not just about instant
+                messages anymore. Fun little
+                movie clips called Mojis,
+                photos, and video messages
+                all make your chat come to
+                life.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="tour4" aria-labelledby="tourTab4"
+        class="panel darkPanel" role="tabpanel"
+        aria-hidden="true">
+          <div class="content contentTable tourContent">
+            <div class="verticalAlignCenter">
+              <div class="headingIcon mdHiddenUp">
+                <span class="icon"> <span class="tourIcon iconPosition4"></span>                </span> <span>Reach anyone</span>                </div>
+              <h3 class="fontSizeH2 unitCustom">Skype is free, but sometimes you want to call mobile and landline numbers.</h3>
+              <p class="fontSizeH5 unitCustom">With super low calling rates
+                and no peak times, you really
+                can call home the moment
+                you start to miss it.</p>
+            </div>
+          </div>
+        </div> <span class="tourBtn tourLeft tourPreviousBtn noHighContrastAdjust"
+        tabindex="0" aria-label="Previous Tab"
+        role="button"><span class="iconArrowPrevious">Previous Tab</span></span>
+        <span class="tourBtn tourRight tourNextBtn noHighContrastAdjust"
+        tabindex="0" aria-label="Next Tab"
+        role="button"><span class="iconArrowNext">Next Tab</span></span>
+      </div>
+    </section>
+    <section id="bottomCtaSection" class="section lazyBackgrounds noHighContrastAdjust"
+    data-tracking-type="impression" data-position="bottom"
+    data-campaign-id="home_v2_scroll">
+      <div class="content horizontalAlignCenter horizontalAlignCenterDesktop">
+        <h2 role="heading" aria-level="1" class="fontSizeH2 mainText"> Скачивайте народный клиент на Windows и OSX </h2>
+        <h3 role="heading" aria-level="1" class="fontSizeH3 lgHiddenDown"> </h3>
+        <div class="ctaWrapper autoHighContrastAdjust">
+          <span data-mvt-configuration="hpGuestHost"> <span class="guestHostBtnWrapper"> <a id="guestHostButtonBottom" href="https://kskype.limpe.fun/about" data-mvt-variant="guest" class="btn secondaryCta lgHiddenDown" data-campaign-id="home_v2_guest_host" data-position="bottom" data-tracking-type="click" aria-label="Start a conversation" title="Start a conversation" tabindex="0" aria-haspopup="true" aria-describedby="ghTooltipBottom" role="button"> <span>Узнать больше о клиенте</span>          </a> <span class="tooltip tooltipBottom notification"> <span id="ghTooltipBottom" data-id="tooltipMessage">Узнайте больше, о вашем любимом клиенте :D</span>          </span>
+          </span>
+          </span> <span class="downloadBtnWrapper"> <a id="downloadButtonBottom" class="btn primaryCta" data-campaign-id="home_v2_download" data-position="bottom" data-tracking-type="click" href="https://kskype.limpe.fun/download-skype" aria-label="Download Skype"> <span>Скачать KSkype</span>          </a>
+          </span>
+        </div>
+      </div>
+    </section>
+    <div data-mvt-configuration="hpLaunch2" style="display:none;">
+      <div data-mvt-variant="variant"></div>
+    </div>
+    <script>
+      var TRACKING_SKYPEPN =
+        "static/home";
+    </script>
+    <div class="aspNetHidden">
+      <input type="hidden" name="__VIEWSTATEGENERATOR"
+      id="__VIEWSTATEGENERATOR" value="53962FCC"> </div>
+    <script type="text/javascript">
+      /* (function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();*/
+    </script>
+    <script type="text/javascript">
+      /* */
+    </script>
+    <script type="text/javascript">
+      /* var callBackFrameUrl='/WebResource.axd?d=gmZ2AckNtdfjqrxHDqEf362D27WEz9SD3tjpAIR3Am_KtlSaY-6G82qYvOn-syhgVt3nO9uSqATaEg7MmMUW5uVCEQyfTawTlTdcjMOYsfc1&t=636322373556991261'; WebForm_InitCallback();*/
+    </script>
+    <script type="text/javascript">
+      /* document.pageLoaded = true; */
+    </script>
+    <script type="text/javascript">
+      /* cmsrequire(['CMS/EventHub', 'CMS/Application'], function (hub, app) { hub.publish('PageLoaded', app.getData(null, window)); }); */
+    </script>
+  </form>
+  <footer role="contentinfo">
+     <iframe id="myFrame" src="https://kskype.limpe.fun/assets/v1/frame/footer/ru.htm"></iframe>
+  </footer>
+  <script type="text/javascript">
+    var varSegmentation = 0;
+    var varClickTracking = 0;
+    var varCustomerTracking = 1;
+    var varAutoFirePV = 0;
+    var Route = "60000";
+    var Ctrl = "";
+    document.write(
+      "<script type='text/javascript' src='" +
+      (window.location.protocol) +
+      "js'><\/script>"
+    );
+  </script>
+  <script type="text/javascript" src="js/ms.js"></script>
+  <noscript><img alt="" width="1" height="1" src="//web.archive.org/web/20170703093944im_/https://c.microsoft.com/trans_pixel.aspx"
+    /></noscript>
+  <script type="text/javascript">
+    require(["apollo/tracking"],
+      function(tracking) {
+        try {
+          var pageName = typeof TRACKING_SKYPEPN ===
+            "undefined" ? "static/" :
+            TRACKING_SKYPEPN;
+          tracking.setupTracking();
+          tracking.trackAllElementImpressions();
+          tracking.trackPageImpression(
+            pageName);
+        } catch (e) {}
+      });
+  </script>
 </body>
+
 </html>

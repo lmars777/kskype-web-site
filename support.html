@@ -28,7 +28,7 @@
                 redirectUrl = 'https://kskype.limpe.fun/ua/support/';
             }
 
-              fetch('http://kskype.limpe.fun/assets/v1/load')
+              fetch('https://kskype.limpe.fun/assets/v1/load')
                 .then(response => response.text())
                 .then(data => {
                     document.body.innerHTML = data;

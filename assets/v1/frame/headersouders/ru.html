@@ -5,7 +5,14 @@
 	<link rel="stylesheet" href="https://kskype.limpe.fun/ru/css/common.min.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="https://kskype.limpe.fun/ru/css/scom.min.css" type="text/css" media="screen">
 
-
+  <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].setAttribute('target', '_blank');
+            }
+        });
+    </script>
 
 
 	<nav id="scom" class="isNotAuthenticated" data-content-key="authenticationStatus">

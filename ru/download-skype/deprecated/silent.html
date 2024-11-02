@@ -1,0 +1,146 @@
+<!DOCTYPE html><!-- saved from url=(0186)https://a.lw.skype.com/Login/silent/MsaCallback?site_name=lw.skype.com&client_id=815617&response_type=postmessage&redirect_uri=https%3a%2f%2fwww.skype.com&session_id=AAAAAAAAAAAAAAAAAAAA --><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+
+    <title>Skype</title>
+
+    <script type="text/javascript">
+        var message = "";
+
+        window.hashFragment = (function () {
+            "use strict";
+
+            return {
+                hashParams: {},
+
+                parseHashParams: function (windowObj) {
+                    var hash,
+                        hashPairs,
+                        hashPair,
+                        delimiterIndex,
+                        key,
+                        value,
+                        ind;
+
+                    windowObj = windowObj ? windowObj : window;
+                    hash = windowObj.location.hash.replace("#", "");
+                    this.hashParams = {};
+                    hashPairs = hash.split("&");
+                    for (ind in hashPairs) {
+                        hashPair = hashPairs[ind];
+                        delimiterIndex = hashPair.indexOf("=");
+                        if (delimiterIndex >= 0) {
+                            key = decodeURIComponent(hashPair.substring(0, delimiterIndex)).toLowerCase();
+                            value = decodeURIComponent(hashPair.substring(delimiterIndex + 1));
+                            this.hashParams[key] = value;
+                        }
+                    }
+                },
+                getHashParam: function (key) {
+                    return this.hashParams[key.toLowerCase()];
+                }
+            };
+        })();
+
+        (function () {
+            var target = "https://www.skype.com/",
+                messageObject = {"error":"invalid_grant","error_description":"User is not authenticated at MSA"};
+
+            window.hashFragment.parseHashParams();
+            var error = window.hashFragment.getHashParam("error");
+            var errorDescription = window.hashFragment.getHashParam("error_description");
+
+            if (!!error && error.length) {
+                messageObject.error = error;
+                messageObject.error_description = errorDescription;
+            }
+            
+            var message = JSON.stringify(messageObject);
+
+            if (!!window.opener) {                              // Send postMessage from a Popup and close window
+                window.opener.postMessage(message, target);
+                window.close();
+            } else if (!!window.parent) {                       // Send postMessage from an Iframe
+                window.parent.postMessage(message, target);
+            }
+        }());
+    </script>
+<meta name="swx-chrome-extension" id="blakpkgjpemejpbmfiglncklihnhjkij"><script type="text/javascript">// Promises 
+var _eid_promises = {}; 
+// Turn the incoming message from extension 
+// into pending Promise resolving 
+window.addEventListener("message", function(event) { 
+    if(event.source !== window) return; 
+    if(event.data.src && (event.data.src === "background.js")) { 
+        console.log("Page received: "); 
+        console.log(event.data); 
+        // Get the promise 
+        if(event.data.nonce) { 
+            var p = _eid_promises[event.data.nonce]; 
+            // resolve 
+            if(event.data.result === "ok") { 
+                if(event.data.signature !== undefined) { 
+                    p.resolve({hex: event.data.signature}); 
+                } else if(event.data.version !== undefined) { 
+                    p.resolve(event.data.extension + "/" + event.data.version); 
+                } else if(event.data.cert !== undefined) { 
+                    p.resolve({hex: event.data.cert}); 
+                } else { 
+                    console.log("No idea how to handle message"); 
+                    console.log(event.data); 
+                } 
+            } else { 
+                // reject 
+                p.reject(new Error(event.data.result)); 
+            } 
+            delete _eid_promises[event.data.nonce]; 
+        } else { 
+            console.log("No nonce in event msg"); 
+        } 
+    } 
+}, false); 
+ 
+ 
+function TokenSigning() { 
+    function nonce() { 
+        var val = ""; 
+        var hex = "abcdefghijklmnopqrstuvwxyz0123456789"; 
+        for(var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length)); 
+        return val; 
+    } 
+ 
+    function messagePromise(msg) { 
+        return new Promise(function(resolve, reject) { 
+            // amend with necessary metadata 
+            msg["nonce"] = nonce(); 
+            msg["src"] = "page.js"; 
+            // send message 
+            window.postMessage(msg, "*"); 
+            // and store promise callbacks 
+            _eid_promises[msg.nonce] = { 
+                resolve: resolve, 
+                reject: reject 
+            }; 
+        }); 
+    } 
+    this.getCertificate = function(options) { 
+        var msg = {type: "CERT", lang: options.lang, filter: options.filter}; 
+        console.log("getCertificate()"); 
+        return messagePromise(msg); 
+    }; 
+    this.sign = function(cert, hash, options) { 
+        var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info}; 
+        console.log("sign()"); 
+        return messagePromise(msg); 
+    }; 
+    this.getVersion = function() { 
+        console.log("getVersion()"); 
+        return messagePromise({ 
+            type: "VERSION" 
+        }); 
+    }; 
+}</script></head>
+<body>
+
+</body></html>

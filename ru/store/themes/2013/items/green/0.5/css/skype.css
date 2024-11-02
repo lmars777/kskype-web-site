@@ -1,0 +1,8583 @@
+/* Reset (Inspired by E. Meyers)
+================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}html {
+	background-color: #596B6F;
+}
+
+body {
+	background-color: #ffffff;
+	height: 100%;
+}
+
+a {
+	color: #0078CA;
+}
+
+a:hover {
+	color: #00548D;
+}
+
+section, div, header, nav {
+	zoom: 1;
+}
+
+.isTablet,
+.isMobile {
+	display: none; 
+}
+
+.noDesktop {
+	display: none !important;
+}
+
+/* Tablet version
+================== */	
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.isTablet {
+	display: block;
+}
+
+.isDesktop,
+.isMobile {
+	display: none; 
+}
+
+} /* end @media only screen and (min-width: 768px) and (max-width: 959px) */
+
+/* Mobile version
+================== */	
+@media only screen and (max-width: 767px) {
+
+	html {
+		background-color: #ffffff;
+	}	
+
+	.isMobile {
+		display: block;
+	}
+
+	.isDesktop,
+	.isTablet {
+		display: none; 
+	}
+
+	.noDesktop {
+		display: block !important;
+	}
+
+	.noMobile {
+		display: none !important;
+	}
+
+} /* end @media only screen and (max-width: 767px) *//*
+* Font face declarations
+* 
+* TTF   - Works in most browsers except IE and iPhone.
+* EOT   - IE only.
+* WOFF  - Compressed, emerging standard.
+* SVG   - iPhone/iPad.
+*/
+
+@font-face {
+	font-family: "Segoe UI Light";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-light-latin.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-light-latin.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-light-latin.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-light-latin.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: "Segoe UI Arabic Light";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-light-arabic.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-light-arabic.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-light-arabic.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-light-arabic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: "Segoe UI Cyrillic Light";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-light-cyrillic.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-light-cyrillic.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-light-cyrillic.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-light-cyrillic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: "Segoe UI Greek Light";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-light-greek.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-light-greek.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-light-greek.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-light-greek.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: "Segoe UI Hebrew Light";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-light-hebrew.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-light-hebrew.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-light-hebrew.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-light-hebrew.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: "Segoe UI Regular";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-regular-latin.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-regular-latin.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-regular-latin.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-regular-latin.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segoe UI Arabic Regular";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-regular-arabic.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-regular-arabic.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-regular-arabic.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-regular-arabic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segoe UI Cyrillic Regular";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-regular-cyrillic.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-regular-cyrillic.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-regular-cyrillic.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-regular-cyrillic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segoe UI Greek Regular";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-regular-greek.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-regular-greek.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-regular-greek.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-regular-greek.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segoe UI Hebrew Regular";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-regular-hebrew.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segoe UI Semibold";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-semibold-latin.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-semibold-latin.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-semibold-latin.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/latin/segoe-ui-semibold-latin.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segoe UI Arabic Semibold";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/arabic/segoe-ui-semibold-arabic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segoe UI Cyrillic Semibold";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/cyrillic/segoe-ui-semibold-cyrillic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segoe UI Greek Semibold";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/greek/segoe-ui-semibold-greek.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segoe UI Hebrew Semibold";
+	src: local("O"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-semibold-hebrew.woff") format("woff"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-semibold-hebrew.eot"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-semibold-hebrew.eot") format("embedded-opentype"),
+		 url("https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/fonts/hebrew/segoe-ui-semibold-hebrew.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+/*
+* Generic shared typography styles
+*/
+body {
+	font: 14px/18px "Segoe UI", "Segoe WP", "Segoe UI Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	color: #333534;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+	html[lang=ar] body {
+		font-family: "Segoe UI Arabic Regular", "Segoe UI Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	}
+
+	html[lang=ru] body {
+		font-family: "Segoe UI", "Segoe WP", "Segoe UI Regular", "Segoe UI Cyrillic Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	}
+
+	html[lang=el] body {
+		font-family: "Segoe UI", "Segoe WP", "Segoe UI Regular", "Segoe UI Greek Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	}
+
+	html[lang=he] body {
+		font-family: "Segoe UI", "Segoe WP", "Segoe UI Regular", "Segoe UI Hebrew Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	}
+
+input, textarea, select {
+	font-family: "Segoe UI", "Segoe WP", "Segoe UI Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+}
+
+	html[lang=ar] input,
+	html[lang=ar] textarea,
+	html[lang=ar] select {
+		font-family: "Segoe UI", "Segoe WP", "Segoe UI Arabic Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	}
+
+	html[lang=ru] input,
+	html[lang=ru] textarea,
+	html[lang=ru] select {
+		font-family: "Segoe UI", "Segoe WP", "Segoe UI Regular", "Segoe UI Cyrillic Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	}
+
+	html[lang=el] input,
+	html[lang=el] textarea,
+	html[lang=el] select {
+		font-family: "Segoe UI", "Segoe WP", "Segoe UI Regular", "Segoe UI Greek Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	}
+
+	html[lang=he] input,
+	html[lang=he] textarea,
+	html[lang=he] select {
+		font-family: "Segoe UI", "Segoe WP", "Segoe UI Regular", "Segoe UI Hebrew Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	}
+
+	h1, h2, h3, h4, h5, h6, p,
+	#CQrte h1,
+	#CQrte h2,
+	#CQrte h3,
+	#CQrte h4,
+	#CQrte h5,
+	#CQrte h6,
+	#CQrte p,
+	.title-h1,
+	.title-h2,
+	.title-h3,
+	.title-h4,
+	.title-h5 {
+		margin-bottom: 18px;
+	}
+
+		h2, h3 {
+			margin-bottom: 12px;
+		}
+
+	small {
+		font-size: 0.89em;
+	}
+
+	b,strong {
+		font-weight: bold;
+	}
+
+	i,em {
+		font-style: italic;
+	}
+
+	u {
+		text-decoration: underline;
+	}
+
+	p:last-child {
+			margin-bottom: 0;
+	}
+
+	h1,
+	.title-h1,
+	#CQrte h1,
+	#CQrte .title-h1 {
+		font-size: 36px;
+		line-height: 42px;
+		letter-spacing: -1px;
+		font-weight: 200;
+		font-family: "Segoe UI Light";
+	}
+
+	h1.semibold,
+	.title-h1.semibold,
+	#CQrte h1.semibold,
+	#CQrte .title-h1.semibold {
+		font-size: 36px;
+		line-height: 42px;
+		letter-spacing: -1px;
+		font-weight: 400;
+		font-family: "Segoe UI Regular";
+	}
+
+		html[lang=ar] h1,
+		html[lang=ar] .title-h1,
+		html[lang=ar] #CQrte h1,
+		html[lang=ar] #CQrte .title-h1 {
+			font-family: "Segoe UI Arabic Light", "Segoe UI Light", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+			html[lang=ar] h1.semibold,
+			html[lang=ar] .title-h1.semibold,
+			html[lang=ar] #CQrte h1.semibold,
+			html[lang=ar] #CQrte .title-h1.semibold {
+				font-family: "Segoe UI Arabic Regular", "Segoe UI Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+		html[lang=ru] h1,
+		html[lang=ru] .title-h1,
+		html[lang=ru] #CQrte h1,
+		html[lang=ru] #CQrte .title-h1 {
+			font-family: "Segoe UI Light", "Segoe UI Cyrillic Light", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+			html[lang=ru] h1.semibold,
+			html[lang=ru] .title-h1.semibold,
+			html[lang=ru] #CQrte h1.semibold,
+			html[lang=ru] #CQrte .title-h1.semibold {
+				font-family: "Segoe UI Regular", "Segoe UI Cyrillic Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}            
+
+		html[lang=el] h1,
+		html[lang=el] .title-h1,
+		html[lang=el] #CQrte h1,
+		html[lang=el] #CQrte .title-h1 {
+			font-family: "Segoe UI Light", "Segoe UI Greek Light", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+			html[lang=el] h1.semibold,
+			html[lang=el] .title-h1.semibold,
+			html[lang=el] #CQrte h1.semibold,
+			html[lang=el] #CQrte .title-h1.semibold {
+				font-family: "Segoe UI Regular", "Segoe UI Greek Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+		html[lang=he] h1,
+		html[lang=he] .title-h1,
+		html[lang=he] #CQrte h1,
+		html[lang=he] #CQrte .title-h1 {
+			font-family: "Segoe UI Light", "Segoe UI Hebrew Light", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+			html[lang=he] h1.semibold,
+			html[lang=he] .title-h1.semibold,
+			html[lang=he] #CQrte h1.semibold,
+			html[lang=he] #CQrte .title-h1.semibold {
+				font-family: "Segoe UI Regular", "Segoe UI Hebrew Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+	h2,
+	.title-h2,
+	#CQrte h2,
+	#CQrte .title-h2 {
+		font-size: 30px;
+		line-height: 36px;
+		letter-spacing: -1px;
+		font-weight: 200;
+		font-family: "Segoe UI Light";
+	}
+
+		html[lang=ar] h2,
+		html[lang=ar] .title-h2,
+		html[lang=ar] #CQrte h2,
+		html[lang=ar] #CQrte .title-h2 {
+			font-family: "Segoe UI Arabic Light", "Segoe UI Light", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=ru] h2,
+		html[lang=ru] .title-h2,
+		html[lang=ru] #CQrte h2,
+		html[lang=ru] #CQrte .title-h2 {
+			font-family: "Segoe UI Light", "Segoe UI Cyrillic Light", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=el] h2,
+		html[lang=el] .title-h2,
+		html[lang=el] #CQrte h2,
+		html[lang=el] #CQrte .title-h2 {
+			font-family: "Segoe UI Light", "Segoe UI Greek Light", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=he] h2,
+		html[lang=he] .title-h2,
+		html[lang=he] #CQrte h2,
+		html[lang=he] #CQrte .title-h2 {
+			font-family: "Segoe UI Light", "Segoe UI Hebrew Light", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+	h2.semibold,
+	.title-h2.semibold {
+		font-size: 30px;
+		line-height: 36px;
+		letter-spacing: -1px;
+		font-weight: 400;
+		font-family: "Segoe UI Regular";
+	}
+
+		html[lang=ar] h2.semibold,
+		html[lang=ar] .title-h2.semibold,
+		html[lang=ar] #CQrte h2.semibold,
+		html[lang=ar] #CQrte .title-h2.semibold {
+			font-family: "Segoe UI Arabic Regular", "Segoe UI Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=ru] h2.semibold,
+		html[lang=ru] .title-h2.semibold,
+		html[lang=ru] #CQrte h2.semibold,
+		html[lang=ru] #CQrte .title-h2.semibold {
+			font-family: "Segoe UI Regular", "Segoe UI Cyrillic Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=el] h2.semibold,
+		html[lang=el] .title-h2.semibold,
+		html[lang=el] #CQrte h2.semibold,
+		html[lang=el] #CQrte .title-h2.semibold {
+			font-family: "Segoe UI Regular", "Segoe UI Greek Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=he] h2.semibold,
+		html[lang=he] .title-h2.semibold,
+		html[lang=he] #CQrte h2.semibold,
+		html[lang=he] #CQrte .title-h2.semibold {
+			font-family: "Segoe UI Regular", "Segoe UI Hebrew Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+	h3,
+	.title-h3,
+	#CQrte h3,
+	#CQrte .title-h3 {
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: -1px;
+		font-weight: 400;
+		font-family: "Segoe UI Regular";
+	}
+
+		html[lang=ar] h3,
+		html[lang=ar] .title-h3,
+		html[lang=ar] #CQrte h3,
+		html[lang=ar] #CQrte .title-h3 {
+			font-family: "Segoe UI Arabic Regular", "Segoe UI Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=ru] h3,
+		html[lang=ru] .title-h3,
+		html[lang=ru] #CQrte h3,
+		html[lang=ru] #CQrte .title-h3 {
+			font-family: "Segoe UI Regular", "Segoe UI Cyrillic Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=el] h3,
+		html[lang=el] .title-h3,
+		html[lang=el] #CQrte h3,
+		html[lang=el] #CQrte .title-h3 {
+			font-family: "Segoe UI Regular", "Segoe UI Greek Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=he] h3,
+		html[lang=he] .title-h3,
+		html[lang=he] #CQrte h3,
+		html[lang=he] #CQrte .title-h3 {
+			font-family: "Segoe UI Regular", "Segoe UI Hebrew Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		h3.semibold,
+		#CQrte h3.semibold {
+			font-weight: 400;
+			font-family: "Segoe UI Semibold";
+		}
+
+			html[lang=ar] h3.semibold,
+			html[lang=ar] .title-h3.semibold,
+			html[lang=ar] #CQrte h3.semibold,
+			html[lang=ar] #CQrte .title-h3.semibold {
+				font-family: "Segoe UI Arabic Semibold", "Segoe UI Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+			html[lang=ru] h3.semibold,
+			html[lang=ru] .title-h3.semibold,
+			html[lang=ru] #CQrte h3.semibold,
+			html[lang=ru] #CQrte .title-h3.semibold {
+				font-family: "Segoe UI Semibold", "Segoe UI Cyrillic Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+			html[lang=el] h3.semibold,
+			html[lang=el] .title-h3.semibold,
+			html[lang=el] #CQrte h3.semibold,
+			html[lang=el] #CQrte .title-h3.semibold {
+				font-family: "Segoe UI Semibold", "Segoe UI Greek Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+			html[lang=he] h3.semibold,
+			html[lang=he] .title-h3.semibold,
+			html[lang=he] #CQrte h3.semibold,
+			html[lang=he] #CQrte .title-h3.semibold {
+				font-family: "Segoe UI Semibold", "Segoe UI Hebrew Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+	h4,
+	.title-h4,
+	#CQrte h4,
+	#CQrte .title-h4 {
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: -1px;
+		font-weight: 400;
+		font-family: "Segoe UI Regular";
+	}
+
+		html[lang=ar] h4,
+		html[lang=ar] .title-h4,
+		html[lang=ar] #CQrte h4,
+		html[lang=ar] #CQrte .title-h4 {
+			font-family: "Segoe UI Arabic Regular", "Segoe UI Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=ru] h4,
+		html[lang=ru] .title-h4,
+		html[lang=ru] #CQrte h4,
+		html[lang=ru] #CQrte .title-h4 {
+			font-family: "Segoe UI Regular", "Segoe UI Cyrillic Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=el] h4,
+		html[lang=el] .title-h4,
+		html[lang=el] #CQrte h4,
+		html[lang=el] #CQrte .title-h4 {
+			font-family: "Segoe UI Regular", "Segoe UI Greek Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		html[lang=he] h4,
+		html[lang=he] .title-h4,
+		html[lang=he] #CQrte h4,
+		html[lang=he] #CQrte .title-h4 {
+			font-family: "Segoe UI Regular", "Segoe UI Hebrew Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+		}
+
+		h4.semibold,
+		.title-h4.semibold,
+		#CQrte h4.semibold,
+		#CQrte .title-h4.semibold {
+			font-weight: 400;
+			font-family: "Segoe UI Semibold";
+		}    
+
+			html[lang=ar] h4.semibold,
+			html[lang=ar] .title-h4.semibold,
+			html[lang=ar] #CQrte h4.semibold,
+			html[lang=ar] #CQrte .title-h4.semibold {
+				font-family: "Segoe UI Arabic Semibold", "Segoe UI Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+			html[lang=ru] h4.semibold,
+			html[lang=ru] .title-h4.semibold,
+			html[lang=ru] #CQrte h4.semibold,
+			html[lang=ru] #CQrte .title-h4.semibold {
+				font-family: "Segoe UI Semibold", "Segoe UI Cyrillic Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+			html[lang=el] h4.semibold,
+			html[lang=el] .title-h4.semibold,
+			html[lang=el] #CQrte h4.semibold,
+			html[lang=el] #CQrte .title-h4.semibold {
+					font-family: "Segoe UI Semibold", "Segoe UI Greek Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+			html[lang=he] h4.semibold,
+			html[lang=he] .title-h4.semibold,
+			html[lang=he] #CQrte h4.semibold,
+			html[lang=he] #CQrte .title-h4.semibold {
+				font-family: "Segoe UI Semibold", "Segoe UI Hebrew Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+	p,
+	#CQrte p {
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+
+		p.smaller,
+		p span.smaller,
+		#CQrte p span.smaller {
+			font-size: 14px;
+			line-height: 18px;
+		}
+
+		p.smallest,
+		p span.smallest,
+		#CQrte p span.smallest {
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+		p.semibold,
+		p span.semibold,
+		#CQrte p span.semibold {
+			font-weight: 400;
+			font-family: "Segoe UI Semibold";
+		}        
+
+			html[lang=ar] p.semibold,
+			html[lang=ar] p span.semibold,
+			html[lang=ar] #CQrte p.semibold,
+			html[lang=ar] #CQrte p span.semibold {
+				font-family: "Segoe UI Arabic Semibold", "Segoe UI Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+			html[lang=ru] p.semibold,
+			html[lang=ru] p span.semibold,
+			html[lang=ru] #CQrte p.semibold,
+			html[lang=ru] #CQrte p span.semibold {
+				font-family: "Segoe UI Semibold", "Segoe UI Cyrillic Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+			html[lang=el] p.semibold,
+			html[lang=el] p span.semibold,
+			html[lang=el] #CQrte p.semibold,
+			html[lang=el] #CQrte p span.semibold {
+				font-family: "Segoe UI Semibold", "Segoe UI Greek Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+			html[lang=he] p.semibold,
+			html[lang=he] p span.semibold,
+			html[lang=he] #CQrte p.semibold,
+			html[lang=he] #CQrte p span.semibold {
+				font-family: "Segoe UI Semibold", "Segoe UI Hebrew Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+	p.semilight {
+		font-size: 13px;
+		opacity: 0.5;
+		-moz-opacity: 0.5;
+		filter:alpha(opacity=50);
+		margin-bottom: 0;
+	}
+
+a,
+#CQrte a {
+	text-decoration: none;
+	color: #0078ca;
+}
+
+/*
+* For the mobile.
+*/
+@media only screen and (max-width: 767px) {
+
+	h1, h2, h3, h4,
+	h1.semibold,
+	h2.semibold,
+	h3.semibold,
+	h4.semibold,
+	.title-h1,
+	.title-h2,
+	.title-h3,
+	.title-h4,
+	.title-h1.semibold,
+	.title-h2.semibold,
+	.title-h3.semibold,
+	.title-h4.semibold {		
+		letter-spacing: -0.5px;
+	}
+
+	h1,
+	.title-h1 {
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 400;
+		font-family: "Segoe UI Regular";
+	}
+
+		h1.semibold,
+		.title-h1.semibold {
+			font-size: 24px;
+			line-height: 28px;
+			font-weight: 400;
+			font-family: "Segoe UI Semibold";
+		}
+
+	h2,
+	.title-h2 {
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: 400;
+		font-family: "Segoe UI Regular";
+	}
+
+		h2.semibold,
+		.title-h2.semibold {
+			font-size: 18px;
+			line-height: 20px;
+			font-weight: 400;
+			font-family: "Segoe UI Semibold";
+		}
+
+	h3,
+	.title-h3 {
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: 400;
+		font-family: "Segoe UI Regular";
+	}
+
+		h3.semibold,
+		.title-h3.semibold {
+			font-weight: 400;
+			font-family: "Segoe UI Semibold";
+		}
+
+	h4,
+	.title-h4 {
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: 400;
+		font-family: "Segoe UI Regular";
+	}
+
+		h4.semibold {
+			font-weight: 400;
+			font-family: "Segoe UI Semibold";
+		}
+
+			html[lang=ar] h1,
+			html[lang=ar] h2,
+			html[lang=ar] h3,
+			html[lang=ar] h4,
+			html[lang=ar] .title-h1,
+			html[lang=ar] .title-h2,
+			html[lang=ar] .title-h3,
+			html[lang=ar] .title-h4 {
+				font-family: "Segoe UI Arabic Regular", "Segoe UI Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+				html[lang=ar] h2.semibold,
+				html[lang=ar] h3.semibold,
+				html[lang=ar] h4.semibold,
+				html[lang=ar] .title-h2.semibold,
+				html[lang=ar] .title-h3.semibold,
+				html[lang=ar] .title-h4.semibold {
+					font-family: "Segoe UI Arabic Semibold", "Segoe UI Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+				}
+	
+			html[lang=ru] h1,
+			html[lang=ru] h2,
+			html[lang=ru] h3,
+			html[lang=ru] h4,
+			html[lang=ru] .title-h1,
+			html[lang=ru] .title-h2,
+			html[lang=ru] .title-h3,
+			html[lang=ru] .title-h4 {
+				font-family: "Segoe UI Regular", "Segoe UI Cyrillic Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+				html[lang=ru] h2.semibold,
+				html[lang=ru] h3.semibold,
+				html[lang=ru] h4.semibold,
+				html[lang=ru] .title-h2.semibold,
+				html[lang=ru] .title-h3.semibold,
+				html[lang=ru] .title-h4.semibold {
+					font-family: "Segoe UI Semibold", "Segoe UI Cyrillic Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+				}
+	
+			html[lang=el] h1,
+			html[lang=el] h2,
+			html[lang=el] h3,
+			html[lang=el] h4,
+			html[lang=el] .title-h1,
+			html[lang=el] .title-h2,
+			html[lang=el] .title-h3,
+			html[lang=el] .title-h4 {
+				font-family: "Segoe UI Regular", "Segoe UI Greek Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+				html[lang=el] h2.semibold,
+				html[lang=el] h3.semibold,
+				html[lang=el] h4.semibold,
+				html[lang=el] .title-h2.semibold,
+				html[lang=el] .title-h3.semibold,
+				html[lang=el] .title-h4.semibold {
+					font-family: "Segoe UI Semibold", "Segoe UI Greek Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+				}
+
+	
+			html[lang=he] h1,
+			html[lang=he] h2,
+			html[lang=he] h3,
+			html[lang=he] h4,
+			html[lang=he] .title-h1,
+			html[lang=he] .title-h2,
+			html[lang=he] .title-h3,
+			html[lang=he] .title-h4 {
+				font-family: "Segoe UI Regular", "Segoe UI Hebrew Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+			}
+
+				html[lang=he] h2.semibold,
+				html[lang=he] h3.semibold,
+				html[lang=he] h4.semibold,
+				html[lang=he] .title-h2.semibold,
+				html[lang=he] .title-h3.semibold,
+				html[lang=he] .title-h4.semibold {
+					font-family: "Segoe UI Semibold", "Segoe UI Hebrew Semibold", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+				}
+
+
+	p {
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 400;
+	}
+
+		p.smaller,
+		p span.smaller {
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		p.smallest,
+		p span.smallest {
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		p.lightHeading {
+			opacity: 0.5;
+			-moz-opacity: 0.5;
+			filter:alpha(opacity=5);
+			margin-bottom: 0;
+		}
+}
+/*
+ * Suggested order:
+ *  display, position, float, clear
+ *  width, height
+ *  margin, padding
+ *  border, background
+ *  color, font, line-height, text-align, text-decoration
+ *  vertical-align, white-space, overflow, cursor, list-style
+ */
+
+/* Default Styles
+================= */
+
+/* General regular button style */
+button.button,
+a.button,
+button.smallButton,
+a.smallButton {
+	color: white;
+	display: inline-block;
+	height: 100%;
+	padding: 9px 25px 14px 25px;
+	cursor: pointer;
+	margin: 0;
+	overflow: visible;
+	border: none;
+	text-decoration: none;
+	text-align: left;
+	line-height: 20px;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: "Segoe UI", "Segoe WP", "Segoe UI Regular", "Helvetica Neue", Helvetica, Tahoma, Arial Unicode MS, sans-serif;
+	letter-spacing: -0.01em;
+	-webkit-border-radius: 27px;
+	-moz-border-radius: 27px;
+	border-radius: 27px;
+	outline: none;
+	outline-width: 0;
+	width: auto;
+	border: none;	
+	background: transparent;
+	white-space: nowrap;
+	cursor: pointer;
+	cursor: hand;
+	text-align: center;
+}
+
+
+button.button {
+	/* padding: 11px 25px 12px 25px;  */
+}
+
+
+button.button:hover,
+a.button:hover,
+button.smallButton:hover,
+a.smallButton:hover {
+	color: white;
+}
+
+	/* remove extra padding from FF buttons */
+	button.button::-moz-focus-inner,
+	button.smallButton::-moz-focus-inner {
+	    border: 0;
+	    padding: 0;
+	}
+
+/* General small button style */
+button.smallButton,
+a.smallButton {
+	padding: 6px 18px 6px 18px; 
+	font-size: 16px;
+}
+
+/* remove IE 7 button focus black border */
+*:first-child+html button
+{
+    filter:chroma(color=#000000);
+}
+/* IE7 fix regular button paddings */
+
+*:first-child+html a.button {
+	padding-top: 9px; 
+	padding-bottom: 10px;
+}
+
+*:first-child+html button.button {
+	padding-top: 7px; 
+	padding-bottom: 8px;
+}
+
+*:first-child+html button.smallButton {
+	padding-top: 4px; 
+	padding-bottom: 4px;
+}
+
+* html button.button {
+	padding-top: 9px; 
+	padding-bottom: 10px;
+}
+
+* html button.smallButton {
+	padding-top: 4px; 
+	padding-bottom: 4px;
+}
+
+/* Arrow icon styles*/
+.arrowNext,
+.arrowPrev,
+.arrowUp,
+.arrowDown,
+.noIcon {
+	display: inline-block; /* if not specified RTL wont work properly */
+}
+
+
+/* Arrow icon styles*/
+.arrowNext,
+.arrowPrev,
+.arrowUp,
+.arrowDown {
+	background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/ui-elements/buttons-sprite.png');
+	background-repeat: no-repeat;
+	text-align: middle;
+	/* display: inline-block; if not specified RTL wont work properly */
+}
+
+/* Primary regular and small button state colors */
+button.primaryCta,
+a.primaryCta {
+	background-color: #7fba00;
+	border: 2px solid #7fba00;
+}
+
+	button.primaryCta:hover,
+	a.primaryCta:hover {
+		background-color: #75ab00;
+		border: 2px solid #75ab00;
+	}
+
+	button.primaryCta:active,
+	a.primaryCta:active {
+		background-color: #6c9e00;
+		border: 2px solid #6c9e00;
+	}
+
+
+/* Premium regular and small button state colors */
+button.premiumCta,
+a.premiumCta {
+	background-color: #953cac;
+	border: 2px solid #953cac;
+}
+	button.premiumCta:hover,
+	a.premiumCta:hover {
+		background-color: #7f3392;
+		border: 2px solid #7f3392;
+	}
+	button.premiumCta:active,
+	a.premiumCta:active {
+		background-color: #68217a;
+		border: 2px solid #68217a;
+	}
+
+/* Primary regular and small button state colors */
+button.secondaryWhiteCta,
+a.secondaryWhiteCta {
+	color: #0078ca;
+	background-color: #FFF;
+	border: 2px solid #FFF;
+}
+
+	button.secondaryWhiteCta:hover,
+	a.secondaryWhiteCta:hover {
+		color: #333534;
+		background-color: #FFF;
+		border: 2px solid #FFF;
+	}
+
+	button.secondaryWhiteCta:active,
+	a.secondaryWhiteCta:active {
+		color: #333534;
+		background-color: #e4eef2;
+		border: 2px solid #e4eef2;
+	}
+
+		button.button.secondaryWhiteCta .arrowUp,
+		a.secondaryWhiteCta .arrowUp {
+			background-position: 100% -798px;
+		}
+
+		button.button.secondaryWhiteCta .arrowDown,
+		a.secondaryWhiteCta .arrowDown {
+			background-position: 100% -899px;
+		}
+
+		button.button.secondaryWhiteCta .arrowNext,
+		a.secondaryWhiteCta .arrowNext {
+			background-position: 100% -997px;
+		}
+
+		button.button.secondaryWhiteCta .arrowPrev,
+		a.secondaryWhiteCta .arrowPrev {
+			background-position: 0 -1097px;
+		}
+
+		/* small button arrow position */
+		button.smallButton.secondaryWhiteCta .arrowUp,
+		a.smallButton.secondaryWhiteCta {
+			background-position: 100% -799px;
+		}
+
+		button.smallButton.secondaryWhiteCta .arrowDown,
+		a.smallButton.secondaryWhiteCta .arrowDown {
+			background-position: 100% -900px;
+		}
+
+		button.smallButton.secondaryWhiteCta .arrowNext,
+		a.smallButton.secondaryWhiteCta .arrowNext {
+			background-position: 100% -997px;
+		}
+
+		button.smallButton.secondaryWhiteCta .arrowPrev,
+		a.smallButton.secondaryWhiteCta .arrowPrev {
+			background-position: 0 -1097px;
+		}
+
+		/* RTL support for Secondary regular and small buttons */
+		html.rtl button.button.secondaryWhiteCta .arrowUp,
+		html.rtl a.secondaryWhiteCta .arrowUp {
+			background-position: 0 -797px;
+		}
+
+		html.rtl button.button.secondaryWhiteCta .arrowDown,
+		html.rtl a.secondaryWhiteCta .arrowDown {
+			background-position: 0 -899px;
+		}
+
+		html.rtl button.button.secondaryWhiteCta .arrowNext,
+		html.rtl a.secondaryWhiteCta .arrowNext {
+			background-position: 0 -1097px;
+		}
+
+		html.rtl button.button.secondaryWhiteCta .arrowPrev,
+		html.rtl a.secondaryWhiteCta .arrowPrev {
+			background-position: 100% -997px;
+		}
+
+		/* small button arrow position */
+		html.rtl button.smallButton.secondaryWhiteCta .arrowUp,
+		a.smallButton.secondaryWhiteCta {
+			background-position: 0 -799px;
+		}
+
+		html.rtl button.smallButton.secondaryWhiteCta .arrowDown,
+		html.rtl a.smallButton.secondaryWhiteCta .arrowDown {
+			background-position: 0 -900px;
+		}
+
+		html.rtl button.smallButton.secondaryWhiteCta .arrowNext,
+		html.rtl a.smallButton.secondaryWhiteCta .arrowNext {
+			background-position: 0 -1097px;
+		}
+
+		html.rtl button.smallButton.secondaryWhiteCta .arrowPrev,
+		html.rtl a.smallButton.secondaryWhiteCta .arrowPrev {
+			background-position: 100% -997px;
+		}
+
+
+
+
+
+
+
+
+
+
+/* Primary Negative large and small button state colors */
+button.primaryNegativeCta,
+a.primaryNegativeCta {
+	background-color: #FFF;
+	color: #333534;
+	border: 2px solid #cadee5;
+	font-weight: 400;
+}
+
+	button.primaryNegativeCta:hover,
+	a.primaryNegativeCta:hover {
+		background-color: #a2c5d3;
+		color: #FFF;
+		border: 2px solid #a2c5d3;
+	}
+
+	button.primaryNegativeCta:active,
+	a.primaryNegativeCta:active {
+		background-color: #91b1bd;
+		color: #FFF;
+		border: 2px solid #91b1bd;
+	}
+
+		button.button.primaryNegativeCta .arrowUp,
+		a.primaryNegativeCta .arrowUp {
+			background-position: 100% -399px;
+		}
+
+		button.button.primaryNegativeCta .arrowDown,
+		a.primaryNegativeCta .arrowDown {
+			background-position: 100% -499px;
+		}
+
+		button.button.primaryNegativeCta .arrowNext,
+		a.primaryNegativeCta .arrowNext {
+			background-position: 100% -597px;
+		}
+
+		button.button.primaryNegativeCta .arrowPrev,
+		a.primaryNegativeCta .arrowPrev {
+			background-position: 0px -697px;
+		}
+
+		/* small button arrow position */
+		button.smallButton.primaryNegativeCta .arrowUp,
+		a.smallButton.primaryNegativeCta {
+			background-position: 100% -399px;
+		}
+
+		button.smallButton.primaryNegativeCta .arrowDown,
+		a.smallButton.primaryNegativeCta .arrowDown {
+			background-position: 100% -500px;
+		}
+
+		button.smallButton.primaryNegativeCta .arrowNext,
+		a.smallButton.primaryNegativeCta .arrowNext {
+			background-position: 100% -597px;
+		}
+
+		button.smallButton.primaryNegativeCta .arrowPrev,
+		a.smallButton.primaryNegativeCta .arrowPrev {
+			background-position: 0px -697px;
+		}
+
+		/* RTL support for Primary Negative regular and small buttons */
+		html.rtl button.button.primaryNegativeCta .arrowUp,
+		html.rtl a.primaryNegativeCta .arrowUp {
+			background-position: 0 -397px;
+		}
+
+		html.rtl button.button.primaryNegativeCta .arrowDown,
+		html.rtl a.primaryNegativeCta .arrowDown {
+			background-position: 0 -499px;
+		}
+
+		html.rtl button.button.primaryNegativeCta .arrowNext,
+		html.rtl a.primaryNegativeCta .arrowNext {
+			background-position: 0 -697px;
+		}
+
+		html.rtl button.button.primaryNegativeCta .arrowPrev,
+		html.rtl a.primaryNegativeCta .arrowPrev {
+			background-position: 100% -597px;
+		}
+
+		/* small button arrow position */
+		html.rtl button.smallButton.primaryNegativeCta .arrowUp,
+		html.rtl a.smallButton.primaryNegativeCta {
+			background-position: 0 -399px;
+		}
+
+		html.rtl button.smallButton.primaryNegativeCta .arrowDown,
+		html.rtl a.smallButton.primaryNegativeCta .arrowDown {
+			background-position: 0 -500px;
+		}
+
+		html.rtl button.smallButton.primaryNegativeCta .arrowNext,
+		html.rtl a.smallButton.primaryNegativeCta .arrowNext {
+			background-position: 0 -697px;
+		}
+
+		html.rtl button.smallButton.primaryNegativeCta .arrowPrev,
+		html.rtl a.smallButton.primaryNegativeCta .arrowPrev {
+			background-position: 100% -597px;
+		}
+
+
+
+/* Secondary Negative large and small button state colors */
+button.secondaryCta,
+a.secondaryCta {
+	background-color: #FFF;
+	color: #0078ca;
+	border: 2px solid #00aff0;
+
+}
+
+	button.secondaryCta:hover,
+	a.secondaryCta:hover {
+		background-color: #00aff0;
+		color: #FFF;
+		border: 2px solid #00aff0;
+	}
+
+	button.secondaryCta:active,
+	a.secondaryCta:active {
+		background-color: #009dd8;
+		color: #FFF;
+		border: 2px solid #009dd8;
+	}
+
+		button.button.secondaryCta .arrowUp,
+		a.secondaryCta .arrowUp {
+			background-position: 100% -798px;
+		}
+
+		button.button.secondaryCta .arrowDown,
+		a.secondaryCta .arrowDown {
+			background-position: 100% -899px;
+		}
+
+		button.button.secondaryCta .arrowNext,
+		a.secondaryCta .arrowNext {
+			background-position: 100% -997px;
+		}
+
+		button.button.secondaryCta .arrowPrev,
+		a.secondaryCta .arrowPrev {
+			background-position: 0 -1097px;
+		}
+
+		/* small button arrow position */
+		button.smallButton.secondaryCta .arrowUp,
+		a.smallButton.secondaryCta {
+			background-position: 100% -799px;
+		}
+
+		button.smallButton.secondaryCta .arrowDown,
+		a.smallButton.secondaryCta .arrowDown {
+			background-position: 100% -900px;
+		}
+
+		button.smallButton.secondaryCta .arrowNext,
+		a.smallButton.secondaryCta .arrowNext {
+			background-position: 100% -997px;
+		}
+
+		button.smallButton.secondaryCta .arrowPrev,
+		a.smallButton.secondaryCta .arrowPrev {
+			background-position: 0 -1097px;
+		}
+
+		/* RTL support for Secondary regular and small buttons */
+		html.rtl button.button.secondaryCta .arrowUp,
+		html.rtl a.secondaryCta .arrowUp {
+			background-position: 0 -797px;
+		}
+
+		html.rtl button.button.secondaryCta .arrowDown,
+		html.rtl a.secondaryCta .arrowDown {
+			background-position: 0 -899px;
+		}
+
+		html.rtl button.button.secondaryCta .arrowNext,
+		html.rtl a.secondaryCta .arrowNext {
+			background-position: 0 -1097px;
+		}
+
+		html.rtl button.button.secondaryCta .arrowPrev,
+		html.rtl a.secondaryCta .arrowPrev {
+			background-position: 100% -997px;
+		}
+
+		/* small button arrow position */
+		html.rtl button.smallButton.secondaryCta .arrowUp,
+		a.smallButton.secondaryCta {
+			background-position: 0 -799px;
+		}
+
+		html.rtl button.smallButton.secondaryCta .arrowDown,
+		html.rtl a.smallButton.secondaryCta .arrowDown {
+			background-position: 0 -900px;
+		}
+
+		html.rtl button.smallButton.secondaryCta .arrowNext,
+		html.rtl a.smallButton.secondaryCta .arrowNext {
+			background-position: 0 -1097px;
+		}
+
+		html.rtl button.smallButton.secondaryCta .arrowPrev,
+		html.rtl a.smallButton.secondaryCta .arrowPrev {
+			background-position: 100% -997px;
+		}
+
+
+/* Premium Secondary large and small button state colors */
+button.premiumSecondaryCta,
+a.premiumSecondaryCta {
+	background-color: #FFF;
+	color: #953cac;
+	border: 2px solid #953cac;
+}
+
+	button.premiumSecondaryCta:hover,
+	a.premiumSecondaryCta:hover {
+		background-color: #7f3392;
+		color: #FFF;
+		border: 2px solid #7f3392;
+	}
+
+	button.premiumSecondaryCta:active,
+	a.premiumSecondaryCta:active {
+		background-color: #68217a;
+		color: #FFF;
+		border: 2px solid #68217a;
+	}
+
+		button.button.premiumSecondaryCta .arrowUp,
+		a.button.premiumSecondaryCta .arrowUp {
+			background-position: 100% -1198px;
+		}
+
+		button.button.premiumSecondaryCta .arrowDown,
+		a.button.premiumSecondaryCta .arrowDown {
+			background-position: 100% -1299px;
+		}
+
+		button.button.premiumSecondaryCta .arrowNext,
+		a.button.premiumSecondaryCta .arrowNext {
+			background-position: 100% -1397px;
+		}
+
+		button.button.premiumSecondaryCta .arrowPrev,
+		a.button.premiumSecondaryCta .arrowPrev {
+			background-position: 0 -1497px;
+		}
+
+		/* small button arrow position */
+		button.smallButton.premiumSecondaryCta .arrowUp,
+		a.smallButton.premiumSecondaryCta .arrowUp{
+			background-position: 100% -1199px;
+		}
+
+		button.smallButton.premiumSecondaryCta .arrowDown,
+		a.smallButton.premiumSecondaryCta .arrowDown {
+			background-position: 100% -1300px;
+		}
+
+		button.smallButton.premiumSecondaryCta .arrowNext,
+		a.smallButton.premiumSecondaryCta .arrowNext {
+			background-position: 100% -1397px;
+		}
+
+		button.smallButton.premiumSecondaryCta .arrowPrev,
+		a.smallButton.premiumSecondaryCta .arrowPrev {
+			background-position: 0 -1497px;
+		}
+
+
+		html.rtl button.button.premiumSecondaryCta .arrowUp,
+		html.rtl a.button.premiumSecondaryCta .arrowUp {
+			background-position: 0 -1197px;
+		}
+
+		html.rtl button.button.premiumSecondaryCta .arrowDown,
+		html.rtl a.button.premiumSecondaryCta .arrowDown {
+			background-position: 0 -1299px;
+		}
+
+		html.rtl button.button.premiumSecondaryCta .arrowNext,
+		html.rtl a.button.premiumSecondaryCta .arrowNext {
+			background-position: 0 -1497px;
+		}
+
+		html.rtl button.button.premiumSecondaryCta .arrowPrev,
+		html.rtl a.button.premiumSecondaryCta .arrowPrev {
+			background-position: 100% -1397px;
+		}
+
+		/* small button arrow position */
+		html.rtl button.smallButton.premiumSecondaryCta .arrowUp,
+		html.rtl a.smallButton.premiumSecondaryCta .arrowUp {
+			background-position: 0 -1199px;
+		}
+
+		html.rtl button.smallButton.premiumSecondaryCta .arrowDown,
+		html.rtl a.smallButton.premiumSecondaryCta .arrowDown {
+			background-position: 0 -1300px;
+		}
+
+		html.rtl button.smallButton.premiumSecondaryCta .arrowNext,
+		html.rtl a.smallButton.premiumSecondaryCta .arrowNext {
+			background-position: 0 -1497px;
+		}
+
+		html.rtl button.smallButton.premiumSecondaryCta .arrowPrev,
+		html.rtl a.smallButton.premiumSecondaryCta .arrowPrev {
+			background-position: 100% -1397px;
+		}
+
+	/* GENERAL styles for regular button arrow position active default always white */		
+	.button .arrowUp,
+	a.button:active .arrowUp,
+	button.button:active .arrowUp,
+	a.button:hover .arrowUp,
+	button.button:hover .arrowUp {
+		background-position: 100% 2px;
+		padding-right: 27px;
+	}
+
+	.button .arrowDown,
+	a.button:active .arrowDown,
+	button.button:active .arrowDown,
+	a.button:hover .arrowDown,
+	button.button:hover .arrowDown {
+		background-position: 100% -99px;
+		padding-right: 27px;
+	}
+
+	.button .arrowNext,
+	a.button:active .arrowNext,
+	button.button:active .arrowNext,
+	a.button:hover .arrowNext,
+	button.button:hover .arrowNext {
+		background-position: 100% -197px;
+		padding-right: 27px;
+	}
+
+	.button .arrowPrev,
+	a.button:active .arrowPrev,
+	button.button:active .arrowPrev,
+	a.button:hover .arrowPrev,
+	button.button:hover .arrowPrev {
+		background-position: 0px -297px;
+		padding-left: 27px;
+	}
+
+	/* GENERAL styles for small button arrow position active default always white */
+	.smallButton .arrowUp,
+	a.smallButton:active .arrowUp,
+	button.smallButton:active .arrowUp,
+	a.smallButton:hover .arrowUp,
+	button.smallButton:hover .arrowUp {
+		background-position: 100% 1px;
+		padding-right: 27px;
+	}
+
+	.smallButton .arrowDown,
+	a.smallButton:active .arrowDown,
+	button.smallButton:active .arrowDown,
+	a.smallButton:hover .arrowDown,
+	button.smallButton:hover .arrowDown {
+		background-position: 100% -100px;
+		padding-right: 27px;
+	}
+
+	.smallButton .arrowNext,
+	a.smallButton:active .arrowNext,
+	button.smallButton:active .arrowNext,
+	a.smallButton:hover .arrowNext,
+	button.smallButton:hover .arrowNext {
+		background-position: 100% -197px;
+		padding-right: 27px;
+	}
+
+	.smallButton .arrowPrev,
+	a.smallButton:active .arrowPrev,
+	button.smallButton:active .arrowPrev,
+	a.smallButton:hover .arrowPrev,
+	button.smallButton:hover .arrowPrev {
+		background-position: 0px -297px;
+		padding-left: 27px;
+	}
+
+	/* RTL support for regular button arrows*/
+	html.rtl .button .arrowUp,
+	html.rtl a.button:active .arrowUp,
+	html.rtl button.button:active .arrowUp,
+	html.rtl a.button:hover .arrowUp,
+	html.rtl button.button:hover .arrowUp {
+		background-position: 0 3px;
+		padding-left: 27px;
+		padding-right: 0;
+	}
+
+	html.rtl .button .arrowDown,
+	html.rtl a.button:active .arrowDown,
+	html.rtl button.button:active .arrowDown,
+	html.rtl a.button:hover .arrowDown,
+	html.rtl button.button:hover .arrowDown {
+		background-position: 0 -99px;
+		padding-left: 27px;
+		padding-right: 0px;
+	}
+
+	html.rtl .button .arrowNext,
+	html.rtl a.button:active .arrowNext,
+	html.rtl button.button:active .arrowNext,
+	html.rtl a.button:hover .arrowNext,
+	html.rtl button.button:hover .arrowNext {
+		background-position: 0 -297px;
+		padding-left: 27px;
+		padding-right: 0;
+	}
+
+
+	html.rtl .button .arrowPrev,
+	html.rtl a.button:active .arrowPrev,
+	html.rtl button.button:active .arrowPrev,
+	html.rtl a.button:hover .arrowPrev,
+	html.rtl button.button:hover .arrowPrev {
+		background-position: 100% -197px;
+		padding-right: 27px;
+		padding-left: 0px;
+	}
+
+	/* RTL support for small button arrows*/
+	html.rtl .smallButton .arrowUp,
+	html.rtl a.smallButton:active .arrowUp,
+	html.rtl button.smallButton:active .arrowUp,
+	html.rtl a.smallButton:hover .arrowUp,
+	html.rtl button.smallButton:hover .arrowUp {
+		background-position: 0 1px;
+		padding-left: 27px;
+		padding-right: 0;
+	}
+
+	html.rtl .smallButton .arrowDown,
+	html.rtl a.smallButton:active .arrowDown,
+	html.rtl button.smallButton:active .arrowDown,
+	html.rtl a.smallButton:hover .arrowDown,
+	html.rtl button.smallButton:hover .arrowDown {
+		background-position: 0 -99px;
+		padding-left: 27px;
+		padding-right: 0;
+	}
+
+	html.rtl .smallButton .arrowNext,
+	html.rtl a.smallButton:active .arrowNext,
+	html.rtl button.smallButton:active .arrowNext,
+	html.rtl a.smallButton:hover .arrowNext,
+	html.rtl button.smallButton:hover .arrowNext {
+		background-position: 0 -297px;
+		padding-left: 27px;
+		padding-right: 0;
+	}
+
+	html.rtl .smallButton .arrowPrev,
+	html.rtl a.smallButton:active .arrowPrev,
+	html.rtl button.smallButton:active .arrowPrev,
+	html.rtl a.smallButton:hover .arrowPrev,
+	html.rtl button.smallButton:hover .arrowPrev {
+		background-position: 100% -197px;
+		padding-right: 27px;
+		padding-left: 0;
+	}
+
+	/* Secondary white has different arrow color for hover and active */
+	/* Large button hover and active */
+	a.secondaryWhiteCta:active .arrowUp,
+	button.secondaryWhiteCta:active .arrowUp,
+	a.secondaryWhiteCta:hover .arrowUp,
+	button.secondaryWhiteCta:hover .arrowUp {
+		background-position: 100% -399px;
+		padding-right: 27px;
+	}
+
+	a.secondaryWhiteCta:active .arrowDown,
+	button.secondaryWhiteCta:active .arrowDown,
+	a.secondaryWhiteCta:hover .arrowDown,
+	button.secondaryWhiteCta:hover .arrowDown {
+		background-position: 100% -499px;
+		padding-right: 27px;
+	}
+
+	a.secondaryWhiteCta:active .arrowNext,
+	button.secondaryWhiteCta:active .arrowNext,
+	a.secondaryWhiteCta:hover .arrowNext,
+	button.secondaryWhiteCta:hover .arrowNext {
+		background-position: 100% -597px;
+		padding-right: 27px;
+	}
+
+	a.secondaryWhiteCta:active .arrowPrev,
+	button.secondaryWhiteCta:active .arrowPrev,
+	a.secondaryWhiteCta:hover .arrowPrev,
+	button.secondaryWhiteCta:hover .arrowPrev {
+		background-position: 0px -697px;
+		padding-left: 27px;
+	}
+
+
+
+	/* small button hover and active*/
+
+	/*
+	a.smallButton:active .arrowUp,
+	button.smallButton:active .arrowUp,
+	a.smallButton:hover .arrowUp,
+	button.smallButton:hover .arrowUp {
+		background-position: 100% -399px;
+		padding-right: 27px;
+	}
+
+	a.smallButton:active .arrowDown,
+	button.smallButton:active .arrowDown,
+	a.smallButton:hover .arrowDown,
+	button.smallButton:hover .arrowDown {
+		background-position: 100% -500px;
+		padding-right: 27px;
+	}
+
+	a.smallButton:active .arrowNext,
+	button.smallButton:active .arrowNext,
+	a.smallButton:hover .arrowNext,
+	button.smallButton:hover .arrowNext {
+		background-position: 100% -597px;
+		padding-right: 27px;
+	}
+
+	a.smallButton:active .arrowPrev,
+	button.smallButton:active .arrowPrev,
+	a.smallButton:hover .arrowPrev,
+	button.smallButton:hover .arrowPrev {
+		background-position: 0px -697px;
+		padding-left: 27px;
+	}
+
+
+*/
+
+
+
+/* Dual Line Button (special case) */
+a.dualLineCta,
+button.dualLineCta {
+	position: relative;
+	padding-left: 64px;
+	text-align: center;
+	line-height: 20px;
+}
+
+	a .dualLineCta span,
+	button .dualLineCta span,
+	a .dualLineMobileCta span,
+	button .dualLineMobileCta span {
+		margin: 0;
+	}
+
+	.dualLineCta {
+		position: relative;
+		display: inline-block;
+		padding: 0 45px 0 20px;
+	}
+
+	.dualLineCta .arrowDown,
+	.dualLineCta .arrowUp,
+	.dualLineCta .arrowNext,
+	.dualLineCta .arrowPrev {
+		position: absolute;
+		display: inline-block;
+	}
+
+		.dualLineCta .arrowNext,
+		.dualLineCta .arrowPrev {
+			width: 18px;
+			height: 25px;
+		}
+
+		.dualLineCta .arrowDown,
+		.dualLineCta .arrowUp {
+			width: 15px;
+			height: 25px;
+		}
+
+	.buttonText {
+		display: inline-block;
+	}
+
+		.buttonText .lineOne,
+		.buttonText .lineTwo {
+			display: block;
+		}
+
+			.dualLineMobileCta .buttonText .lineOne {
+				font-size: 16px;
+			}
+
+			.dualLineMobileCta .buttonText .lineTwo {
+				font-size: 20px;
+			}
+
+	.dualLineCta .arrowDown {
+		right: 20px;
+		top: 50%;
+		margin-top: -11px;
+	}
+
+	html.rtl .dualLineCta {
+		position: relative;
+		display: inline-block;
+		padding: 0 20px 0 45px;
+	}
+
+	html.rtl .dualLineCta .arrowDown {
+		width: 15px;
+		height: 25px;
+		left: 20px;
+		right: auto;
+		top: 50%;
+	}
+
+a.button .dualLineMobileCta,
+button.button .dualLineMobileCta {
+	position: relative;
+	display: inline-block;
+	padding: 0 20px 0 20px;
+}
+
+
+/* Overrides for tablet
+============================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* Overrides for mobile
+============================== */
+@media only screen and (max-width: 767px) {
+
+		button.button,
+		a.button,
+		button.smallButton,
+		a.smallButton {
+			text-align: center;
+			display: block;
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		a.smallButton,
+		a.button {
+			display: block;
+		}
+
+		button.smallButton,
+		button.button {
+			width: 100%;
+		}
+
+		a.smallButton.fixedButton,
+		a.button.fixedButton,
+		button.smallButton.fixedButton,
+		button.button.fixedButton {
+			max-width: 280px;
+			width: 280px;
+		}
+
+		a.button.premiumSecondaryCta,
+		a.button.secondaryCta,
+		a.button.primaryNegativeCta,
+		a.smallButton.premiumSecondaryCta,
+		a.smallButton.secondaryCta,
+		a.smallButton.primaryNegativeCta {
+			padding-right: 0;
+			padding-left: 0;
+		}
+		
+		.button.iconRight,
+		.smallButton.iconRight {
+			padding-right: 0;
+		}
+
+		.button.iconLeft,
+		.smallButton.iconLeft {
+			padding-left: 0;
+		}
+
+
+	.lineOne {
+		font-size: 16px;
+	}
+
+	.lineTwo {
+		font-size: 18px;
+	}
+
+} /* End @media only screen and (max-width: 767px) */ nav#scom {
+	position: relative;
+	z-index: 99;
+	height: 72px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: -72px;
+}
+
+	nav#scom .centerWrapper {
+		background-color: white;
+		position: relative;
+		width: 960px;
+		height: 100%;
+		margin: 0 auto;
+		padding: 0;
+		box-shadow: 0 0 1px #d2d0ce;
+	}
+
+	.skypeLogo {
+		display: block;
+		position: relative;
+		top: 15px;
+		left: 19px;
+		width: 99px;
+		height: 44px;
+		background: transparent url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) no-repeat;
+	}
+
+		.skypeLogo:hover {
+			background-position: 0 -50px;
+		}
+
+	.rtl .skypeLogo {
+		left: auto;
+		right: 19px;
+	}
+
+#mobileMenu {
+	display: none;
+}
+
+script {
+	display: none;
+}
+
+/*
+* Main navigation
+*/
+
+	.mainNavigation ul {
+		position: absolute;
+		top: 0;
+		left: 130px;
+	}
+
+	.rtl .mainNavigation ul {
+		left: auto;
+		right: 130px;
+	}
+
+		.mainNavigation ul li {
+			position: relative;
+			display: inline-block;
+			height: 68px;
+			padding: 1px 0 3px;
+			margin: 0;
+			font-size: 20px;
+			line-height: 65px;
+			vertical-align: top;		
+		}
+
+		.mainNavigation > ul > li:not(.singleItem) > a {
+			cursor: default;
+		}
+
+		*:first-child+html .mainNavigation ul li {
+			display: inline;
+		}
+
+		* html .mainNavigation ul li {
+			display: inline;
+			line-height: 62px;
+		}
+
+			.mainNavigation ul li a {
+				display: block;
+				height: 100%;
+				padding: 0 13px;
+			}
+
+			* html .mainNavigation ul li a {
+				display: inline;
+			}			
+
+			.mainNavigation ul li:hover,
+			.mainNavigation .hover {
+				background-color: #00aff0;
+				color: #ffffff;
+			}
+
+			.mainNavigation ul.sub li:hover {
+				margin: 0 -1px;
+				padding: 0 1px;
+			}
+
+			.mainNavigation ul.sub li:last-child:hover {
+				margin-bottom: -1px;
+				padding-bottom: 1px;
+			}
+
+			.mainNavigation ul li a {
+				color: #0078ca;
+				text-decoration: none;
+				letter-spacing: -0.5px;
+			}
+
+				.mainNavigation .active a {
+					color: #1c1c1c;
+				}	
+
+				.mainNavigation .active:hover a,
+				.mainNavigation .hover a {
+					color: #ffffff;
+				}
+
+				.mainNavigation ul li:hover a,
+				.mainNavigation .hover a {
+					color: #ffffff;
+					text-decoration: none;
+				}
+
+					.mainNavigation ul li:hover .sub a,
+					.mainNavigation .hover .sub a {
+						color: #0078ca;
+					}
+
+					.mainNavigation .hover .sub .hover a {
+						color: #ffffff;
+					}					
+
+					.mainNavigation ul li .sub a:hover,
+					.mainNavigation .sub .hover {
+						color: #ffffff;
+					}					
+
+		.mainNavigation .sub {
+			display: none;
+			width: auto;
+			position: absolute;
+			top: 72px;
+			left: 0;
+			background-color: #ffffff;
+			border: 1px solid #d8e2e6;
+			border-top: none;
+		}
+
+		.rtl .mainNavigation .sub {
+			right: 0;
+			left: auto;
+		}
+
+		@-webkit-keyframes fadein {
+			0%{ opacity: 0;}
+			100%{ opacity: 1;}
+		}
+
+		@-ms-keyframes fadein {
+			0%{ opacity: 0;}
+			100%{ opacity: 1;}
+		}
+
+		@-moz-keyframes fadein {
+			0%{ opacity: 0;}
+			100%{ opacity: 1;}
+		}
+
+		@keyframes fadein {
+			0%{ opacity: 0;}
+			100%{ opacity: 1;}
+		}
+
+		.mainNavigation ul li:hover .sub,
+		.mainNavigation .hover .sub {
+			display: block;
+			-webkit-animation-name: fadein;
+			-ms-animation-name: fadein;
+			-moz-animation-name: fadein;
+			-o-animation-name: fadein;
+			animation-name: fadein;
+
+			-webkit-animation-duration: .1s;
+			-ms-animation-duration: .1s;
+			-moz-animation-duration: .1s;
+			-o-animation-duration: .1s;
+			animation-duration: .1s;
+
+			-webkit-animation-iteration-count: 1;
+			-ms-animation-iteration-count: 1;
+			-moz-animation-iteration-count: 1;
+			-o-animation-iteration-count: 1;
+			animation-iteration-count: 1;
+
+			-webkit-animation-direction: normal;
+			-ms-animation-direction: normal;
+			-moz-animation-direction: normal;
+			-o-animation-direction: normal;
+			animation-direction: normal;
+
+			-webkit-animation-timing-function: ease-out;
+			-ms-animation-timing-function: ease-out;
+			-moz-animation-timing-function: ease-out;
+			-o-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		}	
+
+			.mainNavigation .sub li {
+				float: left;
+				clear: both;
+				display: block;
+				white-space: nowrap;
+				height: 59px;
+				line-height: 59px;
+				padding: 0;
+				width: 100%;
+				border-top: 1px solid #d8e2e6;
+			}
+
+		.mainNavigation .sub li:hover {
+			border-top: 1px solid #0093dc;
+		}
+
+			* html .mainNavigation .sub li {
+				width: auto;
+			}
+
+			.rtl .mainNavigation .sub li {
+				float: right;
+			}
+
+			*:first-child+html.rtl .mainNavigation .sub li {
+				display: inline;
+				float: none;
+			}
+
+			* html.rtl .mainNavigation .sub li {
+				position: relative;
+				float: none;
+				width: 150px;
+			}
+
+				.mainNavigation .sub li:hover {
+					background-color: #0093dc;
+				}
+
+				.mainNavigation .sub li:hover,
+				.mainNavigation .sub li.hover {
+					background-color: #0093dc;
+				}				
+
+			.mainNavigation .sub li a {
+				padding: 0 32px 0 14px;
+				font-size: 16px;
+			}
+
+			.rtl .mainNavigation .sub li a {
+				padding: 0 14px 0 32px;
+				font-size: 16px;
+			}	
+
+			* html.rtl .mainNavigation .sub li a {
+				float: right;
+			}
+
+/*
+* User information / account.
+*/
+
+nav#scom .account {
+	position: absolute;
+	display: inline-block;
+	top: 13px;
+	right: 2px;
+}
+
+.rtl nav#scom .account {
+	right: auto;
+	left: 25px;
+}
+
+	nav#scom.isNotAuthenticated .notAuthenticated,
+	nav#scom.isAuthenticated .authenticated {
+		display: inline-block;
+	}
+
+	nav#scom.isAuthenticated .notAuthenticated,
+	nav#scom.isNotAuthenticated .authenticated {
+		display: none;
+	}	
+
+	nav#scom .account li {
+		position: relative;
+		display: inline;
+		margin-left: 24px;
+		font-size: 16px;
+		line-height: 44px;
+	}
+
+	nav#scom .account li {
+		margin-left: auto;
+		margin-right: 24px;
+		font-size: 16px;
+		line-height: 44px;
+	}	
+
+	* html nav#scom .account li {
+		display: inline;
+	}
+
+	*:first-child+html.rtl nav#scom .account li {
+		float: left;
+	}
+
+	* html.rtl nav#scom .account li {
+		float: left;
+	}	
+
+		nav#scom .account a:hover {
+			text-decoration: none;
+			color: #00548D;
+		}
+
+	.mobileShow {
+		display: none;
+	}
+
+
+/* Overrides for tablet
+============================== */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	html:not(.noTabletState) nav#scom {
+		height: 54px;
+		margin-bottom: -54px;
+	}
+
+	html:not(.noTabletState) nav#scom .centerWrapper {
+		width: 720px;
+	}
+
+	html:not(.noTabletState) .skypeLogo {
+		width: 75px;
+		height: 35px;
+		top: 10px;
+		left: 14px;
+		background-position: 0 -100px;
+	}
+
+	html:not(.noTabletState) .mainNavigation > ul  {
+		left: 96px;
+	}
+
+	html:not(.noTabletState) .mainNavigation > ul > li {
+		font-size: 15px;
+		height: 51px;
+		line-height: 51px;
+		padding: 0 11px;
+		padding-bottom: 3px;
+	}
+
+html:not(.noTabletState) nav#scom .account {
+		top: 5px;
+		right: -3px;
+	}
+
+	html.rtl:not(.noTabletState) nav#scom .account {
+		top: 5px;
+		right: auto;
+		left: -3px;
+	}	
+
+	html:not(.noTabletState) nav#scom .account li {
+		font-size: 12px;
+	}
+
+	html:not(.noTabletState) nav#scom .account li:first-child {
+		margin-right: 19px;
+	}	
+
+		html.rtl:not(.noTabletState) nav#scom .account li:first-child {
+			margin-left: 19px;
+			margin-right: auto;
+		}
+
+html:not(.noTabletState) .mainNavigation .sub {
+	top: 54px;
+}
+
+	html:not(.noTabletState) .mainNavigation .sub li {
+		height: 44px;
+		line-height: 44px;
+	}
+
+	html:not(.noTabletState) .mainNavigation .sub li a {
+		font-size: 12px;
+		letter-spacing: 0;
+	}
+}
+
+/* Overrides for retina
+============================== */
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-moz-device-pixel-ratio: 2) {
+	.skypeLogo {
+		background: transparent url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/menu-sprite-retina.png) no-repeat;
+		background-size: 140px auto;
+	}
+
+	.skypeLogo:hover {
+		background: transparent url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/menu-sprite-retina.png) no-repeat 0 -100;
+	}
+}
+
+/* Overrides for mobile
+============================== */
+
+@media only screen and (max-width: 767px) {
+	
+	html:not(.noMobileState) .skypeLogo {
+		top: 9px;
+		left: 0;
+		height: 34px;
+		width: 75px;
+		background-position: 0 -100px;
+	}
+	
+	html.rtl:not(.noMobileState) .skypeLogo,
+	html:not(.noMobileState) .skypeLogo:hover,
+	html:not(.noMobileState) .skypeLogo:hover {
+		right: auto;
+	}
+		
+	html:not(.noMobileState) nav#scom {
+		position: static;
+		left: auto;
+		margin-bottom: 0;
+		height: 52px;
+	}
+
+	html:not(.noMobileState) nav#scom .centerWrapper {
+		position: relative;
+		height: 52px;
+		width: 297px;
+		padding: 0 9px 0 14px;
+		left: auto;
+		border-bottom: 1px solid #c5d9e1;
+		box-shadow: none;
+	}
+	
+	html.rtl nav#scom .centerWrapper {
+		padding: 0 20px 0 13px;
+		width: 287px;
+	}
+
+	html:not(.noMobileState) #mobileMenu {
+		position: absolute;
+		top: 7px;
+		right: 19px;
+		display: block;
+		width: 38px;
+		height: 38px;
+		background: transparent url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) -100px 0 no-repeat;
+		z-index: 2;
+	}
+
+	html.rtl:not(.noMobileState) #mobileMenu {
+		left: 12px;
+		right: auto;
+	}	
+
+	html:not(.noMobileState) .mainNavigation {
+		display: none;
+		background-color: #00aff0;
+		z-index: 999;
+	}
+
+	html:not(.noMobileState) .mainNavigation.mobileShow {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+		html:not(.noMobileState) #closeMenu {
+			display: block;
+			position: relative;
+			top: 0;
+			left: 0;
+			height: 28px;
+			line-height: 28px;
+			padding-left: 37px;
+			padding-right: 8px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			background: transparent url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/menu-sprite-standard.png) -100px -38px no-repeat;
+			color: #fff;
+		}
+
+		html:not(.noMobileState) #homeLink {
+			margin: 0;
+			color: #ffffff;
+			height: 44px;
+			line-height: 44px;
+			margin: 6px 0;
+			cursor: pointer;
+			cursor: hand;			
+		}
+
+	html:not(.noMobileState) .mainNavigation ul {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 320px;
+		margin: 0;
+		overflow: hidden;
+		z-index: 999;
+	}
+	
+	html.rtl .mainNavigation ul {
+		right: auto;
+	}
+
+		html:not(.noMobileState) .mainNavigation ul li {
+			display: block;
+			height: auto;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
+			text-indent: 20px;
+		}
+
+		html.noMobileState .mainNavigation ul li.noDesktop {
+			display: none !important;
+		}
+
+		html:not(.noMobileState) .mainNavigation > ul > li:first-child {
+			text-indent: 0;
+			padding-left: 20px;
+		}
+
+		html:not(.noMobileState) .mainNavigation > ul > li:before {
+			content: '';
+			display: block;
+			position: relative;
+			left: 20px;
+			height: 1px;
+			width: 280px;
+			background-color: #4dc7f5;
+		}
+
+			html:not(.noMobileState) .mainNavigation > ul > li:first-child:before {
+				display: none;
+			}
+
+		html:not(.noMobileState) .mainNavigation ul li:first-child {
+			border: none;
+		}
+
+		html:not(.noMobileState) .mainNavigation ul li:last-child {
+			margin-bottom: 20px;
+		}
+
+			html:not(.noMobileState) .mainNavigation ul li a,
+			html:not(.noMobileState) .mainNavigation ul li p,
+			html:not(.noMobileState) .mainNavigation ul li.active a {
+				display: block;
+				margin: 0;
+				padding: 0;
+				color: #333534;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 44px;
+				height: 44px;
+			}
+
+			html:not(.noMobileState) .mainNavigation ul li p {
+				margin: 7px 0 0;
+			}
+
+			html:not(.noMobileState) .mainNavigation ul li a:first-letter,
+			html:not(.noMobileState) .mainNavigation ul li p:first-letter,
+			html:not(.noMobileState) .mainNavigation ul li.active a:first-letter {
+				text-transform: uppercase;
+			}
+
+			html:not(.noMobileState) .mainNavigation ul li.singleItem a,
+			html:not(.noMobileState) .mainNavigation ul li.active.singleItem a {
+				color: #ffffff;
+				height: 44px;
+				line-height: 44px;
+				padding: 0;
+				margin: 6px 0;
+				cursor: pointer;
+				cursor: hand;
+			}
+
+	html:not(.noMobileState) .mainNavigation ul.sub {
+		display: block;
+		position: relative;
+		top: auto;
+		left: auto;
+		width: auto;
+		height: auto;
+		padding: 0 0 15px 0;
+		border: none;
+		background-color: transparent;
+	}
+
+		html:not(.noMobileState) .mainNavigation ul li:hover .sub,
+		html:not(.noMobileState) .mainNavigation .hover .sub {
+			display: block;
+			-webkit-animation-name: none;
+			-ms-animation-name: none;
+			-moz-animation-name: none;
+			-o-animation-name: none;
+			animation-name: none;	
+			padding-left: 0;
+		}
+
+		html:not(.noMobileState) .mainNavigation ul.sub li {
+			display: block;
+			margin: 0;
+			border: none;
+			height: 44px;
+		}
+
+			html:not(.noMobileState) .mainNavigation ul.sub li a {
+				display: block;
+				margin: 0;
+				padding: 0;
+				color: #ffffff;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 44px;
+			}
+
+		html:not(.noMobileState) .mainNavigation ul.sub li:first-child {
+			padding-left: 0;
+		}
+
+	html:not(.noMobileState) .mainNavigation > ul > li > a {
+		cursor: auto;
+	}
+
+	html:not(.noMobileState) .mainNavigation ul > li a:hover,
+	html:not(.noMobileState) .mainNavigation ul li.singleItem:hover a {
+		background-color: #0093dc;
+		color: #ffffff;
+		border: none;
+	}
+
+	.mainNavigation ul li.singleItem:hover,
+	.mainNavigation ul li.singleItemHover {
+		background-color: #00AFF0;
+	}
+
+	html:not(.noMobileState) nav#scom .account {
+		top: 5px;
+		right: 46px;
+		text-align: left;
+	}
+	
+		.rtl ul.account {
+			right: auto;
+			left: 70px;
+		}
+		
+	html:not(.noMobileState) .slimline ul.account {
+		right: 0;
+	}
+
+		html:not(.noMobileState) ul.account li {
+			font-size: 16px;
+			margin-right: 31px;
+		}
+
+		html:not(.noMobileState) .slimline ul.account li {
+			margin-right: 20px;
+		}
+
+	html:not(.noMobileState) nav#scom.isNotAuthenticated .notAuthenticated,
+	html:not(.noMobileState) nav#scom.isAuthenticated .authenticated {
+		display: block;
+	}
+
+	html:not(.noMobileState) nav#scom.isAuthenticated.slimline .authenticated {
+		display: block;
+		left: auto;
+		right: 0;
+	}
+
+		html:not(.noMobileState) nav#scom.isAuthenticated.slimline .authenticated li {
+			margin-right: 19px;
+		}
+
+	html.rtl:not(.noMobileState) nav#scom.isAuthenticated.slimline .authenticated {
+		display: block;
+		left: 0;
+		right: auto;
+	}
+
+		html.rtl:not(.noMobileState) nav#scom.isAuthenticated.slimline .authenticated li {
+			margin-left: 19px;
+			margin-right: auto;
+		}	
+}
+
+/* Overrides for retina
+============================== */
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (max-moz-device-pixel-ratio: 2) and (max-width: 767px) {
+	html:not(.noMobileState) #closeMenu {
+		background-image: url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/menu-sprite-retina.png);
+		background-size: 140px auto;
+	}
+
+	html:not(.noMobileState) #mobileMenu {
+		background-image: url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/menu-sprite-retina.png);
+		background-size: 140px auto;
+	}
+}
+/* Full footer
+=============== */
+
+footer {
+	overflow: hidden;
+	clear: both;
+}
+
+	footer a {
+		text-decoration: none;
+		color: #0078ca;
+	}
+
+.trackingPixel {
+	position: absolute;
+	border: none;
+}
+
+footer .top {
+	position: relative;
+	overflow: hidden;
+	background-color: #d4e0e4;
+	background-image: -ms-linear-gradient(top, #d4e0e4 0%, #e1f1f4 100%);
+	background-image: -moz-linear-gradient(top, #d4e0e4 0%, #e1f1f4 100%);
+	background-image: -o-linear-gradient(top, #d4e0e4 0%, #e1f1f4 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d4e0e4), color-stop(1, #e1f1f4));
+	background-image: -webkit-linear-gradient(top, #d4e0e4 0%, #e1f1f4 100%);
+	background-image: linear-gradient(top, #d4e0e4 0%, #e1f1f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e0e4', endColorstr='#e1f1f4',GradientType=0 );
+}
+
+footer .bottom {
+	background-color: #596b6f;
+}
+
+	footer .bottom p {
+		width: 860px;
+		padding-top: 16px;
+		padding-bottom: 19px;
+		font-size: 12px;
+		line-height: 18px;
+		color: #acb5b7;
+		display: inline-block;
+	}
+
+footer .centered {
+	clear: both;
+	width: 960px;
+	margin: 0 auto;
+}
+
+	footer .centered div {
+		display: inline-block;
+	}
+
+.footerContent {
+	width: 650px;
+	margin: 30px 0 0 0;
+	float: left;
+	z-index: 2;
+	padding-bottom: 18px;
+}
+
+* html .footerContent {
+	padding-bottom: 18px;
+}
+
+.footerContent > div {
+	width: 300px;
+}
+
+* html footer .footerButtons {
+	width: 300px;
+}
+
+* html footer .footerCopyright {
+	width: 300px;
+}
+
+* html footer .footerButtons {
+	width: 300px;
+}
+
+.footerContent hr {
+	width: 650px;
+	height: 1px;
+	margin: 0;
+	clear: both;
+	float: left;
+	color: #bacad0;
+	background-color: #bacad0;
+	border: none;
+}
+
+.footerImageContainer {
+	width: 1000px;
+	height: 148px;
+	right: -706px;
+	bottom: 0;
+	position: absolute;
+	background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow.png');
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+* html .footerImageContainer {
+	display: none;
+}
+
+.footerButtons {
+	float: right;
+	line-height: 0;
+}
+
+.footerCopyright {
+	float: right;
+	padding-top: 21px;
+	padding-bottom: 10px;
+}
+
+	.footerCopyright p {
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+.footerLinks {
+	margin-top: 8px;
+	margin-bottom: 26px;
+	margin-right: 15px;
+}
+
+	.footerLinks ul {
+		width: 300px;
+		float: left;
+		line-height: 23px;
+	}
+
+		.footerLinks ul li {
+			width: 120px;
+			float: left;
+			list-style-type: none;
+			margin: 0;
+			padding: 0 30px 0 0;
+		}
+
+.footerSlogan {
+	width: 240px;
+	margin-top: 30px;
+	padding: 0 0 60px 50px;
+	float: right;
+}
+
+	.footerSlogan p {
+		font-size: 20px;
+		text-align: right;
+		font-weight: 500;
+		line-height: 26px;
+		letter-spacing: -1px;
+	}
+
+.footerSocial {
+	width: 100%;
+	clear: left;
+	padding-top: 20px;
+	padding-bottom: 23px;
+}
+
+	footer .footerSocial img {
+		width: 27px;
+		height: 27px;
+		padding-right: 15px;
+		float: left;
+	}
+
+.footerWarning p {
+	font-size: 14px;
+	line-height: 18px;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+	.footerWarning .noCalls {
+		line-height: 0;
+		padding-top: 21px;
+		padding-bottom: 11px;
+	}
+
+		.footerWarning .noCalls img {
+			width: 37px;
+			height: 28px;
+			background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/footer-no-calls.png');
+		}
+
+.rtl .footerContent {
+	float: right;
+}
+
+	.rtl .footerSocial img {
+		float: right;
+		padding-right: 0;
+		padding-left: 15px;
+	}
+
+.rtl .footerWarning,
+.rtl .footerLinks {
+	margin-right: 0px;
+	float: right;
+}
+
+.rtl .footerLinks ul li {
+	padding: 0 0 0 30px;
+}
+
+.rtl .footerCopyright {
+	float: left;
+}
+
+.rtl .footerSlogan {
+	float: left;
+	padding-left: 0px;
+}
+
+.rtl .footerButtons {
+	float: left;
+}
+
+.rtl .footerImageContainer {
+	right: auto;
+	left: -706px;
+	background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-rtl.png');
+	background-position: right top;
+}
+
+
+/* Language selector (mockup design)
+++=================================== */
+
+.footerLanguageSelector {
+	position: relative;
+}
+
+.footerLanguageSelector .language {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #333534;
+	padding-top: 8px;
+	float: left;
+}
+
+.footerLanguageSelector .languagesDropdown {
+	display: block;
+	width: 301px;
+	height: 35px;
+	margin: 1px;
+	border: 1px solid #cad6d9;
+	background-color: #eef4f6;
+}
+
+	* html .footerLanguageSelector .languagesDropdown {
+		visibility: hidden;
+	}
+
+	* html .footerLanguageSelector .languagesDropdown .userLanguage {
+		visibility: visible;
+	}
+
+	.footerLanguageSelector .languagesDropdown.open,
+	.footerLanguageSelector .languagesDropdown:hover {
+		border: 2px solid #bacad0;
+		margin: 0;
+	}
+
+	.languagesDropdown .world {
+		width: 41px;
+		height: 100%;
+		display: inline-block;
+		float: left;
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/languages-world.png');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.languagesDropdown .language {
+		float: left;
+	}
+
+	.languagesDropdown .pickDown {
+		width: 36px;
+		height: 100%;
+		display: inline-block;
+		float: right;
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/languages-pick-down.png');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.footerLanguageSelector .userLanguage {
+		position: absolute;
+		left: 0;
+		top: 1px;
+		height: 37px;
+		line-height: 37px;
+		width: 305px;
+		opacity: 0;
+		padding: 0;
+		border: 0;
+		filter: alpha(opacity=0);
+		cursor: pointer;
+	}
+
+		.rtl .footerLanguageSelector .userLanguage {
+			direction: ltr;
+		}
+
+		.userLanguage option[value=ar],
+		.userLanguage option[value=iw],
+		.userLanguage option[value=he] {
+			direction: rtl;
+		}
+
+	.slimlineFooter .userLanguage {
+		width: 254px;
+	}
+
+
+@media only screen and (min-width: 1496px) {
+	.footerImageContainer {
+		left: 50%;
+		margin-left: 454px;
+		background-position: 0 0;
+	}
+	.rtl .footerImageContainer {
+		left: auto;
+		right: 50%;
+		margin-right: 454px;
+		background-position: right top;
+	}
+}
+
+/* Slimline footer
+=================== */
+
+.slimlineFooter .footerContent {
+	margin: 30px 0 31px 0;
+	width: 720px;
+}
+
+.slimlineFooter {
+	float: none;
+}
+
+	.slimlineFooter .footerButtons {
+		margin-right: 120px;
+	}
+
+	* html .slimlineFooter .footerButtons {
+		display: inline;
+	}
+
+.slimlineFooter .footerLanguageSelector .languagesDropdown {
+	width: 250px;
+}
+
+.slimlineFooter .footerWarning {
+	float: left;
+	width: 300px;
+}
+
+* html .slimlineFooter .footerWarning {
+	margin-left: 0;
+}
+
+	.slimlineFooter .footerWarning p {
+		width: 270px;
+		margin-bottom: 0;
+	}
+
+	.slimlineFooter .footerWarning p strong {
+		font-size: 12px;
+	}
+
+	.slimlineFooter .footerWarning .noCalls {
+		padding-top: 1px;
+		padding-bottom: 20px;
+	}
+
+.slimlineFooter .footerCopyright {
+	padding-top: 19px;
+	padding-bottom: 0;
+	float: none;
+	width: 355px;
+}
+
+* html .slimlineFooter .footerCopyright {
+	float: left;
+}
+
+.rtl .slimlineFooter .footerContent {
+	float: right;
+}
+
+.rtl .slimlineFooter .footerWarning {
+	float: right;
+}
+
+.rtl .slimlineFooter .footerCopyright {
+	float: left;
+}
+
+.rtl .slimlineFooter .footerButtons {
+	float: left;
+	width: 250px;
+	margin-right: 0;
+	margin-left: 105px;
+}
+
+/* Overrides for retina
+============================== */
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-moz-device-pixel-ratio: 2) {
+	.languagesDropdown .world {
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/languages-world-hd.png');
+		background-size: 18px auto;
+	}
+
+	.languagesDropdown .pickDown {
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/languages-pick-down-hd.png');
+		background-size: 12px auto;
+	}
+
+	.footerImageContainer {
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-hd.png');
+		background-size: 488px auto;
+	}
+
+	.footerWarning .noCalls img {
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/footer-no-calls-hd.png');
+		background-size: 37px;
+	}
+}
+
+/* Overrides for tablet
+============================== */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	.noTabletState footer {
+		width: 960px;
+	}
+
+	html:not(.noTabletState) footer .centered {
+		width: 720px;
+	}
+
+	html:not(.noTabletState) .footerContent {
+		width: 515px;
+		padding-bottom: 10px;
+	}
+
+		html:not(.noTabletState) .footerContent > div {
+			width: 250px;
+		}
+
+	html:not(.noTabletState) .footerLinks ul {
+		width: 250px;
+	}
+
+		html:not(.noTabletState) .footerContent .footerLinks ul li{
+			padding: 0;
+		}
+
+	html:not(.noTabletState) .footerLanguageSelector .languagesDropdown {
+		position: relative;
+		width: 250px;
+	}
+
+	html:not(.noTabletState) .footerLanguageSelector .languagesDropdown .userLanguage {
+		width: 250px;
+	}
+
+	html:not(.noTabletState) .footerContent hr {
+		width: 515px;
+		margin: 0;
+	}
+
+	html:not(.noTabletState) .footerSlogan {
+		width: 150px;
+		padding: 0 0 60px 50px;
+	}
+
+	html:not(.noTabletState) .footerImageContainer {
+		height: 109px;
+		right: -781px;
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-tablet.png');
+	}
+
+	html.rtl:not(.noMobileState) .rtl .footerImageContainer {
+		right: auto;
+		left: -781px;
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-tablet-rtl.png');
+		background-position: right bottom;
+	}
+
+	html:not(.noTabletState) footer .bottom p {
+		width: auto;
+	}
+
+	html.rtl:not(.noMobileState) .rtl .footerWarning,
+	html.rtl:not(.noMobileState) .rtl .footerLinks {
+		margin-left: 15px;
+	}
+}
+
+/* slimline footer for tablet
+============================== */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	html:not(.noTabletState) footer.slimlineFooter .centered {
+		width: 720px;
+	}
+
+	html:not(.noTabletState) .slimlineFooter .footerContent {
+		width: 488px;
+		margin-bottom: 9px;
+		margin-top: 24px;
+	}
+
+		html:not(.noTabletState) .slimlineFooter .footerContent .footerWarning {
+			width: 210px;
+			padding-right: 28px;
+		}
+
+		html:not(.noTabletState) .slimlineFooter .footerContent .footerWarning p {
+			width: 210px;
+		}
+
+		html:not(.noTabletState) .slimlineFooter .footerContent .footerWarning .noCalls {
+			display: block;
+		}
+
+		html:not(.noTabletState) .slimlineFooter .footerContent .footerCopyright {
+			width: 250px;
+		}
+
+	html.rtl:not(.noMobileState) .slimlineFooter .footerContent .footerWarning {
+		padding-right: 0;
+	}
+
+	html:not(.noTabletState) .slimlineFooter .footerButtons,
+	html.rtl:not(.noMobileState) .slimlineFooter .footerButtons {
+		margin: 0;
+	}
+
+	html:not(.noTabletState) .footerImageContainer {
+		height: 109px;
+		right: -781px;
+	}
+
+	html.rtl:not(.noMobileState) .footerImageContainer {
+		right: 0;
+		background-position: right bottom;
+	}
+
+	html:not(.noTabletState) .slimlineFooter .footerImageContainer {
+		right: -751px;
+	}
+
+
+	html.rtl:not(.noMobileState) .slimlineFooter .footerImageContainer {
+		left: -751px;
+	}
+}
+
+/* Overrides for mobile
+============================== */
+
+@media only screen and (max-width: 767px) {
+
+	html:not(.noMobileState) footer {
+		min-width: 0;
+	}
+
+		html:not(.noMobileState) footer p {
+			font-weight: normal;
+		}
+
+		html:not(.noMobileState) footer .centered {
+			width: 320px;
+		}
+
+		html:not(.noMobileState) footer .noCalls img {
+			width: 34px;
+			height: 25px;
+			background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/footer-no-calls-mobile.png');
+		}
+
+		html:not(.noMobileState) footer .top {
+			width: 320px;
+			margin: 0 auto;
+		}
+
+	html:not(.noMobileState) .footerContent {
+		width: 280px;
+		margin: 20px;
+	}
+
+		html:not(.noMobileState) .footerContent > div {
+			width: 280px;
+		}
+
+		html:not(.noMobileState) .footerContent hr {
+			margin: 0;
+			width: 280px;
+		}
+
+	html:not(.noMobileState) .footerLanguageSelector .languagesDropdown {
+		width: 280px;
+	}
+
+	html:not(.noMobileState) .footerLanguageSelector .userLanguage {
+		width: 284px;
+	}
+
+	html:not(.noMobileState) .footerImageContainer {
+		width: 320px;
+		height: 77px;
+		right: 0;
+		bottom: 0;
+		margin: 0 auto;
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile.png');
+		background-position: right bottom;
+	}
+
+	html:not(.noMobileState) .footerCopyright {
+		padding-top: 19px;
+		padding-bottom: 5px;
+	}
+
+		html:not(.noMobileState) .footerCopyright p {
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+	html:not(.noMobileState) .footerLinks {
+		margin: 11px 0 1px 0;
+	}
+
+	html:not(.noMobileState) .footerWarning {
+		margin: 0;
+		float: left;
+	}
+
+		html.rtl:not(.noMobileState) .footerWarning {
+			float: right;
+		}
+
+		html:not(.noMobileState) .footerWarning p {
+			width: auto;
+			margin-bottom: -6px;
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		html:not(.noMobileState) .footerWarning .noCalls {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
+	html.rtl:not(.noMobileState) .footerLinks ul li {
+		float: right;
+		padding-left: 160px;
+	}
+
+	html.rtl:not(.noMobileState) .slimlineFooter .footerContent .footerWarning {
+		padding-right: 20px;
+	}
+
+	html.rtl:not(.noMobileState) .footerImageContainer {
+		left: 0;
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile-rtl.png');
+		background-position: left bottom;
+	}
+
+	/* Slimline footer for mobile
+	=================== */
+
+	html:not(.noMobileState) .slimlineFooter .footerContent {
+		margin: 20px auto;
+		width: 100%;
+	}
+
+	html:not(.noMobileState) .slimlineFooter div.footerButtons,
+	html:not(.noMobileState) .slimlineFooter div.footerCopyright,
+	html:not(.noMobileState) .slimlineFooter div.footerWarning,
+	html:not(.noMobileState) .slimlineFooter div.footerLinks {
+		float: none;
+		margin: 0 auto;
+		display: block;
+	}
+
+	html:not(.noMobileState) .slimlineFooter .footerBottomImage {
+		padding-top: 1px;
+		padding-bottom: 7px;
+	}
+
+	html:not(.noMobileState) .slimlineFooter div.footerCopyright {
+		width: 280px;
+		padding-top: 10px;
+		padding-bottom: 0;
+		margin-bottom: -2px;
+	}
+
+	html:not(.noMobileState) .slimlineFooter .footerCopyright p {
+		margin-right: 150px;
+	}
+
+	html:not(.noMobileState) .slimlineFooter .footerLinks ul {
+		margin-top: 17px;
+		margin-bottom: 10px;
+		width: 280px;
+		line-height: 1;
+	}
+
+	html:not(.noMobileState) .slimlineFooter .footerLinks ul li {
+		width: auto;
+		float: left;
+		margin: 0;
+		padding: 0 12px 0 0;
+		color: #c0c0c0;
+		list-style-type: none;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	html:not(.noMobileState) .slimlineFooter .footerLanguageSelector .languagesDropdown {
+		width: 280px;
+	}
+
+	html:not(.noMobileState) .slimlineFooter p {
+		width: auto;
+	}
+
+	html:not(.noMobileState) .slimlineFooter .footerWarning {
+		width: 280px;
+	}
+
+	html:not(.noMobileState) .slimlineFooter .footerWarning .noCalls {
+		padding-top: 0;
+		padding-bottom: 5px;
+	}
+
+	html:not(.noMobileState) .slimlineFooter .footerWarning p {
+		margin-bottom: -2px;
+	}
+
+	html.rtl:not(.noMobileState) .slimlineFooter .footerCopyright p {
+		margin-right: 0;
+		margin-left: 140px;
+		padding-right: 20px;
+	}
+
+	html.rtl:not(.noMobileState) .slimlineFooter div.footerCopyright {
+		float: right;
+	}
+
+	html.rtl:not(.noMobileState) .slimlineFooter .footerButtons {
+		float: none;
+		width: 280px;
+		margin: 0 auto;
+	}
+}
+
+/* Overrides for retina mobile
+============================== */
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (max-moz-device-pixel-ratio: 2) and (max-width: 767px) {
+	html:not(.noMobileState) .footerImageContainer {
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/backgrounds/footer-clouds-with-rainbow-mobile-hd.png');
+		background-size: 167px auto;
+	}
+
+	.footerWarning .noCalls img {
+		background-image: url('https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/icons/footer-no-calls-mobile-hd.png');
+		background-size: 34px auto;
+	}
+}
+.largeFlag {
+	width: 74px;
+	height: 46px;
+	background-image: url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/flags/country-flags-74x46.png);
+	background-repeat: no-repeat;
+}
+
+.mediumFlag {
+	width: 52px;
+	height: 32px;
+	background-image: url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/flags/country-flags-52x32.png);
+	background-repeat: no-repeat;
+}
+
+.smallFlag {
+	width: 37px;
+	height: 23px;
+	background-image: url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/flags/country-flags-37x23.png);
+	background-repeat: no-repeat;
+}
+
+/* Country flag
+================== */	
+
+.largeFlag-AD {
+	background-position: 0 0;
+}
+
+.largeFlag-AE {
+	background-position: 0 -50px;
+}
+
+.largeFlag-AF {
+	background-position: 0 -100px;
+}
+
+.largeFlag-AG {
+	background-position: 0 -150px;
+}
+
+.largeFlag-AI {
+	background-position: 0 -200px;
+}
+
+.largeFlag-AL {
+	background-position: 0 -250px;
+}
+
+.largeFlag-AM {
+	background-position: 0 -300px;
+}
+
+.largeFlag-AN {
+	background-position: 0 -350px;
+}
+
+.largeFlag-AO {
+	background-position: 0 -400px;
+}
+
+.largeFlag-AQ {
+	background-position: 0 -450px;
+}
+
+.largeFlag-AR {
+	background-position: 0 -500px;
+}
+
+.largeFlag-AS {
+	background-position: 0 -550px;
+}
+
+.largeFlag-AT {
+	background-position: 0 -600px;
+}
+
+.largeFlag-AU {
+	background-position: 0 -650px;
+}
+
+.largeFlag-AW {
+	background-position: 0 -700px;
+}
+
+.largeFlag-AX {
+	background-position: 0 -750px;
+}
+
+.largeFlag-AZ {
+	background-position: 0 -800px;
+}
+
+.largeFlag-BA {
+	background-position: 0 -850px;
+}
+
+.largeFlag-BB {
+	background-position: 0 -900px;
+}
+
+.largeFlag-BD {
+	background-position: 0 -950px;
+}
+
+.largeFlag-BE {
+	background-position: 0 -1000px;
+}
+
+.largeFlag-BF {
+	background-position: 0 -1050px;
+}
+
+.largeFlag-BG {
+	background-position: 0 -1100px;
+}
+
+.largeFlag-BH {
+	background-position: 0 -1150px;
+}
+
+.largeFlag-BI {
+	background-position: 0 -1200px;
+}
+
+.largeFlag-BJ {
+	background-position: 0 -1250px;
+}
+
+.largeFlag-BL {
+	background-position: 0 -1300px;
+}
+
+.largeFlag-BM {
+	background-position: 0 -1350px;
+}
+
+.largeFlag-BN {
+	background-position: 0 -1400px;
+}
+
+.largeFlag-BO {
+	background-position: 0 -1450px;
+}
+
+.largeFlag-BR {
+	background-position: 0 -1500px;
+}
+
+.largeFlag-BS {
+	background-position: 0 -1550px;
+}
+
+.largeFlag-BT {
+	background-position: 0 -1600px;
+}
+
+.largeFlag-BV {
+	background-position: 0 -1650px;
+}
+
+.largeFlag-BW {
+	background-position: 0 -1700px;
+}
+
+.largeFlag-BY {
+	background-position: 0 -1750px;
+}
+
+.largeFlag-BZ {
+	background-position: 0 -1800px;
+}
+
+.largeFlag-CA {
+	background-position: 0 -1850px;
+}
+
+.largeFlag-CC {
+	background-position: 0 -1900px;
+}
+
+.largeFlag-CD {
+	background-position: 0 -1950px;
+}
+
+.largeFlag-CF {
+	background-position: 0 -2000px;
+}
+
+.largeFlag-CG {
+	background-position: 0 -2050px;
+}
+
+.largeFlag-CH {
+	background-position: 0 -2100px;
+}
+
+.largeFlag-CI {
+	background-position: 0 -2150px;
+}
+
+.largeFlag-CK {
+	background-position: 0 -2200px;
+}
+
+.largeFlag-CL {
+	background-position: 0 -2250px;
+}
+
+.largeFlag-CM {
+	background-position: 0 -2300px;
+}
+
+.largeFlag-CN {
+	background-position: 0 -2350px;
+}
+
+.largeFlag-CO {
+	background-position: 0 -2400px;
+}
+
+.largeFlag-CR {
+	background-position: 0 -2450px;
+}
+
+.largeFlag-CU {
+	background-position: 0 -2500px;
+}
+
+.largeFlag-CV {
+	background-position: 0 -2550px;
+}
+
+.largeFlag-CX {
+	background-position: 0 -2600px;
+}
+
+.largeFlag-CY {
+	background-position: 0 -2650px;
+}
+
+.largeFlag-CZ {
+	background-position: 0 -2700px;
+}
+
+.largeFlag-DE {
+	background-position: 0 -2750px;
+}
+
+.largeFlag-DJ {
+	background-position: 0 -2800px;
+}
+
+.largeFlag-DK {
+	background-position: 0 -2850px;
+}
+
+.largeFlag-DM {
+	background-position: 0 -2900px;
+}
+
+.largeFlag-DO {
+	background-position: 0 -2950px;
+}
+
+.largeFlag-DZ {
+	background-position: 0 -3000px;
+}
+
+.largeFlag-EC {
+	background-position: 0 -3050px;
+}
+
+.largeFlag-EE {
+	background-position: 0 -3100px;
+}
+
+.largeFlag-EG {
+	background-position: 0 -3150px;
+}
+
+.largeFlag-EH {
+	background-position: 0 -3200px;
+}
+
+.largeFlag-ER {
+	background-position: 0 -3250px;
+}
+
+.largeFlag-ES {
+	background-position: 0 -3300px;
+}
+
+.largeFlag-ET {
+	background-position: 0 -3350px;
+}
+
+.largeFlag-FI {
+	background-position: 0 -3400px;
+}
+
+.largeFlag-FJ {
+	background-position: 0 -3450px;
+}
+
+.largeFlag-FK {
+	background-position: 0 -3500px;
+}
+
+.largeFlag-FM {
+	background-position: 0 -3550px;
+}
+
+.largeFlag-FO {
+	background-position: 0 -3600px;
+}
+
+.largeFlag-FR {
+	background-position: 0 -3650px;
+}
+
+.largeFlag-GA {
+	background-position: 0 -3700px;
+}
+
+.largeFlag-GB {
+	background-position: 0 -3750px;
+}
+
+.largeFlag-GD {
+	background-position: 0 -3800px;
+}
+
+.largeFlag-GE {
+	background-position: 0 -3850px;
+}
+
+.largeFlag-GF {
+	background-position: 0 -3900px;
+}
+
+.largeFlag-GG {
+	background-position: 0 -3950px;
+}
+
+.largeFlag-GH {
+	background-position: 0 -4000px;
+}
+
+.largeFlag-GI {
+	background-position: 0 -4050px;
+}
+
+.largeFlag-GL {
+	background-position: 0 -4100px;
+}
+
+.largeFlag-GM {
+	background-position: 0 -4150px;
+}
+
+.largeFlag-GN {
+	background-position: 0 -4200px;
+}
+
+.largeFlag-GP {
+	background-position: 0 -4250px;
+}
+
+.largeFlag-GQ {
+	background-position: 0 -4300px;
+}
+
+.largeFlag-GR {
+	background-position: 0 -4350px;
+}
+
+.largeFlag-GS {
+	background-position: 0 -4400px;
+}
+
+.largeFlag-GT {
+	background-position: 0 -4450px;
+}
+
+.largeFlag-GU {
+	background-position: 0 -4500px;
+}
+
+.largeFlag-GW {
+	background-position: 0 -4550px;
+}
+
+.largeFlag-GY {
+	background-position: 0 -4600px;
+}
+
+.largeFlag-HK {
+	background-position: 0 -4650px;
+}
+
+.largeFlag-HM {
+	background-position: 0 -4700px;
+}
+
+.largeFlag-HN {
+	background-position: 0 -4750px;
+}
+
+.largeFlag-HR {
+	background-position: 0 -4800px;
+}
+
+.largeFlag-HT {
+	background-position: 0 -4850px;
+}
+
+.largeFlag-HU {
+	background-position: 0 -4900px;
+}
+
+.largeFlag-ID {
+	background-position: 0 -4950px;
+}
+
+.largeFlag-IE {
+	background-position: 0 -5000px;
+}
+
+.largeFlag-IL {
+	background-position: 0 -5050px;
+}
+
+.largeFlag-IM {
+	background-position: 0 -5100px;
+}
+
+.largeFlag-IN {
+	background-position: 0 -5150px;
+}
+
+.largeFlag-IO {
+	background-position: 0 -5200px;
+}
+
+.largeFlag-IQ {
+	background-position: 0 -5250px;
+}
+
+.largeFlag-IR {
+	background-position: 0 -5300px;
+}
+
+.largeFlag-IS {
+	background-position: 0 -5350px;
+}
+
+.largeFlag-IT {
+	background-position: 0 -5400px;
+}
+
+.largeFlag-JE {
+	background-position: 0 -5450px;
+}
+
+.largeFlag-JM {
+	background-position: 0 -5500px;
+}
+
+.largeFlag-JO {
+	background-position: 0 -5550px;
+}
+
+.largeFlag-JP {
+	background-position: 0 -5600px;
+}
+
+.largeFlag-KE {
+	background-position: 0 -5650px;
+}
+
+.largeFlag-KG {
+	background-position: 0 -5700px;
+}
+
+.largeFlag-KH {
+	background-position: 0 -5750px;
+}
+
+.largeFlag-KI {
+	background-position: 0 -5800px;
+}
+
+.largeFlag-KM {
+	background-position: 0 -5850px;
+}
+
+.largeFlag-KN {
+	background-position: 0 -5900px;
+}
+
+.largeFlag-KP {
+	background-position: 0 -5950px;
+}
+
+.largeFlag-KR {
+	background-position: 0 -6000px;
+}
+
+.largeFlag-KW {
+	background-position: 0 -6050px;
+}
+
+.largeFlag-KY {
+	background-position: 0 -6100px;
+}
+
+.largeFlag-KZ {
+	background-position: 0 -6150px;
+}
+
+.largeFlag-LA {
+	background-position: 0 -6200px;
+}
+
+.largeFlag-LB {
+	background-position: 0 -6250px;
+}
+
+.largeFlag-LC {
+	background-position: 0 -6300px;
+}
+
+.largeFlag-LI {
+	background-position: 0 -6350px;
+}
+
+.largeFlag-LK {
+	background-position: 0 -6400px;
+}
+
+.largeFlag-LR {
+	background-position: 0 -6450px;
+}
+
+.largeFlag-LS {
+	background-position: 0 -6500px;
+}
+
+.largeFlag-LT {
+	background-position: 0 -6550px;
+}
+
+.largeFlag-LU {
+	background-position: 0 -6600px;
+}
+
+.largeFlag-LV {
+	background-position: 0 -6650px;
+}
+
+.largeFlag-LY {
+	background-position: 0 -6700px;
+}
+
+.largeFlag-MA {
+	background-position: 0 -6750px;
+}
+
+.largeFlag-MC {
+	background-position: 0 -6800px;
+}
+
+.largeFlag-MD {
+	background-position: 0 -6850px;
+}
+
+.largeFlag-ME {
+	background-position: 0 -6900px;
+}
+
+.largeFlag-MF {
+	background-position: 0 -6950px;
+}
+
+.largeFlag-MG {
+	background-position: 0 -7000px;
+}
+
+.largeFlag-MH {
+	background-position: 0 -7050px;
+}
+
+.largeFlag-MK {
+	background-position: 0 -7100px;
+}
+
+.largeFlag-ML {
+	background-position: 0 -7150px;
+}
+
+.largeFlag-MM {
+	background-position: 0 -7200px;
+}
+
+.largeFlag-MN {
+	background-position: 0 -7250px;
+}
+
+.largeFlag-MO {
+	background-position: 0 -7300px;
+}
+
+.largeFlag-MP {
+	background-position: 0 -7350px;
+}
+
+.largeFlag-MQ {
+	background-position: 0 -7400px;
+}
+
+.largeFlag-MR {
+	background-position: 0 -7450px;
+}
+
+.largeFlag-MS {
+	background-position: 0 -7500px;
+}
+
+.largeFlag-MT {
+	background-position: 0 -7550px;
+}
+
+.largeFlag-MU {
+	background-position: 0 -7600px;
+}
+
+.largeFlag-MV {
+	background-position: 0 -7650px;
+}
+
+.largeFlag-MW {
+	background-position: 0 -7700px;
+}
+
+.largeFlag-MX {
+	background-position: 0 -7750px;
+}
+
+.largeFlag-MY {
+	background-position: 0 -7800px;
+}
+
+.largeFlag-MZ {
+	background-position: 0 -7850px;
+}
+
+.largeFlag-NA {
+	background-position: 0 -7900px;
+}
+
+.largeFlag-NC {
+	background-position: 0 -7950px;
+}
+
+.largeFlag-NE {
+	background-position: 0 -8000px;
+}
+
+.largeFlag-NF {
+	background-position: 0 -8050px;
+}
+
+.largeFlag-NG {
+	background-position: 0 -8100px;
+}
+
+.largeFlag-NI {
+	background-position: 0 -8150px;
+}
+
+.largeFlag-NL {
+	background-position: 0 -8200px;
+}
+
+.largeFlag-NO {
+	background-position: 0 -8250px;
+}
+
+.largeFlag-NP {
+	background-position: 0 -8300px;
+}
+
+.largeFlag-NR {
+	background-position: 0 -8350px;
+}
+
+.largeFlag-NU {
+	background-position: 0 -8400px;
+}
+
+.largeFlag-NZ {
+	background-position: 0 -8450px;
+}
+
+.largeFlag-OM {
+	background-position: 0 -8500px;
+}
+
+.largeFlag-PA {
+	background-position: 0 -8550px;
+}
+
+.largeFlag-PE {
+	background-position: 0 -8600px;
+}
+
+.largeFlag-PF {
+	background-position: 0 -8650px;
+}
+
+.largeFlag-PG {
+	background-position: 0 -8700px;
+}
+
+.largeFlag-PH {
+	background-position: 0 -8750px;
+}
+
+.largeFlag-PK {
+	background-position: 0 -8800px;
+}
+
+.largeFlag-PL {
+	background-position: 0 -8850px;
+}
+
+.largeFlag-PM {
+	background-position: 0 -8900px;
+}
+
+.largeFlag-PN {
+	background-position: 0 -8950px;
+}
+
+.largeFlag-PR {
+	background-position: 0 -9000px;
+}
+
+.largeFlag-PS {
+	background-position: 0 -9050px;
+}
+
+.largeFlag-PT {
+	background-position: 0 -9100px;
+}
+
+.largeFlag-PW {
+	background-position: 0 -9150px;
+}
+
+.largeFlag-PY {
+	background-position: 0 -9200px;
+}
+
+.largeFlag-QA {
+	background-position: 0 -9250px;
+}
+
+.largeFlag-RE {
+	background-position: 0 -9300px;
+}
+
+.largeFlag-RO {
+	background-position: 0 -9350px;
+}
+
+.largeFlag-RS {
+	background-position: 0 -9400px;
+}
+
+.largeFlag-RU {
+	background-position: 0 -9450px;
+}
+
+.largeFlag-RW {
+	background-position: 0 -9500px;
+}
+
+.largeFlag-SA {
+	background-position: 0 -9550px;
+}
+
+.largeFlag-SB {
+	background-position: 0 -9600px;
+}
+
+.largeFlag-SC {
+	background-position: 0 -9650px;
+}
+
+.largeFlag-SD {
+	background-position: 0 -9700px;
+}
+
+.largeFlag-SE {
+	background-position: 0 -9750px;
+}
+
+.largeFlag-SG {
+	background-position: 0 -9800px;
+}
+
+.largeFlag-SH {
+	background-position: 0 -9850px;
+}
+
+.largeFlag-SI {
+	background-position: 0 -9900px;
+}
+
+.largeFlag-SJ {
+	background-position: 0 -9950px;
+}
+
+.largeFlag-SK {
+	background-position: 0 -10000px;
+}
+
+.largeFlag-SL {
+	background-position: 0 -10050px;
+}
+
+.largeFlag-SM {
+	background-position: 0 -10100px;
+}
+
+.largeFlag-SN {
+	background-position: 0 -10150px;
+}
+
+.largeFlag-SO {
+	background-position: 0 -10200px;
+}
+
+.largeFlag-SR {
+	background-position: 0 -10250px;
+}
+
+.largeFlag-ST {
+	background-position: 0 -10300px;
+}
+
+.largeFlag-SV {
+	background-position: 0 -10350px;
+}
+
+.largeFlag-SY {
+	background-position: 0 -10400px;
+}
+
+.largeFlag-SZ {
+	background-position: 0 -10450px;
+}
+
+.largeFlag-TC {
+	background-position: 0 -10500px;
+}
+
+.largeFlag-TD {
+	background-position: 0 -10550px;
+}
+
+.largeFlag-TF {
+	background-position: 0 -10600px;
+}
+
+.largeFlag-TG {
+	background-position: 0 -10650px;
+}
+
+.largeFlag-TH {
+	background-position: 0 -10700px;
+}
+
+.largeFlag-TJ {
+	background-position: 0 -10750px;
+}
+
+.largeFlag-TK {
+	background-position: 0 -10800px;
+}
+
+.largeFlag-TL {
+	background-position: 0 -10850px;
+}
+
+.largeFlag-TM {
+	background-position: 0 -10900px;
+}
+
+.largeFlag-TN {
+	background-position: 0 -10950px;
+}
+
+.largeFlag-TO {
+	background-position: 0 -11000px;
+}
+
+.largeFlag-TR {
+	background-position: 0 -11050px;
+}
+
+.largeFlag-TT {
+	background-position: 0 -11100px;
+}
+
+.largeFlag-TV {
+	background-position: 0 -11150px;
+}
+
+.largeFlag-TW {
+	background-position: 0 -11200px;
+}
+
+.largeFlag-TZ {
+	background-position: 0 -11250px;
+}
+
+.largeFlag-UA {
+	background-position: 0 -11300px;
+}
+
+.largeFlag-UG {
+	background-position: 0 -11350px;
+}
+
+.largeFlag-UM {
+	background-position: 0 -11400px;
+}
+
+.largeFlag-US {
+	background-position: 0 -11450px;
+}
+
+.largeFlag-UY {
+	background-position: 0 -11500px;
+}
+
+.largeFlag-UZ {
+	background-position: 0 -11550px;
+}
+
+.largeFlag-VA {
+	background-position: 0 -11600px;
+}
+
+.largeFlag-VC {
+	background-position: 0 -11650px;
+}
+
+.largeFlag-VE {
+	background-position: 0 -11700px;
+}
+
+.largeFlag-VG {
+	background-position: 0 -11750px;
+}
+
+.largeFlag-VI {
+	background-position: 0 -11800px;
+}
+
+.largeFlag-VN {
+	background-position: 0 -11850px;
+}
+
+.largeFlag-VU {
+	background-position: 0 -11900px;
+}
+
+.largeFlag-WF {
+	background-position: 0 -11950px;
+}
+
+.largeFlag-WS {
+	background-position: 0 -12000px;
+}
+
+.largeFlag-YE {
+	background-position: 0 -12050px;
+}
+
+.largeFlag-YT {
+	background-position: 0 -12100px;
+}
+
+.largeFlag-ZA {
+	background-position: 0 -12150px;
+}
+
+.largeFlag-ZM {
+	background-position: 0 -12200px;
+}
+
+.largeFlag-ZW {
+	background-position: 0 -12250px;
+}
+
+.largeFlag-AC {
+	background-position: 0 -12300px;
+}
+
+.largeFlag-IZ {
+	background-position: 0 -12350px;
+}
+
+.largeFlag-SQ {
+	background-position: 0 -12400px;
+}
+
+.largeFlag-SS {
+	background-position: 0 -12450px;
+}
+
+.largeFlag-SX {
+	background-position: 0 -12500px;
+}
+
+.largeFlag-UN {
+	background-position: 0 -12550px;
+}
+
+.largeFlag-VO {
+	background-position: 0 -12600px;
+}
+
+.largeFlag-XX {
+	background-position: 0 -12650px;
+}
+
+.mediumFlag-AD {
+	background-position: 0 0;
+}
+
+.mediumFlag-AE {
+	background-position: 0 -35px;
+}
+
+.mediumFlag-AF {
+	background-position: 0 -70px;
+}
+
+.mediumFlag-AG {
+	background-position: 0 -105px;
+}
+
+.mediumFlag-AI {
+	background-position: 0 -140px;
+}
+
+.mediumFlag-AL {
+	background-position: 0 -175px;
+}
+
+.mediumFlag-AM {
+	background-position: 0 -210px;
+}
+
+.mediumFlag-AN {
+	background-position: 0 -245px;
+}
+
+.mediumFlag-AO {
+	background-position: 0 -280px;
+}
+
+.mediumFlag-AQ {
+	background-position: 0 -315px;
+}
+
+.mediumFlag-AR {
+	background-position: 0 -350px;
+}
+
+.mediumFlag-AS {
+	background-position: 0 -385px;
+}
+
+.mediumFlag-AT {
+	background-position: 0 -420px;
+}
+
+.mediumFlag-AU {
+	background-position: 0 -455px;
+}
+
+.mediumFlag-AW {
+	background-position: 0 -490px;
+}
+
+.mediumFlag-AX {
+	background-position: 0 -525px;
+}
+
+.mediumFlag-AZ {
+	background-position: 0 -560px;
+}
+
+.mediumFlag-BA {
+	background-position: 0 -595px;
+}
+
+.mediumFlag-BB {
+	background-position: 0 -630px;
+}
+
+.mediumFlag-BD {
+	background-position: 0 -665px;
+}
+
+.mediumFlag-BE {
+	background-position: 0 -700px;
+}
+
+.mediumFlag-BF {
+	background-position: 0 -735px;
+}
+
+.mediumFlag-BG {
+	background-position: 0 -770px;
+}
+
+.mediumFlag-BH {
+	background-position: 0 -805px;
+}
+
+.mediumFlag-BI {
+	background-position: 0 -840px;
+}
+
+.mediumFlag-BJ {
+	background-position: 0 -875px;
+}
+
+.mediumFlag-BL {
+	background-position: 0 -910px;
+}
+
+.mediumFlag-BM {
+	background-position: 0 -945px;
+}
+
+.mediumFlag-BN {
+	background-position: 0 -980px;
+}
+
+.mediumFlag-BO {
+	background-position: 0 -1015px;
+}
+
+.mediumFlag-BR {
+	background-position: 0 -1050px;
+}
+
+.mediumFlag-BS {
+	background-position: 0 -1085px;
+}
+
+.mediumFlag-BT {
+	background-position: 0 -1120px;
+}
+
+.mediumFlag-BV {
+	background-position: 0 -1155px;
+}
+
+.mediumFlag-BW {
+	background-position: 0 -1190px;
+}
+
+.mediumFlag-BY {
+	background-position: 0 -1225px;
+}
+
+.mediumFlag-BZ {
+	background-position: 0 -1260px;
+}
+
+.mediumFlag-CA {
+	background-position: 0 -1295px;
+}
+
+.mediumFlag-CC {
+	background-position: 0 -1330px;
+}
+
+.mediumFlag-CD {
+	background-position: 0 -1365px;
+}
+
+.mediumFlag-CF {
+	background-position: 0 -1400px;
+}
+
+.mediumFlag-CG {
+	background-position: 0 -1435px;
+}
+
+.mediumFlag-CH {
+	background-position: 0 -1470px;
+}
+
+.mediumFlag-CI {
+	background-position: 0 -1505px;
+}
+
+.mediumFlag-CK {
+	background-position: 0 -1540px;
+}
+
+.mediumFlag-CL {
+	background-position: 0 -1575px;
+}
+
+.mediumFlag-CM {
+	background-position: 0 -1610px;
+}
+
+.mediumFlag-CN {
+	background-position: 0 -1645px;
+}
+
+.mediumFlag-CO {
+	background-position: 0 -1680px;
+}
+
+.mediumFlag-CR {
+	background-position: 0 -1715px;
+}
+
+.mediumFlag-CU {
+	background-position: 0 -1750px;
+}
+
+.mediumFlag-CV {
+	background-position: 0 -1785px;
+}
+
+.mediumFlag-CX {
+	background-position: 0 -1820px;
+}
+
+.mediumFlag-CY {
+	background-position: 0 -1855px;
+}
+
+.mediumFlag-CZ {
+	background-position: 0 -1890px;
+}
+
+.mediumFlag-DE {
+	background-position: 0 -1925px;
+}
+
+.mediumFlag-DJ {
+	background-position: 0 -1960px;
+}
+
+.mediumFlag-DK {
+	background-position: 0 -1995px;
+}
+
+.mediumFlag-DM {
+	background-position: 0 -2030px;
+}
+
+.mediumFlag-DO {
+	background-position: 0 -2065px;
+}
+
+.mediumFlag-DZ {
+	background-position: 0 -2100px;
+}
+
+.mediumFlag-EC {
+	background-position: 0 -2135px;
+}
+
+.mediumFlag-EE {
+	background-position: 0 -2170px;
+}
+
+.mediumFlag-EG {
+	background-position: 0 -2205px;
+}
+
+.mediumFlag-EH {
+	background-position: 0 -2240px;
+}
+
+.mediumFlag-ER {
+	background-position: 0 -2275px;
+}
+
+.mediumFlag-ES {
+	background-position: 0 -2310px;
+}
+
+.mediumFlag-ET {
+	background-position: 0 -2345px;
+}
+
+.mediumFlag-FI {
+	background-position: 0 -2380px;
+}
+
+.mediumFlag-FJ {
+	background-position: 0 -2415px;
+}
+
+.mediumFlag-FK {
+	background-position: 0 -2450px;
+}
+
+.mediumFlag-FM {
+	background-position: 0 -2485px;
+}
+
+.mediumFlag-FO {
+	background-position: 0 -2520px;
+}
+
+.mediumFlag-FR {
+	background-position: 0 -2555px;
+}
+
+.mediumFlag-GA {
+	background-position: 0 -2590px;
+}
+
+.mediumFlag-GB {
+	background-position: 0 -2625px;
+}
+
+.mediumFlag-GD {
+	background-position: 0 -2660px;
+}
+
+.mediumFlag-GE {
+	background-position: 0 -2695px;
+}
+
+.mediumFlag-GF {
+	background-position: 0 -2730px;
+}
+
+.mediumFlag-GG {
+	background-position: 0 -2765px;
+}
+
+.mediumFlag-GH {
+	background-position: 0 -2800px;
+}
+
+.mediumFlag-GI {
+	background-position: 0 -2835px;
+}
+
+.mediumFlag-GL {
+	background-position: 0 -2870px;
+}
+
+.mediumFlag-GM {
+	background-position: 0 -2905px;
+}
+
+.mediumFlag-GN {
+	background-position: 0 -2940px;
+}
+
+.mediumFlag-GP {
+	background-position: 0 -2975px;
+}
+
+.mediumFlag-GQ {
+	background-position: 0 -3010px;
+}
+
+.mediumFlag-GR {
+	background-position: 0 -3045px;
+}
+
+.mediumFlag-GS {
+	background-position: 0 -3080px;
+}
+
+.mediumFlag-GT {
+	background-position: 0 -3115px;
+}
+
+.mediumFlag-GU {
+	background-position: 0 -3150px;
+}
+
+.mediumFlag-GW {
+	background-position: 0 -3185px;
+}
+
+.mediumFlag-GY {
+	background-position: 0 -3220px;
+}
+
+.mediumFlag-HK {
+	background-position: 0 -3255px;
+}
+
+.mediumFlag-HM {
+	background-position: 0 -3290px;
+}
+
+.mediumFlag-HN {
+	background-position: 0 -3325px;
+}
+
+.mediumFlag-HR {
+	background-position: 0 -3360px;
+}
+
+.mediumFlag-HT {
+	background-position: 0 -3395px;
+}
+
+.mediumFlag-HU {
+	background-position: 0 -3430px;
+}
+
+.mediumFlag-ID {
+	background-position: 0 -3465px;
+}
+
+.mediumFlag-IE {
+	background-position: 0 -3500px;
+}
+
+.mediumFlag-IL {
+	background-position: 0 -3535px;
+}
+
+.mediumFlag-IM {
+	background-position: 0 -3570px;
+}
+
+.mediumFlag-IN {
+	background-position: 0 -3605px;
+}
+
+.mediumFlag-IO {
+	background-position: 0 -3640px;
+}
+
+.mediumFlag-IQ {
+	background-position: 0 -3675px;
+}
+
+.mediumFlag-IR {
+	background-position: 0 -3710px;
+}
+
+.mediumFlag-IS {
+	background-position: 0 -3745px;
+}
+
+.mediumFlag-IT {
+	background-position: 0 -3780px;
+}
+
+.mediumFlag-JE {
+	background-position: 0 -3815px;
+}
+
+.mediumFlag-JM {
+	background-position: 0 -3850px;
+}
+
+.mediumFlag-JO {
+	background-position: 0 -3885px;
+}
+
+.mediumFlag-JP {
+	background-position: 0 -3920px;
+}
+
+.mediumFlag-KE {
+	background-position: 0 -3955px;
+}
+
+.mediumFlag-KG {
+	background-position: 0 -3990px;
+}
+
+.mediumFlag-KH {
+	background-position: 0 -4025px;
+}
+
+.mediumFlag-KI {
+	background-position: 0 -4060px;
+}
+
+.mediumFlag-KM {
+	background-position: 0 -4095px;
+}
+
+.mediumFlag-KN {
+	background-position: 0 -4130px;
+}
+
+.mediumFlag-KP {
+	background-position: 0 -4165px;
+}
+
+.mediumFlag-KR {
+	background-position: 0 -4200px;
+}
+
+.mediumFlag-KW {
+	background-position: 0 -4235px;
+}
+
+.mediumFlag-KY {
+	background-position: 0 -4270px;
+}
+
+.mediumFlag-KZ {
+	background-position: 0 -4305px;
+}
+
+.mediumFlag-LA {
+	background-position: 0 -4340px;
+}
+
+.mediumFlag-LB {
+	background-position: 0 -4375px;
+}
+
+.mediumFlag-LC {
+	background-position: 0 -4410px;
+}
+
+.mediumFlag-LI {
+	background-position: 0 -4445px;
+}
+
+.mediumFlag-LK {
+	background-position: 0 -4480px;
+}
+
+.mediumFlag-LR {
+	background-position: 0 -4515px;
+}
+
+.mediumFlag-LS {
+	background-position: 0 -4550px;
+}
+
+.mediumFlag-LT {
+	background-position: 0 -4585px;
+}
+
+.mediumFlag-LU {
+	background-position: 0 -4620px;
+}
+
+.mediumFlag-LV {
+	background-position: 0 -4655px;
+}
+
+.mediumFlag-LY {
+	background-position: 0 -4690px;
+}
+
+.mediumFlag-MA {
+	background-position: 0 -4725px;
+}
+
+.mediumFlag-MC {
+	background-position: 0 -4760px;
+}
+
+.mediumFlag-MD {
+	background-position: 0 -4795px;
+}
+
+.mediumFlag-ME {
+	background-position: 0 -4830px;
+}
+
+.mediumFlag-MF {
+	background-position: 0 -4865px;
+}
+
+.mediumFlag-MG {
+	background-position: 0 -4900px;
+}
+
+.mediumFlag-MH {
+	background-position: 0 -4935px;
+}
+
+.mediumFlag-MK {
+	background-position: 0 -4970px;
+}
+
+.mediumFlag-ML {
+	background-position: 0 -5005px;
+}
+
+.mediumFlag-MM {
+	background-position: 0 -5040px;
+}
+
+.mediumFlag-MN {
+	background-position: 0 -5075px;
+}
+
+.mediumFlag-MO {
+	background-position: 0 -5110px;
+}
+
+.mediumFlag-MP {
+	background-position: 0 -5145px;
+}
+
+.mediumFlag-MQ {
+	background-position: 0 -5180px;
+}
+
+.mediumFlag-MR {
+	background-position: 0 -5215px;
+}
+
+.mediumFlag-MS {
+	background-position: 0 -5250px;
+}
+
+.mediumFlag-MT {
+	background-position: 0 -5285px;
+}
+
+.mediumFlag-MU {
+	background-position: 0 -5320px;
+}
+
+.mediumFlag-MV {
+	background-position: 0 -5355px;
+}
+
+.mediumFlag-MW {
+	background-position: 0 -5390px;
+}
+
+.mediumFlag-MX {
+	background-position: 0 -5425px;
+}
+
+.mediumFlag-MY {
+	background-position: 0 -5460px;
+}
+
+.mediumFlag-MZ {
+	background-position: 0 -5495px;
+}
+
+.mediumFlag-NA {
+	background-position: 0 -5530px;
+}
+
+.mediumFlag-NC {
+	background-position: 0 -5565px;
+}
+
+.mediumFlag-NE {
+	background-position: 0 -5600px;
+}
+
+.mediumFlag-NF {
+	background-position: 0 -5635px;
+}
+
+.mediumFlag-NG {
+	background-position: 0 -5670px;
+}
+
+.mediumFlag-NI {
+	background-position: 0 -5705px;
+}
+
+.mediumFlag-NL {
+	background-position: 0 -5740px;
+}
+
+.mediumFlag-NO {
+	background-position: 0 -5775px;
+}
+
+.mediumFlag-NP {
+	background-position: 0 -5810px;
+}
+
+.mediumFlag-NR {
+	background-position: 0 -5845px;
+}
+
+.mediumFlag-NU {
+	background-position: 0 -5880px;
+}
+
+.mediumFlag-NZ {
+	background-position: 0 -5915px;
+}
+
+.mediumFlag-OM {
+	background-position: 0 -5950px;
+}
+
+.mediumFlag-PA {
+	background-position: 0 -5985px;
+}
+
+.mediumFlag-PE {
+	background-position: 0 -6020px;
+}
+
+.mediumFlag-PF {
+	background-position: 0 -6055px;
+}
+
+.mediumFlag-PG {
+	background-position: 0 -6090px;
+}
+
+.mediumFlag-PH {
+	background-position: 0 -6125px;
+}
+
+.mediumFlag-PK {
+	background-position: 0 -6160px;
+}
+
+.mediumFlag-PL {
+	background-position: 0 -6195px;
+}
+
+.mediumFlag-PM {
+	background-position: 0 -6230px;
+}
+
+.mediumFlag-PN {
+	background-position: 0 -6265px;
+}
+
+.mediumFlag-PR {
+	background-position: 0 -6300px;
+}
+
+.mediumFlag-PS {
+	background-position: 0 -6335px;
+}
+
+.mediumFlag-PT {
+	background-position: 0 -6370px;
+}
+
+.mediumFlag-PW {
+	background-position: 0 -6405px;
+}
+
+.mediumFlag-PY {
+	background-position: 0 -6440px;
+}
+
+.mediumFlag-QA {
+	background-position: 0 -6475px;
+}
+
+.mediumFlag-RE {
+	background-position: 0 -6510px;
+}
+
+.mediumFlag-RO {
+	background-position: 0 -6545px;
+}
+
+.mediumFlag-RS {
+	background-position: 0 -6580px;
+}
+
+.mediumFlag-RU {
+	background-position: 0 -6615px;
+}
+
+.mediumFlag-RW {
+	background-position: 0 -6650px;
+}
+
+.mediumFlag-SA {
+	background-position: 0 -6685px;
+}
+
+.mediumFlag-SB {
+	background-position: 0 -6720px;
+}
+
+.mediumFlag-SC {
+	background-position: 0 -6755px;
+}
+
+.mediumFlag-SD {
+	background-position: 0 -6790px;
+}
+
+.mediumFlag-SE {
+	background-position: 0 -6825px;
+}
+
+.mediumFlag-SG {
+	background-position: 0 -6860px;
+}
+
+.mediumFlag-SH {
+	background-position: 0 -6895px;
+}
+
+.mediumFlag-SI {
+	background-position: 0 -6930px;
+}
+
+.mediumFlag-SJ {
+	background-position: 0 -6965px;
+}
+
+.mediumFlag-SK {
+	background-position: 0 -7000px;
+}
+
+.mediumFlag-SL {
+	background-position: 0 -7035px;
+}
+
+.mediumFlag-SM {
+	background-position: 0 -7070px;
+}
+
+.mediumFlag-SN {
+	background-position: 0 -7105px;
+}
+
+.mediumFlag-SO {
+	background-position: 0 -7140px;
+}
+
+.mediumFlag-SR {
+	background-position: 0 -7175px;
+}
+
+.mediumFlag-ST {
+	background-position: 0 -7210px;
+}
+
+.mediumFlag-SV {
+	background-position: 0 -7245px;
+}
+
+.mediumFlag-SY {
+	background-position: 0 -7280px;
+}
+
+.mediumFlag-SZ {
+	background-position: 0 -7315px;
+}
+
+.mediumFlag-TC {
+	background-position: 0 -7350px;
+}
+
+.mediumFlag-TD {
+	background-position: 0 -7385px;
+}
+
+.mediumFlag-TF {
+	background-position: 0 -7420px;
+}
+
+.mediumFlag-TG {
+	background-position: 0 -7455px;
+}
+
+.mediumFlag-TH {
+	background-position: 0 -7490px;
+}
+
+.mediumFlag-TJ {
+	background-position: 0 -7525px;
+}
+
+.mediumFlag-TK {
+	background-position: 0 -7560px;
+}
+
+.mediumFlag-TL {
+	background-position: 0 -7595px;
+}
+
+.mediumFlag-TM {
+	background-position: 0 -7630px;
+}
+
+.mediumFlag-TN {
+	background-position: 0 -7665px;
+}
+
+.mediumFlag-TO {
+	background-position: 0 -7700px;
+}
+
+.mediumFlag-TR {
+	background-position: 0 -7735px;
+}
+
+.mediumFlag-TT {
+	background-position: 0 -7770px;
+}
+
+.mediumFlag-TV {
+	background-position: 0 -7805px;
+}
+
+.mediumFlag-TW {
+	background-position: 0 -7840px;
+}
+
+.mediumFlag-TZ {
+	background-position: 0 -7875px;
+}
+
+.mediumFlag-UA {
+	background-position: 0 -7910px;
+}
+
+.mediumFlag-UG {
+	background-position: 0 -7945px;
+}
+
+.mediumFlag-UM {
+	background-position: 0 -7980px;
+}
+
+.mediumFlag-US {
+	background-position: 0 -8015px;
+}
+
+.mediumFlag-UY {
+	background-position: 0 -8050px;
+}
+
+.mediumFlag-UZ {
+	background-position: 0 -8085px;
+}
+
+.mediumFlag-VA {
+	background-position: 0 -8120px;
+}
+
+.mediumFlag-VC {
+	background-position: 0 -8155px;
+}
+
+.mediumFlag-VE {
+	background-position: 0 -8190px;
+}
+
+.mediumFlag-VG {
+	background-position: 0 -8225px;
+}
+
+.mediumFlag-VI {
+	background-position: 0 -8260px;
+}
+
+.mediumFlag-VN {
+	background-position: 0 -8295px;
+}
+
+.mediumFlag-VU {
+	background-position: 0 -8330px;
+}
+
+.mediumFlag-WF {
+	background-position: 0 -8365px;
+}
+
+.mediumFlag-WS {
+	background-position: 0 -8400px;
+}
+
+.mediumFlag-YE {
+	background-position: 0 -8435px;
+}
+
+.mediumFlag-YT {
+	background-position: 0 -8470px;
+}
+
+.mediumFlag-ZA {
+	background-position: 0 -8505px;
+}
+
+.mediumFlag-ZM {
+	background-position: 0 -8540px;
+}
+
+.mediumFlag-ZW {
+	background-position: 0 -8575px;
+}
+
+.mediumFlag-AC {
+	background-position: 0 -8610px;
+}
+
+.mediumFlag-IZ {
+	background-position: 0 -8645px;
+}
+
+.mediumFlag-SQ {
+	background-position: 0 -8680px;
+}
+
+.mediumFlag-SS {
+	background-position: 0 -8715px;
+}
+
+.mediumFlag-SX {
+	background-position: 0 -8750px;
+}
+
+.mediumFlag-UN {
+	background-position: 0 -8785px;
+}
+
+.mediumFlag-VO {
+	background-position: 0 -8820px;
+}
+
+.mediumFlag-XX {
+	background-position: 0 -8855px;
+}
+
+.smallFlag-AD {
+	background-position: 0 0px;
+}
+
+.smallFlag-AE {
+	background-position: 0 -25px;
+}
+
+.smallFlag-AF {
+	background-position: 0 -50px;
+}
+
+.smallFlag-AG {
+	background-position: 0 -75px;
+}
+
+.smallFlag-AI {
+	background-position: 0 -100px;
+}
+
+.smallFlag-AL {
+	background-position: 0 -125px;
+}
+
+.smallFlag-AM {
+	background-position: 0 -150px;
+}
+
+.smallFlag-AN {
+	background-position: 0 -175px;
+}
+
+.smallFlag-AO {
+	background-position: 0 -200px;
+}
+
+.smallFlag-AQ {
+	background-position: 0 -225px;
+}
+
+.smallFlag-AR {
+	background-position: 0 -250px;
+}
+
+.smallFlag-AS {
+	background-position: 0 -275px;
+}
+
+.smallFlag-AT {
+	background-position: 0 -300px;
+}
+
+.smallFlag-AU {
+	background-position: 0 -325px;
+}
+
+.smallFlag-AW {
+	background-position: 0 -350px;
+}
+
+.smallFlag-AX {
+	background-position: 0 -375px;
+}
+
+.smallFlag-AZ {
+	background-position: 0 -400px;
+}
+
+.smallFlag-BA {
+	background-position: 0 -425px;
+}
+
+.smallFlag-BB {
+	background-position: 0 -450px;
+}
+
+.smallFlag-BD {
+	background-position: 0 -475px;
+}
+
+.smallFlag-BE {
+	background-position: 0 -500px;
+}
+
+.smallFlag-BF {
+	background-position: 0 -525px;
+}
+
+.smallFlag-BG {
+	background-position: 0 -550px;
+}
+
+.smallFlag-BH {
+	background-position: 0 -575px;
+}
+
+.smallFlag-BI {
+	background-position: 0 -600px;
+}
+
+.smallFlag-BJ {
+	background-position: 0 -625px;
+}
+
+.smallFlag-BL {
+	background-position: 0 -650px;
+}
+
+.smallFlag-BM {
+	background-position: 0 -675px;
+}
+
+.smallFlag-BN {
+	background-position: 0 -700px;
+}
+
+.smallFlag-BO {
+	background-position: 0 -725px;
+}
+
+.smallFlag-BR {
+	background-position: 0 -750px;
+}
+
+.smallFlag-BS {
+	background-position: 0 -775px;
+}
+
+.smallFlag-BT {
+	background-position: 0 -800px;
+}
+
+.smallFlag-BV {
+	background-position: 0 -825px;
+}
+
+.smallFlag-BW {
+	background-position: 0 -850px;
+}
+
+.smallFlag-BY {
+	background-position: 0 -875px;
+}
+
+.smallFlag-BZ {
+	background-position: 0 -900px;
+}
+
+.smallFlag-CA {
+	background-position: 0 -925px;
+}
+
+.smallFlag-CC {
+	background-position: 0 -950px;
+}
+
+.smallFlag-CD {
+	background-position: 0 -975px;
+}
+
+.smallFlag-CF {
+	background-position: 0 -1000px;
+}
+
+.smallFlag-CG {
+	background-position: 0 -1025px;
+}
+
+.smallFlag-CH {
+	background-position: 0 -1050px;
+}
+
+.smallFlag-CI {
+	background-position: 0 -1075px;
+}
+
+.smallFlag-CK {
+	background-position: 0 -1100px;
+}
+
+.smallFlag-CL {
+	background-position: 0 -1125px;
+}
+
+.smallFlag-CM {
+	background-position: 0 -1150px;
+}
+
+.smallFlag-CN {
+	background-position: 0 -1175px;
+}
+
+.smallFlag-CO {
+	background-position: 0 -1200px;
+}
+
+.smallFlag-CR {
+	background-position: 0 -1225px;
+}
+
+.smallFlag-CU {
+	background-position: 0 -1250px;
+}
+
+.smallFlag-CV {
+	background-position: 0 -1275px;
+}
+
+.smallFlag-CX {
+	background-position: 0 -1300px;
+}
+
+.smallFlag-CY {
+	background-position: 0 -1325px;
+}
+
+.smallFlag-CZ {
+	background-position: 0 -1350px;
+}
+
+.smallFlag-DE {
+	background-position: 0 -1375px;
+}
+
+.smallFlag-DJ {
+	background-position: 0 -1400px;
+}
+
+.smallFlag-DK {
+	background-position: 0 -1425px;
+}
+
+.smallFlag-DM {
+	background-position: 0 -1450px;
+}
+
+.smallFlag-DO {
+	background-position: 0 -1475px;
+}
+
+.smallFlag-DZ {
+	background-position: 0 -1500px;
+}
+
+.smallFlag-EC {
+	background-position: 0 -1525px;
+}
+
+.smallFlag-EE {
+	background-position: 0 -1550px;
+}
+
+.smallFlag-EG {
+	background-position: 0 -1575px;
+}
+
+.smallFlag-EH {
+	background-position: 0 -1600px;
+}
+
+.smallFlag-ER {
+	background-position: 0 -1625px;
+}
+
+.smallFlag-ES {
+	background-position: 0 -1650px;
+}
+
+.smallFlag-ET {
+	background-position: 0 -1675px;
+}
+
+.smallFlag-FI {
+	background-position: 0 -1700px;
+}
+
+.smallFlag-FJ {
+	background-position: 0 -1725px;
+}
+
+.smallFlag-FK {
+	background-position: 0 -1750px;
+}
+
+.smallFlag-FM {
+	background-position: 0 -1775px;
+}
+
+.smallFlag-FO {
+	background-position: 0 -1800px;
+}
+
+.smallFlag-FR {
+	background-position: 0 -1825px;
+}
+
+.smallFlag-GA {
+	background-position: 0 -1850px;
+}
+
+.smallFlag-GB {
+	background-position: 0 -1875px;
+}
+
+.smallFlag-GD {
+	background-position: 0 -1900px;
+}
+
+.smallFlag-GE {
+	background-position: 0 -1925px;
+}
+
+.smallFlag-GF {
+	background-position: 0 -1950px;
+}
+
+.smallFlag-GG {
+	background-position: 0 -1975px;
+}
+
+.smallFlag-GH {
+	background-position: 0 -2000px;
+}
+
+.smallFlag-GI {
+	background-position: 0 -2025px;
+}
+
+.smallFlag-GL {
+	background-position: 0 -2050px;
+}
+
+.smallFlag-GM {
+	background-position: 0 -2075px;
+}
+
+.smallFlag-GN {
+	background-position: 0 -2100px;
+}
+
+.smallFlag-GP {
+	background-position: 0 -2125px;
+}
+
+.smallFlag-GQ {
+	background-position: 0 -2150px;
+}
+
+.smallFlag-GR {
+	background-position: 0 -2175px;
+}
+
+.smallFlag-GS {
+	background-position: 0 -2200px;
+}
+
+.smallFlag-GT {
+	background-position: 0 -2225px;
+}
+
+.smallFlag-GU {
+	background-position: 0 -2250px;
+}
+
+.smallFlag-GW {
+	background-position: 0 -2275px;
+}
+
+.smallFlag-GY {
+	background-position: 0 -2300px;
+}
+
+.smallFlag-HK {
+	background-position: 0 -2325px;
+}
+
+.smallFlag-HM {
+	background-position: 0 -2350px;
+}
+
+.smallFlag-HN {
+	background-position: 0 -2375px;
+}
+
+.smallFlag-HR {
+	background-position: 0 -2400px;
+}
+
+.smallFlag-HT {
+	background-position: 0 -2425px;
+}
+
+.smallFlag-HU {
+	background-position: 0 -2450px;
+}
+
+.smallFlag-ID {
+	background-position: 0 -2475px;
+}
+
+.smallFlag-IE {
+	background-position: 0 -2500px;
+}
+
+.smallFlag-IL {
+	background-position: 0 -2525px;
+}
+
+.smallFlag-IM {
+	background-position: 0 -2550px;
+}
+
+.smallFlag-IN {
+	background-position: 0 -2575px;
+}
+
+.smallFlag-IO {
+	background-position: 0 -2600px;
+}
+
+.smallFlag-IQ {
+	background-position: 0 -2625px;
+}
+
+.smallFlag-IR {
+	background-position: 0 -2650px;
+}
+
+.smallFlag-IS {
+	background-position: 0 -2675px;
+}
+
+.smallFlag-IT {
+	background-position: 0 -2700px;
+}
+
+.smallFlag-JE {
+	background-position: 0 -2725px;
+}
+
+.smallFlag-JM {
+	background-position: 0 -2750px;
+}
+
+.smallFlag-JO {
+	background-position: 0 -2775px;
+}
+
+.smallFlag-JP {
+	background-position: 0 -2800px;
+}
+
+.smallFlag-KE {
+	background-position: 0 -2825px;
+}
+
+.smallFlag-KG {
+	background-position: 0 -2850px;
+}
+
+.smallFlag-KH {
+	background-position: 0 -2875px;
+}
+
+.smallFlag-KI {
+	background-position: 0 -2900px;
+}
+
+.smallFlag-KM {
+	background-position: 0 -2925px;
+}
+
+.smallFlag-KN {
+	background-position: 0 -2950px;
+}
+
+.smallFlag-KP {
+	background-position: 0 -2975px;
+}
+
+.smallFlag-KR {
+	background-position: 0 -3000px;
+}
+
+.smallFlag-KW {
+	background-position: 0 -3025px;
+}
+
+.smallFlag-KY {
+	background-position: 0 -3050px;
+}
+
+.smallFlag-KZ {
+	background-position: 0 -3075px;
+}
+
+.smallFlag-LA {
+	background-position: 0 -3100px;
+}
+
+.smallFlag-LB {
+	background-position: 0 -3125px;
+}
+
+.smallFlag-LC {
+	background-position: 0 -3150px;
+}
+
+.smallFlag-LI {
+	background-position: 0 -3175px;
+}
+
+.smallFlag-LK {
+	background-position: 0 -3200px;
+}
+
+.smallFlag-LR {
+	background-position: 0 -3225px;
+}
+
+.smallFlag-LS {
+	background-position: 0 -3250px;
+}
+
+.smallFlag-LT {
+	background-position: 0 -3275px;
+}
+
+.smallFlag-LU {
+	background-position: 0 -3300px;
+}
+
+.smallFlag-LV {
+	background-position: 0 -3325px;
+}
+
+.smallFlag-LY {
+	background-position: 0 -3350px;
+}
+
+.smallFlag-MA {
+	background-position: 0 -3375px;
+}
+
+.smallFlag-MC {
+	background-position: 0 -3400px;
+}
+
+.smallFlag-MD {
+	background-position: 0 -3425px;
+}
+
+.smallFlag-ME {
+	background-position: 0 -3450px;
+}
+
+.smallFlag-MF {
+	background-position: 0 -3475px;
+}
+
+.smallFlag-MG {
+	background-position: 0 -3500px;
+}
+
+.smallFlag-MH {
+	background-position: 0 -3525px;
+}
+
+.smallFlag-MK {
+	background-position: 0 -3550px;
+}
+
+.smallFlag-ML {
+	background-position: 0 -3575px;
+}
+
+.smallFlag-MM {
+	background-position: 0 -3600px;
+}
+
+.smallFlag-MN {
+	background-position: 0 -3625px;
+}
+
+.smallFlag-MO {
+	background-position: 0 -3650px;
+}
+
+.smallFlag-MP {
+	background-position: 0 -3675px;
+}
+
+.smallFlag-MQ {
+	background-position: 0 -3700px;
+}
+
+.smallFlag-MR {
+	background-position: 0 -3725px;
+}
+
+.smallFlag-MS {
+	background-position: 0 -3750px;
+}
+
+.smallFlag-MT {
+	background-position: 0 -3775px;
+}
+
+.smallFlag-MU {
+	background-position: 0 -3800px;
+}
+
+.smallFlag-MV {
+	background-position: 0 -3825px;
+}
+
+.smallFlag-MW {
+	background-position: 0 -3850px;
+}
+
+.smallFlag-MX {
+	background-position: 0 -3875px;
+}
+
+.smallFlag-MY {
+	background-position: 0 -3900px;
+}
+
+.smallFlag-MZ {
+	background-position: 0 -3925px;
+}
+
+.smallFlag-NA {
+	background-position: 0 -3950px;
+}
+
+.smallFlag-NC {
+	background-position: 0 -3975px;
+}
+
+.smallFlag-NE {
+	background-position: 0 -4000px;
+}
+
+.smallFlag-NF {
+	background-position: 0 -4025px;
+}
+
+.smallFlag-NG {
+	background-position: 0 -4050px;
+}
+
+.smallFlag-NI {
+	background-position: 0 -4075px;
+}
+
+.smallFlag-NL {
+	background-position: 0 -4100px;
+}
+
+.smallFlag-NO {
+	background-position: 0 -4125px;
+}
+
+.smallFlag-NP {
+	background-position: 0 -4150px;
+}
+
+.smallFlag-NR {
+	background-position: 0 -4175px;
+}
+
+.smallFlag-NU {
+	background-position: 0 -4200px;
+}
+
+.smallFlag-NZ {
+	background-position: 0 -4225px;
+}
+
+.smallFlag-OM {
+	background-position: 0 -4250px;
+}
+
+.smallFlag-PA {
+	background-position: 0 -4275px;
+}
+
+.smallFlag-PE {
+	background-position: 0 -4300px;
+}
+
+.smallFlag-PF {
+	background-position: 0 -4325px;
+}
+
+.smallFlag-PG {
+	background-position: 0 -4350px;
+}
+
+.smallFlag-PH {
+	background-position: 0 -4375px;
+}
+
+.smallFlag-PK {
+	background-position: 0 -4400px;
+}
+
+.smallFlag-PL {
+	background-position: 0 -4425px;
+}
+
+.smallFlag-PM {
+	background-position: 0 -4450px;
+}
+
+.smallFlag-PN {
+	background-position: 0 -4475px;
+}
+
+.smallFlag-PR {
+	background-position: 0 -4500px;
+}
+
+.smallFlag-PS {
+	background-position: 0 -4525px;
+}
+
+.smallFlag-PT {
+	background-position: 0 -4550px;
+}
+
+.smallFlag-PW {
+	background-position: 0 -4575px;
+}
+
+.smallFlag-PY {
+	background-position: 0 -4600px;
+}
+
+.smallFlag-QA {
+	background-position: 0 -4625px;
+}
+
+.smallFlag-RE {
+	background-position: 0 -4650px;
+}
+
+.smallFlag-RO {
+	background-position: 0 -4675px;
+}
+
+.smallFlag-RS {
+	background-position: 0 -4700px;
+}
+
+.smallFlag-RU {
+	background-position: 0 -4725px;
+}
+
+.smallFlag-RW {
+	background-position: 0 -4750px;
+}
+
+.smallFlag-SA {
+	background-position: 0 -4775px;
+}
+
+.smallFlag-SB {
+	background-position: 0 -4800px;
+}
+
+.smallFlag-SC {
+	background-position: 0 -4825px;
+}
+
+.smallFlag-SD {
+	background-position: 0 -4850px;
+}
+
+.smallFlag-SE {
+	background-position: 0 -4875px;
+}
+
+.smallFlag-SG {
+	background-position: 0 -4900px;
+}
+
+.smallFlag-SH {
+	background-position: 0 -4925px;
+}
+
+.smallFlag-SI {
+	background-position: 0 -4950px;
+}
+
+.smallFlag-SJ {
+	background-position: 0 -4975px;
+}
+
+.smallFlag-SK {
+	background-position: 0 -5000px;
+}
+
+.smallFlag-SL {
+	background-position: 0 -5025px;
+}
+
+.smallFlag-SM {
+	background-position: 0 -5050px;
+}
+
+.smallFlag-SN {
+	background-position: 0 -5075px;
+}
+
+.smallFlag-SO {
+	background-position: 0 -5100px;
+}
+
+.smallFlag-SR {
+	background-position: 0 -5125px;
+}
+
+.smallFlag-ST {
+	background-position: 0 -5150px;
+}
+
+.smallFlag-SV {
+	background-position: 0 -5175px;
+}
+
+.smallFlag-SY {
+	background-position: 0 -5200px;
+}
+
+.smallFlag-SZ {
+	background-position: 0 -5225px;
+}
+
+.smallFlag-TC {
+	background-position: 0 -5250px;
+}
+
+.smallFlag-TD {
+	background-position: 0 -5275px;
+}
+
+.smallFlag-TF {
+	background-position: 0 -5300px;
+}
+
+.smallFlag-TG {
+	background-position: 0 -5325px;
+}
+
+.smallFlag-TH {
+	background-position: 0 -5350px;
+}
+
+.smallFlag-TJ {
+	background-position: 0 -5375px;
+}
+
+.smallFlag-TK {
+	background-position: 0 -5400px;
+}
+
+.smallFlag-TL {
+	background-position: 0 -5425px;
+}
+
+.smallFlag-TM {
+	background-position: 0 -5450px;
+}
+
+.smallFlag-TN {
+	background-position: 0 -5475px;
+}
+
+.smallFlag-TO {
+	background-position: 0 -5500px;
+}
+
+.smallFlag-TR {
+	background-position: 0 -5525px;
+}
+
+.smallFlag-TT {
+	background-position: 0 -5550px;
+}
+
+.smallFlag-TV {
+	background-position: 0 -5575px;
+}
+
+.smallFlag-TW {
+	background-position: 0 -5600px;
+}
+
+.smallFlag-TZ {
+	background-position: 0 -5625px;
+}
+
+.smallFlag-UA {
+	background-position: 0 -5650px;
+}
+
+.smallFlag-UG {
+	background-position: 0 -5675px;
+}
+
+.smallFlag-UM {
+	background-position: 0 -5700px;
+}
+
+.smallFlag-US {
+	background-position: 0 -5725px;
+}
+
+.smallFlag-UY {
+	background-position: 0 -5750px;
+}
+
+.smallFlag-UZ {
+	background-position: 0 -5775px;
+}
+
+.smallFlag-VA {
+	background-position: 0 -5800px;
+}
+
+.smallFlag-VC {
+	background-position: 0 -5825px;
+}
+
+.smallFlag-VE {
+	background-position: 0 -5850px;
+}
+
+.smallFlag-VG {
+	background-position: 0 -5875px;
+}
+
+.smallFlag-VI {
+	background-position: 0 -5900px;
+}
+
+.smallFlag-VN {
+	background-position: 0 -5925px;
+}
+
+.smallFlag-VU {
+	background-position: 0 -5950px;
+}
+
+.smallFlag-WF {
+	background-position: 0 -5975px;
+}
+
+.smallFlag-WS {
+	background-position: 0 -6000px;
+}
+
+.smallFlag-YE {
+	background-position: 0 -6025px;
+}
+
+.smallFlag-YT {
+	background-position: 0 -6050px;
+}
+
+.smallFlag-ZA {
+	background-position: 0 -6075px;
+}
+
+.smallFlag-ZM {
+	background-position: 0 -6100px;
+}
+
+.smallFlag-ZW {
+	background-position: 0 -6125px;
+}
+
+.smallFlag-AC {
+	background-position: 0 -6150px;
+}
+
+.smallFlag-IZ {
+	background-position: 0 -6175px;
+}
+
+.smallFlag-SQ {
+	background-position: 0 -6200px;
+}
+
+.smallFlag-SS {
+	background-position: 0 -6225px;
+}
+
+.smallFlag-SX {
+	background-position: 0 -6250px;
+}
+
+.smallFlag-UN {
+	background-position: 0 -6275px;
+}
+
+.smallFlag-VO {
+	background-position: 0 -6300px;
+}
+
+.smallFlag-XX {
+	background-position: 0 -6325px;
+}
+
+/* Mobile version
+================== */	
+@media only screen and (max-width: 767px) {
+
+	.largeFlag {
+		width: 52px;
+		height: 32px;
+		background-image: url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/flags/country-flags-52x32.png);
+	}
+
+	.mediumFlag {
+		width: 37px;
+		height: 23px;
+		background-image: url(https://web.archive.org/web/20130120030003im_/https://beta.skypeassets.com/i/common/images/flags/country-flags-37x23.png);
+	}
+
+	.largeFlag-AD {
+		background-position: 0 0;
+	}
+
+	.largeFlag-AE {
+		background-position: 0 -35px;
+	}
+
+	.largeFlag-AF {
+		background-position: 0 -70px;
+	}
+
+	.largeFlag-AG {
+		background-position: 0 -105px;
+	}
+
+	.largeFlag-AI {
+		background-position: 0 -140px;
+	}
+
+	.largeFlag-AL {
+		background-position: 0 -175px;
+	}
+
+	.largeFlag-AM {
+		background-position: 0 -210px;
+	}
+
+	.largeFlag-AN {
+		background-position: 0 -245px;
+	}
+
+	.largeFlag-AO {
+		background-position: 0 -280px;
+	}
+
+	.largeFlag-AQ {
+		background-position: 0 -315px;
+	}
+
+	.largeFlag-AR {
+		background-position: 0 -350px;
+	}
+
+	.largeFlag-AS {
+		background-position: 0 -385px;
+	}
+
+	.largeFlag-AT {
+		background-position: 0 -420px;
+	}
+
+	.largeFlag-AU {
+		background-position: 0 -455px;
+	}
+
+	.largeFlag-AW {
+		background-position: 0 -490px;
+	}
+
+	.largeFlag-AX {
+		background-position: 0 -525px;
+	}
+
+	.largeFlag-AZ {
+		background-position: 0 -560px;
+	}
+
+	.largeFlag-BA {
+		background-position: 0 -595px;
+	}
+
+	.largeFlag-BB {
+		background-position: 0 -630px;
+	}
+
+	.largeFlag-BD {
+		background-position: 0 -665px;
+	}
+
+	.largeFlag-BE {
+		background-position: 0 -700px;
+	}
+
+	.largeFlag-BF {
+		background-position: 0 -735px;
+	}
+
+	.largeFlag-BG {
+		background-position: 0 -770px;
+	}
+
+	.largeFlag-BH {
+		background-position: 0 -805px;
+	}
+
+	.largeFlag-BI {
+		background-position: 0 -840px;
+	}
+
+	.largeFlag-BJ {
+		background-position: 0 -875px;
+	}
+
+	.largeFlag-BL {
+		background-position: 0 -910px;
+	}
+
+	.largeFlag-BM {
+		background-position: 0 -945px;
+	}
+
+	.largeFlag-BN {
+		background-position: 0 -980px;
+	}
+
+	.largeFlag-BO {
+		background-position: 0 -1015px;
+	}
+
+	.largeFlag-BR {
+		background-position: 0 -1050px;
+	}
+
+	.largeFlag-BS {
+		background-position: 0 -1085px;
+	}
+
+	.largeFlag-BT {
+		background-position: 0 -1120px;
+	}
+
+	.largeFlag-BV {
+		background-position: 0 -1155px;
+	}
+
+	.largeFlag-BW {
+		background-position: 0 -1190px;
+	}
+
+	.largeFlag-BY {
+		background-position: 0 -1225px;
+	}
+
+	.largeFlag-BZ {
+		background-position: 0 -1260px;
+	}
+
+	.largeFlag-CA {
+		background-position: 0 -1295px;
+	}
+
+	.largeFlag-CC {
+		background-position: 0 -1330px;
+	}
+
+	.largeFlag-CD {
+		background-position: 0 -1365px;
+	}
+
+	.largeFlag-CF {
+		background-position: 0 -1400px;
+	}
+
+	.largeFlag-CG {
+		background-position: 0 -1435px;
+	}
+
+	.largeFlag-CH {
+		background-position: 0 -1470px;
+	}
+
+	.largeFlag-CI {
+		background-position: 0 -1505px;
+	}
+
+	.largeFlag-CK {
+		background-position: 0 -1540px;
+	}
+
+	.largeFlag-CL {
+		background-position: 0 -1575px;
+	}
+
+	.largeFlag-CM {
+		background-position: 0 -1610px;
+	}
+
+	.largeFlag-CN {
+		background-position: 0 -1645px;
+	}
+
+	.largeFlag-CO {
+		background-position: 0 -1680px;
+	}
+
+	.largeFlag-CR {
+		background-position: 0 -1715px;
+	}
+
+	.largeFlag-CU {
+		background-position: 0 -1750px;
+	}
+
+	.largeFlag-CV {
+		background-position: 0 -1785px;
+	}
+
+	.largeFlag-CX {
+		background-position: 0 -1820px;
+	}
+
+	.largeFlag-CY {
+		background-position: 0 -1855px;
+	}
+
+	.largeFlag-CZ {
+		background-position: 0 -1890px;
+	}
+
+	.largeFlag-DE {
+		background-position: 0 -1925px;
+	}
+
+	.largeFlag-DJ {
+		background-position: 0 -1960px;
+	}
+
+	.largeFlag-DK {
+		background-position: 0 -1995px;
+	}
+
+	.largeFlag-DM {
+		background-position: 0 -2030px;
+	}
+
+	.largeFlag-DO {
+		background-position: 0 -2065px;
+	}
+
+	.largeFlag-DZ {
+		background-position: 0 -2100px;
+	}
+
+	.largeFlag-EC {
+		background-position: 0 -2135px;
+	}
+
+	.largeFlag-EE {
+		background-position: 0 -2170px;
+	}
+
+	.largeFlag-EG {
+		background-position: 0 -2205px;
+	}
+
+	.largeFlag-EH {
+		background-position: 0 -2240px;
+	}
+
+	.largeFlag-ER {
+		background-position: 0 -2275px;
+	}
+
+	.largeFlag-ES {
+		background-position: 0 -2310px;
+	}
+
+	.largeFlag-ET {
+		background-position: 0 -2345px;
+	}
+
+	.largeFlag-FI {
+		background-position: 0 -2380px;
+	}
+
+	.largeFlag-FJ {
+		background-position: 0 -2415px;
+	}
+
+	.largeFlag-FK {
+		background-position: 0 -2450px;
+	}
+
+	.largeFlag-FM {
+		background-position: 0 -2485px;
+	}
+
+	.largeFlag-FO {
+		background-position: 0 -2520px;
+	}
+
+	.largeFlag-FR {
+		background-position: 0 -2555px;
+	}
+
+	.largeFlag-GA {
+		background-position: 0 -2590px;
+	}
+
+	.largeFlag-GB {
+		background-position: 0 -2625px;
+	}
+
+	.largeFlag-GD {
+		background-position: 0 -2660px;
+	}
+
+	.largeFlag-GE {
+		background-position: 0 -2695px;
+	}
+
+	.largeFlag-GF {
+		background-position: 0 -2730px;
+	}
+
+	.largeFlag-GG {
+		background-position: 0 -2765px;
+	}
+
+	.largeFlag-GH {
+		background-position: 0 -2800px;
+	}
+
+	.largeFlag-GI {
+		background-position: 0 -2835px;
+	}
+
+	.largeFlag-GL {
+		background-position: 0 -2870px;
+	}
+
+	.largeFlag-GM {
+		background-position: 0 -2905px;
+	}
+
+	.largeFlag-GN {
+		background-position: 0 -2940px;
+	}
+
+	.largeFlag-GP {
+		background-position: 0 -2975px;
+	}
+
+	.largeFlag-GQ {
+		background-position: 0 -3010px;
+	}
+
+	.largeFlag-GR {
+		background-position: 0 -3045px;
+	}
+
+	.largeFlag-GS {
+		background-position: 0 -3080px;
+	}
+
+	.largeFlag-GT {
+		background-position: 0 -3115px;
+	}
+
+	.largeFlag-GU {
+		background-position: 0 -3150px;
+	}
+
+	.largeFlag-GW {
+		background-position: 0 -3185px;
+	}
+
+	.largeFlag-GY {
+		background-position: 0 -3220px;
+	}
+
+	.largeFlag-HK {
+		background-position: 0 -3255px;
+	}
+
+	.largeFlag-HM {
+		background-position: 0 -3290px;
+	}
+
+	.largeFlag-HN {
+		background-position: 0 -3325px;
+	}
+
+	.largeFlag-HR {
+		background-position: 0 -3360px;
+	}
+
+	.largeFlag-HT {
+		background-position: 0 -3395px;
+	}
+
+	.largeFlag-HU {
+		background-position: 0 -3430px;
+	}
+
+	.largeFlag-ID {
+		background-position: 0 -3465px;
+	}
+
+	.largeFlag-IE {
+		background-position: 0 -3500px;
+	}
+
+	.largeFlag-IL {
+		background-position: 0 -3535px;
+	}
+
+	.largeFlag-IM {
+		background-position: 0 -3570px;
+	}
+
+	.largeFlag-IN {
+		background-position: 0 -3605px;
+	}
+
+	.largeFlag-IO {
+		background-position: 0 -3640px;
+	}
+
+	.largeFlag-IQ {
+		background-position: 0 -3675px;
+	}
+
+	.largeFlag-IR {
+		background-position: 0 -3710px;
+	}
+
+	.largeFlag-IS {
+		background-position: 0 -3745px;
+	}
+
+	.largeFlag-IT {
+		background-position: 0 -3780px;
+	}
+
+	.largeFlag-JE {
+		background-position: 0 -3815px;
+	}
+
+	.largeFlag-JM {
+		background-position: 0 -3850px;
+	}
+
+	.largeFlag-JO {
+		background-position: 0 -3885px;
+	}
+
+	.largeFlag-JP {
+		background-position: 0 -3920px;
+	}
+
+	.largeFlag-KE {
+		background-position: 0 -3955px;
+	}
+
+	.largeFlag-KG {
+		background-position: 0 -3990px;
+	}
+
+	.largeFlag-KH {
+		background-position: 0 -4025px;
+	}
+
+	.largeFlag-KI {
+		background-position: 0 -4060px;
+	}
+
+	.largeFlag-KM {
+		background-position: 0 -4095px;
+	}
+
+	.largeFlag-KN {
+		background-position: 0 -4130px;
+	}
+
+	.largeFlag-KP {
+		background-position: 0 -4165px;
+	}
+
+	.largeFlag-KR {
+		background-position: 0 -4200px;
+	}
+
+	.largeFlag-KW {
+		background-position: 0 -4235px;
+	}
+
+	.largeFlag-KY {
+		background-position: 0 -4270px;
+	}
+
+	.largeFlag-KZ {
+		background-position: 0 -4305px;
+	}
+
+	.largeFlag-LA {
+		background-position: 0 -4340px;
+	}
+
+	.largeFlag-LB {
+		background-position: 0 -4375px;
+	}
+
+	.largeFlag-LC {
+		background-position: 0 -4410px;
+	}
+
+	.largeFlag-LI {
+		background-position: 0 -4445px;
+	}
+
+	.largeFlag-LK {
+		background-position: 0 -4480px;
+	}
+
+	.largeFlag-LR {
+		background-position: 0 -4515px;
+	}
+
+	.largeFlag-LS {
+		background-position: 0 -4550px;
+	}
+
+	.largeFlag-LT {
+		background-position: 0 -4585px;
+	}
+
+	.largeFlag-LU {
+		background-position: 0 -4620px;
+	}
+
+	.largeFlag-LV {
+		background-position: 0 -4655px;
+	}
+
+	.largeFlag-LY {
+		background-position: 0 -4690px;
+	}
+
+	.largeFlag-MA {
+		background-position: 0 -4725px;
+	}
+
+	.largeFlag-MC {
+		background-position: 0 -4760px;
+	}
+
+	.largeFlag-MD {
+		background-position: 0 -4795px;
+	}
+
+	.largeFlag-ME {
+		background-position: 0 -4830px;
+	}
+
+	.largeFlag-MF {
+		background-position: 0 -4865px;
+	}
+
+	.largeFlag-MG {
+		background-position: 0 -4900px;
+	}
+
+	.largeFlag-MH {
+		background-position: 0 -4935px;
+	}
+
+	.largeFlag-MK {
+		background-position: 0 -4970px;
+	}
+
+	.largeFlag-ML {
+		background-position: 0 -5005px;
+	}
+
+	.largeFlag-MM {
+		background-position: 0 -5040px;
+	}
+
+	.largeFlag-MN {
+		background-position: 0 -5075px;
+	}
+
+	.largeFlag-MO {
+		background-position: 0 -5110px;
+	}
+
+	.largeFlag-MP {
+		background-position: 0 -5145px;
+	}
+
+	.largeFlag-MQ {
+		background-position: 0 -5180px;
+	}
+
+	.largeFlag-MR {
+		background-position: 0 -5215px;
+	}
+
+	.largeFlag-MS {
+		background-position: 0 -5250px;
+	}
+
+	.largeFlag-MT {
+		background-position: 0 -5285px;
+	}
+
+	.largeFlag-MU {
+		background-position: 0 -5320px;
+	}
+
+	.largeFlag-MV {
+		background-position: 0 -5355px;
+	}
+
+	.largeFlag-MW {
+		background-position: 0 -5390px;
+	}
+
+	.largeFlag-MX {
+		background-position: 0 -5425px;
+	}
+
+	.largeFlag-MY {
+		background-position: 0 -5460px;
+	}
+
+	.largeFlag-MZ {
+		background-position: 0 -5495px;
+	}
+
+	.largeFlag-NA {
+		background-position: 0 -5530px;
+	}
+
+	.largeFlag-NC {
+		background-position: 0 -5565px;
+	}
+
+	.largeFlag-NE {
+		background-position: 0 -5600px;
+	}
+
+	.largeFlag-NF {
+		background-position: 0 -5635px;
+	}
+
+	.largeFlag-NG {
+		background-position: 0 -5670px;
+	}
+
+	.largeFlag-NI {
+		background-position: 0 -5705px;
+	}
+
+	.largeFlag-NL {
+		background-position: 0 -5740px;
+	}
+
+	.largeFlag-NO {
+		background-position: 0 -5775px;
+	}
+
+	.largeFlag-NP {
+		background-position: 0 -5810px;
+	}
+
+	.largeFlag-NR {
+		background-position: 0 -5845px;
+	}
+
+	.largeFlag-NU {
+		background-position: 0 -5880px;
+	}
+
+	.largeFlag-NZ {
+		background-position: 0 -5915px;
+	}
+
+	.largeFlag-OM {
+		background-position: 0 -5950px;
+	}
+
+	.largeFlag-PA {
+		background-position: 0 -5985px;
+	}
+
+	.largeFlag-PE {
+		background-position: 0 -6020px;
+	}
+
+	.largeFlag-PF {
+		background-position: 0 -6055px;
+	}
+
+	.largeFlag-PG {
+		background-position: 0 -6090px;
+	}
+
+	.largeFlag-PH {
+		background-position: 0 -6125px;
+	}
+
+	.largeFlag-PK {
+		background-position: 0 -6160px;
+	}
+
+	.largeFlag-PL {
+		background-position: 0 -6195px;
+	}
+
+	.largeFlag-PM {
+		background-position: 0 -6230px;
+	}
+
+	.largeFlag-PN {
+		background-position: 0 -6265px;
+	}
+
+	.largeFlag-PR {
+		background-position: 0 -6300px;
+	}
+
+	.largeFlag-PS {
+		background-position: 0 -6335px;
+	}
+
+	.largeFlag-PT {
+		background-position: 0 -6370px;
+	}
+
+	.largeFlag-PW {
+		background-position: 0 -6405px;
+	}
+
+	.largeFlag-PY {
+		background-position: 0 -6440px;
+	}
+
+	.largeFlag-QA {
+		background-position: 0 -6475px;
+	}
+
+	.largeFlag-RE {
+		background-position: 0 -6510px;
+	}
+
+	.largeFlag-RO {
+		background-position: 0 -6545px;
+	}
+
+	.largeFlag-RS {
+		background-position: 0 -6580px;
+	}
+
+	.largeFlag-RU {
+		background-position: 0 -6615px;
+	}
+
+	.largeFlag-RW {
+		background-position: 0 -6650px;
+	}
+
+	.largeFlag-SA {
+		background-position: 0 -6685px;
+	}
+
+	.largeFlag-SB {
+		background-position: 0 -6720px;
+	}
+
+	.largeFlag-SC {
+		background-position: 0 -6755px;
+	}
+
+	.largeFlag-SD {
+		background-position: 0 -6790px;
+	}
+
+	.largeFlag-SE {
+		background-position: 0 -6825px;
+	}
+
+	.largeFlag-SG {
+		background-position: 0 -6860px;
+	}
+
+	.largeFlag-SH {
+		background-position: 0 -6895px;
+	}
+
+	.largeFlag-SI {
+		background-position: 0 -6930px;
+	}
+
+	.largeFlag-SJ {
+		background-position: 0 -6965px;
+	}
+
+	.largeFlag-SK {
+		background-position: 0 -7000px;
+	}
+
+	.largeFlag-SL {
+		background-position: 0 -7035px;
+	}
+
+	.largeFlag-SM {
+		background-position: 0 -7070px;
+	}
+
+	.largeFlag-SN {
+		background-position: 0 -7105px;
+	}
+
+	.largeFlag-SO {
+		background-position: 0 -7140px;
+	}
+
+	.largeFlag-SR {
+		background-position: 0 -7175px;
+	}
+
+	.largeFlag-ST {
+		background-position: 0 -7210px;
+	}
+
+	.largeFlag-SV {
+		background-position: 0 -7245px;
+	}
+
+	.largeFlag-SY {
+		background-position: 0 -7280px;
+	}
+
+	.largeFlag-SZ {
+		background-position: 0 -7315px;
+	}
+
+	.largeFlag-TC {
+		background-position: 0 -7350px;
+	}
+
+	.largeFlag-TD {
+		background-position: 0 -7385px;
+	}
+
+	.largeFlag-TF {
+		background-position: 0 -7420px;
+	}
+
+	.largeFlag-TG {
+		background-position: 0 -7455px;
+	}
+
+	.largeFlag-TH {
+		background-position: 0 -7490px;
+	}
+
+	.largeFlag-TJ {
+		background-position: 0 -7525px;
+	}
+
+	.largeFlag-TK {
+		background-position: 0 -7560px;
+	}
+
+	.largeFlag-TL {
+		background-position: 0 -7595px;
+	}
+
+	.largeFlag-TM {
+		background-position: 0 -7630px;
+	}
+
+	.largeFlag-TN {
+		background-position: 0 -7665px;
+	}
+
+	.largeFlag-TO {
+		background-position: 0 -7700px;
+	}
+
+	.largeFlag-TR {
+		background-position: 0 -7735px;
+	}
+
+	.largeFlag-TT {
+		background-position: 0 -7770px;
+	}
+
+	.largeFlag-TV {
+		background-position: 0 -7805px;
+	}
+
+	.largeFlag-TW {
+		background-position: 0 -7840px;
+	}
+
+	.largeFlag-TZ {
+		background-position: 0 -7875px;
+	}
+
+	.largeFlag-UA {
+		background-position: 0 -7910px;
+	}
+
+	.largeFlag-UG {
+		background-position: 0 -7945px;
+	}
+
+	.largeFlag-UM {
+		background-position: 0 -7980px;
+	}
+
+	.largeFlag-US {
+		background-position: 0 -8015px;
+	}
+
+	.largeFlag-UY {
+		background-position: 0 -8050px;
+	}
+
+	.largeFlag-UZ {
+		background-position: 0 -8085px;
+	}
+
+	.largeFlag-VA {
+		background-position: 0 -8120px;
+	}
+
+	.largeFlag-VC {
+		background-position: 0 -8155px;
+	}
+
+	.largeFlag-VE {
+		background-position: 0 -8190px;
+	}
+
+	.largeFlag-VG {
+		background-position: 0 -8225px;
+	}
+
+	.largeFlag-VI {
+		background-position: 0 -8260px;
+	}
+
+	.largeFlag-VN {
+		background-position: 0 -8295px;
+	}
+
+	.largeFlag-VU {
+		background-position: 0 -8330px;
+	}
+
+	.largeFlag-WF {
+		background-position: 0 -8365px;
+	}
+
+	.largeFlag-WS {
+		background-position: 0 -8400px;
+	}
+
+	.largeFlag-YE {
+		background-position: 0 -8435px;
+	}
+
+	.largeFlag-YT {
+		background-position: 0 -8470px;
+	}
+
+	.largeFlag-ZA {
+		background-position: 0 -8505px;
+	}
+
+	.largeFlag-ZM {
+		background-position: 0 -8540px;
+	}
+
+	.largeFlag-ZW {
+		background-position: 0 -8575px;
+	}
+
+	.largeFlag-AC {
+		background-position: 0 -8610px;
+	}
+
+	.largeFlag-IZ {
+		background-position: 0 -8645px;
+	}
+
+	.largeFlag-SQ {
+		background-position: 0 -8680px;
+	}
+
+	.largeFlag-SS {
+		background-position: 0 -8715px;
+	}
+
+	.largeFlag-SX {
+		background-position: 0 -8750px;
+	}
+
+	.largeFlag-UN {
+		background-position: 0 -8785px;
+	}
+
+	.largeFlag-VO {
+		background-position: 0 -8820px;
+	}
+
+	.largeFlag-XX {
+		background-position: 0 -8855px;
+	}
+
+	.mediumFlag-AD {
+		background-position: 0 0;
+	}
+
+	.mediumFlag-AE {
+		background-position: 0 -25px;
+	}
+
+	.mediumFlag-AF {
+		background-position: 0 -50px;
+	}
+
+	.mediumFlag-AG {
+		background-position: 0 -75px;
+	}
+
+	.mediumFlag-AI {
+		background-position: 0 -100px;
+	}
+
+	.mediumFlag-AL {
+		background-position: 0 -125px;
+	}
+
+	.mediumFlag-AM {
+		background-position: 0 -150px;
+	}
+
+	.mediumFlag-AN {
+		background-position: 0 -175px;
+	}
+
+	.mediumFlag-AO {
+		background-position: 0 -200px;
+	}
+
+	.mediumFlag-AQ {
+		background-position: 0 -225px;
+	}
+
+	.mediumFlag-AR {
+		background-position: 0 -250px;
+	}
+
+	.mediumFlag-AS {
+		background-position: 0 -275px;
+	}
+
+	.mediumFlag-AT {
+		background-position: 0 -300px;
+	}
+
+	.mediumFlag-AU {
+		background-position: 0 -325px;
+	}
+
+	.mediumFlag-AW {
+		background-position: 0 -350px;
+	}
+
+	.mediumFlag-AX {
+		background-position: 0 -375px;
+	}
+
+	.mediumFlag-AZ {
+		background-position: 0 -400px;
+	}
+
+	.mediumFlag-BA {
+		background-position: 0 -425px;
+	}
+
+	.mediumFlag-BB {
+		background-position: 0 -450px;
+	}
+
+	.mediumFlag-BD {
+		background-position: 0 -475px;
+	}
+
+	.mediumFlag-BE {
+		background-position: 0 -500px;
+	}
+
+	.mediumFlag-BF {
+		background-position: 0 -525px;
+	}
+
+	.mediumFlag-BG {
+		background-position: 0 -550px;
+	}
+
+	.mediumFlag-BH {
+		background-position: 0 -575px;
+	}
+
+	.mediumFlag-BI {
+		background-position: 0 -600px;
+	}
+
+	.mediumFlag-BJ {
+		background-position: 0 -625px;
+	}
+
+	.mediumFlag-BL {
+		background-position: 0 -650px;
+	}
+
+	.mediumFlag-BM {
+		background-position: 0 -675px;
+	}
+
+	.mediumFlag-BN {
+		background-position: 0 -700px;
+	}
+
+	.mediumFlag-BO {
+		background-position: 0 -725px;
+	}
+
+	.mediumFlag-BR {
+		background-position: 0 -750px;
+	}
+
+	.mediumFlag-BS {
+		background-position: 0 -775px;
+	}
+
+	.mediumFlag-BT {
+		background-position: 0 -800px;
+	}
+
+	.mediumFlag-BV {
+		background-position: 0 -825px;
+	}
+
+	.mediumFlag-BW {
+		background-position: 0 -850px;
+	}
+
+	.mediumFlag-BY {
+		background-position: 0 -875px;
+	}
+
+	.mediumFlag-BZ {
+		background-position: 0 -900px;
+	}
+
+	.mediumFlag-CA {
+		background-position: 0 -925px;
+	}
+
+	.mediumFlag-CC {
+		background-position: 0 -950px;
+	}
+
+	.mediumFlag-CD {
+		background-position: 0 -975px;
+	}
+
+	.mediumFlag-CF {
+		background-position: 0 -1000px;
+	}
+
+	.mediumFlag-CG {
+		background-position: 0 -1025px;
+	}
+
+	.mediumFlag-CH {
+		background-position: 0 -1050px;
+	}
+
+	.mediumFlag-CI {
+		background-position: 0 -1075px;
+	}
+
+	.mediumFlag-CK {
+		background-position: 0 -1100px;
+	}
+
+	.mediumFlag-CL {
+		background-position: 0 -1125px;
+	}
+
+	.mediumFlag-CM {
+		background-position: 0 -1150px;
+	}
+
+	.mediumFlag-CN {
+		background-position: 0 -1175px;
+	}
+
+	.mediumFlag-CO {
+		background-position: 0 -1200px;
+	}
+
+	.mediumFlag-CR {
+		background-position: 0 -1225px;
+	}
+
+	.mediumFlag-CU {
+		background-position: 0 -1250px;
+	}
+
+	.mediumFlag-CV {
+		background-position: 0 -1275px;
+	}
+
+	.mediumFlag-CX {
+		background-position: 0 -1300px;
+	}
+
+	.mediumFlag-CY {
+		background-position: 0 -1325px;
+	}
+
+	.mediumFlag-CZ {
+		background-position: 0 -1350px;
+	}
+
+	.mediumFlag-DE {
+		background-position: 0 -1375px;
+	}
+
+	.mediumFlag-DJ {
+		background-position: 0 -1400px;
+	}
+
+	.mediumFlag-DK {
+		background-position: 0 -1425px;
+	}
+
+	.mediumFlag-DM {
+		background-position: 0 -1450px;
+	}
+
+	.mediumFlag-DO {
+		background-position: 0 -1475px;
+	}
+
+	.mediumFlag-DZ {
+		background-position: 0 -1500px;
+	}
+
+	.mediumFlag-EC {
+		background-position: 0 -1525px;
+	}
+
+	.mediumFlag-EE {
+		background-position: 0 -1550px;
+	}
+
+	.mediumFlag-EG {
+		background-position: 0 -1575px;
+	}
+
+	.mediumFlag-EH {
+		background-position: 0 -1600px;
+	}
+
+	.mediumFlag-ER {
+		background-position: 0 -1625px;
+	}
+
+	.mediumFlag-ES {
+		background-position: 0 -1650px;
+	}
+
+	.mediumFlag-ET {
+		background-position: 0 -1675px;
+	}
+
+	.mediumFlag-FI {
+		background-position: 0 -1700px;
+	}
+
+	.mediumFlag-FJ {
+		background-position: 0 -1725px;
+	}
+
+	.mediumFlag-FK {
+		background-position: 0 -1750px;
+	}
+
+	.mediumFlag-FM {
+		background-position: 0 -1775px;
+	}
+
+	.mediumFlag-FO {
+		background-position: 0 -1800px;
+	}
+
+	.mediumFlag-FR {
+		background-position: 0 -1825px;
+	}
+
+	.mediumFlag-GA {
+		background-position: 0 -1850px;
+	}
+
+	.mediumFlag-GB {
+		background-position: 0 -1875px;
+	}
+
+	.mediumFlag-GD {
+		background-position: 0 -1900px;
+	}
+
+	.mediumFlag-GE {
+		background-position: 0 -1925px;
+	}
+
+	.mediumFlag-GF {
+		background-position: 0 -1950px;
+	}
+
+	.mediumFlag-GG {
+		background-position: 0 -1975px;
+	}
+
+	.mediumFlag-GH {
+		background-position: 0 -2000px;
+	}
+
+	.mediumFlag-GI {
+		background-position: 0 -2025px;
+	}
+
+	.mediumFlag-GL {
+		background-position: 0 -2050px;
+	}
+
+	.mediumFlag-GM {
+		background-position: 0 -2075px;
+	}
+
+	.mediumFlag-GN {
+		background-position: 0 -2100px;
+	}
+
+	.mediumFlag-GP {
+		background-position: 0 -2125px;
+	}
+
+	.mediumFlag-GQ {
+		background-position: 0 -2150px;
+	}
+
+	.mediumFlag-GR {
+		background-position: 0 -2175px;
+	}
+
+	.mediumFlag-GS {
+		background-position: 0 -2200px;
+	}
+
+	.mediumFlag-GT {
+		background-position: 0 -2225px;
+	}
+
+	.mediumFlag-GU {
+		background-position: 0 -2250px;
+	}
+
+	.mediumFlag-GW {
+		background-position: 0 -2275px;
+	}
+
+	.mediumFlag-GY {
+		background-position: 0 -2300px;
+	}
+
+	.mediumFlag-HK {
+		background-position: 0 -2325px;
+	}
+
+	.mediumFlag-HM {
+		background-position: 0 -2350px;
+	}
+
+	.mediumFlag-HN {
+		background-position: 0 -2375px;
+	}
+
+	.mediumFlag-HR {
+		background-position: 0 -2400px;
+	}
+
+	.mediumFlag-HT {
+		background-position: 0 -2425px;
+	}
+
+	.mediumFlag-HU {
+		background-position: 0 -2450px;
+	}
+
+	.mediumFlag-ID {
+		background-position: 0 -2475px;
+	}
+
+	.mediumFlag-IE {
+		background-position: 0 -2500px;
+	}
+
+	.mediumFlag-IL {
+		background-position: 0 -2525px;
+	}
+
+	.mediumFlag-IM {
+		background-position: 0 -2550px;
+	}
+
+	.mediumFlag-IN {
+		background-position: 0 -2575px;
+	}
+
+	.mediumFlag-IO {
+		background-position: 0 -2600px;
+	}
+
+	.mediumFlag-IQ {
+		background-position: 0 -2625px;
+	}
+
+	.mediumFlag-IR {
+		background-position: 0 -2650px;
+	}
+
+	.mediumFlag-IS {
+		background-position: 0 -2675px;
+	}
+
+	.mediumFlag-IT {
+		background-position: 0 -2700px;
+	}
+
+	.mediumFlag-JE {
+		background-position: 0 -2725px;
+	}
+
+	.mediumFlag-JM {
+		background-position: 0 -2750px;
+	}
+
+	.mediumFlag-JO {
+		background-position: 0 -2775px;
+	}
+
+	.mediumFlag-JP {
+		background-position: 0 -2800px;
+	}
+
+	.mediumFlag-KE {
+		background-position: 0 -2825px;
+	}
+
+	.mediumFlag-KG {
+		background-position: 0 -2850px;
+	}
+
+	.mediumFlag-KH {
+		background-position: 0 -2875px;
+	}
+
+	.mediumFlag-KI {
+		background-position: 0 -2900px;
+	}
+
+	.mediumFlag-KM {
+		background-position: 0 -2925px;
+	}
+
+	.mediumFlag-KN {
+		background-position: 0 -2950px;
+	}
+
+	.mediumFlag-KP {
+		background-position: 0 -2975px;
+	}
+
+	.mediumFlag-KR {
+		background-position: 0 -3000px;
+	}
+
+	.mediumFlag-KW {
+		background-position: 0 -3025px;
+	}
+
+	.mediumFlag-KY {
+		background-position: 0 -3050px;
+	}
+
+	.mediumFlag-KZ {
+		background-position: 0 -3075px;
+	}
+
+	.mediumFlag-LA {
+		background-position: 0 -3100px;
+	}
+
+	.mediumFlag-LB {
+		background-position: 0 -3125px;
+	}
+
+	.mediumFlag-LC {
+		background-position: 0 -3150px;
+	}
+
+	.mediumFlag-LI {
+		background-position: 0 -3175px;
+	}
+
+	.mediumFlag-LK {
+		background-position: 0 -3200px;
+	}
+
+	.mediumFlag-LR {
+		background-position: 0 -3225px;
+	}
+
+	.mediumFlag-LS {
+		background-position: 0 -3250px;
+	}
+
+	.mediumFlag-LT {
+		background-position: 0 -3275px;
+	}
+
+	.mediumFlag-LU {
+		background-position: 0 -3300px;
+	}
+
+	.mediumFlag-LV {
+		background-position: 0 -3325px;
+	}
+
+	.mediumFlag-LY {
+		background-position: 0 -3350px;
+	}
+
+	.mediumFlag-MA {
+		background-position: 0 -3375px;
+	}
+
+	.mediumFlag-MC {
+		background-position: 0 -3400px;
+	}
+
+	.mediumFlag-MD {
+		background-position: 0 -3425px;
+	}
+
+	.mediumFlag-ME {
+		background-position: 0 -3450px;
+	}
+
+	.mediumFlag-MF {
+		background-position: 0 -3475px;
+	}
+
+	.mediumFlag-MG {
+		background-position: 0 -3500px;
+	}
+
+	.mediumFlag-MH {
+		background-position: 0 -3525px;
+	}
+
+	.mediumFlag-MK {
+		background-position: 0 -3550px;
+	}
+
+	.mediumFlag-ML {
+		background-position: 0 -3575px;
+	}
+
+	.mediumFlag-MM {
+		background-position: 0 -3600px;
+	}
+
+	.mediumFlag-MN {
+		background-position: 0 -3625px;
+	}
+
+	.mediumFlag-MO {
+		background-position: 0 -3650px;
+	}
+
+	.mediumFlag-MP {
+		background-position: 0 -3675px;
+	}
+
+	.mediumFlag-MQ {
+		background-position: 0 -3700px;
+	}
+
+	.mediumFlag-MR {
+		background-position: 0 -3725px;
+	}
+
+	.mediumFlag-MS {
+		background-position: 0 -3750px;
+	}
+
+	.mediumFlag-MT {
+		background-position: 0 -3775px;
+	}
+
+	.mediumFlag-MU {
+		background-position: 0 -3800px;
+	}
+
+	.mediumFlag-MV {
+		background-position: 0 -3825px;
+	}
+
+	.mediumFlag-MW {
+		background-position: 0 -3850px;
+	}
+
+	.mediumFlag-MX {
+		background-position: 0 -3875px;
+	}
+
+	.mediumFlag-MY {
+		background-position: 0 -3900px;
+	}
+
+	.mediumFlag-MZ {
+		background-position: 0 -3925px;
+	}
+
+	.mediumFlag-NA {
+		background-position: 0 -3950px;
+	}
+
+	.mediumFlag-NC {
+		background-position: 0 -3975px;
+	}
+
+	.mediumFlag-NE {
+		background-position: 0 -4000px;
+	}
+
+	.mediumFlag-NF {
+		background-position: 0 -4025px;
+	}
+
+	.mediumFlag-NG {
+		background-position: 0 -4050px;
+	}
+
+	.mediumFlag-NI {
+		background-position: 0 -4075px;
+	}
+
+	.mediumFlag-NL {
+		background-position: 0 -4100px;
+	}
+
+	.mediumFlag-NO {
+		background-position: 0 -4125px;
+	}
+
+	.mediumFlag-NP {
+		background-position: 0 -4150px;
+	}
+
+	.mediumFlag-NR {
+		background-position: 0 -4175px;
+	}
+
+	.mediumFlag-NU {
+		background-position: 0 -4200px;
+	}
+
+	.mediumFlag-NZ {
+		background-position: 0 -4225px;
+	}
+
+	.mediumFlag-OM {
+		background-position: 0 -4250px;
+	}
+
+	.mediumFlag-PA {
+		background-position: 0 -4275px;
+	}
+
+	.mediumFlag-PE {
+		background-position: 0 -4300px;
+	}
+
+	.mediumFlag-PF {
+		background-position: 0 -4325px;
+	}
+
+	.mediumFlag-PG {
+		background-position: 0 -4350px;
+	}
+
+	.mediumFlag-PH {
+		background-position: 0 -4375px;
+	}
+
+	.mediumFlag-PK {
+		background-position: 0 -4400px;
+	}
+
+	.mediumFlag-PL {
+		background-position: 0 -4425px;
+	}
+
+	.mediumFlag-PM {
+		background-position: 0 -4450px;
+	}
+
+	.mediumFlag-PN {
+		background-position: 0 -4475px;
+	}
+
+	.mediumFlag-PR {
+		background-position: 0 -4500px;
+	}
+
+	.mediumFlag-PS {
+		background-position: 0 -4525px;
+	}
+
+	.mediumFlag-PT {
+		background-position: 0 -4550px;
+	}
+
+	.mediumFlag-PW {
+		background-position: 0 -4575px;
+	}
+
+	.mediumFlag-PY {
+		background-position: 0 -4600px;
+	}
+
+	.mediumFlag-QA {
+		background-position: 0 -4625px;
+	}
+
+	.mediumFlag-RE {
+		background-position: 0 -4650px;
+	}
+
+	.mediumFlag-RO {
+		background-position: 0 -4675px;
+	}
+
+	.mediumFlag-RS {
+		background-position: 0 -4700px;
+	}
+
+	.mediumFlag-RU {
+		background-position: 0 -4725px;
+	}
+
+	.mediumFlag-RW {
+		background-position: 0 -4750px;
+	}
+
+	.mediumFlag-SA {
+		background-position: 0 -4775px;
+	}
+
+	.mediumFlag-SB {
+		background-position: 0 -4800px;
+	}
+
+	.mediumFlag-SC {
+		background-position: 0 -4825px;
+	}
+
+	.mediumFlag-SD {
+		background-position: 0 -4850px;
+	}
+
+	.mediumFlag-SE {
+		background-position: 0 -4875px;
+	}
+
+	.mediumFlag-SG {
+		background-position: 0 -4900px;
+	}
+
+	.mediumFlag-SH {
+		background-position: 0 -4925px;
+	}
+
+	.mediumFlag-SI {
+		background-position: 0 -4950px;
+	}
+
+	.mediumFlag-SJ {
+		background-position: 0 -4975px;
+	}
+
+	.mediumFlag-SK {
+		background-position: 0 -5000px;
+	}
+
+	.mediumFlag-SL {
+		background-position: 0 -5025px;
+	}
+
+	.mediumFlag-SM {
+		background-position: 0 -5050px;
+	}
+
+	.mediumFlag-SN {
+		background-position: 0 -5075px;
+	}
+
+	.mediumFlag-SO {
+		background-position: 0 -5100px;
+	}
+
+	.mediumFlag-SR {
+		background-position: 0 -5125px;
+	}
+
+	.mediumFlag-ST {
+		background-position: 0 -5150px;
+	}
+
+	.mediumFlag-SV {
+		background-position: 0 -5175px;
+	}
+
+	.mediumFlag-SY {
+		background-position: 0 -5200px;
+	}
+
+	.mediumFlag-SZ {
+		background-position: 0 -5225px;
+	}
+
+	.mediumFlag-TC {
+		background-position: 0 -5250px;
+	}
+
+	.mediumFlag-TD {
+		background-position: 0 -5275px;
+	}
+
+	.mediumFlag-TF {
+		background-position: 0 -5300px;
+	}
+
+	.mediumFlag-TG {
+		background-position: 0 -5325px;
+	}
+
+	.mediumFlag-TH {
+		background-position: 0 -5350px;
+	}
+
+	.mediumFlag-TJ {
+		background-position: 0 -5375px;
+	}
+
+	.mediumFlag-TK {
+		background-position: 0 -5400px;
+	}
+
+	.mediumFlag-TL {
+		background-position: 0 -5425px;
+	}
+
+	.mediumFlag-TM {
+		background-position: 0 -5450px;
+	}
+
+	.mediumFlag-TN {
+		background-position: 0 -5475px;
+	}
+
+	.mediumFlag-TO {
+		background-position: 0 -5500px;
+	}
+
+	.mediumFlag-TR {
+		background-position: 0 -5525px;
+	}
+
+	.mediumFlag-TT {
+		background-position: 0 -5550px;
+	}
+
+	.mediumFlag-TV {
+		background-position: 0 -5575px;
+	}
+
+	.mediumFlag-TW {
+		background-position: 0 -5600px;
+	}
+
+	.mediumFlag-TZ {
+		background-position: 0 -5625px;
+	}
+
+	.mediumFlag-UA {
+		background-position: 0 -5650px;
+	}
+
+	.mediumFlag-UG {
+		background-position: 0 -5675px;
+	}
+
+	.mediumFlag-UM {
+		background-position: 0 -5700px;
+	}
+
+	.mediumFlag-US {
+		background-position: 0 -5725px;
+	}
+
+	.mediumFlag-UY {
+		background-position: 0 -5750px;
+	}
+
+	.mediumFlag-UZ {
+		background-position: 0 -5775px;
+	}
+
+	.mediumFlag-VA {
+		background-position: 0 -5800px;
+	}
+
+	.mediumFlag-VC {
+		background-position: 0 -5825px;
+	}
+
+	.mediumFlag-VE {
+		background-position: 0 -5850px;
+	}
+
+	.mediumFlag-VG {
+		background-position: 0 -5875px;
+	}
+
+	.mediumFlag-VI {
+		background-position: 0 -5900px;
+	}
+
+	.mediumFlag-VN {
+		background-position: 0 -5925px;
+	}
+
+	.mediumFlag-VU {
+		background-position: 0 -5950px;
+	}
+
+	.mediumFlag-WF {
+		background-position: 0 -5975px;
+	}
+
+	.mediumFlag-WS {
+		background-position: 0 -6000px;
+	}
+
+	.mediumFlag-YE {
+		background-position: 0 -6025px;
+	}
+
+	.mediumFlag-YT {
+		background-position: 0 -6050px;
+	}
+
+	.mediumFlag-ZA {
+		background-position: 0 -6075px;
+	}
+
+	.mediumFlag-ZM {
+		background-position: 0 -6100px;
+	}
+
+	.mediumFlag-ZW {
+		background-position: 0 -6125px;
+	}
+
+	.mediumFlag-AC {
+		background-position: 0 -6150px;
+	}
+
+	.mediumFlag-IZ {
+		background-position: 0 -6175px;
+	}
+
+	.mediumFlag-SQ {
+		background-position: 0 -6200px;
+	}
+
+	.mediumFlag-SS {
+		background-position: 0 -6225px;
+	}
+
+	.mediumFlag-SX {
+		background-position: 0 -6250px;
+	}
+
+	.mediumFlag-UN {
+		background-position: 0 -6275px;
+	}
+
+	.mediumFlag-VO {
+		background-position: 0 -6300px;
+	}
+
+	.mediumFlag-XX {
+		background-position: 0 -6325px;
+	}
+
+}
+/*
+     FILE ARCHIVED ON 03:00:03 Jan 20, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:06:41 Nov 02, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.549
+  exclusion.robots: 0.019
+  exclusion.robots.policy: 0.009
+  esindex: 0.011
+  cdx.remote: 7.633
+  LoadShardBlock: 240.208 (3)
+  PetaboxLoader3.datanode: 231.288 (5)
+  PetaboxLoader3.resolve: 105.541 (3)
+  load_resource: 131.716 (2)
+*/

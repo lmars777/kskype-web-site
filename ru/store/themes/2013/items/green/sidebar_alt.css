@@ -1,0 +1,117 @@
+#sidebar #sidebarContent {
+    padding: 10px 20px 0 17px;
+}
+
+#sidebar #sidebarContent2 {
+    padding: 10px 10px 0 17px;
+}
+
+#sidebarContent.sideMenu .alternative {
+    padding-top: 285px;
+}
+
+#sidebarMenu.knowhow {
+margin-bottom: 90px;
+}
+
+#sidebarMenu ul {
+margin: 0 0 29px 0px;
+padding: 0;
+width: 220px;
+}
+
+* html #sidebarMenu ul {
+/*margin: 10px 0 29px -18px !important;*/
+width: 200px;
+}
+
+#sidebarMenu ul li {
+list-style: none;
+line-height: 19px;
+font-weight: bold;
+padding: 6px 0;
+position: relative;
+z-index: 666;
+margin: 0;
+width: 220px;
+}
+
+* html #sidebarMenu ul li {
+padding: 6px 0;
+width: 200px;
+}
+
+#sidebarMenu ul li.subTitle {
+color: #525252;
+font-size: 18px;
+}
+
+#sidebarMenu ul li a {
+text-decoration: none;
+    zoom: 1;
+}
+
+#sidebarMenu ul li.active {
+margin: 0 0 0 -27px;
+padding: 0 0 0 10px;
+background-image: url(https://web.archive.org/web/20130121124815im_/http://shop.skype.com/i/images/backgrounds/subnavi_third_arrow.png);
+background-position: left top;
+background-repeat: no-repeat;
+width: 220px;
+height: 100%;
+}
+
+* html #sidebarMenu ul li.active {
+margin: 0 0 0 -27px;
+width: 200px;
+}
+
+*:first-child+html #sidebarMenu ul {
+margin: 34px 0 49px -17px !important;
+}
+
+#sidebarMenu ul li.active a {
+background-image: url(https://web.archive.org/web/20130121124815im_/http://shop.skype.com/i/images/backgrounds/subnavi_third_back.png);
+background-position: right top;
+background-repeat: no-repeat;
+padding: 6px 0 0 0;
+display: block;
+color: #ffffff;
+}
+
+#sidebarMenu ul li.active a strong {
+background-image: url(https://web.archive.org/web/20130121124815im_/http://shop.skype.com/i/images/backgrounds/subnavi_third_back.png);
+background-position: right bottom;
+background-repeat: no-repeat;
+padding: 0 5px 6px 17px;
+display: block;
+position: relative;
+z-index: 667;
+}
+
+    #sidebarMenu ul li img.menuIcon {
+        height: 16px;
+        width: 16px;
+        margin-right: 5px;
+        vertical-align: top;
+    }
+/*
+     FILE ARCHIVED ON 12:48:15 Jan 21, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:06:57 Nov 02, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.734
+  exclusion.robots: 0.027
+  exclusion.robots.policy: 0.012
+  esindex: 0.014
+  cdx.remote: 26.119
+  LoadShardBlock: 129.438 (3)
+  PetaboxLoader3.datanode: 285.996 (7)
+  load_resource: 476.217 (2)
+  PetaboxLoader3.resolve: 280.325 (2)
+*/

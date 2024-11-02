@@ -1,0 +1,1866 @@
+span.buttonSmall a.greenSml
+{
+    color: #E5F6FD;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    padding-left: 0;
+    text-decoration: none;
+    vertical-align: middle;
+}
+* html span.buttonSmall a.greenSml
+{
+    -moz-background-inline-policy: continuous;
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+}
+* html span.buttonSmall a.greenSml span.text
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/backgrounds/blank.gif") repeat scroll left top transparent;
+}
+span.buttonSmall a.greenSml:hover
+{
+    background-position: 0 -20px;
+}
+span.buttonSmall a.greenSml span.text
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/green_xsmall.png") no-repeat scroll left top transparent;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 15px;
+    padding: 2px 0 0 10px;
+}
+span.buttonSmall a.greenSml span.rs
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/green_xsmall.png") no-repeat scroll right top transparent;
+    display: inline-block;
+    height: 20px;
+    vertical-align: bottom;
+    width: 10px;
+}
+* html span.buttonSmall a.greenSml span.rs
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/backgrounds/blank.gif") repeat scroll left top transparent;
+    display: inline-block;
+    height: 20px;
+    width: 10px;
+}
+span.buttonSmall a.greenSml:hover span.text
+{
+    background-position: 0 -20px;
+    color: #FFFFFF;
+}
+span.buttonSmall a.greenSml:hover span.rs
+{
+    background-position: 100% -20px;
+}
+.lineRight
+{
+    border-right: 1px solid #E3E3E3;
+}
+span.italic
+{
+    font-style: italic;
+}
+div.appinfobox
+{
+}
+div.appinfobox p.actionBtn
+{
+    margin-bottom: 0;
+    text-align: right;
+}
+div.appinfobox p.actionInfo
+{
+}
+div.appinfobox span.price
+{
+    border-right: 1px solid #525252;
+    color: #525252;
+    font-weight: bold;
+    padding: 0 5px 0 0;
+}
+div.appinfobox span.winmac
+{
+    border-right: 1px solid #525252;
+    padding: 0 5px 0 0;
+    margin: 0 0 0 5px;
+    vertical-align: top;
+}
+div.appinfobox span.winmac span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/apps/images/win_mac.png") no-repeat scroll 0 -60px transparent;
+    display: inline-block;
+    height: 20px;
+    width: 42px;
+}
+div.appinfobox span.winmac span.win
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/apps/images/win_mac.png") no-repeat scroll 0 -20px transparent;
+}
+
+div.appinfobox span.winmac span.winmac_all
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/apps/images/win_mac.png") no-repeat scroll 0 0 transparent;
+}
+
+div.appinfobox span.winmac span.mac
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/apps/images/win_mac.png") no-repeat scroll 0 -40px transparent;
+}
+div.appinfobox span.skypekit
+{
+    border-right: 1px solid #525252;
+    padding: 0 5px 0 0;
+    vertical-align: top;
+}
+div.appinfobox span.skypekit span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/skypekit_sml.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+div.appinfobox span.ratingstars
+{
+    display: inline-block;
+    vertical-align: top;
+}
+span.ratingstars span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 15px;
+    width: 92px;
+}
+
+span.ratingstars0 span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 3px transparent;
+    display: inline-block;
+    height: 15px;
+    width: 92px;
+}
+
+span.ratingstars1 span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -11px transparent;
+    display: inline-block;
+    height: 15px;
+    width: 92px;
+}
+
+span.ratingstars2 span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -25px transparent;
+    display: inline-block;
+    height: 15px;
+    width: 92px;
+}
+
+span.ratingstars3 span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -39px transparent;
+    display: inline-block;
+    height: 15px;
+    width: 92px;
+}
+
+span.ratingstars4 span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -53px transparent;
+    display: inline-block;
+    height: 15px;
+    width: 92px;
+}
+
+span.ratingstars5 span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -67px transparent;
+    display: inline-block;
+    height: 15px;
+    width: 92px;
+}
+
+
+
+
+span.ratingstars span.stars1
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -12px transparent;
+}
+span.ratingstars span.stars2
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -25px transparent;
+}
+span.ratingstars span.stars3
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -39px transparent;
+}
+span.ratingstars span.stars4
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -53px transparent;
+}
+span.ratingstars span.stars5
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/blue_star_sml.png") no-repeat scroll 0 -67px transparent;
+}
+span.ratingstarsYellow span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 14px;
+    width: 72px;
+}
+span.ratingstarsYellow span.stars1
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -12px transparent;
+}
+span.ratingstarsYellow span.stars2
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -25px transparent;
+}
+span.ratingstarsYellow span.stars3
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -39px transparent;
+}
+span.ratingstarsYellow span.stars4
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -53px transparent;
+}
+span.ratingstarsYellow span.stars5
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -67px transparent;
+}
+div.appinfobox span.comments
+{
+    border-left: 1px solid #525252;
+    color: #525252;
+    font-weight: bold;
+    padding: 0 5px;
+}
+div.appinfobox span.comments a
+{
+    color: #00ACEF;
+    text-decoration: underline;
+}
+div.appinfobox span.comments a:hover
+{
+    color: #00ACEF;
+    text-decoration: none;
+}
+span.featuredIcon
+{
+    padding: 0 10px;
+}
+span.featuredIcon span.featured
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/icon_featured.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    width: 90px;
+}
+span.featuredIcon span.mostviewed
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/icon_most_viewed.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    width: 115px;
+}
+span.featuredIcon span.toprated
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/icon_top_rated.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    width: 94px;
+}
+span.featuredIcon span.topdl
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/icon_top_dl.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    width: 139px;
+}
+span.featuredIcon span.toppaid
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/icon_top_paid.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    width: 82px;
+}
+span.featuredIcon span.topfree
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/icon_top_free.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    width: 85px;
+}
+div.promo-phones #topSplash.AppStore
+{
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 387px;
+}
+div.promo-phones #topSplash div.appBreadcrumbs {
+    padding-bottom:25px;
+    color:#B2E7FA;
+    font-weight:bold;
+}
+div.promo-phones #topSplash div.appBreadcrumbs a,
+div.promo-phones #topSplash div.appBreadcrumbs a:hover,
+div.promo-phones #topSplash div.appBreadcrumbs a:visited {
+    text-decoration:underline;
+    color:#B2E7FA;
+}
+#splashContent h2.appShop
+{
+    width: 235px;
+}
+#splashSearch
+{
+    left: 20px;
+    position: absolute;
+    top: 275px;
+    z-index: 100;
+}
+#splashSearch input.search
+{
+    -moz-border-radius: 4px 4px 4px 4px;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/search_btn.jpg") no-repeat scroll 3px 3px #FFFFFF;
+    border: 1px solid #C1ECFB;
+    color: #B0B4B5;
+    font-size: 14px;
+    font-weight: bold;
+    height: 18px;
+    padding: 3px 5px 3px 25px;
+    width: 180px;
+}
+#splashSearch td
+{
+    vertical-align: middle;
+}
+#splashSearch td.action
+{
+    padding: 0 0 0 5px;
+    text-align: left;
+}
+#splashSearch p
+{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+#splashSearch p a, #splashSearch p a:hover, #splashSearch p a:visited
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+#splashNavigationSlide
+{
+    height: 333px;
+    left: 545px;
+    position: absolute;
+    top: 40px;
+    width: 400px;
+    z-index: 100;
+}
+#splashNavigationSlide div.heroWrapper
+{
+    overflow: visible;
+    position: relative;
+    top: -30px;
+    width: 100%;
+    z-index: 9;
+}
+* html div#splashNavigationSlide div.heroWrapper
+{
+}
+#splashNavigationSlide div.heroWrapper div.heroSlide
+{
+    display: block;
+    height: 310px;
+    position: absolute;
+    top: -5000px;
+    width: 400px;
+}
+#splashNavigationSlide div.heroWrapper div.current
+{
+    display: block;
+    position: relative;
+    top: 0 !important;
+}
+#splashNavigationSlide div.heroWrapper div.visible
+{
+    display: block;
+}
+#splashNavigationSlide div.heroWrapper div.heroSlide div.copy
+{
+    float: left;
+    margin: 10px 20px 0 45px;
+    position: relative;
+    width: 305px;
+    z-index: 9;
+}
+#splashNavigationSlide div.heroSlide div.copy
+{
+    color: #525252;
+}
+#splashNavigationSlide div.heroSlide div.copy h2.slideTitle
+{
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    height: 38px;
+    padding: 9px 0 0;
+    text-decoration: none;
+    vertical-align: middle;
+}
+* html #splashNavigationSlide div.heroSlide div.copy h2.slideTitle
+{
+    -moz-background-inline-policy: continuous;
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+}
+* html #splashNavigationSlide div.heroSlide div.copy h2.slideTitle span.text
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/backgrounds/blank.gif") repeat scroll left top transparent;
+}
+#splashNavigationSlide div.heroSlide div.copy h2.slideTitle span.text
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/slide_h2_blue_left.png") no-repeat scroll left top transparent;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    height: 25px;
+    line-height: 15px;
+    padding: 13px 0 0 15px;
+}
+#splashNavigationSlide div.heroSlide div.copy h2.slideTitle span.sml
+{
+    font-size: 16px;
+}
+#splashNavigationSlide div.heroSlide div.copy h2.slideTitle span.rs
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/slide_h2_blue_right.png") no-repeat scroll right top transparent;
+    display: inline-block;
+    height: 38px;
+    vertical-align: top;
+    width: 20px;
+}
+* html #splashNavigationSlide div.heroSlide div.copy h2.slideTitle span.rs
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/backgrounds/blank.gif") repeat scroll left top transparent;
+    display: inline-block;
+    height: 38px;
+    width: 20px;
+}
+#splashNavigationSlide div.heroSlide div.odd
+{
+    color: #FFFFFF;
+}
+#splashNavigationSlide div.heroSlide div.odd h2.slideTitle
+{
+    color: #00AFF0;
+    display: inline-block;
+    font-size: 18px;
+    height: 38px;
+    padding-left: 0;
+    text-decoration: none;
+    vertical-align: middle;
+}
+* html #splashNavigationSlide div.heroSlide div.odd h2.slideTitle
+{
+    -moz-background-inline-policy: continuous;
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+}
+* html #splashNavigationSlide div.heroSlide div.odd h2.slideTitle span.text
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/backgrounds/blank.gif") repeat scroll left top transparent;
+}
+#splashNavigationSlide div.heroSlide div.odd h2.slideTitle span.text
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/slide_h2_white_left.png") no-repeat scroll left top transparent;
+    color: #00AFF0;
+    display: inline-block;
+    font-size: 18px;
+    height: 25px;
+    line-height: 15px;
+    padding: 13px 0 0 15px;
+}
+#splashNavigationSlide div.heroSlide div.odd h2.slideTitle span.sml
+{
+    font-size: 16px;
+}
+#splashNavigationSlide div.heroSlide div.odd h2.slideTitle span.rs
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/slide_h2_white_right.png") no-repeat scroll right top transparent;
+    display: inline-block;
+    height: 38px;
+    vertical-align: top;
+    width: 20px;
+}
+* html #splashNavigationSlide div.heroSlide div.odd h2.slideTitle span.rs
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/backgrounds/blank.gif") repeat scroll left top transparent;
+    display: inline-block;
+    height: 38px;
+    width: 20px;
+}
+#splashNavigationSlide div.heroSlide div.featuredWrapper
+{
+    color: #525252;
+    padding: 0 0 0 20px;
+    width: 285px;
+}
+#splashNavigationSlide div.heroSlide div.featuredWrapper p.viewAll
+{
+    font-size: 12px;
+    padding: 0;
+    text-align: right;
+}
+#splashNavigationSlide div.heroSlide div.odd div.featuredWrapper p.viewAll a, #splashNavigationSlide div.heroSlide div.odd div.featuredWrapper p.viewAll a:hover, #splashNavigationSlide div.heroSlide div.odd div.featuredWrapper p.viewAll a:visited
+{
+    color: #FFFFFF;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp
+{
+    border-bottom: 1px solid #525252;
+    padding: 9px 0;
+}
+#splashNavigationSlide div.heroSlide div.odd div.featuredApp
+{
+    border-bottom: 1px solid #FFFFFF;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp img.thmb
+{
+    padding: 0 5px;
+    vertical-align: middle;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp span.num
+{
+    padding: 0 5px 0 0;
+    vertical-align: middle;
+}
+#splashNavigationSlide div.heroSlide div.odd div.featuredApp span.num
+{
+    color: #FFFFFF;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp span.name
+{
+    padding: 3px 0 0;
+    vertical-align: middle;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp span.name a, #splashNavigationSlide div.heroSlide div.featuredApp span.name a:visited
+{
+    color: #525252;
+    text-decoration: none;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp span.name a:hover
+{
+    color: #525252;
+    text-decoration: underline;
+}
+#splashNavigationSlide div.heroSlide div.odd div.featuredApp span.name a, #splashNavigationSlide div.heroSlide div.odd div.featuredApp span.name a:visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#splashNavigationSlide div.heroSlide div.odd div.featuredApp span.name a:hover
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp span.left
+{
+    float: left;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp span.right
+{
+    float: right;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp ul.getNow
+{
+    float: right;
+}
+#splashNavigationSlide div.heroSlide div.featuredApp div.appinfobox
+{
+    padding: 7px 0 0 17px;
+}
+#splashNavigationSlide div.heroSlide div.odd div.appinfobox span.price
+{
+    border-right: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#splashNavigationSlide div.heroSlide div.odd div.appinfobox span.winmac, #splashNavigationSlide div.heroSlide div.odd div.appinfobox span.skypekit
+{
+    border-right: 1px solid #FFFFFF;
+}
+.getNow li ul.horizontal
+{
+    position: absolute;
+    visibility: hidden;
+}
+.getNow li ul.horizontal li
+{
+    background-color: #FFFFFF;
+    display: inline-block;
+    float: none;
+    left: -160px;
+    position: absolute;
+    width: 150px;
+}
+div.odd .getNow li ul.horizontal li
+{
+    background-color: #00AFF0;
+}
+.getNow li ul.horizontal li.one
+{
+    top: -18px;
+}
+.getNow li ul.horizontal li.two
+{
+    top: -29px;
+}
+ul li.hoverInfo span.price
+{
+    color: #525252;
+    font-size: 12px;
+    padding: 0 5px 0 0;
+}
+div.odd ul li.hoverInfo span.price
+{
+    color: #FFFFFF;
+}
+ul li.hoverInfo span.date
+{
+    color: #525252;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0 5px 0 0;
+}
+div.odd ul li.hoverInfo span.date
+{
+    color: #FFFFFF;
+}
+ul li.hoverInfo span.winmac
+{
+    border-right: 1px solid #525252;
+    padding: 2px 3px 0;
+    vertical-align: top;
+}
+div.odd ul li.hoverInfo span.winmac
+{
+    border-right: 1px solid #FFFFFF;
+}
+ul li.hoverInfo span.winmac span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/win_mac_sml.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 15px;
+    width: 35px;
+}
+ul li.hoverInfo span.winmac span.win
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/win_mac_sml.png") no-repeat scroll 0 -16px transparent;
+}
+ul li.hoverInfo span.winmac span.mac
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/win_mac_sml.png") no-repeat scroll 0 -33px transparent;
+}
+ul li.hoverInfo span.rating
+{
+    display: inline-block;
+    padding: 2px 3px 0;
+    vertical-align: top;
+}
+ul li.hoverInfo span.rating span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_xsml.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 12px;
+    width: 60px;
+}
+ul li.hoverInfo span.rating span.stars1
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_xsml.png") no-repeat scroll 0 -11px transparent;
+}
+ul li.hoverInfo span.rating span.stars2
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_xsml.png") no-repeat scroll 0 -23px transparent;
+}
+ul li.hoverInfo span.rating span.stars3
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_xsml.png") no-repeat scroll 0 -34px transparent;
+}
+ul li.hoverInfo span.rating span.stars4
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_xsml.png") no-repeat scroll 0 -45px transparent;
+}
+ul li.hoverInfo span.rating span.stars5
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_xsml.png") no-repeat scroll 0 -56px transparent;
+}
+#splashNavigationSlide div.heroWrapper div.heroSlide img.main
+{
+    bottom: 0;
+    float: right;
+    position: absolute;
+}
+html.rtl #splashNavigationSlide div.heroWrapper div.heroSlide img.main
+{
+    float: left;
+}
+#splashNavigationSlide div.heroWrapper div.heroSlide img.carouselMain, #splashNavigationSlide div.slideWrapper div.heroSlide img.carouselMainFull
+{
+    left: 13px;
+    position: absolute;
+    top: 0;
+}
+html.rtl #splashNavigationSlide div.heroWrapper div.heroSlide img.carouselMain, html.rtl #splashNavigationSlide div.heroWrapper div.heroSlide img.carouselMainFull
+{
+    left: 0;
+    right: auto;
+}
+* html div.heroCarousel div.heroSlide img.carouselMain
+{
+}
+:first-child + html div.heroCarousel div.heroSlide img.carouselMain
+{
+}
+#splashNavigationSlide div.heroWrapper ul.pagination
+{
+    bottom: 0;
+    left: 15px;
+    position: absolute;
+    visibility: hidden;
+    width: 380px;
+}
+#splashNavigationSlide div.heroWrapper ul.pagination li
+{
+    float: left;
+    height: 175px;
+    list-style-type: none;
+    padding: 0;
+}
+html.rtl #splashNavigationSlide div.heroWrapper ul.pagination li
+{
+    float: right;
+}
+#splashNavigationSlide div.heroWrapper ul.pagination li button.invArrowLeft
+{
+    background: url("https://web.archive.org/web/20130121124920im_/http://www.skypeassets.com/i/images/misc/dummy.png") repeat scroll 0 0 transparent;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 30px;
+}
+html.rtl #splashNavigationSlide div.heroWrapper ul.pagination li button.invArrowLeft
+{
+}
+#splashNavigationSlide div.heroWrapper ul.pagination li button.p1
+{
+    bottom: -15px;
+    left: 130px;
+    position: absolute;
+}
+#splashNavigationSlide div.heroWrapper ul.pagination li button.p2
+{
+    bottom: -15px;
+    left: 154px;
+    position: absolute;
+}
+#splashNavigationSlide div.heroWrapper ul.pagination li button.p3
+{
+    bottom: -15px;
+    left: 178px;
+    position: absolute;
+}
+#splashNavigationSlide div.heroWrapper ul.pagination li button.p4
+{
+    bottom: -15px;
+    left: 202px;
+    position: absolute;
+}
+#splashNavigationSlide div.heroWrapper ul.pagination li button.invArrowRight
+{
+    background: url("https://web.archive.org/web/20130121124920im_/http://www.skypeassets.com/i/images/misc/dummy.png") repeat scroll 0 0 transparent;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+html.rtl #splashNavigationSlide div.heroWrapper ul.pagination li button.invArrowRight
+{
+}
+* html #splashNavigationSlide div.heroWrapper ul.pagination
+{
+    position: absolute;
+    z-index: 4000;
+}
+:first-child + html #splashNavigationSlide div.heroWrapper ul.pagination
+{
+    position: absolute;
+    z-index: 4000;
+}
+#splashNavigationPad
+{
+    left: 20px;
+    position: absolute;
+    top: 205px;
+    z-index: 100;
+    width: 235px;
+}
+#splashNavigationPad p
+{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+#splashNavigationPad p a, #splashNavigationPad p a:hover, #splashNavigationPad p a:visited
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.submissionpage #modalPhoneCompare {
+    background-color: #FFFFFF;
+    border-radius: 2px 2px 2px 2px;
+    display: block;
+    left: 0;
+    margin: 0 auto 30px;
+    padding: 20px 10px;
+    position: relative;
+    top: 0;
+    width: 900px;
+}
+
+#modalPhoneCompare h1 span.padInfo
+{
+    color: #525252;
+    font-size: 16px;
+    letter-spacing: 0;
+    padding: 0 0 0 10px;
+}
+#modalPhoneCompare h2 {
+    color: #00AFF0;
+    margin:0 0 20px 20px;
+}
+#modalPhoneCompare p.padIntro
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+#modalPhoneCompare p.term
+{
+    font-size: 14px;
+    width: 400px; 
+    padding-right: 0px; 
+    margin: 40px 0 12px 562px; 
+    padding-left: 0px; 
+}
+#modalPhoneCompare p.term span {
+padding-left:8px;
+}
+#modalPhoneCompare p.padIntro input
+{
+    -moz-border-radius: 4px 4px 4px 4px;
+    border: 1px solid #CCCCCC;
+    color: #B0B4B5;
+    font-size: 16px;
+    font-weight: bold;
+    height: 20px;
+    padding: 7px 10px 5px;
+    width: 590px;
+    margin-left:26px;
+}
+#modalPhoneCompare div.padAction
+{
+    padding: 0 185px 40px 0;
+}
+#modalPhoneCompare div.padAction span.submitButton
+{
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+
+#SortAndFilter
+{
+    margin: 10px 0 0px;
+}
+#SortAndFilter div.content
+{
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+#SortAndFilter div.oneColumn
+{
+    padding: 0 20px;
+}
+#SortAndFilter div.oneColumn p
+{
+    font-weight: bold;
+    margin: 0;
+}
+#SortAndFilter div.oneColumn table
+{
+    width: 920px;
+}
+#SortAndFilter div.oneColumn td
+{
+    background-color: #CCEFFC;
+    border-bottom: 1px solid #7FD7F7;
+    border-top: 1px solid #7FD7F7;
+    padding: 15px 10px;
+}
+#SortAndFilter div.oneColumn td.sort
+{
+    background-color: #E5F6FD;
+}
+#SortAndFilter div.oneColumn div.action
+{
+    padding: 15px 20px 5px 20px;
+    text-align: right;
+}
+div.appListBox
+{
+    border-bottom: 1px solid #C6C6C6;
+    padding: 10px 0;
+}
+div.appListBox:hover
+{
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/best_app_bg.jpg") repeat-x scroll left bottom transparent;
+}
+div.appListBox div.leftCol
+{
+    float: left;
+    width: 60px;
+}
+div.appListBox div.leftCol p.new
+{
+    font-weight: bold;
+    text-align: center;
+}
+div.appListBox div.rightCol
+{
+    float: left;
+    padding: 0 20px;
+    position: relative;
+    width: 820px;
+}
+div.appListBox div.rightCol h2.appName a
+{
+    color: #525252;
+    text-decoration: none;
+}
+div.appListBox div.rightCol h2.appName span a
+{
+    color: #B0B4B5;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+div.appListBox div.rightCol h2.appName a:hover, div.appListBox div.rightCol h2.appName span a:hover
+{
+    text-decoration: underline;
+}
+div.appListBox div.rightCol div.action
+{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+div.paginator
+{
+    padding: 0 40px 0 0;
+    text-align: right;
+}
+div.paginator a
+{
+    color: #00ACEF;
+    padding: 3px;
+}
+div.paginator a.inactive
+{
+    color: #B0B4B5;
+    text-decoration: none;
+}
+div.paginator a.active
+{
+    text-decoration: none;
+}
+div.paginator a.symbol
+{
+    font-weight: normal;
+}
+div.paginator span.pageSymbol
+{
+    display: inline-block;
+    vertical-align: top;
+}
+div.paginator span.pageSymbol span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/pagination_control.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 22px;
+    width: 18px;
+}
+div.paginator span.pageSymbol span.first
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/pagination_control.png") no-repeat scroll 0 -113px transparent;
+}
+div.paginator a.active span.pageSymbol span.first
+{
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/pagination_control.png") no-repeat scroll 0 -135px transparent;
+}
+div.paginator span.pageSymbol span.prev
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/pagination_control.png") no-repeat scroll 0 -25px transparent;
+}
+div.paginator a.active span.pageSymbol span.prev
+{
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/pagination_control.png") no-repeat scroll 0 -47px transparent;
+}
+div.paginator span.pageSymbol span.next
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/pagination_control.png") no-repeat scroll 0 -69px transparent;
+}
+div.paginator a.active span.pageSymbol span.next
+{
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/pagination_control.png") no-repeat scroll 0 -91px transparent;
+}
+div.paginator span.pageSymbol span.last
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/pagination_control.png") no-repeat scroll 0 -157px transparent;
+}
+div.paginator a.active span.pageSymbol span.last
+{
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/pagination_control.png") no-repeat scroll 0 -179px transparent;
+}
+#AppFeatured
+{
+    margin: 0 0 15px;
+}
+#AppFeatured div.content
+{
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+#AppFeatured div.BestAppColumn
+{
+    padding: 0 20px;
+}
+#AppFeatured div.BestAppColumnBg
+{
+    -moz-border-radius: 4px 4px 4px 4px;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/best_app_bg.jpg") repeat-x scroll left bottom transparent;
+    border: 1px solid #C1ECFB;
+    padding: 20px 0;
+}
+#AppFeatured div.BestAppBg
+{
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/lineRight.png") repeat-y scroll 0 0 transparent;
+    position:relative;
+}
+#AppFeatured div.BestApp
+{
+    display: inline;
+    float: left;
+    overflow: hidden;
+    padding: 0 30px;
+    width: 245px;
+}
+#AppFeatured div.BestApp div.BestAppItem {
+    height:100px;
+}
+#AppFeatured div.BestApp div.BestAppItem p 
+{
+    margin:0;    
+}
+#AppFeatured div.BestApp img.thmb
+{
+    float: left;
+    padding-right: 10px;
+}
+#AppFeatured div.BestApp h2
+{
+    padding: 9px 0 5px;
+}
+#AppFeatured div.BestApp h2.name a
+{
+    color: #525252;
+    text-decoration: none;
+}
+#AppFeatured div.BestApp p.devname 
+{
+padding-left:70px;    
+}
+#AppFeatured div.BestApp p.devname a
+{
+    color: #B0B4B5;
+    font-weight: bold;
+    text-decoration: none;
+}
+#AppFeatured div.BestApp h2.name a:hover, #AppFeatured div.BestApp p.devname a:hover
+{
+    text-decoration: underline;
+}
+#AppCategory
+{
+    margin: 0 0 15px;
+}
+#AppCategory div.content
+{
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+#AppCategory div.catColumn
+{
+    padding: 0 20px;
+}
+#AppCategory div.catColumn div.catList
+{
+    border-bottom: 1px solid #C6C6C6;
+    padding: 10px 0;
+}
+#AppCategory div.catColumn div.catList:hover
+{
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/i/images/app-store/graphics/best_app_bg.png") repeat-x scroll left bottom transparent;
+}
+#AppCategory div.catColumn div.title
+{
+    border-bottom: medium none;
+}
+#AppCategory div.catColumn div.title div.leftColumn,
+#AppCategory div.catColumn div.title div.rightColumn 
+{
+height:20px;    
+}
+#AppCategory div.catColumn div.title:hover
+{
+    background: none repeat scroll 0 0 transparent;
+}
+#AppCategory div.leftColumn
+{
+    float: left;
+    padding: 0 20px 0 0;
+    width: 369px;
+    height:60px;
+}
+#AppCategory div.leftColumn img.cube
+{
+    float: left;
+}
+#AppCategory div.leftColumn h2.titleName
+{
+    color: #525252;
+    float: left;
+    padding: 0 0 0 10px;
+    font-size:18px;
+}
+#AppCategory div.leftColumn h2.cateName
+{
+    color: #525252;
+    float: left;
+    padding: 20px 0 0 10px;
+    font-size:18px;
+}
+#AppCategory div.leftColumn h2.cateName a
+{
+    color: #525252;
+    text-decoration: none;
+}
+#AppCategory div.leftColumn h2.cateName a:hover
+{
+    text-decoration: underline;
+}
+#AppCategory div.rightColumn
+{
+    float: left;
+    padding: 0 20px;
+    width: 490px;
+    height:60px;
+}
+#AppCategory div.rightColumn h2.titleName 
+{
+    font-size:14px;
+}
+#AppCategory div.rightColumn img.dlThmb
+{
+    float: left;
+    padding: 10px 0 0;
+}
+#AppCategory div.rightColumn div.dlName
+{
+    float: left;
+    font-size: 14px;
+    padding: 20px 0 0 10px;
+    width: 185px;
+}
+#AppCategory div.rightColumn div.dlName a
+{
+    color: #525252;
+    text-decoration: none;
+}
+#AppCategory div.rightColumn div.dlName a:hover
+{
+    text-decoration: underline;
+}
+#AppCategory div.rightColumn div.dlInfo
+{
+    color: #525252;
+    float: left;
+    padding: 20px 0 0 10px;
+    width: 145px;
+}
+#AppCategory div.rightColumn div.dlInfo div.appinfobox 
+{
+text-align:right;    
+}
+#AppCategory div.rightColumn div.dlInfo div.appinfobox span.winmac
+{
+    border-right:none;
+}
+#AppCategory div.rightColumn div.dlGet
+{
+    float: left;
+    padding: 20px 0 0 10px;
+    width: 92px;
+}
+#allAppList
+{
+    margin: 0 0 15px;
+}
+#allAppList div.content
+{
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+#allAppList div.listColumn
+{
+    padding: 20px;
+}
+#topSplash img.appMainImage
+{
+    left: 240px;
+    position: absolute;
+    top: 160px;
+    width: 430px;
+}
+div.lightHeader.regularProduct div.title h1.app,
+div.lightHeader.regularProduct div.title h2.app 
+{
+    margin-left:70px;
+    width:600px;
+}
+div.lightHeader.regularProduct div.appIcon 
+{
+position:absolute;
+    top:70px;
+    left:20px;
+    width:60px;
+    height:60px;
+}
+div.lightHeader.regularProduct div.bottomThmbPanel
+{
+    left: 720px;
+    position: absolute;
+    top: 345px;
+    width: 240px;
+}
+div.lightHeader.regularProduct div.bottomThmbPanel div.thumbnails
+{
+    float: right;
+    width: 240px;
+}
+div.lightHeader.regularProduct div.bottomThmbPanel div.thumbnails a
+{
+    display: inline-block;
+    float: left;
+    height: 45px;
+    margin: 0 2px 2px 0;
+    width: 59px;
+}
+#photosOverlay div.thumbnails a span.thumb {
+    height: 47px;
+    width: 61px;
+}
+div.lightHeader.regularProduct div.bottomThmbPanel div.thumbnails a.details
+{
+    clear: both;
+    display: block;
+    float: none;
+    height: auto;
+    margin: 0 0 15px;
+    width: auto;
+}
+div.lightHeader.regularProduct div.bottomPricePanel
+{
+    position: absolute;
+    /*top: 365px;*/
+    width: 250px;
+}
+div.lightHeader.regularProduct div.bottomPricePanel p.appPrice
+{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+div.lightHeader.regularProduct div.bottomPricePanel p.appPriceBottom
+{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight:normal;
+    margin-top: 5px;
+}
+.appPromoPriceBottom
+{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight:normal;
+    padding-left:30px;
+        margin-top: 5px;
+}
+.appPromoPriceStrike
+{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight:normal;
+    padding-left:30px;
+    text-decoration: line-through;
+}
+div.lightHeader.regularProduct div.bottomPricePanel .USDCost
+{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-style:italic;
+    padding:0 0 5px 0;
+    font-weight:normal;
+}
+div.lightHeader.regularProduct div.title p
+{
+    color: #FFFFFF;
+    font-weight: normal;
+    margin: 0;
+    width: 205px;
+}
+
+div.businessRegularHeader div.buy, div.lightHeader.regularProduct div.buy {
+    width: 205px;
+}
+
+div.lightHeader.regularProduct div.title p a, div.lightHeader.regularProduct div.title p a:hover, div.lightHeader.regularProduct div.title p a:visited
+{
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: underline;
+}
+div.lightHeader.regularProduct div.title p.rating
+{
+    padding: 15px 0 0;
+}
+div.lightHeader.regularProduct div.title p.commented
+{
+    font-size: 16px;
+}
+div.lightHeader.regularProduct div.title p.commented a, div.lightHeader.regularProduct div.title p.commented a:visited
+{
+    text-decoration: none;
+}
+div.lightHeader.regularProduct div.title p.commented a:hover
+{
+    text-decoration: underline;
+}
+div.overlayContent div.photoBox {
+    width:655px; /* 950px */
+    height:337px; /* 404px */
+    margin:67px 0 0 255px;
+}
+div.title p span.winmac
+{
+    padding: 0 5px;
+    vertical-align: top;
+}
+
+
+
+div.title p span.winmac span
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/apps/images/win_mac.png") no-repeat scroll 0 -60px transparent;
+    display: inline-block;
+    height: 20px;
+    width: 42px;
+}
+div.title p span.winmac span.winmac_all
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/apps/images/win_mac.png") no-repeat scroll 0 0px transparent;
+}
+div.title p span.winmac span.win
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/apps/images/win_mac.png") no-repeat scroll 0 -20px transparent;
+}
+
+div.title p span.winmac span.mac
+{
+    -moz-background-inline-policy: continuous;
+    background: url("https://web.archive.org/web/20130121124920im_/http://shop.skype.com/apps/images/win_mac.png") no-repeat scroll 0 -40px transparent;
+}
+#CommentsFeatures
+{
+    margin: 35px 0 10px;
+}
+#CommentsFeatures div.content
+{
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+#CommentsFeatures div.leftColumn
+{
+    float: left;
+    overflow: hidden;
+    width: 690px;
+}
+#CommentsFeatures div.leftColumn div.commentSort
+{
+    padding: 0 0 10px;
+    text-align: right;
+}
+#CommentsFeatures div.sidebar
+{
+    display: inline;
+    float: left;
+    margin-left: 30px;
+    width: 240px;
+}
+#CommentsFeatures.mobile div.sidebar
+{
+    padding-top: 95px;
+}
+#CommentsFeatures.mobile div.sidebar div.share-logo
+{
+    padding: 15px 0 20px;
+}
+#CommentsFeatures.mobile div.sidebar div.share-logo span
+{
+    margin: 0 8px 10px 0;
+}
+ul.commentList
+{
+}
+ul.commentList li
+{
+}
+ul.commentList li.child
+{
+    margin-left: 30px;
+}
+ul.commentList div.comment_header
+{
+    -moz-background-inline-policy: continuous;
+    -moz-border-radius: 3px 3px 3px 3px;
+    background: none repeat scroll 0 0 #CCEFFC;
+    border: 1px solid #7FD7F7;
+    height: auto;
+    line-height: normal;
+}
+ul.commentList div.child
+{
+    background: none repeat scroll 0 0 #E5F6FD;
+}
+ul.commentList div.comment_header img
+{
+    float: left;
+    padding: 3px 20px 3px 3px;
+    vertical-align: middle;
+}
+ul.commentList div.comment_header span.header-meta
+{
+    color: #525252;
+    float: left;
+    font-weight: bold;
+    padding: 20px 0 0;
+}
+ul.commentList div.comment_header span.reply-link
+{
+    color: #B0B4B5;
+    float: left;
+    font-weight: bold;
+    padding: 20px 0 0 15px;
+}
+ul.commentList div.comment_body
+{
+    padding: 15px 0 0;
+}
+ul.commentList div.comment_footer
+{
+    padding: 0 0 15px;
+}
+ul.commentList div.footer-right
+{
+    text-align: right;
+}
+ul.commentList div.footer-left
+{
+    text-align: left;
+}
+ul.commentList div.comment_footer span.comment-buttons
+{
+    padding-left: 5px;
+    white-space: nowrap;
+}
+ul.commentList button.comment
+{
+    -moz-background-inline-policy: continuous;
+    -moz-border-radius: 3px 3px 3px 3px;
+    background: none repeat scroll 0 0 #CCEFFC;
+    border: 1px solid #7FD7F7;
+    color: #525252;
+    cursor: pointer;
+    font-size: 11px;
+    margin: 0;
+    padding: 2px 4px;
+}
+div.addComment
+{
+}
+div.addComment h3
+{
+    color: #525252;
+}
+div.addComment div.form-area
+{
+    padding: 10px 0;
+}
+div.addComment div.text-area
+{
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #7FD7F7;
+    color: #525252;
+    height: 120px;
+    padding: 5px;
+}
+div.form-right
+{
+    text-align: right;
+}
+div.form-left
+{
+    text-align: left;
+}
+div.addComment div.form-footer
+{
+}
+div.addComment span.form-buttons
+{
+    padding-left: 5px;
+    white-space: nowrap;
+}
+div.addComment button.post
+{
+    -moz-background-inline-policy: continuous;
+    -moz-border-radius: 3px 3px 3px 3px;
+    background: none repeat scroll 0 0 #CCEFFC;
+    border: 1px solid #7FD7F7;
+    color: #525252;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+/* DISQUS CSS */
+
+/* Everything Disqus on your page is contained within this. */
+#disqus_thread {
+padding: 5px !important;
+font-size: 14px !important; 
+}
+
+
+/* The main wrapper for the comment system. */
+#dsq-content {
+font-size: 14px !important;
+}
+
+/*The entire comment thread list.*/
+#dsq-comments {
+    margin: 0 0 0 0 !important;
+    }
+
+/*A single comment in the thread.*/
+.dsq-comment {
+}
+
+/*A single comment in the thread.*/
+.dsq-comment-header {
+color: #525252 !important;
+    -moz-background-inline-policy: continuous !important;
+    -moz-border-radius: 3px 3px 3px 3px !important;
+    background: none repeat scroll 0 0 #CCEFFC !important;
+    border: 1px solid #7FD7F7 !important;
+    height: auto !important;
+    line-height: normal !important;
+    font-size: 14px !important;
+}
+
+/*The avatar image for the registered.*/
+.dsq-header-avatar img {
+    float: left !important;
+    padding: 3px 20px 3px 3px !important;
+    vertical-align: middle !important;
+    height: 48px !important;
+    width:48px !important;
+}
+
+/*The message body of a single comment post.*/
+#dsq-content #dsq-comments .dsq-comment-body {
+    padding: 15px 0 0 !important; 
+ } 
+
+/*"Add New Comment" and "# Comments" are enclosed in h3 tags.*/
+#dsq-content h3 {
+    color: #525252 !important;
+}
+
+/*The footer contains the link to "reply."*/
+.dsq-comment-footer {}
+
+/*Reply and Like buttons*/
+.dsq-button-small {
+    -moz-background-inline-policy: continuous !important;
+    -moz-border-radius: 3px 3px 3px 3px !important;
+    background: none repeat scroll 0 0 #CCEFFC !important;
+    border: 1px solid #7FD7F7 !important;
+    color: #525252 !important;
+    cursor: pointer !important;
+    font-size: 11px !important;
+    margin: 0 !important;
+    padding: 2px 4px !important;
+}
+
+/*The box where a post is typed into.*/
+.dsq-textarea-wrapper{
+    -moz-background-clip: border !important;
+    -moz-background-inline-policy: continuous !important;
+    -moz-background-origin: padding !important;
+    -moz-border-radius: 3px 3px 3px 3px !important;
+    border: 1px solid #7FD7F7 !important;
+    color: #525252 !important;
+    height: 120px !important;
+    padding: 5px !important;
+}
+
+
+/* The toggle button for the thread options. */
+#dsq-options-toggle {
+/* display: none; */
+}
+
+/* The links within the thread Options */
+#dsq-extra-links {
+/* display: none; */
+}
+
+/* The comment rating arrows for posts. */
+.dsq-comment-body {
+    padding: 10px 0 0 !important; 
+    font-size: 14px !important;
+}
+
+/* This is the meta information about the post (time stamp and points). */
+.dsq-header-meta {
+}
+
+/* The message body of a single comment post.
+.dsq-comment-body {
+}
+
+/* This contains and determines the style for the pagination links. */
+#dsq-pagination {
+}
+
+/* This contains Sort and subscribe options. */
+.dsq-options{
+    overflow: hidden !important;
+    clear: none !important;
+    margin-top:5px !important;
+}
+
+/* This contains Sort text and field. */
+.dsq-item-sort{
+    float: right !important; 
+}
+
+
+/* RSS subscription. */
+.dsq-item-mail{
+    padding: 0 0 10px !important;
+    text-align: right !important;
+}
+/* Mail Subscription. */
+.dsq-subscribe-email{
+    display: none !important;
+}
+
+/* Disqus global toolbar. */
+#dsq-global-toolbar{
+    display: none !important;
+}
+
+/* Disqus post Like button . */
+.dsq-like{
+    display: none !important;
+}
+
+/* Post button */
+.dsq-button{
+    -moz-background-inline-policy: continuous !important;
+    -moz-border-radius: 3px 3px 3px 3px !important;
+    background: none repeat scroll 0 0 #CCEFFC !important;
+    border: 1px solid #7FD7F7 !important;
+    color: #525252 !important;
+    cursor: pointer !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    padding: 5px 10px !important;
+}
+
+/* Comments number title */
+#dsq-comments-title {
+    float: left !important;   
+}
+
+
+/* Rating Rate div*/
+.b1{
+padding-left:left ! important;
+}
+
+.rt_bx {
+    color: #525252 !important;
+    font: 12px verdana,arial,helvetica,sans-serif;
+}
+
+.rssum{
+    padding-top: 5px !important;
+}
+
+.submission .closeButton {
+    display: none;
+}
+
+.submission .submitButton {
+    padding-left: 20px;
+}
+
+.freetrial{
+    font-size: 85%;
+    font-weight: bold;
+    margin-left: 12px;
+    margin-right: 12px;
+    }
+
+div.lightHeader.regularProduct div.bottomPricePanel .freetrial{
+    color: #FFFFFF;
+    }
+
+
+span.buttonSmall {
+    display:block;
+}
+#SortAndFilter div.action span.buttonSmall {
+    display:inline-block;
+}
+/*
+     FILE ARCHIVED ON 12:49:20 Jan 21, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:06:55 Nov 02, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.463
+  exclusion.robots: 0.016
+  exclusion.robots.policy: 0.007
+  esindex: 0.01
+  cdx.remote: 7.664
+  LoadShardBlock: 134.572 (3)
+  PetaboxLoader3.datanode: 251.402 (7)
+  load_resource: 313.767 (2)
+  PetaboxLoader3.resolve: 160.57 (2)
+*/

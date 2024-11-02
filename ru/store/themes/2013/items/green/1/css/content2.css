@@ -1,0 +1,1193 @@
+/* --------------------------------
+/* --------------------------------
+Skype Shop New Theme
+----------------------------------- */
+
+/* 
+===== Homepage =====
+*/
+#productTypes td.iconS {
+width:75px;
+}
+#productThemes {
+margin:5px 0 20px;
+}
+#productThemes div.content {
+margin:0 auto;
+position:relative;
+width:960px;
+}
+#productTypes td.sml {
+/*line-height: 1em;*/
+}
+#productTypes td.sml span,
+#productTypes td.lrg span {
+font-size: 10px;
+}
+#productThemes div.themes {
+background:transparent url(../images/prodTheme_bg.jpg) repeat scroll left top;
+width:960px;
+height:278px;
+}
+#productThemes h2 {
+color: #00AAF0;
+font-size:24px;
+padding:20px 20px 5px 20px;
+}
+#productThemes h2 a,
+#productThemes h2 a:visited {
+text-decoration:none;
+color: #00AAF0;
+}
+#productThemes h2 a:hover {
+text-decoration:underline;
+color: #00AAF0;   
+}
+#productThemes p {
+padding:0 20px 5px 20px;	
+}
+#productThemes div.atHome {
+width:318px;
+height:278px;
+border-right:2px solid #FFFFFF;
+float:left;
+position:relative;
+background:transparent no-repeat scroll 20px 90px;
+}
+#productThemes div.atHome div.findBtn {
+position: absolute;
+top:235px;
+left:20px;	
+}
+#productThemes div.atWork {
+width:318px;
+height:278px;
+border-right:1px solid #FFFFFF;
+border-left:1px solid #FFFFFF;
+float:left;
+position:relative;
+background:transparent no-repeat scroll 20px 90px;
+}
+#productThemes div.atWork div.findBtn {
+position: absolute;
+top:235px;
+left:20px;	
+}
+#productThemes div.anyWhere {
+width:318px;
+height:278px;
+border-left:2px solid #FFFFFF;	
+float:left;
+position:relative;
+background:transparent no-repeat scroll 20px 85px;
+}
+#productThemes div.anyWhere div.findBtn {
+position: absolute;
+top:235px;
+left:20px;	
+}
+
+/* 
+===== Theme Page =====
+*/
+#topSplash div.theme_breadcrumbs {
+color:#B2E7FA;
+font-weight:bold;
+margin-left:20px;
+}
+#topSplash div.theme_breadcrumbs a {
+color:#B2E7FA;
+}
+#splashContent.skypeBusiness {
+width:300px;/*width:350px;*/
+padding:15px 20px 20px 20px;
+}
+#splashContent.skypeBusiness p.light {
+color:#B2E7FA;
+font-weight: bold;
+padding:15px 0 0 0;
+}
+#splashNavigation h2.promoSubTitle {
+background:none;
+padding: 150px 0 0 0;
+}
+#splashNavigation h2.promoNonProd {
+padding: 30px 0 3px 0;
+width:220px;
+}
+#splashNavigation div.whiteTxt p {
+color:#FFFFFF;
+margin:0;
+padding:0;
+width:220px;
+}
+#splashNavigation div.whiteTxt p a {
+color:#FFFFFF;
+text-decoration:underline;
+}
+
+#splashNavigation div.featured a:hover {
+color:#FFFFFF;
+text-decoration:none;
+}
+#promo .featured {
+background-attachment:scroll;
+background-position:left top;
+background-repeat:no-repeat;
+color:#00AFF0;
+font-weight:bold;
+height:100px;
+line-height:15px;
+padding:14px 10px 1px 15px;
+width:199px;
+}
+#promo .featured .content {
+height:auto;
+margin:0;
+width:auto;
+}
+#promo .featured .buttonSmall {
+display:block;
+margin:35px 0 0;
+}
+
+#technicalFeatures div.typeBundle {
+margin:0 auto;
+position:relative;
+width:880px;
+padding:0 0 20px;	
+}
+#technicalFeatures div.typeBundle h1 {
+margin:0;	
+}
+#technicalFeatures div.typeBundle p.soldBy {
+color:#666666;
+}
+#technicalFeatures div.typeBundle span.target {
+font-size:24px;
+color:#B0B4B5;
+padding: 0 0 0 10px;
+}
+#technicalFeatures div.qualityTxt {
+position:absolute;
+right:0;
+top:70px;
+width:100px;
+text-align:center;
+
+}
+#technicalFeatures div.qualityTxt p {
+font-size:14px;
+font-weight:bold;
+}
+div.typeBundle div.twoColumns {
+position:relative;
+width:880px;
+}
+div.typeBundle div.leftCol {
+float:left;
+overflow:hidden;
+padding:0 59px 0 0;
+width:211px;
+}
+div.typeBundle div.leftCol p {
+padding:3px 0 0 5px;	
+}
+div.typeBundle div.rightCol {
+float:left;
+overflow:hidden;
+padding:0;
+width:610px;
+}
+div.typeBundle div.rightCol div.items {
+border-bottom:1px solid #D8F3FD;
+padding:10px 0 0 0;
+}
+div.typeBundle div.rightCol div.prodName {/*NEW
+float:left;
+padding:0 0 0 10px;
+width:296px;*/
+}
+div.typeBundle div.rightCol div.prodName h2 a,
+div.typeBundle div.rightCol div.prodName h2 a:visited {
+text-decoration: none;
+}
+div.typeBundle div.rightCol div.prodName h2 a:hover {
+text-decoration: underline;
+}
+div.typeBundle div.rightCol div.prodName span.ratingStars {
+display:inline-block;
+margin:3px 15px 0 0;
+vertical-align:top;
+}
+div.typeBundle div.rightCol div.prodName span.winMac {
+vertical-align:top;
+}
+div.typeBundle div.rightCol div.prodName div.prodName span.freeTxt {
+padding-left:10px;
+font-weight:bold;
+color:#FF0000;
+vertical-align:bottom;
+}
+div.typeBundle div.rightCol div.prodName h2 span.model {
+color:#B0B4B5;
+font-weight:bold;
+font-size: 14px;
+text-decoration:none;
+padding:0 0 0 10px;
+}
+div.typeBundle div.rightCol div.icon {
+float:left;
+padding:0 10px 0 0;
+width:74px;
+}
+div.typeBundle div.rightCol div.midCont {
+float:left;
+padding:0 0 0 10px;
+width:376px;
+}
+div.typeBundle div.rightCol div.ratingLeft {
+float:left;
+width:180px;
+}
+div.typeBundle div.rightCol div.price {
+float:left;
+width:196px;
+text-align:right;
+}
+div.typeBundle div.rightCol  div.price span.strikePrice{
+padding:0 10px 0 0;	
+color: #666666;
+}
+div.typeBundle div.rightCol  div.price span.priceSml {
+color: #00acef;
+font-size:16px;
+}
+div.typeBundle div.rightCol div.price span.priceSml a,
+div.typeBundle div.rightCol div.price span.priceSml a:visited {
+text-decoration: none;
+color: #00acef;
+}
+div.typeBundle div.rightCol div.price span.priceSml a:hover {
+text-decoration: underline;
+color: #00acef;
+}
+div.typeBundle div.rightCol div.quantity {
+float:left;
+width:90px;
+text-align:center;
+padding:30px 0 0 45px;
+}
+div.typeBundle div.rightCol div.quantity select {
+width:50px;
+ }
+div.typeBundle div.rightCol div.quantity input.quantityBox {
+width:45px;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+color: #525252;
+}
+div.typeBundle div.rightCol div.bottomItems {
+border-top:1px solid #D8F3FD;
+padding:20px 0 0 0;	
+}
+div.typeBundle div.rightCol div.bottomItems div.costLeft {
+width:470px;
+float:left;
+}
+div.typeBundle div.rightCol div.bottomItems div.buyRight {
+width:140px;
+float:right;
+padding:40px 0 0 0;
+}
+div.typeBundle div.rightCol div.bottomItems div.costLeft p {
+text-align:right;
+margin: 0;
+padding:0 0 5px 0;
+}
+div.typeBundle div.rightCol div.bottomItems span.totalCost {/*NEW*/
+/*float:left;*/
+color: #525252;
+font-size:20px;
+font-weight: bold;
+padding:0 0 0 20px;	
+vertical-align:top;
+}
+div.typeBundle div.rightCol div.bottomItems span.totalCostPrice {/*NEW*/
+/*float:left;*/
+color: #00acef;
+font-size:20px;
+font-weight: bold;
+padding:0 0 0 12px;	
+vertical-align:top;
+}
+div.typeBundle div.rightCol div.bottomItems span.actionRight {/*NEW*/
+float:right;	
+padding:5px 22px 0 0;	
+}
+div.typeBundle div.rightCol div.bottomItems span.subtotal {
+color:#666666;
+font-size:16px;
+font-weight: bold;
+padding:0 0 0 10px;	
+}
+div.typeBundle div.rightCol div.bottomItems span.discount {
+padding:0 0 0 10px;
+color:#ff0000;
+text-align:right;
+}
+div.typeBundle div.rightCol div.bottomItems span.delivery {
+color:#666666;
+padding:10px 22px 0 0;
+float:right;
+}
+div.typeBundle div.rightCol div.bottomItems span.merchantlogo {
+vertical-align:top;
+display:inline-block;
+margin-top:-10px;
+}
+div.typeBundle div.rightCol div.bottomItems p.saving {
+clear:both;
+margin:0;
+padding:0 0 5px 0;
+}
+div.typeBundle div.rightCol div.bottomItems p.comment {
+clear:both;
+color:#ff0000;
+margin:0;
+padding:0 0 10px 0;
+width:470px;
+text-align:right;
+}
+
+#allThemeHardware {
+margin:0 0 15px;
+}	
+#allThemeHardware div.content {
+margin:0 auto;
+position:relative;
+width:960px;
+}
+#allThemeHardware h1 {
+font-size: 30px;	
+}
+#allThemeHardware h2.name {
+padding:9px 15px 0 0;
+}
+#allThemeHardware p.model {
+padding:0 15px 0 0;	
+}
+#allThemeHardware h2.name a,
+#allThemeHardware h2.name a:visited {
+text-decoration: none;
+}
+#allThemeHardware h2.name a:hover,
+#allThemeHardware p.model a:hover {
+text-decoration: underline;
+}
+#allThemeHardware p.model,
+#allThemeHardware p.model a {
+margin:0;
+color:#B0B4B5;
+font-weight:bold;
+text-decoration:none;
+}
+#allThemeHardware p.rating span.ratingStars {
+display:inline-block;
+margin:3px 15px 0 0;
+vertical-align:top;
+}
+#allThemeHardware p.rating span.winMac {
+vertical-align:top;
+}
+#allThemeHardware p.price,
+#allThemeHardware p.price2 {
+color:#BABABA;
+font-size:14px;
+font-weight:bold;
+margin:0;
+padding: 0 0 5px 0;
+}
+#allThemeHardware p.price span.priceLrg,
+#allThemeHardware p.price2 span.priceLrg {
+color:#525252;
+font-size:18px;
+font-weight:bold;
+padding-right:12px;
+vertical-align:top;
+display:inline-block;
+}
+#allThemeHardware p.price span.priceMid,
+#allThemeHardware p.price2 span.priceMid {
+color:#525252;
+font-weight:bold;
+font-size:16px;
+padding-right: 12px;
+vertical-align:top;
+display:inline-block;
+}
+#allThemeHardware p.price span.buttonSmall,
+#allThemeHardware p.price2 span.buttonSmall {
+vertical-align:top;
+}
+#allThemeHardware p.price span.buttonBelowPrice,
+#allThemeHardware p.price2 span.buttonBelowPrice {
+padding-bottom:10px;
+}
+#allThemeHardware p.learnMore {
+padding:10px 0 0;	
+}
+#allThemeHardware p.learnMore a,
+#allThemeHardware p.learnMore a:hover,
+#allThemeHardware p.learnMore a:visited {
+text-decoration:underline;
+color:#0181E3;
+}
+#allThemeHardware p.notavailable {
+font-size:14px;
+font-weight:bold;
+color:#bababa;
+padding:0px 0px 0px 20px;
+background:0px 1px no-repeat url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/backgrounds/icon_notavailable.png);
+}
+
+/* 
+===== Product Page =====
+*/
+/* Splash */
+div.title span.prodThemeIcon {
+height:28px;
+color:#B2E7FA;
+font-size:14px;
+font-weight:bold;
+padding:5px 0 0 32px;
+display:inline-block;
+vertical-align:top;
+}
+div.title span.prodThemeIcon a,
+div.title span.prodThemeIcon a:hover {
+text-decoration: none;
+}
+div.title p.noStar {
+padding:15px 0 0 0;
+margin:0;
+}
+div.title span.prodAtHome {
+background:transparent url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/icon_prod_athome.png) no-repeat scroll 0 0;
+}
+div.title span.prodAtWork {
+background:transparent url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/icon_prod_atwork.png) no-repeat scroll 0 0;
+}
+div.title span.prodAnyWhere {
+background:transparent url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/icon_prod_anywhere.png) no-repeat scroll 0 0;
+}
+#topSplash div.addPortSpace{
+top:285px;
+}
+div.bottomPanel div.connectPort {
+padding:10px 0 0;
+}
+div.bottomPanel span.portOther {
+color:#B2E7FA;
+font-weight:bold;
+}
+div.bottomPanel span.portNum {
+color:#ffffff;
+font-size:18px;
+}
+div.bottomPanel span.portNum a.active {
+font-weight:bold;
+color:#ffffff;
+text-decoration:underline;    
+font-size: 90%;
+}
+div.bottomPanel span.portNum a {
+color:#ffffff;
+text-decoration:none;
+font-size: 90%;
+}
+.portNumList{
+    margin:0; 
+    padding-left:15px; 
+    list-style: disc outside none;
+}
+
+.portNumList li{ 
+margin:0; 
+padding:0; 
+}
+
+/* content */
+#productBuynow div.priceTab_function {
+background:transparent url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/backgrounds/skypetv_navigation.png) no-repeat scroll 0 0;
+height:13px;
+margin:0 0 20px;
+padding:20px;
+width:560px;
+}
+#productBuynow div.priceTab_function ul.slideTab {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+}
+#productBuynow div.priceTab_function ul.slideTab li {
+float:left;
+overflow:hidden;
+position:relative;
+}
+#productBuynow div.priceTab_function li.sortBy {
+color:#666666;
+font-size: 16px;
+float:left;
+padding:0 10px 0 0;
+}
+#productBuynow div.priceTab_function li.sortByPrice {
+float:left;
+padding:0 80px 0 0;	
+}
+#productBuynow div.priceTab_function li.sortByPrice:hover {
+cursor:hand; 
+cursor:pointer;	
+}
+#productBuynow div.priceTab_function li.sortByRating {
+color:#666666;
+font-size: 16px;
+float:left;
+}
+#productBuynow div.priceTab_function li.sortByRating a,
+#productBuynow div.priceTab_function li.sortByRating a:visited {
+color:#0181E3;
+text-decoration:underline;	
+}
+#productBuynow div.priceTab_function div.sortByRating a:hover {
+text-decoration:none;	
+}
+#productBuynow div.priceTab_function li.sortByPrice div.sortPrice span {
+color:#0181E3;
+font-size: 16px;
+font-weight:bold;
+float:left;
+}
+#productBuynow div.priceTab_function li.sortByPrice div.sortPrice .arrow {
+float:left;
+height:5px;
+margin-left:8px;
+margin-top:7px;
+width:9px;
+}
+#productBuynow div.priceTab_function li.sortByPrice div.sortPrice .arrow.open {
+background-image:url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/toggle_arrow_open.png);
+background-position:left top;
+background-repeat:no-repeat;
+}
+#productBuynow div.priceTab_function li.sortByPrice div.sortPrice .arrow.close {
+background-image:url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/toggle_arrow_close.png);
+background-position:left top;
+background-repeat:no-repeat;
+}
+
+/* productMerchants */
+#productMerchants.sortFunction {
+}
+#productMerchants.sortFunction div.merchant div.price {
+color:#00AFF0;
+float:left;
+font-size:18px;
+font-weight:bold;
+padding-left:20px;
+padding-top:4px;
+width:230px;
+}
+#productMerchants.sortFunction div.merchant div.price span.strikePrice {
+color:#666666;
+font-size:14px;
+font-weight:normal;
+padding-right:15px;
+display:inline;
+}
+#productMerchants.sortFunction div.merchant div.logo {
+float:left;
+margin-right:5px;
+text-align:left;
+width:90px;
+}
+#productMerchants.sortFunction div.merchant div.rating {
+float:left;
+padding-left:10px;
+padding-top:8px;
+width:150px;
+}
+#productMerchants.sortFunction div.merchant div.deliverycopy {
+float:left;
+padding-left:5px;
+padding-top:5px;
+width:130px;
+color:#00AFF0;
+font-weight:bold;
+}
+#productMerchants.sortFunction div.merchant div.promocopy {
+color:#FF0000;
+font-weight:bold;
+padding:5px 0 0 10px;
+clear:both;   
+ }
+ 
+.splash_disTxt a,
+ .splash_disTxt a:hover {
+color:#FFFFFF;     
+}
+
+.splash_disBelowTxt {
+    font-size: 12px;
+    /*font-style: italic;*/
+    /*font-weight: bold;*/
+    padding: 5px 45px 0 35px;
+}
+.splash_disBelowTxt a{
+    font-weight:normal;
+}
+.splash_disBelowTxt p{
+    color: #666666;
+}
+
+/* module */
+#technicalFeatures div.sidebarSpace {
+margin-top:50px;
+}
+#productReviews div.contentModule {
+padding-left:20px;
+margin:0 auto;
+overflow:hidden;
+position:relative;
+width:940px;
+}
+#productReviews .blueH2,
+#productReviews .blueH2 a,
+#productReviews .blueH2 a:visited {
+color:#525252;
+font-size:18px;
+font-weight:bold;
+line-height:19px;
+text-decoration:none;
+}
+#productReviews .blueH2 a:hover {
+color:#00AFF0;
+text-decoration:none;
+}
+#productReviews div.contentModule div.leftModule {
+margin-bottom:20px;
+padding:0 70px 0 0;
+width:230px;
+float:left;
+/*border-right:2px solid #F0F2F3;*/
+}
+#productReviews div.contentModule div.middleModule {
+margin-bottom:20px;
+padding:0 10px 0 0;
+width:303px;
+float:left;
+}
+#productReviews div.contentModule div.rightModule {
+margin-bottom:20px;
+padding:0 10px 0 0;
+width:303px;
+float:left;
+}
+#productReviews div.contentModule div.rightModule div.infoboxContent {
+padding:10px 15px 15px 14px;
+}
+#productReviews div.middleModule div.infobox,
+#productReviews div.rightModule div.infobox {
+background:none;
+}
+div.infobox p.infoSendTo {
+padding:5px 0 0 0;	
+}
+div.infobox span.freesms {
+color: #666666;
+font-size: 12px;
+padding:15px 0 0 0;	
+}
+input.sendtoNumber {
+-x-system-font:none;
+color:#757575;
+font-family:Arial,Helvetica,sans-serif;
+font-size:17px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+height:21px;
+line-height:normal;
+margin-bottom:5px;
+margin-right:3px;
+padding:3px 0 2px 3px;
+width:185px;
+}
+
+/* Video overlay 
+what is different
+*/
+#modalPhoneCompare.videoPlay {
+width:710px;
+margin:0 0 0 -360px;
+}
+#videoPlayerOverlay {
+padding:0 0 0 10px;	
+}
+
+/* Video overlay 
+sub category multi video overlay
+*/
+a.watchVideo,
+a.watchVideo:visited {
+cursor:pointer; 
+font-weight:bold; 
+color:#0181E3;	
+}
+a.watchVideo:hover {
+color:#62A8F0;
+}
+div.modal-overlay {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+background: #000000;
+opacity: .75;
+filter: alpha(opacity=75);
+z-index: 700;
+}
+div.modal-promo{
+/**position: fixed;
+top: 50%;
+left: 50%;
+margin: 0;
+padding: 0;
+z-index: 1000;
+background: #FFFFFF;
+border-radius:2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;**/
+display:hidden;
+}
+.difference h3
+{
+ padding: 0;   
+}
+div.modalPromo {
+position: fixed;
+top: 22%;
+left: 30%;
+margin: 0;
+padding: 30px;
+z-index: 1000;
+background: #FFFFFF;
+border-radius:15px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+display:block;
+width:500px;
+}
+div.modalPromoContent 
+{
+margin: 0;
+padding: 0;
+z-index: 1001;
+display:block;
+}
+div.modalPromoContent h3, div.modalPromoContent p
+{
+ text-align:center; 
+ color:#00AAF0; 
+ line-height:22px; 
+}
+div.modalPromoContent h3
+{
+ font-size: 18px;
+ padding:0 0 25px;
+}
+div.modalPromoContent p
+{
+ font-size: 16px; 
+ font-weight:bold;
+}
+div.modalPromoContent div.closebutton 
+{
+text-align:center!important;
+display: block!important;
+float: none!important;
+margin-right:0px!important;   
+}
+div.modalPromoContent div.closebutton span.buttonSmall a.blue span.text
+{
+line-height:15px;
+padding: 13px 0 0 30px;
+height: 28px; 
+font-size:12px; 
+display:-moz-inline-block; 
+display:inline-block; 
+color:#e5f6fd;
+background:left top no-repeat scroll url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/buttons/blue_lrg_blue.png);  
+}
+div.modalPromoContent div.closebutton span.buttonSmall a.blue span.rs
+{
+display:inline-block;
+height:41px;
+width:30px;
+vertical-align:bottom;
+background:right top no-repeat scroll url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/buttons/blue_lrg_blue.png);
+}  
+div.modalPromoContent div.closebutton span.buttonSmall a.blue:hover span.text {
+background-position:0px -41px;
+color:#FFFFFF;
+}
+div.modalPromoContent div.closebutton span.buttonSmall a.blue:hover span.rs {
+background-position:100% -41px;
+}
+div#green-promo-btn span.go-link-button a.greenbtn span.text{
+-moz-background-inline-policy: continuous;
+background: url('https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/go-link-btn-green-lrg.png') no-repeat scroll left top transparent;
+color: #FFFFFF;
+display: inline-block;
+font-size:14pt;
+height: 45px;
+line-height: 15px;
+padding: 15px 0 0 30px;
+}
+div#green-promo-btn span.go-link-button a.greenbtn span.rs
+{
+-moz-background-inline-policy: continuous;
+background: url('https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/go-link-btn-green-lrg.png') no-repeat scroll right top transparent;
+display: inline-block;
+height: 60px;
+*height:64px;
+vertical-align: bottom;
+width: 30px;       
+}
+div.modal-video {
+position: fixed;
+top: 50%;
+left: 50%;
+margin: 0;
+padding: 0;
+z-index: 1000;
+background: #FFFFFF;
+border-radius:2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+display:none;
+}
+div.modal-video-content {
+margin: 0;
+padding: 0;
+z-index: 1001;
+display:none;
+}
+
+div.modal-video-content div.closebutton, div.modal-video div.closebutton {
+display:inline;
+float:right;
+margin-right:20px;
+}
+div.modal-video-content h1 {
+color:#00AFF0;
+margin: 20px 120px 0 20px;
+font-size:28px;
+}
+div.modal-video div.videoBox {
+padding:10px 0 0 20px;
+width:672px;
+height:378px;
+}
+
+/* 
+===== Splash Scroll ===== 
+*/
+#allThemeHardware div.heroWrapper {
+overflow:visible;
+position:relative;
+width:920px;
+background-color:#FFFFFF;
+}
+* html div#allThemeHardware div.heroWrapper {
+/*margin-bottom:84px;*/
+}
+#allThemeHardware div.heroWrapper div.heroSlide img.carouselMain,
+#allThemeHardware div.heroWrapper div.heroSlide img.carouselMainFull {
+visibility:hidden;
+}
+#allThemeHardware div.heroWrapper div.heroSlide {
+display:block;
+position:absolute;
+top:-5000px;
+width:920px;
+height:420px;
+}
+#allThemeHardware div.heroWrapper div.current {
+display:block;
+position:relative;
+top:0 !important;
+}
+#allThemeHardware div.heroWrapper div.visible {
+display:block;
+}
+#allThemeHardware div.heroSlide div.productInfo {
+display:inline;
+float:left;
+overflow:hidden;
+width:230px;
+}
+
+/* Pagenation */
+#allThemeHardware div.heroWrapper ul.pagination {
+visibility:hidden;
+/*left:340px;
+position:absolute;
+top:300px;
+background:transparent url(/web/20130121124806im_/http://shop.skype.com/i/images/graphics/nav_button_bg.png) no-repeat scroll left 0;*/
+}
+#allThemeHardware div.heroWrapper ul.pagination li {
+list-style-type:none;
+padding:0;
+}
+html.rtl #allThemeHardware div.heroWrapper ul.pagination li {
+float:right;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.invArrowLeft {
+position:absolute;
+cursol:pointer;
+left:-60px;
+top:0;
+//top:-430px; /*IE huck*/
+width:40px;
+height:420px;
+background:url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/nav_arrow_L.png) no-repeat right center;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.invArrowLeft:hover {
+background:url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/nav_arrow_L_hover.png) no-repeat right center;
+}
+html.rtl #allThemeHardware div.heroWrapper ul.pagination li button.invArrowLeft {
+/*margin-left:20px;
+margin-right:0;*/
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p1 {
+position:absolute;
+bottom: 0;
+left:370px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p2 {
+position:absolute;
+bottom: 0;
+left:394px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p3 {
+position:absolute;
+bottom: 0;
+left:418px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p4 {
+position:absolute;
+bottom: 0;
+left:442px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p5 {
+position:absolute;
+bottom: 0;
+left:466px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p6 {
+position:absolute;
+bottom: 0;
+left:490px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p7 {
+position:absolute;
+bottom: 0;
+left:514px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p8 {
+position:absolute;
+bottom: 0;
+left:538px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p9 {
+position:absolute;
+bottom: 0;
+left:562px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p10 {
+position:absolute;
+bottom: 0;
+left:586px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p11 {
+position:absolute;
+bottom: 0;
+left:610px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p12 {
+position:absolute;
+bottom: 0;
+left:634px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p13 {
+position:absolute;
+bottom: 0;
+left:658px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p14 {
+position:absolute;
+bottom: 0;
+left:682px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.p15 {
+position:absolute;
+bottom: 0;
+left:706px;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.invArrowRight {
+/*margin-left:20px;*/
+position:absolute;
+cursol:pointer;
+top:0;
+right:-20px;
+//top:-430px; /*IE huck*/
+//right:-960px; /*IE huck*/
+width:40px;
+height:420px;
+background:url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/nav_arrow_R.png) no-repeat left center;
+}
+#allThemeHardware div.heroWrapper ul.pagination li button.invArrowRight:hover {
+background:url(https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/nav_arrow_R_hover.png) no-repeat left center;
+}
+html.rtl #allThemeHardware div.heroWrapper ul.pagination li button.invArrowRight {
+/*margin-left:0;
+margin-right:20px;*/
+}
+* html #allThemeHardware div.heroWrapper ul.pagination {
+position:absolute;
+z-index:4000;
+}
+:first-child + html #allThemeHardware div.heroWrapper ul.pagination {
+position:absolute;
+z-index:4000;
+}
+
+/*Popup window*/
+    
+    #fade { /*--Transparent background layer--*/
+	display: none; /*--hidden by default--*/
+	background: #000;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .70;
+	z-index: 9999;
+}
+.popup_block{
+	display: none; /*--hidden by default--*/
+	background: #fff;
+	padding: 20px;
+	border: 20px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	/*--CSS3 Box Shadows--*/
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	/*--CSS3 Rounded Corners--*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+img.btn_close {
+	float: right;
+	margin: -55px -55px 0 0;
+}
+
+.popup_block span.buttonSmall {
+    display: inline;
+    float: right;
+}
+    
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+	position: absolute;
+}
+*html .popup_block {
+	position: absolute;
+}
+
+
+
+/*================*/
+/* Go Link Button */ 
+/*================*/
+#topSplash span.go-link-button {
+/*position: absolute;*/
+float:left;
+margin: 0 0 10px 0;
+padding-top:5px; 
+}
+/* Green Button*/
+#topSplash span.go-link-button a.greenbtn {
+font-size:10pt;
+color:#ffffff;
+cursor: pointer;
+display: inline-block;
+height: 32px;
+padding-left: 0;
+text-decoration: none;
+vertical-align: middle;
+}
+#topSplash span.go-link-button a.greenbtn span.text {
+-moz-background-inline-policy: continuous;
+background: url('https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/go-link-btn-green.png') no-repeat scroll left top transparent;
+color: #FFFFFF;
+display: inline-block;
+font-size:10pt;
+height: 25px;
+line-height: 15px;
+padding: 7px 0 0 20px; 
+} 
+#topSplash span.go-link-button a.greenbtn span.rs {
+-moz-background-inline-policy: continuous;
+background: url('https://web.archive.org/web/20130121124806im_/http://shop.skype.com/i/images/graphics/go-link-btn-green.png') no-repeat scroll right top transparent;
+display: inline-block;
+height: 32px;
+vertical-align: bottom;
+width: 20px;
+}
+#topSplash span.go-link-button a.greenbtn span.priceTxt {
+padding: 7px 0 0 10px;
+}
+/*
+     FILE ARCHIVED ON 12:48:06 Jan 21, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:06:53 Nov 02, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.62
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.009
+  esindex: 0.012
+  cdx.remote: 68.461
+  LoadShardBlock: 147.361 (3)
+  PetaboxLoader3.datanode: 187.904 (7)
+  load_resource: 111.143 (2)
+  PetaboxLoader3.resolve: 61.686 (2)
+*/

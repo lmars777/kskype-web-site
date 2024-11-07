@@ -67216,12 +67216,12 @@ html[dir="rtl"] :root .swx span.moji .actionButtons:before {
 }
 @font-face {
     font-family: "SkypeUISymbol";
-    src: url("../fonts/symbol/SkypeUISymbol-Bold.eot");
-    src: url("../fonts/symbol/SkypeUISymbol-Bold.eot?#iefix")
+    src: url("fonts/symbol/SkypeUISymbol-Bold.eot");
+    src: url("fonts/symbol/SkypeUISymbol-Bold.eot?#iefix")
             format("embedded-opentype"),
-        url("../fonts/symbol/SkypeUISymbol-Bold.woff") format("woff"),
-        url("../fonts/symbol/SkypeUISymbol-Bold.ttf") format("truetype"),
-        url("../fonts/symbol/SkypeUISymbol-Bold.svg#SkypeUISymbol-Regular")
+        url("fonts/symbol/SkypeUISymbol-Bold.woff") format("woff"),
+        url("fonts/symbol/SkypeUISymbol-Bold.ttf") format("truetype"),
+        url("fonts/symbol/SkypeUISymbol-Bold.svg#SkypeUISymbol-Regular")
             format("svg");
     font-style: normal;
     font-weight: 600;

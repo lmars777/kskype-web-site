@@ -1,0 +1,194 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;background:transparent}:focus{outline:0}body{line-height:1;color:black;background:white}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:"" ""}@font-face{font-family:"Segoe UI Web Light";src:url("../fonts/segoe-ui-light-latin.eot");src:local("☺"), url("../fonts/segoe-ui-light-latin.woff") format('woff'),
+url("../fonts/segoe-ui-light-latin.ttf") format('truetype');font-style:normal;font-weight:200}@font-face{font-family:'Segoe UI Web Regular';src:url("../fonts/segoe-ui-regular-latin.eot");src:local("☺"), url("../fonts/segoe-ui-regular-latin.woff") format('woff'),
+url("../fonts/segoe-ui-regular-latin.ttf") format('truetype');font-style:normal;font-weight:400}@font-face{font-family:"Segoe UI Web Semibold";src:url("../fonts/segoe-ui-semibold-latin.eot");src:local("☺"), url("../fonts/segoe-ui-semibold-latin.woff") format('woff'),
+url("../fonts/segoe-ui-semibold-latin.ttf") format('truetype');font-style:normal;font-weight:600}@font-face{font-family:"Segoe UI Arabic Web Light";src:url("../fonts/segoe-ui-light-arabic.eot");src:local("☺"), url("../fonts/segoe-ui-light-arabic.woff") format('woff'),
+url("../fonts/segoe-ui-light-arabic.ttf") format('truetype');font-style:normal;font-weight:200}@font-face{font-family:"Segoe UI Arabic Web Regular";src:url("../fonts/segoe-ui-regular-arabic.eot");src:url("../fonts/segoe-ui-regular-arabic.woff") format('woff'),
+url("../fonts/segoe-ui-regular-arabic.ttf") format('truetype');font-style:normal;font-weight:400}@font-face{font-family:"Segoe UI Arabic Web Semibold";src:url("../fonts/segoe-ui-semibold-arabic.eot");src:local("☺"), url("../fonts/segoe-ui-semibold-arabic.woff") format('woff'),
+url("../fonts/segoe-ui-semibold-arabic.ttf") format('truetype');font-style:normal;font-weight:600}@font-face{font-family:"Segoe UI Cyrillic Web Light";src:url("../fonts/segoe-ui-light-cyrillic.eot");src:local("☺"), url("../fonts/segoe-ui-light-cyrillic.woff") format('woff'),
+url("../fonts/segoe-ui-light-cyrillic.ttf") format('truetype');font-style:normal;font-weight:200}@font-face{font-family:"Segoe UI Cyrillic Web Regular";src:url("../fonts/segoe-ui-regular-cyrillic.eot");src:url("../fonts/segoe-ui-regular-cyrillic.woff") format('woff'),
+url("../fonts/segoe-ui-regular-cyrillic.ttf") format('truetype');font-style:normal;font-weight:400}@font-face{font-family:"Segoe UI Cyrillic Web Semibold";src:url("../fonts/segoe-ui-semibold-cyrillic.eot");src:local("☺"), url("../fonts/segoe-ui-semibold-cyrillic.woff") format('woff'),
+url("../fonts/segoe-ui-semibold-cyrillic.ttf") format('truetype');font-style:normal;font-weight:600}@font-face{font-family:"Segoe UI Greek Web Light";src:url("../fonts/segoe-ui-light-greek.eot");src:local("☺"), url("../fonts/segoe-ui-light-greek.woff") format('woff'),
+url("../fonts/segoe-ui-light-greek.ttf") format('truetype');font-style:normal;font-weight:200}@font-face{font-family:"Segoe UI Greek Web Regular";src:url("../fonts/segoe-ui-regular-greek.eot");src:local("☺"), url("../fonts/segoe-ui-regular-greek.woff") format('woff'),
+url("../fonts/segoe-ui-regular-greek.ttf") format('truetype');font-style:normal;font-weight:400}@font-face{font-family:"Segoe UI Greek Web Semibold";src:url("../fonts/segoe-ui-semibold-greek.eot");src:local("☺"), url("../fonts/segoe-ui-semibold-greek.woff") format('woff'),
+url("../fonts/segoe-ui-semibold-greek.ttf") format('truetype');font-style:normal;font-weight:600}@font-face{font-family:"Segoe UI Hebrew Web Light";src:url("../fonts/segoe-ui-light-hebrew.eot");src:local("☺"), url("../fonts/segoe-ui-light-hebrew.woff") format('woff'),
+url("../fonts/segoe-ui-light-hebrew.ttf") format('truetype');font-style:normal;font-weight:200}@font-face{font-family:"Segoe UI Hebrew Web Regular";src:url("../fonts/segoe-ui-regular-hebrew.eot");src:local("☺"), url("../fonts/segoe-ui-regular-hebrew.woff") format('woff'),
+url("../fonts/segoe-ui-regular-hebrew.ttf") format('truetype');font-style:normal;font-weight:400}@font-face{font-family:"Segoe UI Hebrew Web Semibold";src:url("../fonts/segoe-ui-semibold-hebrew.eot");src:local("☺"), url("../fonts/segoe-ui-semibold-hebrew.woff") format('woff'),
+url("../fonts/segoe-ui-semibold-hebrew.ttf") format('truetype');font-style:normal;font-weight:600}@font-face{font-family:"Local Hindi Bold";src:local("Nirmala UI Bold"),local("DevanagariSangamMN-Bold");font-style:normal;font-weight:400}body{font:14px/18px "Segoe UI", "Segoe WP", "Segoe UI Web Regular", "Helvetica Neue", Helvetica, Tahoma, "Arial Unicode MS", sans-serif;color:#333534;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html[lang=ar] body{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] body,
+html[lang=uk] body,
+html[lang=bg] body{font-family:"Segoe UI","Segoe WP","Segoe UI Cyrillic Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] body{font-family:"Segoe UI","Segoe WP","Segoe UI Greek Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] body{font-family:"Segoe UI","Segoe WP","Segoe UI Hebrew Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] body{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}html[lang=hi] body{font-family:"Local Hindi Regular","Segoe WP","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}input,textarea,select{font-family:"Segoe UI","Segoe WP","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] input,
+html[lang=ar] textarea,
+html[lang=ar] select{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] input,
+html[lang=ru] textarea,
+html[lang=ru] select,
+html[lang=uk] input,
+html[lang=uk] textarea,
+html[lang=uk] select,
+html[lang=bg] input,
+html[lang=bg] textarea,
+html[lang=bg] select{font-family:"Segoe UI","Segoe WP","Segoe UI Cyrillic Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] input,
+html[lang=el] textarea,
+html[lang=el] select{font-family:"Segoe UI","Segoe WP","Segoe UI Greek Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] input,
+html[lang=he] textarea,
+html[lang=he] select{font-family:"Segoe UI","Segoe WP","Segoe UI Hebrew Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] input,
+html[lang=ja] textarea,
+html[lang=ja] select{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}html[lang=hi] input,
+html[lang=hi] textarea,
+html[lang=hi] select{font-family:"Local Hindi Regular","Segoe WP","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}h1,h2,h3,h4,h5,h6,p{margin-bottom:18px}h2,h3{margin-bottom:12px}small{font-size:0.89em}b,strong{font-weight:400;font-family:"Segoe UI","Segoe WP","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] b,
+html[lang=ar] strong,
+html[lang=zh_CN] b,
+html[lang=zh_CN] strong,
+html[lang=zh_TW] b,
+html[lang=zh_TW] strong,
+html[lang=ko] b,
+html[lang=ko] strong,
+html[lang=ja] b,
+html[lang=ja] strong{font-weight:600}i,em{font-style:italic}u{text-decoration:underline}p:last-child{margin-bottom:0}h1{font-size:36px;line-height:42px;letter-spacing:-1px;font-weight:200;font-family:"Segoe UI","Segoe WP","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}h1.semibold{font-size:36px;line-height:42px;letter-spacing:-1px;font-weight:400;font-family:"Segoe UI","Segoe WP","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] h1{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] h1.semibold,html[lang=ar] b,html[lang=ar] strong{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] h1,html[lang=uk] h1,html[lang=bg] h1{font-family:"Segoe UI Cyrillic Web Light","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] h1.semibold,html[lang=uk] h1.semibold,html[lang=bg] h1.semibold,html[lang=ru] b,html[lang=ru] strong,html[lang=bg] b,html[lang=bg] strong,html[lang=uk] b,html[lang=uk] strong{font-family:"Segoe UI","Segoe UI Web Regular","Segoe UI Cyrillic Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] h1{font-family:"Segoe UI Greek Web Light","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] h1.semibold,
+html[lang=el] b,
+html[lang=el] strong{font-family:"Segoe UI","Segoe UI Web Regular","Segoe UI Greek Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] h1{font-family:"Segoe UI Hebrew Web Light","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] h1.semibold,
+html[lang=he] b,
+html[lang=he] strong{font-family:"Segoe UI","Segoe UI Hebrew Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=hi] h1{font-family:"Local Hindi Regular","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=hi] h1.semibold,
+html[lang=hi] b,
+html[lang=hi] strong{font-family:"Local Hindi Bold","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] h1{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}html[lang=ja] h1.semibold,
+html[lang=ja] b,
+html[lang=ja] strong{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}h2{font-size:30px;line-height:36px;letter-spacing:-1px;font-weight:200;font-family:"Segoe UI","Segoe WP","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] h2{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] h2,
+html[lang=uk] h2,
+html[lang=bg] h2{font-family:"Segoe UI Cyrillic Web Light","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] h2{font-family:"Segoe UI Greek Web Light","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] h2{font-family:"Segoe UI Hebrew Web Light","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=hi] h2{font-family:"Local Hindi Regular","Segoe UI Web Light","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] h2{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}h2.semibold{font-size:30px;line-height:36px;letter-spacing:-1px;font-weight:400;font-family:"Segoe UI","Segoe WP","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] h2.semibold,
+html[lang=ar] b,
+html[lang=ar] strong{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] h2.semibold,
+html[lang=uk] h2.semibold,
+html[lang=bg] h2.semibold,
+html[lang=ru] b,
+html[lang=ru] strong,
+html[lang=uk] b,
+html[lang=uk] strong,
+html[lang=bg] b,
+html[lang=bg] strong{font-family:"Segoe UI","Segoe UI Cyrillic Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] h2.semibold,
+html[lang=el] b,
+html[lang=el] strong{font-family:"Segoe UI","Segoe UI Greek Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] h2.semibold,
+html[lang=he] b,
+html[lang=he] strong{font-family:"Segoe UI","Segoe UI Hebrew Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=hi] h2.semibold,
+html[lang=hi] b,
+html[lang=hi] strong{font-family:"Local Hindi Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] h2.semibold,
+html[lang=ja] b,
+html[lang=ja] strong{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}h3{font-size:24px;line-height:30px;letter-spacing:-1px;font-weight:400;font-family:"Segoe UI","Segoe WP","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] h3{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] h3,
+html[lang=uk] h3,
+html[lang=bg] h3{font-family:"Segoe UI","Segoe UI Cyrillic Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] h3{font-family:"Segoe UI","Segoe UI Greek Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] h3{font-family:"Segoe UI","Segoe UI Hebrew Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=hi] h3{font-family:"Local Hindi Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] h3{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}h3.semibold{font-weight:400;font-family:"Segoe UI","Segoe WP","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] h3.semibold,
+html[lang=ar] b,
+html[lang=ar] strong{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] h3.semibold,
+html[lang=uk] h3.semibold,
+html[lang=bg] h3.semibold,
+html[lang=ru] b,
+html[lang=ru] strong,
+html[lang=uk] b,
+html[lang=uk] strong,
+html[lang=bg] b,
+html[lang=bg] strong{font-family:"Segoe UI Cyrillic Web Semibold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] h3.semibold,
+html[lang=el] b,
+html[lang=el] strong{font-family:"Segoe UI Greek Web Semibold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] h3.semibold,
+html[lang=he] b,
+html[lang=he] strong{font-family:"Segoe UI Hebrew Web Semibold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=hi] h3.semibold,
+html[lang=hi] b,
+html[lang=hi] strong{font-family:"Local Hindi Bold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] h3.semibold,
+html[lang=ja] b,
+html[lang=ja] strong{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}h4{font-size:20px;line-height:24px;letter-spacing:-1px;font-weight:400;font-family:"Segoe UI","Segoe WP","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] h4{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] h4,
+html[lang=uk] h4,
+html[lang=bg] h4{font-family:"Segoe UI","Segoe UI Cyrillic Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] h4{font-family:"Segoe UI","Segoe UI Greek Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] h4{font-family:"Segoe UI","Segoe UI Hebrew Web Regular","Segoe UI Web Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=hi] h4{font-family:"Local Hindi Regular","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] h4{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}h4.semibold{font-weight:400;font-family:"Segoe UI","Segoe WP","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] h4.semibold,
+html[lang=ar] b,
+html[lang=ar] strong{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] h4.semibold,
+html[lang=uk] h4.semibold,
+html[lang=bg] h4.semibold,
+html[lang=ru] b,
+html[lang=ru] strong,
+html[lang=uk] b,
+html[lang=uk] strong,
+html[lang=bg] b,
+html[lang=bg] strong{font-family:"Segoe UI Cyrillic Web Semibold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] h4.semibold,
+html[lang=el] b,
+html[lang=el] strong{font-family:"Segoe UI Greek Web Semibold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] h4.semibold,
+html[lang=he] b,
+html[lang=he] strong{font-family:"Segoe UI Hebrew Web Semibold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=hi] h4.semibold,
+html[lang=hi] b,
+html[lang=hi] strong{font-family:"Local Hindi Bold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] h4.semibold,
+html[lang=ja] b,
+html[lang=ja] strong{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}p{font-size:16px;line-height:20px;font-weight:400}p.smaller,
+p
+span.smaller{font-size:14px;line-height:18px}p.smallest,
+p
+span.smallest{font-size:12px;line-height:18px}p.semibold,
+p
+span.semibold{font-weight:400;font-family:"Segoe UI","Segoe WP","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ar] p.semibold,
+html[lang=ar] p
+span.semibold{font-family:"Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ru] p.semibold,
+html[lang=ru] p span.semibold,
+html[lang=uk] p.semibold,
+html[lang=uk] p span.semibold,
+html[lang=bg] p.semibold,
+html[lang=bg] p
+span.semibold{font-family:"Segoe UI Cyrillic Web Semibold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=el] p.semibold,
+html[lang=el] p
+span.semibold{font-family:"Segoe UI Greek Web Semibold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=he] p.semibold,
+html[lang=he] p
+span.semibold{font-family:"Segoe UI Hebrew Web Semibold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=hi] p.semibold,
+html[lang=hi] p
+span.semibold{font-family:"Local Hindi Bold","Segoe UI Web Semibold","Helvetica Neue",Helvetica,Tahoma,"Arial Unicode MS",sans-serif}html[lang=ja] p.semibold,
+html[lang=ja] p
+span.semibold{font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif}a{text-decoration:none;color:#0078ca}@media only screen and (max-device-width: 480px){input:focus,input:hover,select:hover{font-size:16px !important;}}@media only screen and (max-width: 767px){h1,h2,h3,h4,h1.semibold,h2.semibold,h3.semibold,h4.semibold{letter-spacing:-0.5px}h1{font-size:24px;line-height:28px;font-weight:400}h1.semibold{font-size:24px;line-height:28px;font-weight:400}h2{font-size:18px;line-height:20px;font-weight:400}h2.semibold{font-size:18px;line-height:20px;font-weight:400}h3{font-size:18px;line-height:20px;font-weight:400}h3.semibold{font-weight:400}h4{font-size:18px;line-height:20px;font-weight:400}h4.semibold{font-weight:400}p{font-size:14px;line-height:16px;font-weight:400}p.smaller,p
+span.smaller{font-size:12px;line-height:16px}}.isTablet,.isMobile{display:none}.noDesktop{display:none !important}@media only screen and (min-width: 768px) and (max-width: 959px){.isTablet{display:block}.isDesktop,.isMobile{display:none}}@media only screen and (max-width: 767px){.isMobile{display:block}.isDesktop,.isTablet{display:none}.noDesktop{display:block !important}.noMobile{display:none !important}}.btn{color:white;font-weight:400;font-size:20px;display:inline-block;height:100%;cursor:pointer;cursor:hand;overflow:visible;text-decoration:none;line-height:24px;letter-spacing:-0.01em;-webkit-border-radius:50px;-webkit-font-smoothing:subpixel-antialiased;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-moz-border-radius:50px;border-radius:50px;border:none;position:relative;border-width:2px;border-style:solid;padding:8px
+0 11px 0;background-color:#FFF;word-wrap:break-word;word-break:normal;-ms-word-break:normal;-epub-word-break:normal;text-align:center;margin:2px}.btn:hover,.btn:focus{border-width:4px;margin:auto}.btn:active{border-width:2px;margin:2px}*:first-child+html
+.btn{margin:0}*:first-child+html .btn:hover,*:first-child+html .btn:focus,*:first-child+html .btn:active{border-width:2px;margin:0}button{font-family:inherit;margin:0}.btn
+span{display:block}.btn.disabled{-moz-opacity:0.3;-khtml-opacity:0.3;opacity:0.3;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity = 30);cursor:not-allowed;zoom:1;border-width:2px;margin:2px}.btn::-moz-focus-inner,.btn.small::-moz-focus-inner{border:0;padding:0}.btn:focus,.btn.small:focus{outline:1px
+dotted #212121}.btn:hover,.btn.small:hover,.btn:active,.btn.small:active{outline:none}.btn.small{font-size:16px;line-height:20px;padding:5px
+0 7px 0}*:first-child+html
+button.btn{padding-bottom:2px}*:first-child+html
+button.btn.small{padding-bottom:1px}.btn.primaryCta{background-color:#077DB4;border-color:#077DB4}.btn.primaryCta:hover,.btn.primaryCta:focus,.btn.primaryCta.disabled{color:white;background-color:#0773A6;border-color:#0773A6;text-decoration:none}.btn.primaryCta:active{color:white;background-color:#00AFF0;border-color:#00AFF0}.btn.primaryNegativeCta{background-color:#FFF;color:#333534;border-color:#c0dce6}.btn.primaryNegativeCta.disabled{background-color:#E2EEF6 !important;color:#333534 !important;border-color:#E2EEF6 !important}.btn.primaryNegativeCta:hover,.btn.primaryNegativeCta:focus{background-color:#a2c5d3;color:#FFF;border-color:#a2c5d3;text-decoration:none}.btn.primaryNegativeCta:active{background-color:#91b1bd;color:#FFF;border-color:#91b1bd}.btn.secondaryCta{background-color:#FFF;color:#0078ca;border-color:#00aff0}.btn.secondaryCta.disabled{background-color:#FFF !important;color:#0078ca !important;border-color:#00aff0 !important}.btn.secondaryCta:hover,.btn.secondaryCta:focus{background-color:#00aff0;color:#FFF;border-color:#00aff0;text-decoration:none}.btn.secondaryCta:active{background-color:#009dd8;color:#FFF;border-color:#009dd8}.btn.secondaryNegativeCta{background-color:#FFF;color:#0078ca;border-color:#FFF}.btn.secondaryNegativeCta.disabled{background-color:#FFF !important;color:#0078ca !important;border-color:#FFF !important}.btn.secondaryNegativeCta:hover,.btn.secondaryNegativeCta:focus{background-color:#FFF;color:#333534;border-color:#FFF;text-decoration:none}.btn.secondaryNegativeCta:active{background-color:#e4eef2;color:#333534;border-color:#e4eef2}.btn > span,.btn .noArrow,.btn .arrowNext,.btn
+.arrowPrev{position:relative;width:auto;padding-left:25px;padding-right:25px}.btn
+.arrowNext{padding-right:52px}html.rtl .btn
+.arrowNext{padding-right:25px;padding-left:52px}.btn
+.arrowPrev{padding-left:52px}html.rtl .btn
+.arrowPrev{padding-left:25px;padding-right:52px}.btn.small > span,.btn.small .noArrow,.btn.small .arrowNext,.btn.small
+.arrowPrev{position:relative;width:auto;padding-left:18px;padding-right:18px}.btn.small
+.arrowNext{padding-left:18px;padding-right:45px}html.rtl .btn.small
+.arrowNext{padding-right:18px;padding-left:45px}.btn.small
+.arrowPrev{padding-left:45px}html.rtl .btn.small
+.arrowPrev{padding-left:18px;padding-right:45px}.btn .arrowNext,.btn
+.arrowPrev{background-image:none !important}.btn
+.icon{display:block;height:14px;overflow:hidden;position:absolute;top:50%;width:17px}.btn .arrowNext .icon,
+.btn .arrowPrev
+.icon{*background-image:url("../images/buttons-sprite.png");*background-repeat:no-repeat}html.svg .btn .arrowNext .icon:before,
+html.svg .btn .arrowPrev .icon:before{content:url("../images/buttons-sprite.svg");position:relative;display:inline-block;width:62px !important}html.svg.rtl .btn span .icon:before{direction:ltr}.btn .arrowNext .icon,.btn .arrowPrev
+.icon{margin-top:-6px;width:17px;height:14px}.btn .arrowNext
+.icon{right:0;margin-right:25px}html.rtl .btn .arrowNext
+.icon{right:auto;left:0;margin-right:0;margin-left:25px}.btn .arrowPrev
+.icon{left:0;margin-left:25px}html.rtl .btn .arrowPrev
+.icon{left:auto;right:0;margin-left:0;margin-right:25px}.btn.small .arrowNext
+.icon{right:0;margin-right:18px}html.rtl .btn.small .arrowNext
+.icon{left:0;margin-right:0;margin-left:18px}.btn.small .arrowPrev
+.icon{left:0;margin-left:18px}html.rtl .btn.small .arrowPrev
+.icon{right:0;margin-left:0;margin-right:18px}.btn.primaryNegativeCta .arrowNext .icon,.btn.primaryNegativeCta.disabled .arrowNext .icon,.btn.secondaryNegativeCta:hover .arrowNext .icon,.btn.secondaryNegativeCta:focus .arrowNext .icon,.btn.secondaryNegativeCta:active .arrowNext
+.icon{*background-position:-28px -17px}.btn.primaryNegativeCta .arrowNext .icon:before,.btn.primaryNegativeCta.disabled .arrowNext .icon:before,.btn.secondaryNegativeCta:hover .arrowNext .icon:before,.btn.secondaryNegativeCta:focus .arrowNext .icon:before,.btn.secondaryNegativeCta:active .arrowNext .icon:before{left:-28px;top:-17px}html.rtl .btn.primaryNegativeCta .arrowNext .icon,html.rtl .btn.primaryNegativeCta.disabled .arrowNext .icon,html.rtl .btn.secondaryNegativeCta:hover .arrowNext .icon,html.rtl .btn.secondaryNegativeCta:focus .arrowNext .icon,html.rtl .btn.secondaryNegativeCta:active .arrowNext
+.icon{*background-position:-45px -17px}html.rtl .btn.primaryNegativeCta .arrowNext .icon:before,html.rtl .btn.primaryNegativeCta.disabled .arrowNext .icon:before,html.rtl .btn.secondaryNegativeCta:hover .arrowNext .icon:before,html.rtl .btn.secondaryNegativeCta:focus .arrowNext .icon:before,html.rtl .btn.secondaryNegativeCta:active .arrowNext .icon:before{left:0;top:-17px}.btn.primaryNegativeCta .arrowPrev .icon,.btn.primaryNegativeCta.disabled .arrowPrev .icon,.btn.secondaryNegativeCta:hover .arrowPrev .icon,.btn.secondaryNegativeCta:focus .arrowPrev .icon,.btn.secondaryNegativeCta:active .arrowPrev
+.icon{*background-position:-45px -17px}.btn.primaryNegativeCta .arrowPrev .icon:before,.btn.primaryNegativeCta.disabled .arrowPrev .icon:before,.btn.secondaryNegativeCta:hover .arrowPrev .icon:before,.btn.secondaryNegativeCta:focus .arrowPrev .icon:before,.btn.secondaryNegativeCta:active .arrowPrev .icon:before{left:-45px;top:-17px}html.rtl .btn.primaryNegativeCta .arrowPrev .icon,html.rtl .btn.primaryNegativeCta.disabled .arrowPrev .icon,html.rtl .btn.secondaryNegativeCta:hover .arrowPrev .icon,html.rtl .btn.secondaryNegativeCta:focus .arrowPrev .icon,html.rtl .btn.secondaryNegativeCta:active .arrowPrev
+.icon{*background-position:-28px -17px}html.rtl .btn.primaryNegativeCta .arrowPrev .icon:before,html.rtl .btn.primaryNegativeCta.disabled .arrowPrev .icon:before,html.rtl .btn.secondaryNegativeCta:hover .arrowPrev .icon:before,html.rtl .btn.secondaryNegativeCta:focus .arrowPrev .icon:before,html.rtl .btn.secondaryNegativeCta:active .arrowPrev .icon:before{left:17px;top:-17px}.btn.secondaryCta .arrowNext .icon,.btn.secondaryCta.disabled .arrowNext .icon,.btn.secondaryNegativeCta .arrowNext .icon,.btn.secondaryNegativeCta.disabled .arrowNext
+.icon{*background-position:-28px -34px}.btn.secondaryCta .arrowNext .icon:before,.btn.secondaryCta.disabled .arrowNext .icon:before,.btn.secondaryNegativeCta .arrowNext .icon:before,.btn.secondaryNegativeCta.disabled .arrowNext .icon:before{left:-28px;top:-34px}html.rtl .btn.secondaryCta .arrowNext .icon,html.rtl .btn.secondaryCta.disabled .arrowNext .icon,html.rtl .btn.secondaryNegativeCta .arrowNext .icon,html.rtl .btn.secondaryNegativeCta.disabled .arrowNext
+.icon{*background-position:-45px -34px}html.rtl .btn.secondaryCta .arrowNext .icon:before,html.rtl .btn.secondaryCta.disabled .arrowNext .icon:before,html.rtl .btn.secondaryNegativeCta .arrowNext .icon:before,html.rtl .btn.secondaryNegativeCta.disabled .arrowNext .icon:before{left:0;top:-34px}.btn.secondaryCta .arrowPrev .icon,.btn.secondaryCta.disabled .arrowPrev .icon,.btn.secondaryNegativeCta .arrowPrev .icon,.btn.secondaryNegativeCta.disabled .arrowPrev
+.icon{*background-position:-45px -34px}.btn.secondaryCta .arrowPrev .icon:before,.btn.secondaryCta.disabled .arrowPrev .icon:before,.btn.secondaryNegativeCta .arrowPrev .icon:before,.btn.secondaryNegativeCta.disabled .arrowPrev .icon:before{left:-45px;top:-34px}html.rtl .btn.secondaryCta .arrowPrev .icon,html.rtl .btn.secondaryCta.disabled .arrowPrev .icon,html.rtl .btn.secondaryNegativeCta .arrowPrev .icon,html.rtl .btn.secondaryNegativeCta.disabled .arrowPrev
+.icon{*background-position:-28px -34px}html.rtl .btn.secondaryCta .arrowPrev .icon:before,html.rtl .btn.secondaryCta.disabled .arrowPrev .icon:before,html.rtl .btn.secondaryNegativeCta .arrowPrev .icon:before,html.rtl .btn.secondaryNegativeCta.disabled .arrowPrev .icon:before{left:17px;top:-34px}.btn .arrowNext .icon,.btn:hover .arrowNext .icon,.btn:focus .arrowNext .icon,.btn:active .arrowNext
+.icon{*background-position:-28px 0}.btn .arrowNext .icon:before,.btn:hover .arrowNext .icon:before,.btn:focus .arrowNext .icon:before,.btn:active .arrowNext .icon:before{left:-28px;top:0}html.rtl .btn .arrowNext .icon,html.rtl .btn:hover .arrowNext .icon,html.rtl .btn:focus .arrowNext .icon,html.rtl .btn:active .arrowNext
+.icon{*background-position:-45px 0}html.rtl .btn .arrowNext .icon:before,html.rtl .btn:hover .arrowNext .icon:before,html.rtl .btn:focus .arrowNext .icon:before,html.rtl .btn:active .arrowNext .icon:before{left:0;top:0}.btn .arrowPrev .icon,.btn:hover .arrowPrev .icon,.btn:focus .arrowPrev .icon,.btn:active .arrowPrev
+.icon{*background-position:-45px 0}.btn .arrowPrev .icon:before,.btn:hover .arrowPrev .icon:before,.btn:focus .arrowPrev .icon:before,.btn:active .arrowPrev .icon:before{left:-45px;top:0}html.rtl .btn .arrowPrev .icon,html.rtl .btn:hover .arrowPrev .icon,html.rtl .btn:focus .arrowPrev .icon,html.rtl .btn:active .arrowPrev
+.icon{*background-position:-28px 0}html.rtl .btn .arrowPrev .icon:before,html.rtl .btn:hover .arrowPrev .icon:before,html.rtl .btn:focus .arrowPrev .icon:before,html.rtl .btn:active .arrowPrev .icon:before{left:17px;top:0}@media only screen and (max-width: 767px){.btn .arrowNext,
+.btn
+.arrowPrev{display:inline-block}.btn,.btn.small,.btn.disabled{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:18px;width:100%;margin:2px
+0;padding:6px
+0 9px 0 !important;max-width:440px}.btn.fixedButton{max-width:280px;width:280px}.btn:hover,.btn.small:hover,.btn:focus,.btn.small:focus{margin:0;border-left-width:2px;border-right-width:2px;border-top-width:4px;border-bottom-width:4px}.btn.disabled:hover,.btn.disabled.small:hover,.btn.disabled:focus,.btn.disabled.small:focus{margin:2px
+0;border-left-width:2px;border-right-width:2px;border-top-width:2px;border-bottom-width:2px}.btn:active,.btn.small:active{margin-top:2px;margin-bottom:2px;border-top-width:2px;border-bottom-width:2px}}.pageWrap{display:table;height:100%;width:100%;position:absolute}.embedded
+.footer{display:none}#signInMSALink{text-align:left}.rtl
+#signInMSALink{text-align:right}.registrationContainer
+.fieldRow.inputField{margin-left:0;margin-right:0}.skypeLogo{position:relative;width:66px;height:66px;margin:72px
+auto 0}.skypeLogoImage{position:absolute;top:0;left:0;width:66px;height:66px;overflow:hidden;*background:url("../images/s_logo.png") no-repeat}.skypeLogoImage:before{position:relative;display:inline-block;width:66px;height:66px;content:url("../images/s_logo.png");direction:ltr}.svg .skypeLogoImage:before{content:url("../images/skype_logo_blue.svg");background-size:136px 60px}.footer{background-color:#224352;box-shadow:inset 0 2px 5px rgba(0,0,0,0.5);color:#b0c5d1;font-size:11px;min-height:30px;height:30px;padding:0
+10px;position:relative;display:table-row;clear:both;border-top:1px solid transparent}.footer_link{color:#b0c5d1;text-decoration:none}.footer_link:focus,.footer_link:hover{color:#fff}.footer_link:focus{text-decoration:underline}.footer_separator{display:inline-block;line-height:30px;margin:0
+3px}.footer_app{margin-right:10px;margin-left:10px;float:left}.footer_legal{margin-right:10px;margin-left:10px;float:right}.rtl
+.footer_app{float:right}.rtl
+.footer_legal{float:left}.language-selector{display:inline-block;position:relative;line-height:30px}.language-selector_selected{line-height:18px;display:inline-block}.language-selector_selected.focused{color:#fff;cursor:pointer}.language-selector_picker{border:none;cursor:pointer;height:100%;left:0;font-size:11px;opacity:0;position:absolute;top:0;width:100%;z-index:20}.rtl .language-selector_picker{left:auto;right:0}#loader
+h2{color:#000}#loader{position:absolute;width:100%}@media only screen and (min-width: 768px) and (max-width: 959px){}@media only screen and (max-width: 767px){.skypeLogo{margin:42px
+auto 0}.bottomBorder{border:none;border-bottom:1px solid #E7F1F5}}

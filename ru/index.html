@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' *.limpe.fun *.dexpaz.ru; style-src 'self' *.limpe.fun *.dexpaz.ru; img-src 'self' *.limpe.fun *.dexpaz.ru; frame-ancestors 'none';">
 <html class="en ltr os_Windows" data-language="en"
 data-pagename="home" data-pagetype="home"
 data-pagepath="/home" data-region="us" lang="en"
@@ -19,7 +19,7 @@ dir="ltr">
             border: none;
         }
     </style>
-    
+
 <head id="head">
   <!-- is_embed=False -->
   <title> KSkype | Классическое общение!
@@ -106,108 +106,7 @@ dir="ltr">
     };
   </script>
   <script src="js/require.js" data-main="https://secure.skypeassets.com/apollo/2.0.1271/js/scom/main.js"></script>
-  <script>
-    define("apollo/settings", function() {
-      "use strict";
-      var settings = {};
-      settings.newSkype = {
-        "newSkypeAndroidLink": "https://web.archive.org/web/20170703093944/https://go.skype.com/scom.download.new",
-        "newSkypeIphoneLink": "https://web.archive.org/web/20170703093944/https://go.skype.com/scom.download.new",
-        "iPhoneNewSkype": "false",
-        "androidNewSkype": "true",
-        "androidCountryList": "",
-        "androidSupportedList": "Android 7,Android 8,Android 9"
-      };
-      settings.api = {
-        "sessionApiUrl": "https://web.archive.org/web/20170703093944/https://api.skype.com/users/self/displayname",
-        "webClientEligibilityApiUrl": "https://web.archive.org/web/20170703093944/https://web.skype.com/v1/api/eligibility-check",
-        "contentApiUrl": "https://web.archive.org/web/20170703093944/https://contentapi.skype.com/api/v2-0/regions/",
-        "skypeApiUrlBase": "https://web.archive.org/web/20170703093944/https://api.skype.com/",
-        "helperApiUrlBase": "https://web.archive.org/web/20170703093944/https://helperapi.skype.com/"
-      };
-      settings.token = {
-        "clientId": "815617",
-        "redirectUri": "https://web.archive.org/web/20170703093944/https://www.skype.com/en/apps/tokenhandler?appid=scom",
-        "loginUri": "https://web.archive.org/web/20170703093944/https://a.lw.skype.com/login/silent"
-      };
-      settings.user = {
-        "loadProfile": true
-      };
-      settings.message = {
-        "genericError": "Oops, it looks like we lost this bit. Please try again while we find a new copywriter."
-      };
-      settings.clicktale = {
-        "enabled": true,
-        "selector": "[data-content-key='skypename']"
-      };
-      settings.guestHost = {
-        "skypewebClientLauncherUrl": "https://web.archive.org/web/20170703093944/https://web.skype.com/",
-        "skypeguestHostBackEndUrl": "https://web.archive.org/web/20170703093944/https://wx.skype.com/api/v1/scom/",
-        "skypeguestHostDelayToRedirect": 2000,
-        "skypeguestHostGreenIdEnabled": false,
-        "skypeguestHostGreenIdUrl": "https://web.archive.org/web/20170703093944/https://fpt.skype.com"
-      };
-      settings.errorsLogger = {
-        "enabled": true,
-        "token": "28b1987bcc8c4e1a8cd8c2874c7dede4-66d03f5b-4777-4915-ba6a-f821e57b2e64-7437"
-      };
-      settings.ecs = {
-        "serverUri": "prod"
-      };
-      settings.swcChat = {
-        "connectPageUrl": "https://web.archive.org/web/20170703093944/https://www.skype.com/en/connect/",
-        "environment": "prod"
-      };
-      settings.navigation = {
-        "header": {
-          "sticky": false,
-          "showLinks": true,
-          "showButtons": false,
-          "accountLink": "https://go.skype.com/myaccount",
-          "logoutLink": "https://go.skype.com/logout"
-        }
-      };
-      settings.navigation.header[
-        "sticky"] = true;
-      settings.navigation.header[
-        "showLinks"] = false;
-      settings.navigation.header[
-        "showButtons"] = true;
-      return settings;
-    });
-    require(["apollo/settings"],
-      function(settings) {
-        if (!!settings.errorsLogger &&
-          !!settings.errorsLogger.enabled &&
-          !!settings.errorsLogger.token
-        ) {
-          requirejs.onError =
-            function(err) {
-              require([
-                "apollo/tracking.aria"
-              ], function(
-                scomTrackingAria) {
-                scomTrackingAria.logConsoleError(
-                  err,
-                  "requireOnError"
-                );
-              });
-            };
-          window.onerror = function(
-            msg) {
-            require([
-              "apollo/tracking.aria"
-            ], function(
-              scomTrackingAria) {
-              scomTrackingAria.logConsoleError(
-                msg,
-                "windowOnError"
-              );
-            });
-          };
-        }
-      });
-  </script>
+
   <script type="text/javascript">
     require(["scom/home/home"]);
     require(["scom/lazyBackgrounds"]);
@@ -216,19 +115,19 @@ dir="ltr">
     #tour1 {
       background-image: url('images/tour-background-1-sm.jpg');
     }
-    
+
     #tour2 {
       background-image: url('images/tour-background-2-sm.jpg');
     }
-    
+
     #tour3 {
       background-image: url('en.html');
     }
-    
+
     #tour4 {
       background-image: url('images/tour-background-4-sm.jpg');
     }
-    
+
     @media (min-width: 768px) {
       html {
         margin-top: 71px;
@@ -250,33 +149,33 @@ dir="ltr">
         background-image: url('images/oipujrsptrgkedjflkqofd;kehlatiregucrghfuivsloiujhnvfljxs.png');
       }
     }
-    
+
     @media (min-width: 1025px) {
       #bottomCtaSection {
         background-image: url('images/oipujrsptrgkedjflkqofd;kehlatiregucrghfuivsloiujhnvfljxs.png');
       }
     }
-    
+
     html.noMediaQueries {
       margin-top: 71px;
     }
-    
+
     .noMediaQueries #tour1 {
       background-image: url('images/tour-background-1.jpg');
     }
-    
+
     .noMediaQueries #tour2 {
       background-image: url('images/tour-background-2.jpg');
     }
-    
+
     .noMediaQueries #tour3 {
       background-image: url('images/tour-background-3.jpg');
     }
-    
+
     .noMediaQueries #tour4 {
       background-image: url('images/tour-background-4.jpg');
     }
-    
+
     .noMediaQueries #bottomCtaSection {
       background-image: url('images/bottom-bg.jpg');
     }
@@ -285,19 +184,19 @@ dir="ltr">
     #coverSection {
       background-image: url('images/may-1-sm-b.jpg');
     }
-    
+
     @media (min-width: 768px) {
       #coverSection {
         background-image: url('images/may-1-md.jpg');
       }
     }
-    
+
     @media (min-width: 1025px) {
       #coverSection {
         background-image: url('images/may.jpg');
       }
     }
-    
+
     .noMediaQueries #coverSection {
       background-image: url('images/may.jpg');
     }
@@ -699,7 +598,7 @@ dir="ltr">
                   <div class="text">
                     <h3 class="headline">Мгновенные сообщения</h3>
                     <p class="description">Делитесь своими мыслями, идеями, когда неудобно совершить звонок.
-                      <a 
+                      <a
                       href="https://kskype.limpe.fun/features/chat">Узнайте о новых возможностях чата</a></p>
                   </div>
                 </div>
@@ -713,8 +612,8 @@ dir="ltr">
                   <div class="text">
                     <h3 class="headline">Звоните на мобильные</h3>
                     <p class="description">Позвоните тем, у кого нет Скайпа, а лишь сим-карта. В Скайпе одни из самых дешевых тарифах на звонки. <a alt="Learn more about this feature"
-         
-                   
+
+
                       href="https://go.skype.com/prices">Узнайте о тарифах звонков</a></p>
                   </div>
                 </div>

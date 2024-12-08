@@ -3329,9 +3329,14 @@ html.rtl section .row .platformDropdown li>span:before {
 }
 
 section.header {
-  background: transparent url(../images/support-header.jpg) no-repeat top center;
-  background-size: auto 100%
+  background: transparent url(../images/support-header.jpg) no-repeat center top;
+  background-size: cover;
+  height: 248px; /* Высота отображаемой зоны */
+  display: flex;
+  align-items: flex-start; /* Начинаем отображение с верхней части */
+  padding-top: 20px; /* Регулируйте значение по необходимости для опускания изображения */
 }
+
 
 section.header {
   overflow: visible

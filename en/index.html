@@ -69,58 +69,14 @@
 											</script>											
 										</li>
 									
-										<li>
-											<a data-sc="header_features" href="features/index.html" title="Ченжлог">Changelog</a>
-											<script type="text/javascript">
-											var s_el = s_el || {};
-											s_el.header_features = {click: {events: "event35", eVar19: "header: features", prop18: "D=v19"}};
-											</script>											
-										</li>
-									
-										<li>
-											<a data-sc="header_business" href="business/index.html" title="Skype for Bussines">Skype for Bussines</a>
-											<script type="text/javascript">
-											var s_el = s_el || {};
-											s_el.header_business = {click: {events: "event35", eVar19: "header: business", prop18: "D=v19"}};
-											</script>											
-										</li>
+										
+										
 									
 								</ul>
 							
 						</li>
 					
-						<li class="">
-							<a data-sc="header_rates" href="https://limpe.fun/plugins/kskype" title="дополнения">Addons</a>
-							<script type="text/javascript">
-							var s_el = s_el || {};
-							s_el.header_rates = {click: {events: "event35", eVar19: "header: rates", prop18: "D=v19"}};
-							</script>
-							 
-								<ul class="sub">
-									
-										<li>
-											<a data-sc="header_rates" href="https://limpe.fun/plugins/kskype/scripts" title="скрипты">Scripts</a>
-											<script type="text/javascript">
-											var s_el = s_el || {};
-											s_el.header_rates = {click: {events: "event35", eVar19: "header: rates", prop18: "D=v19"}};
-											</script>											
-										</li>
-									
-										<li>
-											<a data-sc="header_premium" href="https://limpe.fun/plugins/kskype/themes" title="темы">Themes</a>
-											<script type="text/javascript">
-											var s_el = s_el || {};
-											s_el.header_premium = {click: {events: "event35", eVar19: "header: premium", prop18: "D=v19"}};
-											</script>											
-									
-									
-									
-																						
-										</li>
-									
-								</ul>
-							
-						</li>
+					
 					
 						<li class="singleItem">
 							<a data-sc="header_download_skype" href="https://kskype.limpe.fun/download-skype" title="загрузки">Downloads</a>
@@ -203,7 +159,7 @@
 		<div class="bubblesWrapper">
 			<div class="bubbles">
 				<div class="headline">
-					<h1 class="h1-large">KSkype is about online</h1>
+					<h1 class="h1-large">Skype support will end in May 2025, KSkype development suspended</h1>
 				</div>
 				
 					<div class="action noMobile">
@@ -220,7 +176,7 @@
 			                    var s_impression  = s_impression || [];s_impression.push({events: "event5",products: ";;;;;evar22=home-_-header-_-join"});
 			                </script>
 						
-						<a href="https://kskype.limpe.fun/download-skype" title="�&nbsp;егистрация" class="CTA section" data-sc="homepagecta">
+						<a href="https://kskype.limpe.fun/download-skype" title="Регистрация" class="CTA section" data-sc="homepagecta">
 							<h2 class="h2-medium">Download now!</h2>
 							<img src="images/dummy.png" class="arrowRight" alt="">
 						</a>
@@ -242,9 +198,9 @@
 		
 			
 			
-				<h3>Want to know more about all of this?<br>
+				<h3>Want to know how to backup data from Skype?<br>
 </h3>
-<h3><a href="what-is-kskype/index.html">Details about KSkype</a></h3>
+<h3><a href="support/pages/backup-data-skype-server/">Go to the help portal</a></h3>
 
 			 
 		
@@ -434,131 +390,133 @@
 </div>
 
 	
-	<footer>
-		<div class="top">
-			<div class="centered">
-				<div class="footerContent">
-					<div class="footerButtons">
-	<div class="footerLanguageSelector">
-		<form action="https://kskype.limpe.fun/${LC}" method="get">
-		<label class="languagesDropdown" for="userLanguage">
-			<span class="world"></span>
-			<span id="pickedLanguage" class="language">Русский</span>
-			<span class="pickDown"></span>
-			<script type="text/javascript">                                        
-		    var s_langChange = function (el) {
-		        if ((typeof s != 'undefined') && (typeof s.trackAction != 'undefined')) {
-		            s.trackAction({events: "event36",
-		                eVar19: "language selector: " + $('html').attr('data-language') + " > " + $('#userLanguage').val(),
-		                prop18: "D=v19"}, el);
-		            }
-		        return true;
-		        };
-		    </script>
-            <select name="userLanguage" id="userLanguage" class="userLanguage" onchange="s_langChange(this);" data-sc="lang_selector">
-				<option value="en" lang="en">English</option>
-				<option value="yt" lang="it">Yakut</option>
-				<option value="uz" lang="ja">Uzbek (Cyrillic alphabet)</option>
-				<option value="ar" lang="ar">Armenian</option>
-				<option value="ro" lang="ro">Română</option>
-				<option value="ru" lang="ru" selected="selected">Russian</option>
-				<option value="uk" lang="uk">Українська</option>
-			</select>
-		</label>
-		</form>
-	</div>
-						<div class="footerSocial noMobile">
-		<a href="https://tt.me/limpe"><img alt="ТамТам" src="images/tamtam.png"></a>				
+<footer>
+	<div class="top">
+		<div class="centered">
+			<div class="footerContent">
+				<div class="footerButtons">
+<div class="footerLanguageSelector">
+<form id="languageForm" action="https://kskype.limpe.fun/${LC}" method="get" onsubmit="return false;">
+	<label class="languagesDropdown" for="userLanguage">
+		<span class="world"></span>
+		<span id="pickedLanguage" class="language">English</span>
+		<span class="pickDown"></span>
+		<script type="text/javascript">                                        
+			var s_langChange = function (el) {
+				if ((typeof s != 'undefined') && (typeof s.trackAction != 'undefined')) {
+					s.trackAction({
+						events: "event36",
+						eVar19: "language selector: " + $('html').attr('data-language') + " > " + $('#userLanguage').val(),
+						prop18: "D=v19"
+					}, el);
+				}
+				
+				var selectedLanguage = el.value;
+				window.top.location.href = "https://kskype.limpe.fun/" + selectedLanguage;
+			};
+		</script>
+		<select name="userLanguage" id="userLanguage" class="userLanguage" onchange="s_langChange(this);" data-sc="lang_selector">
+			<option value="en" lang="en" selected="selected">English</option>
 
-				<a href="https://my.dexpaz.ru/club16"><img alt="Твой Мир @ limpe" src="images/mir.png"></a> 
-							<a href="https://t.me/limpetech"><img alt="Telegram" src="images/telegram.png"></a>	
-						<a href="https://my.mail.ru/community/limpe/"><img alt="Moй мир @ mail.ru" src="images/mymailru.png"></a>				
-						</div>
+			<option value="ru" lang="ru">Русский</option>
+
+		</select>
+	</label>
+</form>
+</div>
+<div class="footerSocial noMobile">
+	<a href="https://tt.me/limpe"><img alt="ТамТам" src="images/tamtam.png"></a>				
+			<a href="https://my.dexpaz.ru/club16"><img alt="Твой Мир @ limpe" src="images/mir.png"></a> 
+						<a href="https://t.me/limpetech"><img alt="Telegram" src="images/telegram.png"></a>	
+					<a href="https://my.mail.ru/community/limpe/"><img alt="Moй мир @ mail.ru" src="images/mymailru.png"></a>				
 					</div>
-					<div class="footerLinks">
-						<ul>
-							
-								<li class="noMobile"><a data-sc="footer_about" href="about/index.html" title="О программе">О программе</a>
-										<script type="text/javascript">
-											var s_el = s_el || {};
-											s_el.footer_about = {click: {events: "event35", eVar19: "footer: about", prop18: "D=v19"}};
-										</script>
-								</li>
-							
-								<li class="noMobile"><a data-sc="footer_advertise" href="https://www.skype.com/go/advertise" title="�&nbsp;еклама у нас">Skype advertising</a>
-										<script type="text/javascript">
-											var s_el = s_el || {};
-											s_el.footer_advertise = {click: {events: "event35", eVar19: "footer: advertise", prop18: "D=v19"}};
-										</script>
-								</li>
-							
-								<li class="noMobile"><a data-sc="footer_blogs_skype_com" href="https://blogs.skype.com/" title="Блоги">Skype Blog (official)</a>
-										<script type="text/javascript">
-											var s_el = s_el || {};
-											s_el.footer_blogs_skype_com = {click: {events: "event35", eVar19: "footer: blogs_skype_com", prop18: "D=v19"}};
-										</script>
-								</li>
-							
-								<li class="noMobile"><a data-sc="footer_legal" href="legal/index.html" title="Юридическая информация">Legal information</a>
-										<script type="text/javascript">
-											var s_el = s_el || {};
-											s_el.footer_legal = {click: {events: "event35", eVar19: "footer: legal", prop18: "D=v19"}};
-										</script>
-								</li>
-							
-								<li class="noMobile"><a data-sc="footer_jobs" href="https://www.skype.com/go/jobs" title="Вакансии">Skype jobs</a>
-										<script type="text/javascript">
-											var s_el = s_el || {};
-											s_el.footer_jobs = {click: {events: "event35", eVar19: "footer: jobs", prop18: "D=v19"}};
-										</script>
-								</li>
-							
-							<li>
-								<a data-sc="sitemapLink" href="site-map/index.html">Site Map</a>
-								<script type="text/javascript">
-									var s_el = s_el || {};
-									s_el.sitemapLink = {click: {events: "event35", eVar19: "footer: site_map", prop18: "D=v19"}};
-								</script>
+				</div>
+				<div class="footerLinks">
+					<ul>
+						
+							<li class="noMobile"><a data-sc="footer_about" href="https://kskype.limpe.fun/about" title="О программе">about KSkype</a>
+									<script type="text/javascript">
+										var s_el = s_el || {};
+										s_el.footer_about = {click: {events: "event35", eVar19: "footer: about", prop18: "D=v19"}};
+									</script>
 							</li>
-						</ul>
-					</div>
-					<hr>
-					<div class="footerCopyright">
-						<div class="noMobile"><p>© 2024 Limpe Technologies. Site Code: 2013 Microsoft. The Skype name, related trademarks and logos, and the “S” logo are trademarks owned by Skype or related companies. Use of this website constitutes consent to perform <a href="http://www.skype.com/ru/legal/tou/">Conditions of Use</a>, <a href="http://www.skype.com/ru/legal/privacy/">Privacy Statement and Cookie Policy</a>.<br>
-</p>
-</div>
-						<div class="noTablet noDesktop"><p>© 2024 Limpe Technologies. Site Code: 2013 Microsoft. The Skype name, related trademarks and logos, and the “S” logo are trademarks owned by Skype or related companies. Use of this website constitutes consent to perform <a href="http://www.skype.com/ru/legal/tou/">Conditions of Use</a>, <a href="http://www.skype.com/ru/legal/privacy/">Privacy Statement and Cookie Policy</a>.<br>
-</p>
-</div>
-					</div>
-					<div class="footerWarning">
-						<div class="noCalls">
-							<img src="images/dummy.png" alt="No emergency calls">
-						</div>
-						<div class="noMobile"><p><b>Banning the use of Skype for emergency calls</b><br>
-Skype is not a substitute for a regular phone and cannot be used for emergency calls.<br>
-</p>
-</div>
-						<div class="noDesktop noTablet"><p>Skype is not for emergency calls<br>
-</p>
-</div>
-					</div>
+						
+							<li class="noMobile"><a data-sc="footer_advertise" href="https://www.skype.com/go/advertise" title="�&nbsp;еклама у нас">Skype advertising</a>
+									<script type="text/javascript">
+										var s_el = s_el || {};
+										s_el.footer_advertise = {click: {events: "event35", eVar19: "footer: advertise", prop18: "D=v19"}};
+									</script>
+							</li>
+						
+							<li class="noMobile"><a data-sc="footer_blogs_skype_com" href="https://blogs.skype.com/" title="Блоги">Skype Blog (official)</a>
+									<script type="text/javascript">
+										var s_el = s_el || {};
+										s_el.footer_blogs_skype_com = {click: {events: "event35", eVar19: "footer: blogs_skype_com", prop18: "D=v19"}};
+									</script>
+							</li>
+						
+							<li class="noMobile"><a data-sc="footer_legal" href="https://www.skype.com/ru/legal/" title="Юридическая информация">Skype Legal Information</a>
+									<script type="text/javascript">
+										var s_el = s_el || {};
+										s_el.footer_legal = {click: {events: "event35", eVar19: "footer: legal", prop18: "D=v19"}};
+									</script>
+							</li>
+						
+							<li class="noMobile"><a data-sc="footer_jobs" href="https://www.skype.com/go/jobs" title="Вакансии">Skype jobs</a>
+									<script type="text/javascript">
+										var s_el = s_el || {};
+										s_el.footer_jobs = {click: {events: "event35", eVar19: "footer: jobs", prop18: "D=v19"}};
+									</script>
+							</li>
+						
+						<li>
+							<a data-sc="sitemapLink" href="https://kskype.limpe.fun/map">Site Map</a>
+							<script type="text/javascript">
+								var s_el = s_el || {};
+								s_el.sitemapLink = {click: {events: "event35", eVar19: "footer: site_map", prop18: "D=v19"}};
+							</script>
+						</li>
+					</ul>
 				</div>
-				<div class="footerSlogan noMobile">
-					
+				<hr>
+				<div class="footerCopyright">
+					<div class="noMobile"><p>© 2024 @limpe. We do not assign the rights to the Skype brand and S. Using Skype to communicate equates to consent to perform a <a href="https://www.skype.com/ru/legal/tou/">Conditions of Use</a>, <a href="https://www.skype.com/ru/legal/privacy/">Privacy Statement and Cookie Policy</a>.<br>
+</p>
+</div>
+					<div class="noTablet noDesktop"><p>© 2024 @limpe. We do not assign the rights to the Skype brand and S. Using Skype to communicate equates to consent to perform a <a href="https://www.skype.com/ru/legal/tou/">Conditions of Use</a>, <a href="https://www.skype.com/ru/legal/privacy/">Privacy Statement and Cookie Policy</a>.<br>
+</p>
+</div>
+				</div>
+				<div class="footerWarning">
+					<div class="noCalls">
+						<img src="images/dummy.png" alt="No emergency calls">
+					</div>
+					<div class="noMobile"><p><b>No emergency calls with Skype</b><br>
+Skype is not a replacement for your telephone and can't be used for emergency calling<br>
+</p>
+</div>
+					<div class="noDesktop noTablet"><p>SNo emergency calls with Skype<br>
+</p>
+</div>
 				</div>
 			</div>
-			<div class="footerImageContainer"></div>
-		</div>
-		<div class="bottom">
-			<div class="centered">
+			<div class="footerSlogan noMobile">
 				
-					<p class="noMobile">Reliable communication via Skype. Call everyone on Skype, instant message and video chat with friends - all for free. And with a little Skype Credit, you can make cheap calls to mobiles and landlines, access the internet in Wi-Fi hotspots and send low-cost SMS messages. Users can also sign up for a Premium account, which includes unlimited calls to any country of your choice.</p>
-				
-				<div class="ms-logo"></div>
 			</div>
 		</div>
-	</footer>
+		<div class="footerImageContainer"></div>
+	</div>
+	<div class="bottom">
+		<div class="centered">
+			
+				<p class="noMobile">Reliable communication via Skype. Call everyone on Skype, instant message and video chat with friends - all for free. And with a little Skype Credit, you can make cheap calls to mobiles and landlines, access the internet in Wi-Fi hotspots and send low-cost SMS messages. Users can also sign up for a Premium account, which includes even more features, including group video calling and unlimited calls to the country of your choice.</p>
+			
+			<div class="ms-logo"></div>
+		</div>
+	</div>
+</footer>
+
+
 	<script>
 	//<![CDATA[
 		SKYPE && SKYPE.env && SKYPE.env.Loader.ready();

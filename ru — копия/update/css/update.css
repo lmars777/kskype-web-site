@@ -1,0 +1,250 @@
+.themeDark .caption,.themeDark .disclaimer a,.themeDark *:not(.btn):not(span):not(input):not(.dropdown_listItem) {
+    /* color:#fff; */
+}
+
+.heroSection .content>div {
+    opacity: 1;
+    animation: none
+}
+
+.heroSection .content .col1 {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+.heroSection:after {
+    content: none
+}
+
+.heroSection.themeWhite .content {
+    background: #f2f2f2
+}
+
+.fullImage {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px
+}
+
+.sectionUpdate .textAndFontIcon {
+    margin-bottom: 30px
+}
+
+.sectionUpdate .textAndFontIcon .icon {
+    color: #000;
+    font-size: 44px
+}
+
+.updateContent {
+    background: #f2f2f2;
+    border-radius: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    padding: 30px
+}
+
+@media (min-width: 480px) {
+    .heroSection .content .col1 {
+        text-align:center
+    }
+
+    .heroSection .colContent {
+        margin: 0 auto
+    }
+
+    .rtl .heroSection.themeWhite .content .col1 .colContent {
+        text-align: center
+    }
+
+    .updateContent {
+        padding: 50px;
+        margin-bottom: 50px
+    }
+}
+
+@media (min-width: 768px) {
+    .fontSizeH1 {
+        font-size:28px;
+        line-height: 38px
+    }
+
+    img.fullImage {
+        width: calc(100% + 60px);
+        max-width: 900px;
+        margin-left: -9%;
+        margin-right: -9%;
+        margin-bottom: 20px
+    }
+
+    .sectionUpdate .content {
+        padding: 0 80px
+    }
+
+    .sectionUpdate .content>.fontSizeH1 {
+        text-align: left
+    }
+
+    .rtl .sectionUpdate .content>.fontSizeH1 {
+        text-align: right
+    }
+
+    .sectionUpdate .colContent {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex
+    }
+
+    .sectionUpdate .updateContent .colContent {
+        display: block
+    }
+
+    .sectionUpdate .updateContent p {
+        text-align: center
+    }
+
+    .rtl .sectionUpdate .updateContent p {
+        text-align: center
+    }
+
+    .sectionUpdate p {
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 30px
+    }
+
+    .rtl .sectionUpdate p {
+        text-align: right
+    }
+
+    .sectionUpdate .row {
+        margin: 0 -30px
+    }
+
+    .sectionUpdate .row .col {
+        -ms-flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+}
+
+@media (min-width: 1024px) {
+    .heroImage {
+        bottom:-50px;
+        left: -80px;
+        position: absolute;
+        width: 624px
+    }
+
+    .ie9 .heroImage {
+        position: static
+    }
+
+    img.fullImage {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto 20px
+    }
+
+    .heroSection {
+        padding-bottom: 80px
+    }
+
+    .heroSection .content,.heroSection .row {
+        overflow: visible
+    }
+
+    .heroSection .content .col1 {
+        text-align: left
+    }
+
+    .rtl .heroSection .content .col1 {
+        text-align: right
+    }
+
+    .heroSection .colContent {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        min-height: 290px;
+        margin: 0
+    }
+
+    .heroSection.themeWhite {
+        padding-bottom: 40px
+    }
+
+    .heroSection.themeWhite .content .col1 {
+        -ms-flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center
+    }
+
+    .heroSection.themeWhite .content .col1 .colContent {
+        margin: 0 auto
+    }
+
+    .sectionUpdate .content>.fontSizeH1 {
+        text-align: center;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 50px
+    }
+
+    .rtl .sectionUpdate .content>.fontSizeH1 {
+        text-align: center
+    }
+
+    .sectionUpdate .row .col {
+        -ms-flex: 0 0 33.33333%;
+        -webkit-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%
+    }
+
+    .sectionUpdate .updateContent .row .col {
+        -ms-flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+
+    .sectionUpdate .colContent {
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-self: baseline;
+        -moz-align-self: baseline;
+        -ms-align-self: baseline;
+        align-self: baseline;
+        height: 100%
+    }
+
+    .sectionUpdate p {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center
+    }
+
+    .rtl .sectionUpdate p {
+        text-align: center
+    }
+}
+
+@media (min-width: 1601px) {
+    .heroImage {
+        left:-50px;
+        width: 724px
+    }
+}

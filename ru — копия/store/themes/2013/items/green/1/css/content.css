@@ -1,0 +1,4632 @@
+/* Alertstripe related styles STAGE */ 
+#alertStripe {
+margin:18px 0px 5px 0px;
+}
+#alertStripe div.wrap {
+width:960px;
+height:31px;
+margin:0 auto;
+overflow:hidden;
+position:relative;
+background-position:top left;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/alertstrip_blue_left.png);
+}
+#alertStripe div.text {
+height:24px;
+padding:7px 0px 0px 17px;
+font-size:14px;
+font-weight:bold;
+color:#a8acae;
+margin:0px 0px 0px 3px;
+background-position:top right;
+background-repeat:no-repeat;
+background-image:url(../images/alertstrip_blue_bg.png);
+}
+#alertStripe a {
+color:#00AFF0;
+}
+#alertStripe div.text img { padding-bottom:1px; }
+/* Promo related styles */ 
+#promo {
+margin:0px 0px 20px 0px;
+}
+#promo div.content {
+width:960px;
+height:278px;
+margin:0 auto;
+overflow:hidden;
+position:relative;
+}
+#promo .shop {
+position:absolute;
+top:20px;
+left:18px;
+font-size:32px;
+line-height:32px;
+font-weight:bold;
+color:#FFFFFF;
+}
+#promo .credits {
+/*top:36px; /*sub banner 219x87*/
+top:24px; /*sub banner 219x99*/
+left:720px;
+position:absolute;
+width:198px;
+/*height:75px; sub banner 219x87*/
+height: 87px; /*sub banner 219x99*/
+padding:10px 10px 5px 15px;
+font-weight:bold;
+line-height:15px;
+color:#d6f4ff;
+overflow:hidden;
+background-position:top left;
+background-repeat:no-repeat;
+background-attachment:scroll;
+}
+#promo .credits .buttonSmall {
+display:block;
+margin:10px 0 0 0;
+}
+#promo .bundles {
+top:140px;
+left:720px;
+position:absolute;
+width:199px;
+height:100px;
+padding:14px 10px 1px 15px;
+line-height:15px;
+font-weight:bold;
+color:#00aff0;
+background-position:top left;
+background-repeat:no-repeat;
+background-attachment:scroll;
+}
+#promo .bundles .content {
+width:auto;
+height:auto;
+margin:0;
+}
+#promo .bundles .buttonSmall {
+display:block;
+margin:10px 0 0 0;
+}
+#promo span.small {
+line-height:9px;
+font-size:12px; 
+}
+#promo .certified {
+position:absolute;
+top:225px;
+left:18px;
+}
+#promo .title {
+position:absolute;
+top:60px;
+left:425px;
+color:#FFFFFF;
+font-weight:bold; 
+}
+#promo .textLeft .title{
+top:70px;
+left:20px;
+}
+#promo .title h3 {
+margin:0 0 15px 0;
+font-size:24px;
+line-height:26px; 
+font-weight:bold;
+color:#FFFFFF;
+} 
+#promo .title .special {
+color:#d6f4ff;
+}
+#promo .title .price {
+font-size:18px;
+color:#FFFFFF;
+}
+#promo .title .from {
+font-size:14px;
+}
+#promo .title .buttonSmall {
+display:block;
+margin:30px 0 0 0;
+}
+#promo .textLeft .title p {
+margin-bottom:3px;
+}
+#promo .textLeft .title .buttonSmall {
+margin-top:0px;
+}
+/* test&target 
+Plan B*/
+#promo .shopPromo {
+position:absolute;
+top:15px;
+left:18px;
+font-size:28px;
+line-height:32px;
+font-weight:bold;
+color:#FFFFFF;
+}
+#promo .lighter,
+#promo .lighter a,
+#promo .lighter a:hover {
+color: #FFFFFF;
+}
+#promo .title .buttonGreen {
+display:block;
+margin:30px 0 0 0;
+font-weight: normal;
+}
+#promo .title .priceLrg {
+font-size:22px;
+color:#FFFFFF;
+margin: 10px 0 0 0;
+line-height: 1em;
+}
+#promo .title .priceLrg span {
+font-size:16px;
+color:#CCCCCC;
+margin: 10px 10px 0 0;    
+}
+/* test&target 
+Plan C*/
+#promo .title h3.subTitle {
+margin:10px 0 15px 0;
+font-size:28px;
+line-height:28px; 
+font-weight:bold;
+color:#FFFFFF;
+}
+#promo .buynowBox {
+top:140px;
+left:720px;
+position:absolute;
+width:199px;
+height:100px;
+padding:14px 10px 1px 15px;
+line-height:15px;
+}
+#promo .buynowBox .priceLrg {
+font-size:22px;
+color:#FFFFFF;
+margin: 10px 0 0 0;
+line-height: 1em;
+font-weight:normal;
+}
+#promo .buynowBox .from {
+font-size:14px;
+font-weight:normal;
+}
+/* end test&target */
+div.promo-blue {
+background:#00AFF0;
+color:#FFFFFF;
+}
+div.promo-blue #topSplash {
+height:209px;
+width:960px;
+position:relative;
+margin:0 auto 30px auto;
+background-position:top center;
+background-repeat:no-repeat;
+background-color:#00AFF0;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/promo_wide_bg.jpg);
+}
+div.know-how {
+color:#FFFFFF;
+background-color:#00AFF0;
+}
+div.know-how #topSplash {
+height:265px;
+width:960px;
+position:relative;
+margin:0 auto 30px auto; 
+background-position:top center;
+background-repeat:no-repeat;
+background-color:#00AFF0;
+}
+div.know-how #splashContent {
+padding-top:38px;
+padding-left:10px;
+width:260px;
+}
+div.know-how h2 {
+margin-bottom:38px;
+}
+div.certification {
+color:#FFFFFF;
+background-color:#00AFF0;
+}
+div.certification #topSplash {
+height:304px;
+width:960px;
+position:relative;
+margin:0 auto 30px auto;
+background-position:top center;
+background-repeat:no-repeat;
+background-color:#00AFF0;
+}
+div.certification #splashContent {
+padding-top:38px;
+padding-left:20px;
+width:300px;
+}
+div.certification h2 {
+margin-bottom:38px;
+}
+div.certification #teamNames {
+position:absolute;
+top:273px;
+left:738px;
+padding-left:28px;
+padding-top:9px;
+background-position:0px 0px;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/graphics/arrow_up.png);
+color:#525252;
+}
+div.video-promo {
+color:#FFFFFF;
+background-color:#00AFF0;
+}
+div.video-promo #topSplash {
+height:133px;
+width:960px;
+position:relative;
+margin:0 auto 30px auto;
+background-position:top center;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/videoglossary_bg.jpg);
+background-color:#00AFF0;
+}
+div.video-promo #splashContent {
+padding-top:11px;
+padding-left:10px;
+padding-bottom:0px;
+width:500px;
+position:relative;
+z-index:200;
+}
+div.video-promo #splashContent h1 {
+margin-bottom:0px;
+}
+div.video-promo #splashContent h1 span {
+font-size:18px;
+}
+
+div.video-promo #splashContent div.promo-description {
+position:absolute;
+left:250px;
+top:15px;
+width:550px;
+}
+div.video-promo #splashContent div.promo-description p {
+font-weight:bold;
+font-size:28px;
+color:#FFFFFF;    
+}
+div.video-promo #splashContent img.certified-logo {
+position:absolute;
+left:800px;
+top:15px;
+}
+
+
+div.video-promo a.arrowLeft {
+background-position:0px 6px;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/arrow_left_lightblue.gif);
+padding-left:15px;
+color:#99def9;
+display:inline-block;
+position:relative;
+margin-left:-6px;
+z-index:300;
+}
+div.promo-kh-theme {
+color:#FFFFFF;
+background-color:#00AFF0;
+}
+div.promo-kh-theme #topSplash {
+height:304px;
+width:960px;
+position:relative;
+margin:0 auto 30px auto;
+background-position:top center;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/promo_blank.jpg);
+background-color:#00AFF0;
+}
+div.promo-kh-theme #splashContent {
+width:405px;
+padding-top:11px;
+}
+div.promo-kh-theme div.image {
+position:absolute;
+left:495px;
+top:80px;
+z-index:100;
+}
+div.promo-kh-theme #topSplash img.clouds {
+z-index:50;
+left:20px;
+}
+div.promo-phones {
+background:#00AFF0;
+color:#FFFFFF;
+}
+div.promo-phones #topSplash {
+height:304px;
+width:960px;
+position:relative;
+margin:0 auto 30px auto;
+background-position:top center;
+background-repeat:no-repeat;
+background-color:#00AFF0;
+}
+div.promo-phones h1,
+div.promo-phones h2,
+div.know-how h1,
+div.know-how h2,
+div.video-promo h1,
+div.video-promo h2,
+div.certification h1,
+div.certification h2,
+div.promo-kh-theme h1,
+div.promo-kh-theme h2,
+div.promo-blue h1,
+div.promo-blue h2 {
+color:#FFFFFF;
+}
+div.promo-bundles #topSplash {
+background-position:top center;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/promo_blank.jpg);
+background-color:#00AFF0;
+color:#FFFFFF;
+}
+div.promo-extras #topSplash {
+background-position:top center;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/category_extras_wide_bg.jpg);
+background-color:#00AFF0;
+color:#FFFFFF;
+}
+div.promo-extras #splashContent h2 {
+margin-bottom:18px;
+}
+div.promo-extras #splashContent p {
+color:#FFFFFF;
+font-size:11px;
+}
+div.lightHeader {
+background-color:#00AFF0;
+margin:0px 0px 0px 0px;
+}
+div.lightHeader h1 {
+color:#FFFFFF;
+}
+div.businessRegularHeader {
+background-color:#363130;
+margin:4px 0px 0px 0px;
+}
+div.businessRegularHeader h1 {
+color:#FFFFFF;
+}
+div.lightHeader.regularProduct #topSplash {
+height:531px;
+}
+div.regularProduct #topSplash {
+height:531px;
+margin:0px auto 38px;
+position:relative;
+width:960px;
+}
+div.lightHeader.panasonicSph200 #topSplash {
+background-position:top left;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/promo/panasonic-sph200.jpg);
+background-color:#00AFF0;
+}
+div.lightHeader.skypephoneS2 #topSplash {
+background-position:top left;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/promo/skypephoneS2.jpg);
+background-color:#00AFF0;
+}
+div.lightHeader.skylook #topSplash {
+background-position:top left;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/promo/skylook.jpg);
+background-color:#00AFF0;
+}
+div.lightHeader.regularProduct div.title {
+margin-left:20px;
+padding-top:25px;
+color:#b2e7fa;
+font-weight:bold;
+}
+div.lightHeader.regularProduct div.title a {
+color:#b2e7fa;
+}
+div.lightHeader.regularProduct div.title h1 { 
+margin-bottom:0px; 
+margin-top:25px; 
+}
+div.lightHeader.regularProduct div.title h2.model { 
+padding-top:0px; 
+padding-bottom:18px; 
+}
+div.businessRegularHeader div.bottomPanel,
+div.lightHeader.regularProduct div.bottomPanel {
+top:380px; 
+position:absolute;
+width:960px;
+}
+div.businessRegularHeader div.buy,
+div.lightHeader.regularProduct div.buy {
+position:absolute;
+/*bottom:0px;*/
+left:20px;
+font-weight:bold;
+/* Go Green*/
+top: 20px;
+width: 285px; 
+}
+/* available at your locale */
+div.buy div.available {
+padding:0 0 10px 0;
+}
+div.buy div.available span {
+font-size:16px; 
+color:#FFF;
+line-height: 42px;
+/*vertical-align:middle;
+padding-bottom:15px;*/
+float: left;
+}
+div.buy div.available img {
+padding:5px;
+float: left;
+}
+div.buy div.locate {
+float: left;
+clear: both;
+}
+div.buy div.locate p {
+font-size:14px; 
+color:#FFF;
+}
+div.buy div.locate a,
+div.buy div.locate a:hover,
+div.buy div.locate a:visited {
+color: #FFF;
+}
+
+div.businessRegularHeader div.buy p,
+div.lightHeader.regularProduct div.buy p {
+margin:0;
+}
+div.lightHeader.regularProduct div.buy p.green span.strikePrice {
+color: #C1ECFB;
+font-weight:normal;
+font-size:14px;
+padding-left:5px;
+display:block;
+}
+div.lightHeader.regularProduct div.buy p.green span.promoPrice {
+padding-left:5px;
+display:block; 
+font-size:16px; 
+}
+div.lightHeader.regularProduct div.buy p.green span.promoPrice a,
+div.lightHeader.regularProduct div.buy p.green span.promoPrice a:hover {
+text-decoration:none;   
+}
+/* Go Green */
+div.lightHeader.regularProduct div.buy p.green {
+padding-bottom: 5px;
+width: 285px;
+}
+div.lightHeader.regularProduct div.buy span.price {
+font-size:32px;
+color:#FFFFFF;
+line-height:42px;
+} 
+div.lightHeader.regularProduct div.buy span.from {
+font-size:14px;
+} 
+div.lightHeader.regularProduct div.buy span.bottomText {
+display:block; 
+margin-bottom:8px;
+}
+div.businessRegularHeader div.bottomPanel div.thumbnails, 
+div.lightHeader.regularProduct div.bottomPanel div.thumbnails { 
+width:240px; 
+float:right;
+}
+div.lightHeader.regularProduct div.bottomPanel div.thumbnails a {
+float:left;
+display:inline-block;
+width:72px;
+height:31px;
+margin:0px 1px 1px 0px;
+}
+div.lightHeader.regularProduct div.bottomPanel div.thumbnails a.details {
+float:none;
+display:block;
+clear:both;
+width:auto;
+height:auto;
+margin:0px 0 15px 0;
+}
+div.lightHeader.regularProduct #topSplash div.thumbnails a.details:hover {
+color:#ffffff;
+}
+div.lightHeader.regularProduct div.information {
+position:absolute;
+top:25px;
+width:240px;
+left:720px;
+font-weight:bold;
+}
+div.lightHeader.regularProduct div.information p.title {
+font-size:32px;
+font-weight:bold;
+line-height:32px;
+margin-bottom:18px;
+}
+div.lightHeader.regularProduct div.information p {
+font-weight:normal;
+}
+div.businessRegularHeader #topSplash {
+height:531px;
+}
+div.businessRegularHeader #topSplash {
+height:531px;
+margin:10px auto 38px;
+position:relative;
+width:960px;
+}
+div.panasonicSph200-business #topSplash {
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/promo/panasonic-business.jpg) #363130;
+}
+div.businessRegularHeader div.title {
+margin-left:20px;
+padding-top:25px;
+color:#878583;
+font-weight:bold;
+}
+div.businessRegularHeader div.title a {
+color:#878583;
+}
+div.businessRegularHeader div.title h1 { 
+margin-bottom:0px; 
+margin-top:25px; 
+}
+div.businessRegularHeader div.title h2.model { 
+padding-top:0px; 
+padding-bottom:18px; 
+}
+div.businessRegularHeader div.buy {}
+div.businessRegularHeader div.buy span.price {
+font-size:32px;
+color:#FFFFFF;
+line-height:42px;
+} 
+div.businessRegularHeader div.buy span.from {
+font-size:14px;
+} 
+div.businessRegularHeader div.thumbnails {}
+div.businessRegularHeader div.thumbnails a {
+float:left;
+display:inline-block;
+width:72px;
+height:31px;
+margin:0px 1px 1px 0px;
+}
+div.businessRegularHeader div.thumbnails a.details {
+float:none;
+display:block;
+clear:both;
+width:auto;
+height:auto;
+margin:0px 0 15px 0;
+}
+div.businessRegularHeader #topSplash div.thumbnails a.details:hover {
+color:#AFADAC;
+}
+div.businessRegularHeader div.information {
+position:absolute;
+top:25px;
+width:240px;
+left:720px;
+font-weight:bold;
+}
+div.businessRegularHeader div.information p.title {
+font-size:32px;
+font-weight:bold;
+line-height:32px;
+margin-bottom:18px; 
+}
+div.businessRegularHeader div.information p {
+font-weight:normal;
+}
+#topSplash .light {
+color:#b2e7fa;
+}
+div.businessRegularHeader #topSplash .light {
+color:#888685;
+}
+#topSplash .lighter, #topSplash .lighter p {
+color:#C1ECFB;
+}
+#topSplash .lighter, #topSplash .lighter p a {
+color:#C1ECFB;
+text-decoration:none;
+}
+#topSplash .lighter p a.promoTxt {
+text-decoration:underline;
+}
+#topSplash .lighter, #topSplash .lighter p a:hover {
+color:#ffffff;
+}
+#topSplash .lighter, #topSplash .lighter p a:visited {
+color:#ffffff;
+} 
+#topSplash a.lighter:hover {
+color:#ffffff;
+} 
+div.businessRegularHeader #topSplash .lighter {
+color:#afadac;
+}
+#topSplash .white-text {
+color:#ffffff;
+}
+#topSplash .spacer {
+padding-top:45px;
+}
+#topSplash .h2 {
+font-size:18px;
+font-weight:bold;
+}
+#topSplash img.clouds {
+position:absolute;
+z-index:50;
+bottom:-1px;
+display:block;
+}
+#splashContent {
+padding:25px 20px 20px 20px;
+}
+#splashContent div.breadcrumbs,
+#splashContent div.breadcrumbs a {
+font-weight:bold;
+color:#C1ECFB; 
+}
+#splashContent h1.splashTitle {
+width:250px;   
+ }
+#splashContent h2 {
+padding-bottom:0px;
+}
+#splashContent .light {
+color:#C1ECFB;
+}
+ {
+color:#FFFFFF;
+}
+
+#splashContent .white a,
+#splashContent .light a {
+color:#ffffff;
+}
+#splashContent .white a:hover {
+color:#C1ECFB;
+}
+#splashNavigation {
+position:absolute;
+z-index:100;
+left:720px;
+top:40px;
+}
+#splashNavigation h2 {
+padding-left:19px;
+background:0px 15px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/arrow_white_down.gif);/*50%*/
+}
+#splashNavigation li {
+padding-left:19px;
+background:1px 50% no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/arrow_splash_nav.gif);
+}
+#splashNavigation li.double {
+padding-left:19px;
+background:transparent url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/arrow_splash_nav.gif) no-repeat scroll 1px 6px;
+/* IE6&7 fixer */
+//background: #00aff0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/arrow_splash_nav_ie.jpg) no-repeat scroll 0 0;
+}
+#splashNavigation a {
+color:#d5f1fc;
+text-decoration:none;
+}
+#splashNavigation a:hover {
+text-decoration:underline;
+color:#FFFFFF;
+}
+#splashNavigation div.difference {
+padding: 30px 0 0 30px;
+}
+#splashNavigation div.difference p {
+color: #FFFFFF;
+}
+#splashNavigation div.difference a {
+text-decoration:underline;
+}
+/* Photos overlay related styles */
+#photosOverlay {
+display:block; 
+z-index:3000; 
+position:absolute; 
+left:0px; 
+top:0px; 
+width:950px; 
+height:512px; 
+background-color:#FFFFFF; 
+margin:9px 0px 0px 10px;
+}
+#photosOverlay span.closeButton {
+top:32px;
+right:32px;
+position:absolute;
+z-index:3100;
+}
+#photosOverlay div.title {
+top:32px;
+left:32px;
+position:absolute;
+font-size:18px;
+font-weight:bold;
+margin:0;
+padding:0;
+z-index:3100;
+}
+#photosOverlay div.loading {
+top:0px;
+left:0px; 
+position:absolute;
+z-index:3050;
+display:block;
+background:#FFFFFF;
+font-size:18px;
+font-weight:bold;
+margin:0;
+width:950px;
+height:404px;
+}
+#photosOverlay div.loading div.content {
+position:absolute;
+top:200px;
+left:406px;
+line-height:42px;
+}
+#photosOverlay div.loading img {
+vertical-align:middle;
+margin-right:5px;
+}
+#photosOverlay #photoTitle {
+color:#02aff1;
+}
+#photosOverlay #photoName {
+color:#525252;
+}
+#photosOverlay #photoName.dark {
+color:#ffffff;
+}
+#photosOverlay div.overlayContent img {
+display:block;
+}
+#photosOverlay div.overlayContent img.shadow {
+margin:0 auto;
+}
+#photosOverlay div.thumbnails {
+margin-left:17px;
+position:static;
+top:auto;
+left:auto;
+margin-top:5px;
+}
+#photosOverlay div.thumbnails a {
+display:inline-block;
+float:left;
+width:78px;
+margin-right:15px;
+text-decoration:none;
+}
+#photosOverlay div.thumbnails a span.thumb {
+border:2px solid #FFFFFF;
+display:block;
+width:74px;
+height:33px;
+cursor:pointer;
+margin-bottom:10px;
+}
+#photosOverlay div.thumbnails a.active span.thumb {
+border:2px solid #00aff0;
+}
+#photosOverlay div.thumbnails a img {
+border:1px solid #b0b4b5;
+}
+#photosOverlay div.thumbnails {
+line-height:1em;
+}
+#photosOverlay div.thumbnails a span.name {
+font-size:12px;
+padding-left:2px;
+text-decoration:underline;
+}
+#photosOverlay div.thumbnails a.active span.name {
+color:#2c2c2c;
+text-decoration:none;
+}
+/* Content container related styles */
+#container {
+width:960px;
+margin:0 auto;
+}
+#container.sidebar #content {
+float:left;
+padding:0;
+width:720px;
+}
+#container.sidebar #sidebar {
+float:right;
+width:240px;
+position:relative;
+}
+#container.twocolumn #leftContent {
+float:left;
+padding:0;
+width:440px;
+padding-left:20px;
+padding-right:10px;
+}
+#container.twocolumn #rightContent {
+float:right;
+width:440px;
+padding-left:30px;
+padding-right:20px;
+position:relative;
+}
+#container.splitShadow {
+background:689px bottom no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/sidebar_end.png);
+}
+#container.splitShadow #content {
+background:689px top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/sidebar_begin.png);
+}
+.middleShadow {
+background:470px bottom no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/sidebar_left_end.png);
+}
+#container.twocolumn #rightContent {
+background:0px top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/sidebar_left_begin.png);
+}
+#content #paddedContent {
+padding:0 30px 0 0;
+}
+#content #paddedContent p, 
+#content #paddedContent h1, 
+#content #paddedContent h2, 
+#content #paddedContent h3, 
+#content #paddedContent h4, 
+#content #paddedContent h5, 
+#content #paddedContent h6, 
+#content #paddedContent .padded {
+padding-left:20px;
+padding-right:10px;
+}
+#content #paddedContent .padded10 p, 
+#content #paddedContent .padded10 h1, 
+#content #paddedContent .padded10 h2, 
+#content #paddedContent .padded10 h3, 
+#content #paddedContent .padded10 h4, 
+#content #paddedContent .padded10 h5, 
+#content #paddedContent .padded10 h6,
+#content #paddedContent h1.padded10, 
+#content #paddedContent h2.padded10, 
+#content #paddedContent h3.padded10, 
+#content #paddedContent h4.padded10, 
+#content #paddedContent h5.padded10, 
+#content #paddedContent h6.padded10, 
+#content #paddedContent .padded10 .padded {
+padding-left:10px;
+padding-right:10px;
+}
+#content .rightPadded,
+#sidebar .rightPadded { padding-right:10px; }
+
+/* Layout related styles */
+div.container {
+width:960px;
+margin:0 auto;
+}
+div.container div.content {}
+div.container.sidebar div.content {
+width:720px;
+float:left;
+}
+div.container.sidebar div.sidebar {
+width:240px;
+float:left;
+}
+div.container div.paddedContent {
+padding:0px 30px 0px 0px;
+}
+div.container div.paddedContent p,
+div.container div.paddedContent h1, 
+div.container div.paddedContent h2, 
+div.container div.paddedContent h3, 
+div.container div.paddedContent h4, 
+div.container div.paddedContent h5, 
+div.container div.paddedContent h6, 
+div.container div.paddedContent .padded {
+padding-left:20px;
+padding-right:10px;
+}
+
+/* Column panels raelated styles */
+div.twoColumns { 
+width:690px; 
+}
+div.twoColumns div.leftColumn,
+div.twoColumns div.rightColumn {
+float:left;
+width:345px;
+overflow:hidden;
+}
+div.twoColumns div.paddedLeft {
+padding-left:20px;
+}
+div.twoColumns div.twoColumns {
+width:345px;
+}
+div.twoColumns div.twoColumns div.leftColumn,
+div.twoColumns div.twoColumns div.rightColumn {
+float:left;
+width:172px;
+overflow:hidden;
+}
+div.treeColumn {
+width:690px;
+}
+div.treeColumn div.leftColumn,
+div.treeColumn div.centerColumn,
+div.treeColumn div.rightColumn {
+float:left;
+width:230px;
+overflow:hidden;
+}
+div.twoColumnsWideLeft {
+width:690px;
+}
+div.twoColumnsWideLeft div.cleftColumn,
+div.twoColumnsWideLeft div.rightColumn {
+float:left;
+width:230px;
+display:inline;
+overflow:hidden;
+}
+div.twoColumnsWideLeft div.leftColumn {
+width:460px;
+}
+
+/* Content styled elements */
+div.infobox {
+margin-bottom:19px;
+width:240px;
+background:bottom left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/infobox_bg_lightblue.png);
+}
+div.infobox div.infoboxContent {
+padding:10px 15px 5px 20px;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/infobox_top_lightblue.png); 
+}
+div.infobox.medium {
+background:bottom left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/infobox_medium_bg_lightblue.png);
+width:325px; 
+}
+div.infobox.medium div.infoboxContent {
+padding:10px 20px 38px 20px;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/infobox_medium_top_lightblue.png); 
+}
+div.infobox.nobg {
+background:none;
+}
+div.infobox.nobg div.infoboxContent {
+background:none; 
+}
+div.infobox.medium.border { background:none; }
+div.infobox.medium.border div.infoboxContent { padding-left:0px; padding-right:40px; background:none; border-bottom:1px solid #d4f4ff; }
+div.infobox.medium.noborder { background:none; }
+div.infobox.medium.noborder div.infoboxContent { padding-left:0px; padding-right:40px; background:none; border:none; }
+div.infobox h2 {
+padding:0px;
+margin-bottom:19px;
+}
+div.infobox h2 span.sml {font-size:12px;}
+div.infobox.credits {}
+div.infobox.credits div.infoboxContent { padding-bottom:15px; }
+div.infobox.credits p.blueH2 { margin-bottom:10px; }
+div.infobox.company {}
+div.infobox.company div.infoboxContent { padding-bottom:15px; }
+div.infobox.company h2 { margin-bottom:10px; }
+div.infobox.company h2 a { text-decoration:none; }
+div.infobox.company h2 a:hover { color:#3A9EEB; }
+div.infobox.company div.logo { margin-bottom:10px; }
+div.infobox.labrating { }
+div.infobox.labrating div.infoboxContent { padding-bottom:15px; }
+div.infobox.labrating .ratingStars { margin-bottom:10px; display:inline-block; }
+div.infobox.labrating h2 { margin-bottom:10px; }
+div.infobox.reviewproduct {}
+div.infobox.reviewproduct .ratingStars { margin-bottom:10px; display:inline-block; }
+div.infobox.reviewproduct h2 { margin-bottom:10px; }
+
+/* Phone compare modal window related styles */
+#modalOverlay {
+width:100%;
+height:1500px;
+position:absolute;
+top:0px;
+left:0px;
+z-index:700;
+background-color:#000000;
+display:none;
+}
+#modalPhoneCompare {
+width:900px;/*842px;*/
+/*height:690px;*/
+-moz-border-radius:2px; 
+-webkit-border-radius:2px;
+border-radius:2px;
+background-color:#FFFFFF;
+padding:20px 10px 20px 10px;
+display:none;
+position:absolute; 
+left:50%; 
+margin:0px 0px 0px -460px;/*0px 0px 0px -421px; */
+top:100px; 
+z-index:1000;
+}
+#modalPhoneCompare span.closeButton {
+float:right;
+margin-right:20px;
+display:inline;
+}
+#modalPhoneCompare h1 {
+color:#00aff0;
+margin-left:20px;
+}
+#modalPhoneCompare p {
+padding-left:20px;
+}
+#compareChartSmall {
+width:800px;/*695px;*/
+margin:50px 0px 0px 30px/*65px*/;
+}
+#compareChartSmall div.compareChartHeader {
+width:504px;
+padding:0px 0px 0px 320px;
+background:320px 100% no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_chart_small_header_bg.png);
+}
+#compareChartSmall div.compareChartHeader div.type {
+width:122px;
+padding:0px 10px 0px 20px;
+float:left;
+margin-left:0px;
+display:inline;
+}
+#compareChartSmall div.compareChartHeader div.type p {
+padding-left:0px;
+}
+#compareChartSmall div.compareChartHeader div.work {
+margin-left:1px;
+margin-right:1px;
+}
+#compareChartSmall div.compareChartHeader p {
+margin:0;
+min-height:38px!important;
+height:38px;
+}
+#compareChartSmall div.compareChartContent {
+background:320px 0px repeat-y url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_chart_small_bg.png);
+padding:10px 0px 70px 0px;
+}
+#compareChartSmall div.compareChartContent div {
+height:54px;
+margin-bottom:1px;
+}
+#compareChartSmall div.compareChartContent div.plugin {
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/graphics/compare_small_plugin.jpg);
+}
+#compareChartSmall div.compareChartContent div.cordless {
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/graphics/compare_small_cordless.jpg);
+}
+#compareChartSmall div.compareChartContent div.wifi {
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/graphics/compare_small_wifi.jpg);
+}
+#compareChartSmall div.compareChartContent div.mobile {
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/graphics/compare_small_mobile.jpg);
+}
+#compareChartSmall div.compareChartContent span {
+display:block;
+height:54px;
+width:300px;/*200px;*/
+font-size:18px;
+line-height:54px;
+color:#525252;
+text-align:right;
+font-weight:bold;
+padding:0px 480px 0px 0px;
+}
+#compareChartSmall div.compareChartContent span.home {
+background:340px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks_small.gif);
+}
+#compareChartSmall div.compareChartContent span.work {
+background:340px -55px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks_small.gif);
+}
+#compareChartSmall div.compareChartContent span.work2 {
+background:340px -165px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks_small.gif);
+}
+#compareChartSmall div.compareChartContent span.any {
+background:340px -111px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks_small.gif);
+}
+
+/* Technical Features related styles */ 
+#technicalFeatures {
+margin:35px 0px 10px 0px;
+}
+#technicalFeatures div.content {
+width:960px;
+margin:0 auto;
+overflow:hidden;
+position:relative;
+}
+#technicalFeatures div.leftColumn {
+width:690px;
+float:left;
+overflow:hidden;
+}
+#technicalFeatures div.sidebar {
+width:240px;
+float:left;
+margin-left:30px;
+display:inline;
+}
+#technicalFeatures.mobile div.sidebar {
+padding-top:54px;
+}
+#technicalFeatures div.tabs {
+height:54px;
+position:relative;
+margin-right:45px;
+}
+#technicalFeatures div.tabContent {
+padding:25px 45px 0px 35px;
+}
+#technicalFeatures div.tabContent h2 {
+font-size:16px;
+color:#363636;
+line-height:30px;
+padding:0;    
+}
+#technicalFeatures div.tabContent ul {
+list-style-type:disc;
+list-style-position:outside;
+margin:0 0 15px 15px;
+}
+#technicalFeatures div.tabContent ul ul {
+margin:0 0 5px 15px;
+list-style-type:circle;   
+}
+#technicalFeatures div.tabContent ul ul ul {
+margin:0 0 5px 15px;
+list-style-type:square;   
+}
+#technicalFeatures div.tabContent li {
+color: #3A3A3A;
+}
+#technicalFeatures div.tabContent p {
+margin:0;   
+ }
+#technicalFeatures div.tabContent p.listSpec{
+font-weight: bold;
+margin:10px 0 0 0;
+}
+#technicalFeatures div.tabContent p.listSpace{
+margin:10px 0 0 0;
+}
+#technicalFeatures div.tabContent ol {
+list-style-type:decimal;
+list-style-position:outside;
+}
+#technicalFeatures div.tabs h1 {
+float:left;
+font-weight:bold;
+font-size:32px;
+color:#b0b4b5;
+line-height:40px;
+}
+#technicalFeatures div.tabs img.shadow {
+position:absolute;
+top:44px;
+left:0px;
+}
+#technicalFeatures div.tabs a {
+display:block;
+margin:8px 0px 0px 5px;
+height:46px;
+white-space:nowrap;
+float:left;
+color:#00AFF0;
+text-decoration:none;
+position:relative;
+}
+#technicalFeatures div.tabs a span.ls {
+display:block;
+width:10px;
+height:46px;
+float:left;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tab_inactive_left.png);
+}
+#technicalFeatures div.tabs a span.rs {
+display:block;
+width:10px;
+height:46px;
+float:left;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tab_inactive_right.png);
+}
+#technicalFeatures div.tabs a span.text {
+display:block;
+height:31px;
+background-color:#F3FBFE;
+color:#00AFF0;
+font-size:14px;
+font-weight:bold;
+padding:15px 10px 0px 10px;
+float:left;
+cursor:pointer;
+}
+#technicalFeatures div.tabs a.active {
+z-index:300;
+color:#525252;
+}
+#technicalFeatures div.tabs a.active span.ls {
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tab_active_left.png);
+}
+#technicalFeatures div.tabs a.active span.rs {
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tab_active_right.png);
+}
+#technicalFeatures div.tabs a.active span.text {
+background-color:#FFFFFF;
+color:#525252;
+padding:15px 20px 0px 20px;
+}
+
+/* Product buy now related styles */
+#productBuynow {
+width:960px;
+margin:0 auto 0 auto;
+position:relative;
+}
+#productBuynow div.content {
+float:left;
+/* Go Green */
+width:600px;
+padding-left:0px;
+/*width:670px;
+padding-left:20px;*/
+padding-right:30px;
+}
+#productBuynow blockquote {
+margin-bottom:19px;
+line-height:19px;
+text-indent:20px; 
+color:#2c2c2c;
+background:0px 3px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/quote.png);
+}
+#productBuynow div.sidebar {
+float:left;
+width:240px;
+padding-top:18px; /* title + infobox top padding */
+}
+#productBuynow h2.title {
+padding-bottom:19px;
+}
+#productMerchants {
+border-bottom:1px solid #d8f3fd;
+margin-bottom:19px;
+}
+#productMerchants div.merchant {
+border-top:1px solid #d8f3fd;
+padding:20px 0px 20px 0px;
+}
+#productMerchants div.merchant div.logo {
+float:left;
+width:110px;
+/*text-align:right;  ADD FOR NON-MERCHANDISE LOGO TEXT ALIGN LEFT*/
+margin-right: 65px; /* this mergin is for removing marchendise yellow star */
+margin-left: 10px;
+}
+#productMerchants div.merchant div.logo a {
+text-decoration:none;
+}
+#productMerchants div.merchant div.rating {
+float:left;
+width:150px;
+padding-left:10px;
+padding-top:4px;
+}
+#productMerchants div.merchant div.rating span,
+#productMerchants div.merchant div.rating span a,
+#productMerchants div.merchant div.rating span a:hover {
+font-size:1em;
+font-weight:normal;
+color:#3A3A3A;
+text-decoration: none;
+}
+#productMerchants div.merchant div.price {
+font-size:18px;
+font-weight:bold;
+color:#00aff0;
+float:left;
+/* Go Green */
+width:150px;
+/*width:200px;*/
+padding-left:10px;
+padding-top:4px;
+}
+#productMerchants div.merchant div.price a,
+#productMerchants div.merchant div.price a:hover {
+font-size:18px;
+font-weight:bold;
+color:#00aff0;
+text-decoration: none;
+}
+#productMerchants div.merchant div.price span {
+font-size:12px;
+font-weight:normal;
+color:#666666;
+}
+#productMerchants div.merchant div.actions {
+float:left;
+}
+#productMerchants div.merchant div.price span.strikePrice {
+display:block;
+color: #666666;
+font-weight:normal;
+font-size:14px;
+}
+
+/* promo */
+#productMerchantsPro {
+/*border-bottom:1px solid #d8f3fd;
+margin-bottom:19px;*/
+background-color: #FCEFEA;
+}
+#productMerchantsPro div.merchant {
+border-top:1px solid #d8f3fd;
+padding:10px 0px 20px 0px;
+}
+#productMerchantsPro div.merchant div.title {
+font-weight: bold; 
+color: #E16232; 
+Font-size: 14px;
+padding:0px 0px 5px 20px;
+}
+#productMerchantsPro div.merchant div.logo {
+float:left;
+width:110px;
+text-align:right;
+}
+#productMerchantsPro div.merchant div.qty {
+float:left;
+width:60px;
+padding-left:100px;
+padding-top:4px;
+font-weight: bold;
+color: #525252;
+}
+#productMerchants div.merchant div.qty {
+float:left;
+width:60px;
+padding-left:100px;
+padding-top:4px;
+font-weight: bold;
+color: #525252;
+}
+#productMerchantsPro div.merchant div.price {
+font-size:18px;
+font-weight:bold;
+color:#00aff0;
+float:left;
+width:150px;
+padding-left:10px;
+padding-top:4px;
+}
+#productMerchantsPro div.merchant div.price span {
+font-size:12px;
+font-weight:normal;
+color:#666666;
+}
+#productMerchants#productMerchantsPro div.merchant div.actions {
+float:left;
+}
+
+/* Product reviews related styles */
+#productReviews {
+width:960px;
+margin:0 auto 0 auto;
+position:relative;
+padding-bottom:38px;
+}
+#productReviews div.content {
+float:left;
+width:700px;
+padding-left:20px;
+}
+#productReviews blockquote {
+margin-bottom:19px;
+line-height:19px;
+color:#2c2c2c;
+}
+#productReviews blockquote img.begin {
+vertical-align:baseline;
+margin-right:8px;
+}
+#productReviews blockquote img.end {
+vertical-align:baseline;
+margin-left:8px;
+}
+#productReviews div.content div.topColumns {
+margin-bottom:19px;
+background:left bottom no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/product_reviews_bg.png); 
+}
+#productReviews div.content div.topColumns div.infobox {
+margin-bottom:0;
+}
+#productReviews div.sidebar {
+float:left;
+width:240px;
+padding-top:48px; /* title + infobox top padding */
+}
+#productReviews div.sidebar h2 {
+padding:0px;
+margin-bottom:19px;
+}
+#productReviews div.reviewFeedback {
+/* Go Green */
+/*padding-left:20px;*/
+padding-right:10px;
+}
+#productReviews div.reviewFeedback p {
+margin-bottom:10px;
+}
+#productReviews div.reviewFeedback a.yes {
+display:inline-block;
+line-height:27px;
+height:27px;
+padding:0px 0px 0px 32px;
+margin-right:21px;
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/smiley_yes.png);
+}
+#productReviews div.reviewFeedback a.no {
+display:inline-block;
+line-height:27px;
+height:27px;
+padding:0px 0px 0px 32px;
+margin-right:21px;
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/smiley_no.png);
+}
+
+/* Hardware recommendations related styles */
+#monthsFavorite {
+margin:0px 0px 15px 0px;
+}
+#monthsFavorite.bundles { margin-bottom:5px; }
+#monthsFavorite div.content {
+width:960px;
+margin:0 auto 0 auto;
+position:relative;
+}
+#monthsFavorite div.leftColumn,
+#monthsFavorite div.centerColumn,
+#monthsFavorite div.rightColumn {
+float:left;
+overflow:hidden;
+display:inline;
+}
+#monthsFavorite div.leftColumn {
+width:315px;
+padding:0px 10px 0px 20px;
+}
+#monthsFavorite div.centerColumn {
+width:315px;
+margin-top:45px;
+}
+#monthsFavorite div.rightColumn {
+width:285px;
+margin-left:15px;
+margin-top:58px;
+}
+#monthsFavorite div.extras div.centerColumn {
+width:335px;
+padding-left:10px;
+}
+#monthsFavorite div.extras div.rightColumn {
+width:220px;
+margin:65px 0px 0px 0px;
+padding:0px 20px 0px 30px;
+}
+#monthsFavorite div.extras div.rightColumn a.price {
+font-size:18px;
+}
+#monthsFavorite div.extras div.rightColumn span.buttonSmall {
+margin-right:5px;
+display:inline-block;
+}
+#monthsFavorite div.rightColumn a {
+color:#00aff0;
+}
+#monthsFavorite div.rightColumn a:hover {
+color:#3A9EEB;
+}
+#monthsFavorite span.shopButton {
+margin-right:5px;
+}
+#monthsFavorite h2.name,
+#monthsFavorite h2.name a { 
+padding-bottom:0px; 
+text-decoration:none; 
+color:#525252;
+}
+#monthsFavorite p.model,
+#monthsFavorite p.model a {
+font-weight:bold;
+color:#b0b4b5;
+text-decoration:none;
+padding-right:35px;
+}
+#monthsFavorite h2.name a:hover,
+#monthsFavorite p.model a:hover {
+text-decoration:underline; 
+}
+
+/* Comparing Phone Types */
+#comparingPhoneTypes {
+margin:0px 0px 0px 0px;
+}
+#comparingPhoneTypes.extras {
+margin-bottom:15px;
+}
+#comparingPhoneTypes div.content {
+width:960px;
+margin:0 auto 0 auto;
+position:relative;
+}
+#comparingPhoneTypes h2 {
+margin-left:20px;
+}
+#comparingPhoneTypes div.leftColumn,
+#comparingPhoneTypes div.centerColumn,
+#comparingPhoneTypes div.rightColumn {
+float:left;
+width:210px;
+padding:0px 0px 0px 20px;
+display:inline;
+overflow: hidden;
+}
+#comparingPhoneTypes div.sidebar {
+float:left;
+width:220px;
+padding-right:20px;
+margin-left:30px;
+display:inline;
+}
+
+/* Products category subcategory related styles */
+div.productsSubcategory {}
+div.productsSubcategory div.content {
+width:960px;
+margin:0 auto 0 auto;
+position:relative;
+}
+div.productsSubcategory h1.title {
+padding-left:20px;
+}
+div.productsSubcategory div.categoryHeader {
+padding:0px 0px 20px 0px;
+}
+div.productsSubcategory div.categoryHeader h1.title {
+padding-left:20px;
+margin-bottom:30px;
+width:400px;/* added for Translation */
+}
+div.productsSubcategory div.categoryHeader h1.title span {
+font-size:21px;
+}
+div.productsSubcategory div.categoryHeader div.leftColumn {
+float:left;
+width:690px;
+position:relative;
+}
+div.productsSubcategory div.categoryHeader div.twoColumnsWideLeft div.leftColumn {
+width:460px;
+} 
+div.productsSubcategory div.categoryHeader div.twoColumnsWideLeft div.rightColumn {
+width:200px;
+padding:0px 10px 0px 20px;
+} 
+div.productsSubcategory div.categoryHeader div.leftColumn div.twoColumns div.leftColumn,
+div.productsSubcategory div.categoryHeader div.leftColumn div.twoColumns div.rightColumn,
+div.productsSubcategory div.categoryHeader div.leftColumn div.threeColumns div.leftColumn,
+div.productsSubcategory div.categoryHeader div.leftColumn div.threeColumns div.centerColumn,
+div.productsSubcategory div.categoryHeader div.leftColumn div.threeColumns div.rightColumn {
+float:left;
+width:200px;
+padding:0px 10px 0px 20px;
+overflow:hidden;
+}
+div.productsSubcategory div.categoryHeader div.categoryVideo {
+position:absolute;
+right:0px;
+}
+div.productsSubcategory div.categoryHeader div.rightColumn img {
+display:block;
+position:relative;
+right:0px;
+}
+div.productsSubcategory div.categoryHeader div.sidebar {
+float:left;
+width:240px;
+margin-left:30px;
+display:inline;
+}
+div.productsSubcategory div.categoryHeader div.extrasSidebar {
+padding-top:30px;
+}
+div.productsSubcategory div.categoryHeader div.sidebar ul,
+div.productsSubcategory div.categoryHeader div.categoryVideo ul,
+div.productsSubcategory div.categoryHeader div.centerColumn ul,
+div.productsSubcategory div.categoryHeader div.rightColumn ul,
+#comparingPhoneTypes div.sidebar ul {
+list-style:none;
+margin-bottom:14px;
+}
+div.productsSubcategory div.categoryHeader div.sidebar ul li,
+div.productsSubcategory div.categoryHeader div.categoryVideo ul li,
+div.productsSubcategory div.categoryHeader div.centerColumn ul li ,
+div.productsSubcategory div.categoryHeader div.rightColumn ul li ,
+#comparingPhoneTypes div.sidebar ul li {
+padding:0px 0px 5px 18px;
+background:0px 6px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/bullet_green.png);
+color: #3A3A3A;
+}
+div.productsSubcategory div.categoryProducts {} 
+div.productsSubcategory div.productInfo {
+width:210px;
+margin-left:20px;
+float:left;
+overflow:hidden;
+display:inline;
+}
+div.productsSubcategory div.sidebar {
+margin-left:30px;
+}
+div.productsSubcategory div.productInfo a.image,
+div.productsSubcategory div.productInfo div.image {
+height:209px;
+width:209px;
+display:block;
+}
+div.productsSubcategory div.productInfo h2.name { padding-bottom:0px; }
+div.productsSubcategory div.productInfo h2.name a {
+color:#525252;
+text-decoration:none;
+}
+div.productsSubcategory div.productInfo p.model,
+div.productsSubcategory div.productInfo p.model a {
+color:#b0b4b5;
+font-weight:bold;
+text-decoration:none;
+}
+div.productsSubcategory div.productInfo h2.name a:hover,
+div.productsSubcategory div.productInfo p.model a:hover {
+text-decoration:underline;
+}
+div.productsSubcategory div.productInfo span.ratingStars {
+margin:3px 15px 0px 0px;
+vertical-align:top;
+display:inline-block;
+}
+div.productsSubcategory div.productInfo span.winMac {
+vertical-align:top;
+}
+div.productsSubcategory div.productInfo p.price {
+color:#bababa;
+font-weight:bold;
+}
+div.productsSubcategory div.productInfo p.price a {
+font-size:18px;
+color:#00aff0;
+margin-left:5px;
+}
+div.productsSubcategory div.productInfo p.price a:hover {
+color:#3A9EEB;
+}
+div.productsSubcategory div.productInfo p.learnmore {
+padding:10px 0 0 0;
+}
+div.productsSubcategory div.productInfo p.notavailable {
+font-size:14px;
+font-weight:bold;
+color:#bababa;
+padding:0px 0px 0px 20px;
+background:0px 1px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_notavailable.png);
+}
+div.productsSubcategory div.onMobile {
+float:left;
+width:670px;
+margin-left:20px;
+display:inline;
+}
+div.productsSubcategory div.sidebar {
+float:left;
+width:220px;
+}
+div.productsSubcategory  div.catComingSoon {
+padding:100px 0 200px 0;
+text-align: center;
+}
+/* test&target 
+Category*/
+div.productsSubcategory div.productInfo p.price2 {
+color:#bababa;
+font-weight:bold;
+margin: 0;
+position: relative;
+}
+div.productsSubcategory div.productInfo p.price2 span.buttonSmall {
+position: absolute;
+top: -2px;
+}
+div.productsSubcategory div.productInfo p.price2 {
+font-size:12px;
+}
+div.productsSubcategory div.productInfo p.price2 a {
+font-size:12px;
+color:#00aff0;
+}
+div.productsSubcategory div.productInfo p.price2 a:hover {
+color:#3A9EEB;
+}
+div.productsSubcategory div.productInfo p.price2 span.priceLrg {
+color:#525252;
+font-weight:bold;
+font-size:18px;
+padding-right: 12px;
+}
+div.productsSubcategory div.productInfo p.price2 span.priceMid {
+color:#525252;
+font-weight:bold;
+font-size:16px;
+padding-right: 12px;
+}
+div.productsSubcategory div.productInfo p.price span.buttonBelowPrice,
+div.productsSubcategory div.productInfo p.price2 span.buttonBelowPrice {
+left:0;
+top:25px;
+}
+div.productsSubcategory div.productInfo p.price2 span.strikePrice {
+display:block;
+color: #666666;
+font-weight:normal;
+font-size:14px;
+}
+
+/* test&target 
+Three best Seller*/
+div.bestSellerBox {
+margin-left:15px;}
+div.bestSellerBox div.bestSellerProd {
+display:inline; 
+float: left; 
+overflow:hidden; 
+width:315px;
+}
+div.bestSellerBox div.bestSellerProd p.price2 {
+color:#bababa;
+font-weight:bold;
+margin: 0;
+position: relative;
+}
+div.bestSellerBox div.bestSellerProd p.price2 span.buttonSmall {
+position: absolute;
+top: -2px;
+}
+div.bestSellerBox div.bestSellerProd p.price2 a {
+font-size:12px;
+color:#00aff0;
+}
+div.bestSellerBox div.bestSellerProd p.price2 a:hover {
+color:#3A9EEB;
+}
+div.bestSellerBox div.bestSellerProd p.price2 span.priceLrg {
+color:#525252;
+font-weight:bold;
+font-size:18px;
+padding-right: 12px;
+}
+div.bestSellerBox div.bestSellerProd p.price2 span.priceMid {
+color:#525252;
+font-weight:bold;
+font-size:16px;
+padding-right: 12px;
+}
+div.bestSellerBox div.bestSellerProd p.price span.buttonBelowPrice,
+div.bestSellerBox div.bestSellerProd p.price2 span.buttonBelowPrice {
+left:0;
+top:25px;
+}
+div.bestSellerBox div.bestSellerProd p.learnmore {
+padding:10px 0 0 0;
+}
+div.bestSellerBox div.bestSellerProd p.price2 span.strikePrice {
+display:block;
+color: #666666;
+font-weight:normal;
+font-size:14px;
+}
+
+/* Skype On Mobile related styles */
+div.onMobileSidebar {
+overflow:visible;
+}
+div.onMobileSidebar img { 
+margin-left:-10px;
+position:relative;
+}
+#skypeOnMobile {
+width:530px;
+height:155px;
+padding:35px 0px 25px 140px;
+overflow:hidden;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/skype_on_mobile.jpg);
+}
+#skypeOnMobile.lrg {
+width:750px;
+height:155px;
+padding:35px 0px 25px 160px;
+overflow:hidden;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/skype_on_mobile2.jpg);
+}
+#skypeOnMobile #sendSmsBlock {
+margin-bottom:10px;
+}
+#skypeOnMobile div#sendSmsBlock #sendSmsButton {
+margin-top:-5px;
+*margin-top:-14px; /* IE6 and 7 fix to align button vertically with input field */
+margin-right:5px;
+}
+#skypeOnMobile h1 {
+color:#FFFFFF;
+line-height:30px;
+}
+#skypeOnMobile h1 span.light {
+color:#C1ECFB;
+font-size:18px;
+}
+#skypeOnMobile input.sendtoNumber {
+-x-system-font:none;
+color:#757575;
+font-family:Arial,Helvetica,sans-serif;
+font-size:17px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+height:20px;
+line-height:normal;
+margin-right:3px;
+padding-bottom:3px;
+padding-left:5px;
+padding-top:4px;
+width:185px;
+}
+#skypeOnMobile span.light,
+#skypeOnMobile p.light {
+color:#FFFFFF;
+vertical-align:bottom;
+}
+
+/* Product Types related styles */ 
+#productTypes {
+margin:5px 0px 20px 0px;
+}
+#productTypes div.content {
+width:960px;
+height:95px;
+margin:0 auto;
+overflow:visible;
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/product_navigation.png);
+}
+#productTypes div.content2 {
+width:960px;
+height:95px;
+margin:0 auto;
+overflow:visible;
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/product_navigation2.png);
+}
+#productTypes a {
+color:#00aff0;
+text-decoration:none;
+}
+#productTypes a:hover {
+text-decoration:underline;
+}
+#productTypes table {
+height:95px;
+}
+#productTypes td {
+width:118px;
+vertical-align:middle;
+font-weight:bold;
+}
+#productTypes td.sml {
+width:95px;
+}
+#productTypes td.mdl {
+width:140px;
+}
+#productTypes td.lrg {
+width:120px;
+padding-right: 10px;
+}
+#productTypes td.xlrg {
+width:150px;
+}
+#productTypes td.xlrg span {
+font-size: 12px;
+}
+#productTypes td.title {
+width:102px;
+color:#525252;
+font-size:18px;
+vertical-align:top;
+padding:19px 20px 0px 19px;
+}
+#productTypes td.icon {
+width:90px;
+}
+
+/* Getting started related styles */ 
+#gettingStarted {
+margin:38px 0px 10px 0px;
+}
+#gettingStarted div.content {
+width:960px;
+margin:0 auto;
+overflow:hidden;
+position:relative;
+}
+#gettingStarted div.tabs {
+height:54px;
+position:relative;
+margin-right:45px;
+margin-left:20px;
+}
+#gettingStarted div.tabs h1 {
+float:left;
+font-weight:bold;
+font-size:32px;
+color:#b0b4b5;
+line-height:40px;
+}
+#gettingStarted div.tabs img.shadow {
+position:absolute;
+top:44px;
+left:61px;
+}
+#gettingStarted div.tabs a {
+display:block;
+margin:8px 0px 0px 5px;
+height:46px;
+white-space:nowrap;
+float:right;
+color:#00AFF0;
+text-decoration:none;
+position:relative;
+}
+#gettingStarted div.tabs a span.ls {
+display:block;
+width:10px;
+height:46px;
+float:left;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tab_inactive_left.png);
+}
+#gettingStarted div.tabs a span.rs {
+display:block;
+width:10px;
+height:46px;
+float:left;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tab_inactive_right.png);
+}
+#gettingStarted div.tabs a span.text {
+display:block;
+height:31px;
+background-color:#F3FBFE;
+color:#00AFF0;
+font-size:18px;
+font-weight:bold;
+padding:15px 10px 0px 10px;
+float:left;
+cursor:pointer;
+}
+#gettingStarted div.tabs a.active {
+z-index:300;
+color:#525252;
+}
+#gettingStarted div.tabs a.active span.ls {
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tab_active_left.png);
+}
+#gettingStarted div.tabs a.active span.rs {
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tab_active_right.png);
+}
+#gettingStarted div.tabs a.active span.text {
+background-color:#FFFFFF;
+color:#525252;
+padding:15px 20px 0px 20px;
+}
+#startRecommendation {
+display:none;
+}
+#startRecommendation .navigation {
+margin-left:35px;
+margin-right:30px;
+padding:10px 0px 0px 0px;
+border-bottom:1px solid #80d6f7;
+}
+#startRecommendation .navigation ul {
+list-style:none;
+}
+#startRecommendation .navigation ul li {
+float:left;
+}
+#startRecommendation .navigation ul.left { float:left; }
+#startRecommendation .navigation ul.left a {
+color:#696969;
+font-weight:bold;
+text-decoration:none;
+display:block;
+line-height:35px;
+padding:0px 10px 5px 10px;
+margin-right:60px;
+}
+#startRecommendation .navigation ul.left a.active {
+color:#00aff0;
+background:center bottom no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/bullet_blue.png);
+}
+#startRecommendation .navigation ul.right { 
+float:right; 
+color:#caccc8;
+margin-top:7px;
+}
+#startRecommendation .navigation ul.right a {
+font-size:14px;
+font-weight:normal;
+text-decoration:underline;
+display:block;
+padding:0px 10px 0px 10px;
+}
+#startRecommendation .navigation ul.right a {
+text-decoration:none;
+}
+#startRecommendation .navigation ul.right a.prev img {
+vertical-align:baseline;
+margin-right:8px;
+}
+#startRecommendation .navigation ul.right a.next img {
+vertical-align:baseline;
+margin-left:8px;
+}
+#startRecommendation .navigation ul.right a span {
+text-decoration:underline;
+}
+#startRecommendation .navigation ul.right a img.disabled {
+display:none;
+}
+#startRecommendation .navigation ul.right a.disabled {
+color:#b0b4b7;
+cursor:default;
+}
+#startRecommendation .navigation ul.right a.disabled img.disabled {
+display:inline-block;
+}
+#startRecommendation .navigation ul.right a.disabled img.active {
+display:none;
+}
+#startRecommendation .tabcontent {
+margin:30px 0 40px 40px;
+display:none;
+}
+#startRecommendation .tabcontent .left { 
+float:left;
+width:455px; 
+}
+#startRecommendation .tabcontent .left h2.title {
+color:#525252;
+font-size:32px;
+font-weight:bold;
+padding:0px 0px 0px 40px;
+line-height:38px;
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_atwork.png);
+}
+#startRecommendation .tabcontent .left h2.atwork {
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_atwork.png);
+}
+#startRecommendation .tabcontent .left h2.athome {
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_athome.png);
+}
+#startRecommendation .tabcontent .left h2.anywhere {
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_anywhere.png);
+}
+#startRecommendation .tabcontent .right { 
+float:right;
+width:370px;
+margin:5px 65px 0px 30px; 
+}
+#startRecommendation .tabcontent .right h2 {
+font-size:18px;
+font-weight:bold;
+color:#525252;
+margin-bottom:10px;
+}
+#startRecommendation .tabcontent .right p {
+margin-bottom:20px;
+}
+#startRecommendation .tabcontent .right ul {
+list-style:none;
+margin:20px 0px 20px 0px;
+}
+#startRecommendation .tabcontent .right ul li {
+padding:0px 0px 0px 18px;
+background:0px 6px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/bullet_green.png);
+}
+#startCompare {
+display:none;
+}
+
+/* Compare chart related styles */
+#wideCompare {
+margin:0px 0px 10px 0px;
+}
+#wideCompare div.content {
+width:960px;
+margin:10px auto 0 auto;
+overflow:hidden;
+position:relative;
+}
+#compareChart {
+margin:80px 0px 0px 0px;
+}
+#wideCompare #compareChart {
+margin-bottom:35px;
+}
+#compareChart #compareBubbleAlert {
+width:178px;
+height:480px;
+padding:21px 20px 0px 30px;
+float:right;
+position:relative;
+z-index:900;
+display:inline;
+margin:45px 40px 0px 0px;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_bubble_alert.png);
+}
+#compareChart #compareBubbleAlert #compareBubbleArrow{
+position:absolute;
+float:left;
+left:0px;
+top:208px;
+}
+#compareChart #compareBubbleAlert a.close:link,
+#compareChart #compareBubbleAlert a.close:visited {
+position:absolute;
+display:block;
+width:22px;
+height:22px;
+margin:-21px 0px 0px 176px;
+opacity:0.7;
+text-decoration:none;
+}
+#compareChart #compareBubbleAlert ul {
+list-style:none;
+margin-bottom:14px;
+}
+#compareChart #compareBubbleAlert ul li {
+padding:0px 0px 5px 18px;
+background:0px 6px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/bullet_green_blue.png);
+}
+#compareChart .compareChartHeader {
+width:620px;
+height:53px;
+position:relative;
+z-index:280;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 53px;
+border-bottom:1px solid #8adbf9;
+background:top left repeat-y url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_chart_bg.png);
+}
+#compareChart .compareChartHeader li {
+float:left;
+color:#2c2c2c;
+width:184px;
+}
+#compareChart .compareChartHeader li.info {
+position:relative;
+margin-top:-36px;
+}
+#compareChart .compareChartHeader li.info img {
+position:absolute;
+z-index:300;
+margin:47px 0px 0px -43px;
+} 
+#compareChart .compareChartHeader li.type {
+width:121px;
+font-size:14px;
+color:#525252;
+padding:0px 10px 0px 10px;
+margin-right:1px;
+}
+#compareChart .compareChartHeader li h2 {
+color:#525252;
+padding:0px 0px 3px 0px;
+}
+#compareChart .compareChartHeader li.type img {
+position:absolute;
+margin-top:-53px;
+}
+#compareChart .compareChartContent {
+width:620px;
+position:relative;
+z-index:250;
+padding:0px 0px 3px 53px;
+background:top left repeat-y url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_chart_bg.png) #ffffff;
+} 
+#compareChart .compareChartContent a {
+display:block;
+height:35px;
+line-height:35px;
+margin-bottom:3px;
+font-size:14px;
+font-weight:bold;
+}
+#compareChart .compareChartContent h2 { 
+color:#525252;
+margin:0px;
+padding:23px 0px 15px 0px; 
+}
+#compareChart .compareChartContent a.home {
+background:197px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks.gif);
+}
+#compareChart .compareChartContent a.work,
+#compareChart .compareChartContent a.work2 {
+background:197px -38px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks.gif);
+}
+#compareChart .compareChartContent a.any {
+background:197px -76px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks.gif);
+}
+#compareChart .compareChartContent a.home-active {
+background:197px -114px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks.gif);
+}
+#compareChart .compareChartContent a.work-active,
+#compareChart .compareChartContent a.work2-active {
+background:197px -152px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks.gif);
+}
+#compareChart .compareChartContent a.any-active {
+background:197px -190px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/compare_ticks.gif);
+}
+#compareChart .compareChartContent a.home-active,
+#compareChart .compareChartContent a.work-active,
+#compareChart .compareChartContent a.work2-active,
+#compareChart .compareChartContent a.any-active {
+color:#3A3A3A;
+text-decoration:none;
+cursor:default;
+}
+
+/* Hardware recommendations related styles */
+#hardwareRecommendation {
+margin:0px 0px 55px 0px;
+}
+#hardwareRecommendation div.content {
+width:960px;
+margin:0 auto 0 auto;
+position:relative;
+}
+#hardwareRecommendation h2 {
+padding-left:20px;
+margin-bottom:10px;
+}
+#hardwareRecommendation h3,
+#hardwareRecommendation img { margin-bottom:5px; }
+#hardwareRecommendation h3.title {
+color:#00aff0;
+font-size:18px;
+font-weight:bold;
+padding:0px 0px 0px 35px;
+line-height:27px;
+}
+#hardwareRecommendation h3.title a {
+text-decoration: none;
+color:#00aff0;
+}
+#hardwareRecommendation h3.title a:hover {
+color:#3A9EEB;
+}
+#hardwareRecommendation h3.title a:visited {
+color:#62A8F0;
+}
+#hardwareRecommendation h3.atwork {
+background-position:top left;
+background-repeat:no-repeat;
+background-color:#FFF; /* need this to fix IE issue */
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_atwork_small.png);
+}
+#hardwareRecommendation h3.athome {
+background-position:top left;
+background-repeat:no-repeat;
+background-color:#FFF; /* need this to fix IE issue */
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_athome_small.png);
+}
+#hardwareRecommendation h3.anywhere {
+background-position:top left;
+background-repeat:no-repeat;
+background-color:#FFF; /* need this to fix IE issue */
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_anywhere_small.png);
+}
+#hardwareRecommendation div.leftColumn,
+#hardwareRecommendation div.centerColumn,
+#hardwareRecommendation div.rightColumn {
+width:210px;
+display:inline;
+margin-left:20px;
+}
+
+/* Enhance experience */
+#enhanceExperience h2.title {
+color:#2c2c2c;
+padding-bottom:18px;
+}
+#enhanceExperience div.rightColumn {
+overflow:visible;
+}
+#enhanceExperience div.leftColumn img {
+margin-left:10px;
+}
+#enhanceExperience div.rightColumn img {
+position:relative;
+left:-15px;
+}
+
+/* Video Glossary */
+#videoGlossary {}
+#videoGlossary h1 span.sml {font-size:18px;}
+#videoGlossary span.visit {
+display: inline-block;
+margin-top: 10px;
+}
+#videoGlossary div.videoGroup {}
+#videoGlossary div.videoGroup h2.title {
+margin-bottom: 18px;
+}
+#paddedContent #videoGlossary div.videoGroup h3,
+#videoGlossary div.videoGroup h3 {
+font-size: 18px;
+color: #00aff0;
+font-weight: bold;
+padding: 0px;
+padding-bottom: 14px;
+}
+#videoGlossary div.videoGroup h3 a {
+color: #00aff0;
+text-decoration: none;
+}
+#videoGlossary div.videoGroup h3 a:hover {
+color: #3A9EEB;
+}
+#videoGlossary div.videoGroup h3 span {
+font-size: 14px;
+}
+#videoGlossary div.videoGroup div.video,
+#videoGlossary div.videoGroup div.videoTitle {
+width: 210px;
+float: left;
+display: inline;
+padding-left: 20px;
+padding-bottom: 38px;
+}
+#videoGlossary div.videoGroup table.videoTitle {
+clear: both;
+}
+#videoGlossary div.videoGroup table.videoTitle td {
+width: 210px;
+padding-left: 20px;
+vertical-align: bottom;
+}
+#videoGlossary div.videoGroup table.videoTitle td.first,
+#videoGlossary div.videoGroup div.first {
+padding-left: 10px;
+}
+#videoGlossary div.videoGroup div.video img {
+display: block;
+}
+#sidebarProductGuide {
+margin-bottom:40px;
+}
+#sidebarProductGuide img { margin-bottom:19px; }
+#sidebarProductGuide span.buttonSmall { display:inline-block; }
+#sidebarHardware div.group {
+margin-bottom:42px;
+} 
+#sidebarHardware div.group img {
+margin-bottom:10px;
+}
+
+
+
+
+#sidebarHardware h3.title {
+height:35px;
+color:#00aff0;
+font-size:18px;
+font-weight:bold;
+line-height:27px;
+margin:0 auto 0 auto;
+padding:0px 0px 0px 35px;
+}
+#sidebarHardware h3.title a {
+text-decoration: none;
+color:#00aff0;
+}
+#sidebarHardware h3.title a:hover {
+color:#3A9EEB;
+}
+#sidebarHardware h3.title a:visited {
+color:#62A8F0;
+}
+#sidebarHardware h3.atwork {
+background-position:top left;
+background-repeat:no-repeat;
+background-color:#FFF; /* need this to fix IE issue */
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_atwork_small.png);
+}
+#sidebarHardware h3.athome {
+background-position:top left;
+background-repeat:no-repeat;
+background-color:#FFF; /* need this to fix IE issue */
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_athome_small.png);
+}
+#sidebarHardware h3.anywhere {
+background-position:top left;
+background-repeat:no-repeat;
+background-color:#FFF; /* need this to fix IE issue */
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_anywhere_small.png);
+}
+/*
+#sidebarHardware h3.title {
+color:#00aff0;
+font-size:18px;
+font-weight:bold;
+padding:0px 0px 5px 35px;
+line-height:27px;
+}
+#sidebarHardware h3.title a {
+text-decoration: none;
+color:#00aff0;
+}
+#sidebarHardware h3.title a:hover {
+color:#3A9EEB;
+}
+#sidebarHardware h3.title a:visited {
+color:#62A8F0;
+}
+#sidebarHardware h3.atwork {
+background-position:top left;
+background-repeat:no-repeat;
+background-color:#FFF;
+background-image:url(/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_atwork_small.png);
+}
+#sidebarHardware h3.athome {
+background-position:top left;
+background-repeat:no-repeat;
+background-color:#FFF;
+background-image:url(/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_athome_small.png);
+}
+#sidebarHardware h3.anywhere {
+background-position:top left;
+background-repeat:no-repeat;
+background-color:#FFF;
+background-image:url(/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_anywhere_small.png);
+}
+#sidebarFAQ {}
+#sidebarFAQ h2 { margin-bottom:9px; }
+#sidebarFAQ ul {
+margin-bottom:19px;
+}
+#sidebarFAQ ul li {
+padding:0px 0px 19px 0px;
+border:1px solid #CC0000;
+}
+#sidebarFAQ ul li a {
+font-weight:normal;
+color:#2c2c2c;
+text-decoration:none;
+padding:0px 0px 0px 15px;
+margin:0 auto 0 auto;
+background-color:#FFF;
+background-position: top left;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/bullet_blue_right.png);
+}
+#sidebarFAQ ul li a:hover {
+text-decoration:underline;
+margin:0 auto 0 auto;
+background-color:#FFF;
+background-position: top left;
+background-repeat:no-repeat;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/bullet_blue_right.png);
+}
+*/
+#sidebarFAQ {}
+#sidebarFAQ h2 { margin-bottom:9px; }
+#sidebarFAQ ul {
+margin-bottom:19px;
+}
+#sidebarFAQ ul li {
+padding:0px 0px 19px 15px;
+background:#FFF url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/bullet_blue_right.png) no-repeat scroll 0 6px;
+/* need this background-color:#FFF to fix IE issue */
+}
+#sidebarFAQ ul li a {
+font-weight:normal;
+color:#2c2c2c;
+text-decoration:none;
+}
+#sidebarFAQ ul li a:hover {
+text-decoration:underline;
+}
+
+/* know how recommended product types */
+#recommendedProducts {}
+#recommendedProducts h2.title { 
+margin-bottom:19px; 
+}
+#recommendedProducts div.type {
+margin-bottom:57px;
+}
+#recommendedProducts div.type h3 {
+font-size:18px;
+padding:9px 0 10px;
+}
+#recommendedProducts div.type h3 a {
+color:#00aff0;
+text-decoration:none;
+}
+#recommendedProducts div.type h3 a:hover {
+color:#3A9EEB;
+}
+#recommendedProducts div.type h3 a:visited {
+color:#62A8F0;
+}
+#recommendedProducts div.type div.image { float:left; width:211px; }
+#recommendedProducts div.text {
+padding-left:235px;
+}
+#recommendedHardware {
+border-bottom:1px solid #99dff9;
+margin-bottom:70px;
+}
+#recommendedHardware h2.title { 
+margin-bottom:10px;
+padding-bottom:19px; 
+border-bottom:1px solid #d8f3fd;
+}
+#recommendedHardware div.main {
+height:250px;
+width:440px;
+margin-bottom:25px;
+position:relative;
+}
+#recommendedHardware div.main h2.name { 
+position:relative;
+z-index:100;
+padding-bottom:3px; 
+}
+#recommendedHardware div.main h2.name a {
+text-decoration:none;
+}
+#recommendedHardware div.main h2.name a:hover {
+text-decoration:underline;
+}
+#recommendedHardware div.main p.model {
+color:#b0b4b5;
+font-weight:bold;
+position:relative;
+z-index:100;
+}
+#recommendedHardware div.main p.model a {
+color:#b0b4b5;
+text-decoration:none;
+}
+#recommendedHardware div.main p.model a:hover {
+text-decoration:underline;
+}
+#recommendedHardware div.main p.price {
+font-weight:bold;
+color:#00aff0;
+}
+#recommendedHardware div.main p.price a {
+color:#00aff0;
+text-decoration:none;
+}
+#recommendedHardware div.main p.price a:hover {
+text-decoration:underline;
+}
+#recommendedHardware div.main p.price span {
+color:#bababa;
+}
+#recommendedHardware div.main span.buttonSmall {
+/*position:absolute;
+top:223px;
+left:360px;*/
+z-index:100;
+}
+#recommendedHardware div.main img.productImage {
+position:absolute;
+left:150px;/*left:125px;*/
+top:0px;
+z-index:50;
+}
+#recommendedHardware div.productList {
+border-top:1px solid #d8f3fd;
+}
+#recommendedHardware div.productList div.product {
+border-bottom:1px solid #d8f3fd;
+/*height:74px;*/
+padding:0 0 25px 0;
+}
+#recommendedHardware div.productList div.name {
+float:left;
+padding:23px 0px 0px 2px;
+width:330px;/*width:188px;*/
+color:#525252;
+font-weight:bold;
+}
+#recommendedHardware div.productList div.name a span.model,
+#recommendedHardware div.productList div.name span.model,
+#recommendedHardware div.productList div.name p {
+color:#b0b4b5;
+}
+#recommendedHardware div.productList div.price {
+float:left;
+padding:23px 0px 10px 0px;
+width:90px;
+font-weight:bold;
+color:#00aff0;
+}
+#recommendedHardware div.productList div.price span {
+color:#bababa;
+}
+#recommendedHardware div.productList div.name p {
+margin:0;
+padding:0 0 5px 0;
+}
+#recommendedHardware div.productList div.price a,
+#recommendedHardware div.productList div.name p a {
+text-decoration:none;
+color:#00AFF0;
+}
+#recommendedHardware div.productList div.price a:hover,
+#recommendedHardware div.productList div.name p a:hover {
+text-decoration:underline;
+}
+#recommendedHardware div.productList div.image {
+float:left;
+padding:23px 10px 0px 10px;
+/*height:74px;*/
+}
+#recommendedHardware div.productList div.actions {
+float:left;
+/*padding:23px 0px 0px 6px;
+width:72px;*/
+padding:50px 0px 0px 0px;
+width:100px;
+}
+#recommendedHardware span.viewAll {
+display:inline-block;
+margin:18px 0px 25px 0px;
+}
+
+/* video player */
+#videoPlayer {
+margin-bottom:15px;
+padding-left:10;
+width:682px;
+}
+
+/* sidebar products */
+#sidebarProducts div.productInfo {
+width:210px;
+margin-top:19px;
+overflow:hidden;
+}
+#sidebarProducts div.productInfo a.image,
+#sidebarProducts div.productInfo div.image {
+height:209px;
+width:209px;
+display:block;
+}
+#sidebarProducts div.productInfo h2.name { padding-bottom:0px; }
+#sidebarProducts div.productInfo h2.name a {
+color:#525252;
+text-decoration:none;
+}
+#sidebarProducts div.productInfo p.model {
+color:#b0b4b5;
+font-weight:bold;
+}
+#sidebarProducts div.productInfo span.ratingStars {
+margin:3px 15px 0px 0px;
+vertical-align:top;
+display:inline-block;
+}
+#sidebarProducts div.productInfo span.winMac {
+vertical-align:top;
+}
+#sidebarProducts div.productInfo p.price {
+color:#bababa;
+font-weight:bold;
+}
+#sidebarProducts div.productInfo p.price a {
+font-size:18px;
+color:#00aff0;
+margin-left:5px;
+}
+#sidebarProducts div.productInfo p.price a:hover {
+color:#3A9EEB;
+}
+#sidebarProducts div.productInfo p.notavailable {
+font-size:14px;
+font-weight:bold;
+color:#bababa;
+padding:0px 0px 0px 20px;
+background:0px 1px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_notavailable.png);
+}
+#recentlyCertified {}
+#recentlyCertified span.model {
+color:#b0b4b5;
+font-weight:bold;
+}
+#recentlyCertified span.model a {
+font-weight:normal;
+color:#b0b4b5;
+text-decoration:none;
+}
+#recentlyCertified span.model a:hover {
+text-decoration:underline;
+}
+#videoTipsRelated {
+padding:30px 0px 30px 0px;
+}
+#videoTipsRelated h2 { padding-bottom:19px; padding-top:0px; }
+#videoTipsRelated ul {
+margin-left:20px;
+}
+#videoTipsRelated ul li {
+padding:0px 0px 5px 18px;
+background:0px 6px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/bullet_green.png);
+}
+#videoTipsRelated p.use {
+margin-bottom:28px;
+}
+#videoTipsRelated p.good {
+margin-bottom:35px;
+}
+#relatedVideos {}
+#relatedVideos div.video {
+padding-bottom:10px;
+}
+#relatedVideos div.video img {
+margin-left:20px;
+margin-bottom:5px;
+}
+#relatedVideos div.video p {
+color:#00aff0;
+font-weight:bold;
+}
+#relatedVideos span.buttonSmall {
+display:inline-block;
+margin-left:20px;
+}
+#labsIntro {}
+#labsIntro div.leftColumn {
+width:335px;
+padding-right:10px;
+}
+
+/* Tooltips */
+#toolTip {
+position:absolute;
+display:none;
+width:263px;
+z-index:2000;
+}
+#toolTip div.top {
+width:263px;
+padding-top:45px;
+position:relative;
+background:top left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tooltip_top.png); 
+}
+* html #toolTip div.top {
+width:263px; 
+background:10px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tooltip_top.gif); 
+}
+#toolTip div.content {
+background:bottom left no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tooltip_bg.png);
+font-size:12px; 
+color:#3A3A3A;
+width:263px;
+position:relative;
+}
+* html #toolTip div.content {
+background:10px 100% no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/tooltip_bg.gif);
+} 
+#toolTip div.content div.message {
+position:relative;
+padding:0px 20px 0px 20px;
+top:-27px;
+margin-bottom:-15px;
+}
+
+/* graphical steps */
+.graphicalSteps {
+background:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/graphical_steps.png) no-repeat 23px bottom;
+padding-left:35px;
+margin-left:10px;
+}
+.removeStepsBorder {
+background:#fff;
+margin-left:-35px;
+padding-left:35px;
+margin-bottom:0px;
+}
+#content #paddedContent p.step1,
+#content #paddedContent p.step2,
+#content #paddedContent p.step3,
+#content #paddedContent p.step4,
+#content #paddedContent p.step5,
+#content #paddedContent p.step6,
+#content #paddedContent p.step7,
+#content #paddedContent p.step8,
+#content #paddedContent p.step9,
+#content #paddedContent p.step10 {
+padding:0px 10px 0px 35px !important;
+background-position:top left;
+background-repeat:no-repeat;
+margin-left:-25px;
+zoom:1;
+}
+h2.step1,
+p.step1 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_1.png);
+}
+h2.step2,
+p.step2 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_2.png);
+}
+h2.step3,
+p.step3 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_3.png);
+}
+h2.step4,
+p.step4 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_4.png);
+}
+h2.step5,
+p.step5 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_5.png);
+}
+h2.step6,
+pstep6 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_6.png);
+}
+h2.step7,
+p.step7 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_7.png);
+}
+h2.step8,
+p.step8 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_8.png);
+}
+h2.step9,
+p.step9 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_9.png);
+}
+h2.step10,
+p.step10 {
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/bullets/blue_10.png);
+}
+
+/* rating system */
+.ratingSystem {}
+.ratingSystem .ratings {
+float:left;
+}
+.ratingSystem .ratings p {
+line-height:19px;
+margin-bottom:25px;
+}
+.ratingSystem .ratings p.double {
+line-height:49px;
+}
+.ratingSystem div.stars {
+float:left;
+}
+.ratingSystem div.stars .single {
+padding-left:18px;
+margin-bottom:25px;
+}
+.ratingSystem div.stars .double {
+padding-left:18px;
+margin-bottom:25px;
+background:0px 5px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/ratingsystem_double.png);
+}
+.ratingSystem div.stars span.ratingStars {
+display:block;
+height:19px;
+margin-bottom:11px;
+}
+
+/* Page splitter styles */
+div.bottomShadowSplit {
+margin:0 auto;
+width:915px;
+}
+
+/* Button related styles */
+/* Big button */
+span.button a { 
+height:32px;
+font:bold 18px/32px Helvetica, Arial, sans-serif;
+text-decoration:none;
+float:left;
+display:block;
+overflow:hidden;
+padding:0;
+}
+span.button a span {
+display:block;
+white-space:nowrap;
+padding:5px 12px 5px 0;
+line-height:23px;
+cursor:pointer;
+}
+
+/* Experimental buttons that don't require JS */
+button {
+border:none;
+background:none;
+padding:0;
+margin:0;
+width:auto;
+overflow:visible;
+text-align:center;
+vertical-align:middle;
+white-space:nowrap;
+cursor:pointer;
+}
+button span {
+display:block;
+overflow:visible;
+padding:0;
+white-space:nowrap;
+margin:0;
+}
+button span strong {
+display:block;
+white-space:nowrap;
+margin:0;
+overflow:visible;
+}
+button:focus,
+button:active {
+outline:hidden;
+}
+button.button {
+font:bold 18px Helvetica, Arial, sans-serif;
+height:34px;
+margin-top:-4px;
+display:inline;
+}
+button.button span {
+height:32px;
+}
+button.button span strong {
+padding:0 12px 0 0;
+line-height:32px;
+*line-height:31px; /* IE specific line-height fix */
+height:32px;
+} 
+button.button span.gray {
+color:#0181E3;
+padding-left:12px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/gray/gray_comp_left.png) left top no-repeat;
+}
+button.button span.green {
+color:#fff;
+padding-left:12px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/green/green_comp_left.png) left top no-repeat;
+}
+button.button span.blue {
+color:#fff;
+padding-left:12px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue/blue_comp_left.png) left top no-repeat;
+}
+button.button span.yellow {
+color:#545454;
+padding-left:12px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/yellow/yellow_comp_left.png) left top no-repeat;
+}
+button.button span.purple {
+color:#fff;
+padding-left:12px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/purple/purple_comp_left.png) left top no-repeat;
+}
+button.button span.orange {
+color:#fff;
+padding-left:12px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/orange/orange_comp_left.png) left top no-repeat;
+}
+button.button:hover span.gray {
+color:#006ABC;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/gray/gray_comp_left.png) left -32px no-repeat;
+}
+button.button:hover span.blue {
+color:#fff;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue/blue_comp_left.png) left -32px no-repeat;
+}
+button.button:hover span.green {
+color:#fff;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/green/green_comp_left.png) left -32px no-repeat;
+}
+button.button:hover span.yellow {
+color:#545454;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/yellow/yellow_comp_left.png) left -32px no-repeat;
+}
+button.button:hover span.purple {
+color:#fff;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/purple/purple_comp_left.png) left -32px no-repeat;
+}
+button.button:hover span.orange {
+color:#fff;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/orange/orange_comp_left.png) left -32px no-repeat;
+}
+button.button span.gray strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/gray/gray_comp_right.png) right top no-repeat;
+}
+button.button span.green strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/green/green_comp_right.png) right top no-repeat;
+}
+button.button span.blue strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue/blue_comp_right.png) right top no-repeat;
+}
+button.button span.yellow strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/yellow/yellow_comp_right.png) right top no-repeat;
+}
+button.button span.purple strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/purple/purple_comp_right.png) right top no-repeat;
+}
+button.button span.orange strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/orange/orange_comp_right.png) right top no-repeat;
+}
+button.button:hover span.gray strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/gray/gray_comp_right.png) right -32px no-repeat;
+}
+button.button:hover span.green strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/green/green_comp_right.png) right -32px no-repeat;
+}
+button.button:hover span.blue strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue/blue_comp_right.png) right -32px no-repeat;
+}
+button.button:hover span.yellow strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/yellow/yellow_comp_right.png) right -32px no-repeat;
+}
+button.button:hover span.purple strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/purple/purple_comp_right.png) right -32px no-repeat;
+}
+button.button:hover span.orange strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/orange/orange_comp_right.png) right -32px no-repeat;
+}
+button.button span.disabled {
+color:#afb4b4 !important;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/gray/gray_comp_left.png) left top no-repeat !important;
+cursor:default !important;
+}
+button.button:hover span.disabled {
+color:#afb4b4 !important;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/gray/gray_comp_left.png) left top no-repeat !important;
+cursor:default !important;
+}
+button.button span.disabled strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/gray/gray_comp_right.png) right top no-repeat !important;
+}
+button.button:hover span.disabled strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/gray/gray_comp_right.png) right top no-repeat !important;
+}
+button.buttonSmall {
+font:bold 14px Helvetica, Arial, sans-serif;
+height:24px;
+margin-top:-1px;
+}
+.buttonSmallAndText button.buttonSmall {
+margin-top:-4px;
+}
+button.buttonSmall span {
+height:22px;
+}
+button.buttonSmall span strong {
+padding:0 11px 0 0;
+line-height:23px;
+*line-height:21px; /* IE specific line-height fix */
+height:22px;
+} 
+button.buttonSmall span.gray {
+color:#0181E3;
+padding-left:11px;
+background:transparent url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left top no-repeat;
+}
+button.buttonSmall span.green {
+color:#fff;
+padding-left:11px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left top no-repeat;
+}
+button.buttonSmall span.blue {
+color:#fff;
+padding-left:11px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left top no-repeat;
+}
+button.buttonSmall span.yellow {
+color:#545454;
+padding-left:11px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left top no-repeat;
+}
+button.buttonSmall span.purple {
+color:#fff;
+padding-left:11px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left top no-repeat;
+}
+button.buttonSmall span.orange {
+color:#fff;
+padding-left:11px;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left top no-repeat;
+}
+button.buttonSmall:hover span.gray {
+color:#006ABC;
+background:transparent url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left -22px no-repeat;
+}
+button.buttonSmall:hover span.blue {
+color:#fff;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left -22px no-repeat;
+}
+button.buttonSmall:hover span.green {
+color:#fff;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left -22px no-repeat;
+}
+button.buttonSmall:hover span.yellow {
+color:#545454;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left -22px no-repeat;
+}
+button.buttonSmall:hover span.purple {
+color:#fff;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left -22px no-repeat;
+}
+button.buttonSmall:hover span.orange {
+color:#fff;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left -22px no-repeat;
+}
+button.buttonSmall span.gray strong {
+background:transparent url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right top no-repeat;
+}
+button.buttonSmall span.green strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right top no-repeat;
+}
+button.buttonSmall span.blue strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right top no-repeat;
+}
+button.buttonSmall span.yellow strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right top no-repeat;
+}
+button.buttonSmall span.purple strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right top no-repeat;
+}
+button.buttonSmall span.orange strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right top no-repeat;
+}
+button.buttonSmall:hover span.gray strong {
+background:transparent url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right -22px no-repeat;
+}
+button.buttonSmall:hover span.green strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right -22px no-repeat;
+}
+button.buttonSmall:hover span.blue strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right -22px no-repeat;
+}
+button.buttonSmall:hover span.yellow strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right -22px no-repeat;
+}
+button.buttonSmall:hover span.purple strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right -22px no-repeat;
+}
+button.buttonSmall:hover span.orange strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right -22px no-repeat;
+}
+button.buttonSmall span.disabled {
+color:#afb4b4 !important;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left top no-repeat !important;
+cursor:default !important;
+}
+button.buttonSmall:hover span.disabled {
+color:#afb4b4 !important;
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) left top no-repeat !important;
+cursor:default !important;
+}
+button.buttonSmall span.disabled strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right top no-repeat !important;
+}
+button.buttonSmall:hover span.disabled strong {
+background:#F0F0F0 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) right top no-repeat !important;
+}
+
+/* FF specific line-height fix */
+@-moz-document url-prefix() {
+button {
+margin:0 0 0 -3px;
+}
+
+button.button span strong {
+line-height:35px;
+}
+button.buttonSmall span strong {
+line-height:25px;
+}
+.buttons button {
+margin-left:6px !important;
+}
+}
+
+/* Simple buttons, only light gradient */
+button.simple,
+a.buttonSimple {
+height:22px;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+}
+a.buttonSimple {
+text-decoration:none;
+}
+button.simple span,
+a.buttonSimple span {
+margin-top:-2px;
+.margin-top:0px;
+margin-left:0px;
+margin-right:0px;
+display:block;
+height:14px;
+padding:3px 10px;
+font-family:Arial, sans-serif;
+font-weight:bold;
+font-size:12px;
+line-height:14px;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+}
+button.simple span.white,
+a.buttonSimple span.white {
+border:1px solid white;
+background:#fff url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) repeat-x top left;
+color:#4b465a;
+text-shadow:0px 1px 1px #fff;
+}
+button.simple:hover span.white,
+a.buttonSimple:hover span.white {
+background:#fff url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) repeat-x left -20px;
+}
+button.simple span.purple,
+a.buttonSimple span.purple {
+border:none;
+padding:4px 11px;
+background:#332f3e url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) repeat-x top left;
+color:#fff;
+text-shadow:0px -1px 1px #332f3e;
+}
+button.simple:hover span.purple,
+a.buttonSimple:hover span.purple {
+background:#34303f url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) repeat-x left -22px;
+}
+button.simple:hover span.blue,
+a.buttonSimple span.blue {
+border:none;
+padding:4px 11px;
+background:#00AEEA url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) repeat-x top left;
+color:#fff;
+text-shadow:0px -1px 1px #39BBF6;
+}
+button.simple:hover span.blue,
+a.buttonSimple:hover span.blue {
+background:#20B5F1 url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) repeat-x left -22px;
+}
+a.buttonSimple span {
+display:-moz-inline-box;
+display:inline-block;
+margin-top:0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Big dark button for Busines section */ 
+div.darkBusinessButton {
+width:140px;
+margin-left:20px;
+}
+div.darkBusinessButton.large {
+width:200px;
+}
+div.darkBusinessButton a {
+display:block;
+padding:10px 10px 10px 5px;
+background-color:#4B465A;
+color:#fff;
+font-family:Arial, sans-serif;
+font-size:1.286em;
+line-height:16px;
+text-align:center;
+text-decoration:none;
+text-shadow:0px -1px 1px #2F2C38;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+}
+* html div.darkBusinessButton a {
+width:140px;
+}
+* html div.darkBusinessButton.large a {
+width:200px;
+}
+div.darkBusinessButton a:hover {
+background-color:#5b566f;
+} 
+
+/* FF specific line-height fix */
+@-moz-document url-prefix() {
+button.simple {
+margin:0;
+}
+button.simple span {
+margin-left:-3px;
+margin-right:-3px;
+}
+}
+span.buttonSmall {
+font-weight:bold;
+}
+span.buttonSmall a.lightblue {
+text-decoration:none; 
+vertical-align:middle; 
+display:-moz-inline-box; 
+display:inline-block; 
+height:26px; 
+padding-left:0px;
+font-size:12px;
+color:#00aff0;
+cursor:pointer;
+}
+span.buttonSmall a.lightblue:hover {
+background-position:0px -26px;
+}
+span.buttonSmall a.lightblue span.text {
+line-height:15px;
+padding:6px 0px 0px 10px; 
+height:20px; 
+color:#00aff0; 
+font-size:12px; 
+display:-moz-inline-block; 
+display:inline-block; 
+background:left top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue_small_lightblue.png);
+}
+* html span.buttonSmall a.lightblue span.text {
+background:top left repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/blank.gif);
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/lightblue_small_left.png',sizingMethod='crop');
+}
+span.buttonSmall a.lightblue span.rs {
+display:inline-block;
+height:26px;
+width:10px;
+vertical-align:bottom;
+background:right top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue_small_lightblue.png);
+}
+* html span.buttonSmall a.lightblue span.rs {
+display:inline-block;
+height:26px;
+width:10px;
+background:top left repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/blank.gif);
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/lightblue_small_right.png',sizingMethod='crop');
+}
+span.buttonSmall a.lightblue:hover span.text {
+background-position:0px -26px;
+color:#2ac5ff;
+}
+span.buttonSmall a.lightblue:hover span.rs {
+background-position:100% -26px;
+}
+* html span.buttonSmall a.lightblue:hover span.text {
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/lightblue_small_left_hover.png',sizingMethod='crop');
+}
+* html span.buttonSmall a.lightblue:hover span.rs {
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/lightblue_small_right_hover.png',sizingMethod='crop');
+}
+/* Test&Target button buy now green */
+span.buttonGreen {
+font-weight:bold;
+}
+span.buttonGreen a.buynow {
+text-decoration:none; 
+vertical-align:middle; 
+display:-moz-inline-box; 
+display:inline-block; 
+height:40px; 
+padding-left:0px;
+font-size:18px;
+color:#FFFFFF;
+cursor:pointer;
+}
+* html span.buttonGreen a.buynow {
+background:none;
+padding:0px;
+}
+* html span.buttonGreen a.buynow span.text {
+background:top left repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/blank.gif);
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/button_buynow_left.png',sizingMethod='crop');
+}
+span.buttonGreen a.buynow:hover {
+background-position:0px -40px;
+}
+span.buttonGreen a.buynow span.text {
+line-height:21px;
+padding:10px 17px 0 25px; 
+height:30px; 
+color:#FFFFFF; 
+font-size:18px; 
+display:-moz-inline-block; 
+display:inline-block; 
+background:left top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/button_buynow_left.png);
+}
+span.buttonGreen a.buynow span.rs {
+display:inline-block;
+height:40px;
+width:10px;
+vertical-align:bottom;
+background:right top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/button_buynow.png);
+}
+* html span.buttonGreen a.buynow span.rs {
+display:inline-block;
+height:40px;
+width:10px;
+background:top left repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/blank.gif);
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/button_buynow.png',sizingMethod='crop');
+}
+span.buttonGreen a.buynow:hover span.text {
+background-position:0px -40px;
+color:#FFFFFF;
+}
+span.buttonGreen a.buynow:hover span.rs {
+background-position:100% -40px;
+}
+* html span.buttonGreen a.buynow:hover span.text {
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/button_buynow_left.png',sizingMethod='crop');
+}
+* html span.buttonGreen a.buynow:hover span.rs {
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/button_buynow.png',sizingMethod='crop');
+}
+
+/* button green */
+span.buttonSmall a.green {
+text-decoration:none; 
+vertical-align:middle; 
+display:-moz-inline-box; 
+display:inline-block; 
+height:26px; 
+padding-left:0px;
+font-size:12px;
+color:#e5f6fd;
+cursor:pointer;
+}
+* html span.buttonSmall a.green {
+background:none;
+padding:0px;
+}
+* html span.buttonSmall a.green span.text {
+background:top left repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/blank.gif);
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/green_small_left.png',sizingMethod='crop');
+}
+span.buttonSmall a.green:hover {
+background-position:0px -26px;
+}
+span.buttonSmall a.green span.text {
+line-height:15px;
+padding:6px 0px 0px 10px; 
+height:20px; 
+font-size:12px; 
+display:-moz-inline-block; 
+display:inline-block; 
+/* Go Green */
+color:#FFF;
+background:left top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/green_small_green.png);
+/*color:#e5f6fd;
+background:left top no-repeat scroll url(/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue_small_blue.png);*/
+}
+span.buttonSmall a.green span.rs {
+display:inline-block;
+height:26px;
+width:10px;
+vertical-align:bottom;
+/* Go Green */
+background:right top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/green_small_green.png);
+/*background:right top no-repeat scroll url(/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue_small_blue.png);*/
+}
+* html span.buttonSmall a.green span.rs {
+display:inline-block;
+height:26px;
+width:10px;
+background:top left repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/blank.gif);
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/green_small_right.png',sizingMethod='crop');
+}
+span.buttonSmall a.green:hover span.text {
+background-position:0px -26px;
+color:#FFFFFF;
+}
+span.buttonSmall a.green:hover span.rs {
+background-position:100% -26px;
+}
+* html span.buttonSmall a.green:hover span.text {
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/green_small_left_hover.png',sizingMethod='crop');
+}
+* html span.buttonSmall a.green:hover span.rs {
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/green_small_right_hover.png',sizingMethod='crop');
+}
+/* button promo */
+span.buttonSmall a.promo {
+text-decoration:none; 
+vertical-align:middle; 
+display:-moz-inline-box; 
+display:inline-block; 
+height:26px; 
+padding-left:0px;
+font-size:12px;
+color:#e5f6fd;
+cursor:pointer;
+}
+* html span.buttonSmall a.promo {
+background:none;
+padding:0px;
+}
+span.buttonSmall a.promo:hover {
+background-position:0px -26px;
+}
+span.buttonSmall a.promo span.text {
+line-height:15px;
+padding:6px 0px 0px 10px; 
+height:20px; 
+font-size:12px; 
+display:-moz-inline-block; 
+display:inline-block; 
+color:#FFF;
+background:left top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/pink_small_pink.png);
+}
+span.buttonSmall a.promo span.rs {
+display:inline-block;
+height:26px;
+width:10px;
+vertical-align:bottom;
+background:right top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/pink_small_pink.png);
+}
+span.buttonSmall a.promo:hover span.text {
+background-position:0px -26px;
+color:#FFFFFF;
+}
+span.buttonSmall a.promo:hover span.rs {
+background-position:100% -26px;
+}
+/* button blue*/
+span.buttonSmall a.blue {
+text-decoration:none; 
+vertical-align:middle; 
+display:-moz-inline-box; 
+display:inline-block; 
+height:26px; 
+padding-left:0px;
+font-size:12px;
+color:#e5f6fd;
+cursor:pointer;
+}
+* html span.buttonSmall a.blue {
+background:none;
+padding:0px;
+}
+* html span.buttonSmall a.blue span.text {
+background:top left repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/blank.gif);
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/blue_small_left.png',sizingMethod='crop');
+}
+span.buttonSmall a.blue:hover {
+background-position:0px -26px;
+}
+span.buttonSmall a.blue span.text {
+line-height:15px;
+padding:6px 0px 0px 10px; 
+height:20px; 
+font-size:12px; 
+display:-moz-inline-block; 
+display:inline-block; 
+color:#e5f6fd;
+background:left top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue_small_blue.png);
+}
+span.buttonSmall a.blue span.rs {
+display:inline-block;
+height:26px;
+width:10px;
+vertical-align:bottom;
+background:right top no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/blue_small_blue.png);
+}
+* html span.buttonSmall a.blue span.rs {
+display:inline-block;
+height:26px;
+width:10px;
+background:top left repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/blank.gif);
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/blue_small_right.png',sizingMethod='crop');
+}
+span.buttonSmall a.blue:hover span.text {
+background-position:0px -26px;
+color:#FFFFFF;
+}
+span.buttonSmall a.blue:hover span.rs {
+background-position:100% -26px;
+}
+* html span.buttonSmall a.blue:hover span.text {
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/blue_small_left_hover.png',sizingMethod='crop');
+}
+* html span.buttonSmall a.blue:hover span.rs {
+FILTER:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/images/buttons/blue_small_right_hover.png',sizingMethod='crop');
+}
+span.buttonSmall span.notavailable,
+span.buttonSmall a.notavailable {
+text-decoration:none; 
+vertical-align:middle; 
+display:-moz-inline-box; 
+display:inline-block; 
+height:26px; 
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/notavailable_small_left.gif);
+padding-left:25px;
+font-size:12px;
+color:#FFFFFF;
+cursor:default;
+}
+span.buttonSmall span.notavailable span,
+span.buttonSmall a.notavailable span {
+line-height:15px;
+padding:6px 10px 0px 5px; 
+height:20px; 
+color:#FFFFFF; 
+font-size:12px; 
+display:-moz-inline-block; 
+display:inline-block; 
+background:top right no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/notavailable_small_right.gif);
+}
+span.buttonSmall span.notavailable2, 
+span.buttonSmall a.notavailable2 {
+color:#FFFFFF;
+cursor:default;
+display:inline-block;
+font-size:12px;
+height:16px;
+padding-left:0;
+text-decoration:none;
+vertical-align:middle;
+}
+span.buttonSmall span.notavailable2 span.text, 
+span.buttonSmall a.notavailable2 span.text {
+background-color:transparent;
+background-image:url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/icon_notavailable_trans.png);
+background-repeat:no-repeat;
+background-position:left top;
+color:#FFFFFF;
+display:inline-block;
+font-size:14px;
+font-weight:bold;
+height:16px;
+padding:0 0 0 20px;
+}
+span.shopButton {
+font-weight:bold;
+}
+span.shopButton a {
+padding:0 0 0 0px;
+text-decoration:none;
+display:inline-block;
+/* Go Green */
+font-size:12px;
+color:#525252;
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/shop_buy_left_green2.gif);
+/*background:top left no-repeat scroll url(/web/20130121124946im_/http://shop.skype.com/i/images/buttons/shop_buy_left.gif);*/
+}
+span.shopButton a img {
+display:inline-block;
+margin:4px 4px 4px 5px;
+vertical-align:bottom;
+width: 88px;
+height: 31px;
+}
+span.shopButton a span {
+padding:0 10px 0 10px;
+font-size:12px;
+height:39px;
+line-height:39px;
+white-space:nowrap;
+cursor:pointer;
+display:inline-block;
+/* Go Green */
+color:#FFF;
+background:top right no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/shop_buy_green.gif);
+/*color:#E5F6FD;
+background:top right no-repeat scroll url(/web/20130121124946im_/http://shop.skype.com/i/images/buttons/shop_buy.gif);*/
+}
+span.shopButton a:hover {
+background-position:0px -39px;
+}
+span.shopButton a:hover span {
+color:#ffffff;
+background-position:100% -39px;
+}
+
+/* Button Green xsml */
+span.buttonSmall a.greenSml {
+color:#E5F6FD;
+cursor:pointer;
+display:inline-block;
+font-size:12px;
+height:20px;
+padding-left:0;
+text-decoration:none;
+vertical-align:middle;
+}
+* html span.buttonSmall a.greenSml {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent none repeat scroll 0 0;
+padding:0;
+}
+* html span.buttonSmall a.greenSml span.text {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/blank.gif) repeat scroll left top;
+}
+span.buttonSmall a.greenSml:hover {
+background-position:0 -20px;
+}
+span.buttonSmall a.greenSml span.text {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/green_xsmall.png) no-repeat scroll left top;
+color:#FFFFFF;
+display:inline-block;
+font-size:12px;
+height:17px;
+line-height:15px;
+padding:3px 0 0 10px;
+}
+span.buttonSmall a.greenSml span.rs {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/green_xsmall.png) no-repeat scroll right top;
+display:inline-block;
+height:20px;
+vertical-align:bottom;
+width:10px;
+}
+* html span.buttonSmall a.greenSml span.rs {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/css/content.css) repeat scroll left top;
+display:inline-block;
+height:20px;
+width:10px;
+}
+span.buttonSmall a.greenSml:hover span.text {
+background-position:0 -20px;
+color:#FFFFFF;
+}
+span.buttonSmall a.greenSml:hover span.rs {
+background-position:100% -20px;
+}
+
+
+/* promo */
+.promotitle {
+font-weight: bold; 
+color: #E16232; 
+Font-size: 14px;
+}
+span.shopButton2 {
+font-weight:bold;
+}
+span.shopButton2 a {
+padding:0 0 0 0px;
+text-decoration:none;
+display:inline-block;
+font-size:12px;
+color:#525252;
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/shop_buy_left_pink.gif);
+}
+span.shopButton2 a img {
+display:inline-block;
+margin:3px 9px 3px 4px;
+border: 1px solid #CCCCCC;
+vertical-align:bottom;
+width: 88px;
+height: 31px;
+}
+span.shopButton2 a span {
+padding:0 10px 0 10px;
+margin-left: 10px;
+font-size:12px;
+height:39px;
+line-height:39px;
+white-space:nowrap;
+cursor:pointer;
+display:inline-block;
+color:#FFF;
+background:top right no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/shop_buy_pink.gif);
+}
+span.shopButton2 a:hover {
+background-position:0px -39px;
+}
+span.shopButton2 a:hover span {
+color:#ffffff;
+background-position:100% -39px;
+}
+span.shopButton3 {
+font-weight:bold;
+}
+span.shopButton3 a {
+padding:0 0 0 0px;
+text-decoration:none;
+display:inline-block;
+font-size:12px;
+color:#525252;
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/shop_buy_left_green2.gif);
+}
+span.shopButton3 a img {
+display:inline-block;
+margin:3px 9px 3px 4px;
+border: 1px solid #CCCCCC;
+vertical-align:bottom;
+width: 88px;
+height: 31px;
+}
+span.shopButton3 a span {
+padding:0 10px 0 10px;
+margin-left: 10px;
+font-size:12px;
+height:39px;
+line-height:39px;
+white-space:nowrap;
+cursor:pointer;
+display:inline-block;
+color:#FFF;
+background:top right no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/shop_buy_green.gif);
+}
+span.shopButton3 a:hover {
+background-position:0px -39px;
+}
+span.shopButton3 a:hover span {
+color:#ffffff;
+background-position:100% -39px;
+}
+/* end promo*/
+
+span.placeButton {
+font-weight:bold;
+}
+span.placeButton span {
+padding:0 0 0 37px;
+text-decoration:none;
+display:inline-block;
+color:#525252;
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/icon_anywhere.png);
+}
+span.placeButton span span {
+padding:0 25px 0 5px;
+font-size:14px;
+height:37px;
+line-height:37px;
+white-space:nowrap;
+display:inline-block;
+color:#525252;
+background:top right no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/placebutton_right.png);
+}
+span.placeButton span.home { 
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/icon_home.png); 
+}
+span.placeButton span.work { 
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/icon_work.png); 
+}
+span.placeButton2 {
+font-weight:bold;
+}
+span.placeButton2 a {
+padding:0 0 0 0;
+text-decoration:none;
+display:inline-block;
+color:#525252;
+background:top left no-repeat scroll url(../images/placebutton_left_top.png);
+}
+span.placeButton2 a span.rt {
+display:inline-block;
+background:top right no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/placebutton_right_top.png);
+}
+span.placeButton2 a span.rb {
+display:inline-block;
+background:bottom right no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/placebutton_right_bottom.png);
+}
+span.placeButton2 a span.lb {
+display:inline-block;
+padding-left:25px;
+background:bottom left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/placebutton_left_bottom.png);
+}
+span.placeButton2 span.home {
+padding:9px 25px 10px 17px;
+line-height:19px;
+display:inline-block;
+color:#525252;
+}
+span.placeButton2 span.home img {
+position:absolute;
+margin-left:-37px;
+margin-top:-4px;
+}
+span.placeButton2 a.work { 
+background:top left no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/icon_work.png); 
+}
+span.winMac {
+font-weight:bold;
+}
+span.winMac span {
+width:53px;
+height:23px;
+display:inline-block;
+background:0px 0px no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/win_mac.png);
+}
+span.winMac span.mac { 
+background:0px -52px no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/win_mac.png);
+}
+span.winMac span.win { 
+background:0px -26px no-repeat scroll url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/buttons/win_mac.png);
+}
+
+/* Rating stars related styles */
+span.ratingStars {}
+span.ratingStars span {
+width:99px;
+height:16px;
+display:inline-block;
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue.png);
+}
+/* blue */
+span.ratingStars span.stars05 {
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue05.png);
+}
+span.ratingStars span.stars1 {
+background:0px -19px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue.png);
+}
+span.ratingStars span.stars15 {
+background:0px -19px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue05.png);
+}
+span.ratingStars span.stars2 {
+background:0px -38px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue.png);
+}
+span.ratingStars span.stars25 {
+background:0px -38px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue05.png);
+}
+span.ratingStars span.stars3 {
+background:0px -57px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue.png);
+}
+span.ratingStars span.stars35 {
+background:0px -57px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue05.png);
+}
+span.ratingStars span.stars4 {
+background:0px -76px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue.png);
+}
+span.ratingStars span.stars45 {
+background:0px -76px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue05.png);
+}
+span.ratingStars span.stars5 {
+background:0px -95px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue.png);
+}
+/* light blue */
+/*
+span.ratingStars.light span {
+background:0px 0px no-repeat;
+}
+span.ratingStars.light span.stars1 {
+background:0px -19px no-repeat url(/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-lightblue.png);
+}
+span.ratingStars.light span.stars2 {
+background:0px -38px no-repeat url(/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-lightblue.png);
+}
+span.ratingStars.light span.stars3 {
+background:0px -57px no-repeat url(/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-lightblue.png);
+}
+span.ratingStars.light span.stars4 {
+background:0px -76px no-repeat url(/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-lightblue.png);
+}
+span.ratingStars.light span.stars5 {
+background:0px -95px no-repeat url(/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-lightblue.png);
+}
+*/
+
+/* Business rating stars */
+span.ratingStarsBusiness {}
+span.ratingStarsBusiness span {
+width:99px;
+height:17px;
+display:inline-block;
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-white.png);
+}
+/* blue */
+span.ratingStarsBusiness span.stars1 {
+background:0px -20px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-white.png);
+}
+span.ratingStarsBusiness span.stars2 {
+background:0px -40px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-white.png);
+}
+span.ratingStarsBusiness span.stars3 {
+background:0px -60px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-white.png);
+}
+span.ratingStarsBusiness span.stars4 {
+background:0px -80px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-white.png);
+}
+span.ratingStarsBusiness span.stars5 {
+background:0px -100px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-white.png);
+}
+
+/* small */
+span.ratingStarsSmall {}
+span.ratingStarsSmall span {
+width:73px;
+height:12px;
+overflow:hidden;
+display:inline-block;
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small.png);
+}
+/* blue */
+span.ratingStarsSmall span.stars05 {
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small05.png);
+}
+span.ratingStarsSmall span.stars1 {
+background:0px -15px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small.png);
+}
+span.ratingStarsSmall span.stars15 {
+background:0px -15px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small05.png);
+}
+span.ratingStarsSmall span.stars2 {
+background:0px -30px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small.png);
+}
+span.ratingStarsSmall span.stars25 {
+background:0px -30px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small05.png);
+}
+span.ratingStarsSmall span.stars3 {
+background:0px -45px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small.png);
+}
+span.ratingStarsSmall span.stars35 {
+background:0px -45px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small05.png);
+}
+span.ratingStarsSmall span.stars4 {
+background:0px -60px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small.png);
+}
+span.ratingStarsSmall span.stars45 {
+background:0px -60px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small05.png);
+}
+span.ratingStarsSmall span.stars5 {
+background:0px -75px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-blue-small.png);
+}
+/* yellow */
+span.ratingStars.yellow span {
+width:99px;
+height:14px;
+display:inline-block;
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow.png);
+}
+span.ratingStars.yellow span {
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow.png);
+}
+span.ratingStars.yellow span.stars05 {
+background:0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow05.png);
+}
+span.ratingStars.yellow span.stars1 {
+background:0px -17px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow.png);
+}
+span.ratingStars.yellow span.stars15 {
+background:0px -17px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow05.png);
+}
+span.ratingStars.yellow span.stars2 {
+background:0px -34px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow.png);
+}
+span.ratingStars.yellow span.stars25 {
+background:0px -34px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow05.png);
+}
+span.ratingStars.yellow span.stars3 {
+background:0px -51px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow.png);
+}
+span.ratingStars.yellow span.stars35 {
+background:0px -51px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow05.png);
+}
+span.ratingStars.yellow span.stars4 {
+background:0px -68px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow.png);
+}
+span.ratingStars.yellow span.stars45 {
+background:0px -68px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow05.png);
+}
+span.ratingStars.yellow span.stars5 {
+background:0px -85px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/stars-rating-yellow.png);
+}
+/* promo LP text*/
+.splash_promoLPTxt {
+position:absolute; 
+/*top: 0px;*/
+top: -20px;
+left: 20px; 
+color: #3A3A3A; 
+font-weight: bold;
+width: 165px;
+}
+/* promo text*/
+.splash_promoTxt {
+position:absolute; 
+/*top: 0px;*/
+top: -20px;
+left: 20px; 
+color: #FFFFFF; 
+font-weight: bold;
+width: 225px;
+}
+.splash_promoTxt a,
+.splash_promoTxt a:hover {
+color:#ffffff;
+text-decoration:underline;
+}
+.splash_disTxt {
+position:absolute; 
+top: 70px; 
+left: 20px; 
+width:250px;
+}
+.splash_disTxt p {
+color: #C1ECFB; 
+font-size: 95%;
+}
+.splash_disTxtExtras {
+position:absolute; 
+top: 90px; 
+left: 20px; 
+width:250px;
+}
+.splash_disTxtExtras p {
+color: #C1ECFB; 
+font-size: 95%;
+}
+.monthsFavorite_promoTxt {
+padding: 10px 0 10px 0; 
+color: #FF0000; 
+font-weight: bold;
+}
+.cate_promoTxt {
+color: #FF0000; 
+font-weight: bold;
+padding-bottom: 5px;
+width:210px;
+}
+.cate_promoTxt a,
+.cate_promoTxt a:hover {
+color: #FF0000;
+text-decoration:underline;
+}
+
+/* Skype for TV */
+.tvManuf_split{
+border-top: #CCC solid 1px; 
+}
+div.productsSubcategory div.productInfo h2.TVname {
+padding:10px 0 10px 0;
+}
+div.productsSubcategory div.productInfo h2.TVname a {
+color:#525252;
+text-decoration:none;
+}
+div.productsSubcategory div.productInfo p.TVmodel,
+div.productsSubcategory div.productInfo p.TVmodel a {
+color:#525252;
+font-weight:bold;
+text-decoration:none;
+font-size: 18px;
+}
+div.productsSubcategory div.productInfo p.TVmodel a:hover {
+text-decoration:underline;
+}
+span.tvsize {
+color: #B2E7FA;
+font-weight: bold;
+}
+span.inches,
+span.inches a {
+color: #FFFFFF;
+font-weight: bold;
+font-size: 18px;
+text-decoration: none;
+}
+div.skypetvBox {
+padding: 20px 0 0 0;
+}
+div.skypetv_nav {
+width: 560px;
+height: 13px;
+padding: 20px;
+margin: 0 0 20px 0;
+background: 0px 0px no-repeat url(https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/backgrounds/skypetv_navigation.png);
+}
+div.skypetv_nav div.inch {
+font-size: 0.85em;
+font-weight: bold;
+/*width: 80px;*/
+margin: 0px 10px;
+float: left;
+text-align: center;
+}
+div.skypetv_nav div.inch a {
+color: #00AFF0;
+text-decoration: none;
+}
+div.skypetv_nav div.inch a.active {
+color: #00AFF0;
+text-decoration: underline;
+font-weight: bold;
+}
+div.infobox.company div.compatible {
+background-position: right bottom;
+background-repeat: no-repeat;
+padding: 0 0 80px 0;
+}
+div.infobox.company div.compatible p {
+padding: 0;
+margin: 0;
+}
+div.infoboxContent div.name,
+div.infoboxContent div.name a {
+color:#00AFF0;
+font-size: 14px;
+font-weight: bold;
+text-decoration: none;
+}
+div.infoboxContent div.price {
+color:#525252;
+font-size: 85%;
+font-weight: bold;
+}
+span.watchthevideo {
+font-size:12px;
+}
+
+/*COMMENTS RATINGS DISQUS*/
+
+#CommentsFeatures
+{
+    margin: 35px 0 10px;
+}
+#CommentsFeatures div.content
+{
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px !important;
+}
+#CommentsFeatures div.leftColumn
+{
+    float: left;
+    overflow: hidden;
+    width: 690px;
+}
+#CommentsFeatures div.leftColumn div.commentSort
+{
+    padding: 0 0 10px;
+    text-align: right;
+}
+#CommentsFeatures div.sidebar
+{
+    display: inline;
+    float: left;
+    margin-left: 30px;
+    width: 240px;
+}
+#CommentsFeatures.mobile div.sidebar
+{
+    padding-top: 95px;
+}
+#CommentsFeatures.mobile div.sidebar div.share-logo
+{
+    padding: 15px 0 20px;
+}
+#CommentsFeatures.mobile div.sidebar div.share-logo span
+{
+    margin: 0 8px 10px 0;
+}
+
+/* DISQUS CSS */
+
+/* Everything Disqus on your page is contained within this. */
+#disqus_thread {
+padding: 5px !important;
+font-size: 14px !important; 
+}
+
+
+/* The main wrapper for the comment system. */
+#dsq-content {
+font-size: 14px !important;
+}
+
+/*The entire comment thread list.*/
+#dsq-comments {
+    margin: 0 0 0 0 !important;
+    }
+
+/*A single comment in the thread.*/
+.dsq-comment {
+}
+
+/*A single comment in the thread.*/
+.dsq-comment-header {
+color: #525252 !important;
+    -moz-background-inline-policy: continuous !important;
+    -moz-border-radius: 3px 3px 3px 3px !important;
+    background: none repeat scroll 0 0 #CCEFFC !important;
+    border: 1px solid #7FD7F7 !important;
+    height: auto !important;
+    line-height: normal !important;
+    font-size: 14px !important;
+}
+
+/*The avatar image for the registered.*/
+.dsq-header-avatar img {
+    float: left !important;
+    padding: 3px 20px 3px 3px !important;
+    vertical-align: middle !important;
+    height: 48px !important;
+    width:48px !important;
+}
+
+/*The message body of a single comment post.*/
+#dsq-content #dsq-comments .dsq-comment-body {
+    padding: 15px 0 0 !important; 
+ } 
+
+/*"Add New Comment" and "# Comments" are enclosed in h3 tags.*/
+#dsq-content h3 {
+    color: #525252 !important;
+}
+
+/*The footer contains the link to "reply."*/
+.dsq-comment-footer {}
+
+/*Reply and Like buttons*/
+.dsq-button-small {
+    -moz-background-inline-policy: continuous !important;
+    -moz-border-radius: 3px 3px 3px 3px !important;
+    background: none repeat scroll 0 0 #CCEFFC !important;
+    border: 1px solid #7FD7F7 !important;
+    color: #525252 !important;
+    cursor: pointer !important;
+    font-size: 11px !important;
+    margin: 0 !important;
+    padding: 2px 4px !important;
+}
+
+/*The box where a post is typed into.*/
+.dsq-textarea-wrapper{
+    -moz-background-clip: border !important;
+    -moz-background-inline-policy: continuous !important;
+    -moz-background-origin: padding !important;
+    -moz-border-radius: 3px 3px 3px 3px !important;
+    border: 1px solid #7FD7F7 !important;
+    color: #525252 !important;
+    height: 120px !important;
+    padding: 5px !important;
+}
+
+
+/* The toggle button for the thread options. */
+#dsq-options-toggle {
+/* display: none; */
+}
+
+/* The links within the thread Options */
+#dsq-extra-links {
+/* display: none; */
+}
+
+/* The comment rating arrows for posts. */
+.dsq-comment-body {
+    padding: 10px 0 0 !important; 
+    font-size: 14px !important;
+}
+
+/* This is the meta information about the post (time stamp and points). */
+.dsq-header-meta {
+}
+
+/* The message body of a single comment post.
+.dsq-comment-body {
+}
+
+/* This contains and determines the style for the pagination links. */
+#dsq-pagination {
+}
+
+/* This contains Sort and subscribe options. */
+.dsq-options{
+    overflow: hidden !important;
+    clear: none !important;
+    margin-top:5px !important;
+}
+
+/* This contains Sort text and field. */
+.dsq-item-sort{
+    float: right !important; 
+}
+
+
+/* RSS subscription. */
+.dsq-item-mail{
+    padding: 0 0 10px !important;
+    text-align: right !important;
+}
+/* Mail Subscription. */
+.dsq-subscribe-email{
+    display: none !important;
+}
+
+/* Disqus global toolbar. */
+#dsq-global-toolbar{
+    display: none !important;
+}
+
+/* Disqus post Like button . */
+.dsq-like{
+    display: none !important;
+}
+
+/* Post button */
+.dsq-button{
+    -moz-background-inline-policy: continuous !important;
+    -moz-border-radius: 3px 3px 3px 3px !important;
+    background: none repeat scroll 0 0 #CCEFFC !important;
+    border: 1px solid #7FD7F7 !important;
+    color: #525252 !important;
+    cursor: pointer !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    padding: 5px 10px !important;
+}
+
+/* Comments number title */
+#dsq-comments-title {
+    float: left !important;   
+}
+
+    p.rating
+    {
+        padding: 15px 0 0;
+        color: #FFFFFF;
+        font-weight: normal;
+        margin: 0;
+        width: 250px;
+    }
+    p.commented
+    {
+        font-size: 16px;
+        color: #FFFFFF;
+        font-weight: normal;
+        margin: 0;
+        width: 250px;
+    }
+    p.commented a, p.commented a:visited
+    {
+        text-decoration: none;
+        color: #FFFFFF !important;
+        font-weight: normal;
+    }
+    span.ratingstarsYellow span
+    {
+        -moz-background-inline-policy: continuous;
+        background: url("https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 0 transparent;
+        display: inline-block;
+        height: 14px;
+        width: 72px;
+    }
+    span.ratingstarsYellow span.stars1
+    {
+        -moz-background-inline-policy: continuous;
+        background: url("https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -12px transparent;
+    }
+    span.ratingstarsYellow span.stars2
+    {
+        -moz-background-inline-policy: continuous;
+        background: url("https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -25px transparent;
+    }
+    span.ratingstarsYellow span.stars3
+    {
+        -moz-background-inline-policy: continuous;
+        background: url("https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -39px transparent;
+    }
+    span.ratingstarsYellow span.stars4
+    {
+        -moz-background-inline-policy: continuous;
+        background: url("https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -53px transparent;
+    }
+    span.ratingstarsYellow span.stars5
+    {
+        -moz-background-inline-policy: continuous;
+        background: url("https://web.archive.org/web/20130121124946im_/http://shop.skype.com/i/images/app-store/graphics/yellow_star_sml.png") no-repeat scroll 0 -67px transparent;
+    }
+
+    
+/*
+     FILE ARCHIVED ON 12:49:46 Jan 21, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:06:52 Nov 02, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.414
+  exclusion.robots: 0.013
+  exclusion.robots.policy: 0.007
+  esindex: 0.008
+  cdx.remote: 7.678
+  LoadShardBlock: 331.031 (3)
+  PetaboxLoader3.datanode: 354.763 (7)
+  PetaboxLoader3.resolve: 582.187 (3)
+  load_resource: 615.603 (2)
+*/

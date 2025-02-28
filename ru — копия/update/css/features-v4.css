@@ -1,0 +1,477 @@
+﻿.themeDark .caption,.themeDark .disclaimer a,.themeDark *:not(.btn):not(span):not(input):not(.dropdown_listItem) {
+    /* color:#fff; */
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 30%, 0);
+        transform: translate3d(0, 30%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@-moz-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 30%, 0);
+        transform: translate3d(0, 30%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 30%, 0);
+        transform: translate3d(0, 30%, 0)
+    }
+}
+
+@-o-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 30%, 0);
+        transform: translate3d(0, 30%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 30%, 0);
+        transform: translate3d(0, 30%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.standaloneOverlay .overlayContent {
+    padding: 30px
+}
+
+.standaloneOverlay .overlayContent .content {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.overlayContent p {
+    margin-bottom: 1em
+}
+
+.overlayContent .btnWrapper {
+    display: inline-block;
+    margin: 1em 0;
+    text-align: center;
+    width: 100%
+}
+
+.overlayContent .btn.primaryCta .arrowDown .icon,.overlayContent .btn.primaryCta .arrowNext .icon,.overlayContent .btn.primaryCta:hover .icon,.overlayContent .btn.primaryCta:active .icon,.overlayContent .btn.primaryCta:focus .icon {
+    display: none !important
+}
+
+.overlayContent .row {
+    margin: 0;
+    overflow: visible
+}
+
+.overlayContent img {
+    width: 100%
+}
+
+.overlayContent .imageNotFluid img {
+    width: auto
+}
+
+.overlayContent .tabPanel {
+    flex-direction: column
+}
+
+.overlayContent .tabPanel .panel {
+    padding-top: 40px
+}
+
+.overlayContent .tabPanel .tabList li.title {
+    text-align: center;
+    border-width: 1px;
+    padding: 15px 20px
+}
+
+.standaloneOverlay {
+    padding-top: 0
+}
+
+.standaloneOverlay .backButton {
+    text-decoration: none
+}
+
+.standaloneOverlay .backButton .buttonText {
+    vertical-align: middle
+}
+
+.standaloneOverlay .bottomSection {
+    text-align: center
+}
+
+.standaloneOverlay .bottomSection .grid {
+    padding: 20px 0 0 0
+}
+
+.standaloneOverlay .noStandaloneOverlay {
+    display: none !important
+}
+
+@media (min-width: 768px) {
+    .overlayContent .row {
+        display:-webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row-reverse
+    }
+
+    .overlayContent .row.colDef21 .col1 {
+        padding-left: 40px
+    }
+
+    .rtl .overlayContent .row.colDef21 .col1 {
+        padding-left: 0;
+        padding-right: 40px
+    }
+
+    .ie9 .overlayContent .row.colDef21 .col1 {
+        padding-left: 0;
+        padding-right: 40px
+    }
+
+    .ie9.rtl .overlayContent .row.colDef21 .col1 {
+        padding-left: 40px;
+        padding-right: 0
+    }
+
+    .standaloneOverlay .overlayContent .row.colDef21 .col {
+        width: 50%
+    }
+
+    .overlayContent .btnWrapper {
+        margin: 1.125em 0;
+        text-align: left
+    }
+
+    .overlayContent .tabPanel .row {
+        flex-direction: row-reverse
+    }
+
+    .overlayContent .tabPanel .row.colDef2 .col2 {
+        padding-right: 40px
+    }
+
+    .rtl .overlayContent .tabPanel .row.colDef2 .col2 {
+        padding-right: 0;
+        padding-left: 40px
+    }
+
+    .ie9 .overlayContent .tabPanel .row.colDef2 .col2 {
+        padding-left: 40px;
+        padding-right: 0
+    }
+
+    .ie9.rtl .overlayContent .tabPanel .row.colDef2 .col2 {
+        padding-left: 0;
+        padding-right: 40px
+    }
+
+    .overlayContent .tabPanel .tabList .title:hover {
+        background: #fff;
+        color: #000
+    }
+
+    .overlayContent .tabPanel .tabList .title[aria-selected=true] {
+        background: #2b2c33;
+        color: #fff
+    }
+
+    .overlayContent .tabPanel .tabList .title[aria-selected=true]:after {
+        border-style: solid;
+        border-color: #2b2c33 transparent transparent transparent;
+        border-width: 10px 10px 0 10px;
+        bottom: -10px;
+        left: 50%;
+        content: " ";
+        position: absolute;
+        pointer-events: none;
+        margin-left: -10px
+    }
+
+    .overlayContent .containerDesktop {
+        padding-bottom: 0;
+        padding-top: 0
+    }
+
+    .standaloneOverlay .overlayContent .tabbedOverlayMainTitle {
+        padding-top: 10px
+    }
+
+    .standaloneOverlay {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .standaloneOverlay .bottomSection {
+        text-align: center
+    }
+
+    .standaloneOverlay .bottomSection .grid {
+        padding: 0
+    }
+}
+
+@media (min-width: 1024px) {
+    .overlayContent .section .narrowWidth {
+        max-width:900px
+    }
+
+    .standaloneOverlay .section .narrowWidth {
+        max-width: 80%
+    }
+}
+
+@media (min-width: 1601px) {
+    .standaloneOverlay .section .narrowWidth {
+        max-width:1260px
+    }
+
+    .standaloneOverlay .overlayContent .narrowWidth {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+.featuresHero .iconFeature.text-right:after,.rtl .featuresHero .iconFeature.text-left:after {
+    content: "";
+    right: -45px
+}
+
+.rtl .featuresHero .iconFeature.text-right:before,.featuresHero .iconFeature.text-left:after {
+    content: "";
+    left: -45px
+}
+
+.featuresHero .row {
+    overflow: visible
+}
+
+.featuresHero .iconFeature_icon {
+    font-size: 48px
+}
+
+.featuresHero .iconFeature {
+    border-radius: 20px;
+    position: relative;
+    padding: 30px;
+    z-index: 2;
+    cursor: pointer;
+    margin: 5px 0
+}
+
+.featuresHero .iconFeature:before,.featuresHero .iconFeature:after {
+    display: none;
+    align-items: center;
+    font-family: "SkypeAssetsLight-web";
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    height: 100%
+}
+
+.featuresHero .iconFeature.text-right {
+    margin-left: auto
+}
+
+.rtl .featuresHero .iconFeature.text-right:after {
+    display: none
+}
+
+.featuresHero .iconFeature.activeFeature,.featuresHero .iconFeature:focus,.featuresHero .iconFeature:active,.featuresHero .iconFeature:hover {
+    z-index: 1;
+    background-color: white;
+    transition: all 0.2s cubic-bezier(0.78, 0, 0.22, 1);
+    box-shadow: 0 10px 30px 0 rgba(43,44,51,0.15)
+}
+
+@media (-ms-high-contrast: active) {
+    .featuresHero .iconFeature.activeFeature,.featuresHero .iconFeature:focus,.featuresHero .iconFeature:active,.featuresHero .iconFeature:hover {
+        border: 3px solid
+    }
+}
+
+.featuresHero .iconFeature.activeFeature .iconFeature_title,.featuresHero .iconFeature.activeFeature .iconFeature_icon,.featuresHero .iconFeature:focus .iconFeature_title,.featuresHero .iconFeature:focus .iconFeature_icon,.featuresHero .iconFeature:active .iconFeature_title,.featuresHero .iconFeature:active .iconFeature_icon,.featuresHero .iconFeature:hover .iconFeature_title,.featuresHero .iconFeature:hover .iconFeature_icon {
+    color: #0078d4
+}
+
+.featuresHero .iconFeature.activeFeature:before,.featuresHero .iconFeature.activeFeature:after {
+    display: flex
+}
+
+#section3Device2,#section3Device,#featuresMobile {
+    margin: 0 auto
+}
+
+#all-features-section .row {
+    overflow: visible
+}
+
+.see-all-features-column {
+    padding-top: 0;
+    display: none
+}
+
+.see-all-features-column .iconFeature {
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    border-top: 1px solid #d5d9de;
+    margin: 0 auto;
+    padding: 15px
+}
+
+@media (min-width: 768px) {
+    .see-all-features-column .iconFeature {
+        padding:30px
+    }
+}
+
+.deviceHeroRow.colDef3>.col {
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start
+}
+
+@media (min-width: 768px) {
+    .deviceHeroRow.colDef3>.col {
+        flex:1;
+        max-width: none
+    }
+}
+
+#featuresMobile {
+    max-width: 364px
+}
+
+.featureInfoNote:before,.rtl .featureInfoNote:after {
+    content: attr(data-icon);
+    font-family: "SkypeAssetsLight-web";
+    margin-right: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center
+}
+
+.featureInfoNote {
+    display: inline-flex;
+    border: 1px solid #e5e4e8;
+    padding: 5px 20px 5px 9px;
+    border-radius: 9px;
+    line-height: 25px;
+    margin: 20px 0 0 0
+}
+
+.rtl .featureInfoNote:before {
+    display: none
+}
+
+@media (min-width: 1024px) {
+    .featureInfoNote {
+        border-radius:30px
+    }
+}
+
+.featuresDeviceList {
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    max-width: 98px;
+    width: 98px
+}
+
+.featuresDeviceList p {
+    margin: 10px 0 0
+}
+
+@media (min-width: 1024px) {
+    .addFirstColGap>.col:first-of-type {
+        padding:0 35px
+    }
+}
+
+.alignColsTop>.col {
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start
+}
+
+.featuresHeroTitle h1 {
+    margin-bottom: 10px
+}
+
+.focusMobile {
+    outline: 2px solid #6e7074
+}
+
+#featuresSelection {
+    display: none
+}

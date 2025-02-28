@@ -1,0 +1,38 @@
+ <!-- Open Graph meta tags -->
+    <meta property="og:title" content="KSkype - Classic Skype on Mac or Windows. Linux.">
+    <meta property="og:description" content="Classic Skype in 2024 - KSkype!">
+    <meta property="og:image" content="http://kskype.limpe.fun/assets/v1/tab/imagetab.gif">
+    <meta property="og:url" content="http://kskype.limpe.fun">
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KSkype - Classic Skype on Mac or Windows. Linux.">
+    <meta name="twitter:description" content="Classic Skype in 2024 - KSkype!">
+    <meta name="twitter:image" content="http://kskype.limpe.fun/assets/v1/tab/imagetab.gif">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Redirect</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            var redirectUrl;
+
+            if (userLang.startsWith('ru')) {
+                redirectUrl = 'https://kskype.limpe.fun/ru/about';
+            } else if (userLang.startsWith('uk')) {
+                redirectUrl = 'https://kskype.limpe.fun/en/about';
+            } else {
+                redirectUrl = 'https://kskype.limpe.fun/ua/about';
+            }
+
+            window.location.href = redirectUrl;
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting based on your browser language...</p>
+</body>
+</html>

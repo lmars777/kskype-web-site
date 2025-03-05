@@ -140,6 +140,35 @@
 				s_el.mobile_menu = {click: {events: "event36", eVar19: "mobile nav flyout", prop18: D="v19"}};
 			</script>			
 		</div>
+		<div id="countdownPanel" style="background-color: hsl(245, 50%, 56%); color: white; padding: 10px; text-align: center;">
+			We're one day away from officially shutting down Skype: <span id="countdown"></span>
+		  </div>
+		  <script>
+			function updateCountdown() {
+			  const endDate = new Date('May 5, 2025 00:00:00').getTime();
+			  const now = new Date().getTime();
+			  const distance = endDate - now;
+		  
+			  if (distance < 0) {
+				document.getElementById('countdown').innerHTML = 'Скайп умер';
+				return;
+			  }
+		  
+			  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		  
+			  if (days > 0 || hours > 0) {
+				document.getElementById('countdown').innerHTML = `${days} days ${hours} hours`;
+			  } else {
+				document.getElementById('countdown').innerHTML = `${minutes} minutes ${seconds} seconds`;
+			  }
+			}
+		  
+			setInterval(updateCountdown, 1000);
+			updateCountdown();
+		  </script>
 	</nav>
 
 

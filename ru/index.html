@@ -517,7 +517,39 @@ dir="ltr">
           </li>
         </ul>
         <div id="endNavigation"></div>
+        <div id="countdownPanel" style="background-color: hsl(245, 50%, 56%); color: white; padding: 10px; text-align: center;">
+          До смерти Скайпа осталось <span id="countdown"></span>
+        </div>
+        <script>
+          function updateCountdown() {
+            const endDate = new Date('May 5, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = endDate - now;
+        
+            if (distance < 0) {
+              document.getElementById('countdown').innerHTML = 'Скайп умер';
+              return;
+            }
+        
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+            if (days > 0 || hours > 0) {
+              document.getElementById('countdown').innerHTML = `${days} дней ${hours} часов`;
+            } else {
+              document.getElementById('countdown').innerHTML = `${minutes} минут ${seconds} секунд`;
+            }
+          }
+        
+          setInterval(updateCountdown, 1000);
+          updateCountdown();
+        </script>
       </nav>
+
+
+
     </div>
     <section id="coverSection" class="themeDark themeDarkDesktop">
       <div id="guestHostFormWrapper">

@@ -520,6 +520,9 @@ dir="ltr">
         <div id="ggMigrationSkypetoTeamsPanel" style="background-color: hsl(245, 50%, 56%); color: white; padding: 10px; text-align: center;">
           До смерти Скайпа осталось <span id="countdown"></span>
         </div>
+        <div id="ClientSGatewayTimedOut" style="background-color: hsl(0, 100%, 50%); color: white; padding: 10px; text-align: center;">
+          Общение через KSkype в Скайп больше недоступно, из-за отключения серверов для старых клиентов. Следите за новостями в наших социальных сетях
+        </div>
         <script>
           function updateCountdown() {
             const endDate = new Date('May 5, 2025 00:00:00').getTime();
@@ -640,13 +643,14 @@ dir="ltr">
       <div id="coverSectionMainContent" class="darkenBg">
         <div class="content contentTable fullWidth">
           <div class="verticalAlignCenter">
-            <h1 role="heading" aria-level="1" class="fontSizeH1">Skype прекращает работу 5 мая 2025</h1>
-            <p class="fontSizeH3 clearfix">Поддержка сервиса Skype будет окончена 5 мая 2025. Разработка клиента приостановлена.</p>
-            <p class="fontSizeH4 clearfix">Разработка клиента KSkype была приостановлена. Скачивание клиента будет доступно вплоть до окончания работы серверов Скайп</p>
+            <h1 role="heading" aria-level="1" class="fontSizeH1">Skype прекращает работу 5 мая 2025.</h1>
+            <p class="fontSizeH3 clearfix">В связи с окончанием поддержки Скайп, процесс разработки клиента заморожен.</p>
+            <p class="fontSizeH4 clearfix">В связи с отключением серверов client-s, полноценное общение в сети через KSkype недоступно.</p>
             <div class="ctaWrapper"> <span data-mvt-configuration="hpGuestHost"> <span class="guestHostBtnWrapper"> <a id="guestHostButtonTop" href="support/pages/backup-data-skype-server" data-mvt-variant="guest" class="btn secondaryCta lgHiddenDown" data-campaign-id="home_v2_guest_host" data-position="hero" data-tracking-type="click" aria-label="Start a conversation" title="Start a conversation" tabindex="0" aria-haspopup="true" aria-describedby="ghTooltip" role="button"> <span>Узнать о том, как сохранить свои данные из Скайп</span>              </a> <span class="tooltip tooltipBottom notification"> <span id="ghTooltip" data-id="tooltipMessage">Узнайте как сделать бекап дорогих вам чатов из Скайп.</span>              </span>
               </span>
-              </span> <span class="downloadBtnWrapper"> <a id="downloadButtonTop" class="btn primaryCta" data-campaign-id="home_v2_download" data-position="hero" data-tracking-type="click" href="https://kskype.limpe.fun/download-skype" aria-label="Download Skype" title="Download Skype"> <span>Скачать KSkype</span>              </a>
-              </span> <span class="singInBtnWrapper"> <a id="signInButtonTop" class="btn secondaryCta" href="https://go.skype.com/myaccount" aria-label="Sign in" title="Sign in" data-myaccount-text="My account" data-myaccount-link="support/pages/backup-data-skype-server"> <span>Инструкция по бекапу данных из Скайп</span>              </a>
+           
+     <!--      </span> <span class="downloadBtnWrapper"> <a id="downloadButtonTop" class="btn primaryCta" data-campaign-id="home_v2_download" data-position="hero" data-tracking-type="click" href="https://kskype.limpe.fun/download-skype" aria-label="Download Skype" title="Download Skype"> <span>Скачать KSkype</span>              </a> -->
+            </span> <span class="singInBtnWrapper"> <a id="signInButtonTop" class="btn secondaryCta" href="support/pages/backup-data-skype-server" aria-label="Sign in" title="Sign in" data-myaccount-text="My account" data-myaccount-link="support/pages/backup-data-skype-server"> <span>Инструкция по бекапу данных из Скайп</span>              </a>
               </span>
             </div>
             <div class="takeTour">
@@ -731,7 +735,7 @@ dir="ltr">
                 </div>
               </div>
             </li>
-            <li id="featureTab3" class="feature" aria-controls="feature3"
+           <!-- <li id="featureTab3" class="feature" aria-controls="feature3"
             role="tab" tabindex="0" aria-labelledby="ft3">
               <div id="ft3">
                 <div class="textAndIcon iconTop ">
@@ -744,7 +748,7 @@ dir="ltr">
                   </div>
                 </div>
               </div>
-            </li>
+            </li>-->
             <li id="featureTab4" class="feature" aria-controls="feature4"
             role="tab" tabindex="0" aria-labelledby="ft4">
               <div id="ft4">
@@ -755,14 +759,14 @@ dir="ltr">
                     <p class="description">Позвоните тем, у кого нет Скайпа, а лишь сим-карта. В Скайпе одни из самых дешевых тарифах на звонки. <a alt="Learn more about this feature"
 
 
-                      href="https://go.skype.com/prices">Узнайте о тарифах звонков</a></p>
+                      href="https://support.microsoft.com/ru-ru/skype/skype-%D1%83%D1%85%D0%BE%D0%B4%D0%B8%D1%82-%D0%B2-%D0%BE%D1%82%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D1%83-%D0%B2-%D0%BC%D0%B0%D0%B5-2025-%D0%B3-%D1%87%D1%82%D0%BE-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-2a7d2501-427f-485e-8be0-2068a9f90472">Информация связанная с отключением PSTN звонков</a></p>
                   </div>
                 </div>
               </div>
             </li>
            <li id="featureTab5" class="feature" aria-controls="feature5"
     role="tab" tabindex="0" aria-labelledby="ft5" hidden>
-    <div id="ft5">
+   <div id="ft5">
         <div class="textAndIcon iconTop ">
             <span class="icon"> <span class="featuresIcon iconPosition5"></span> </span>
             <div class="text">
@@ -937,7 +941,8 @@ dir="ltr">
           </span> <span class="downloadBtnWrapper"> <a id="downloadButtonBottom" class="btn primaryCta" data-campaign-id="home_v2_download" data-position="bottom" data-tracking-type="click" href="https://kskype.limpe.fun/download-skype" aria-label="Download Skype"> <span>Скачать KSkype</span>          </a>
           </span>
         </div>
-      </div>
+    
+	</div>
     </section>
     <div data-mvt-configuration="hpLaunch2" style="display:none;">
       <div data-mvt-variant="variant"></div>
